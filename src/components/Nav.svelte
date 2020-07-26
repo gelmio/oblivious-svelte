@@ -4,9 +4,7 @@
 
 <style>
 	nav {
-		border-bottom: 1px solid rgba(255,62,0,0.1);
-		font-weight: 300;
-		padding: 0 1em;
+		padding: 1em;
 	}
 
 	ul {
@@ -14,16 +12,11 @@
 		padding: 0;
 	}
 
-	/* clearfix */
-	ul::after {
-		content: '';
-		display: block;
-		clear: both;
-	}
-
 	li {
+		border-radius: 3px;
 		display: block;
 		float: left;
+		margin: 0 0.5em;
 	}
 
 	[aria-current] {
@@ -36,25 +29,24 @@
 		content: '';
 		width: calc(100% - 1em);
 		height: 2px;
-		background-color: rgb(255,62,0);
+		background-color: theme('colors.oblivious');
 		display: block;
 		bottom: -1px;
 	}
 
 	a {
 		text-decoration: none;
-		padding: 1em 0.5em;
+		padding: 0.5em;
 		display: block;
 	}
 </style>
 
-<nav>
+<nav class="flex flex-row items-center">
+	<img src="/images/logo-150.png" alt="Oblivious logo of motorbike in an outline of Africa">
 	<ul>
 		<li><a aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
-		<li><a aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li>
-
-		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
-		<li><a rel=prefetch aria-current='{segment === "blog" ? "page" : undefined}' href='blog'>blog</a></li>
+		<li><a rel=prefetch aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li>
+		<li><a rel=prefetch aria-current='{segment === "get-a-taste" ? "page" : undefined}' href='get-a-taste'>get a taste</a></li>
+		<li><button>get the book</button></li>
 	</ul>
 </nav>

@@ -1,8 +1,8 @@
 {
 	"background_color": "#ffffff",
 	"theme_color": "#333333",
-	"name": "TODO",
-	"short_name": "TODO",
+	"name": "Oblivious - An overlanding trip through Africa on a Royal Enfield",
+	"short_name": "Oblivious",
 	"display": "minimal-ui",
 	"start_url": "/",
 	"icons": [
