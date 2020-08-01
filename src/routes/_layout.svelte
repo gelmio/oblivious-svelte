@@ -8,9 +8,7 @@
 <style>
 	main {
 		position: relative;
-		max-width: 56em;
 		background-color: white;
-		padding: 2em;
 		margin: 0 auto;
 		box-sizing: border-box;
 	}
@@ -20,6 +18,6 @@
 
 <Nav {segment}/>
 
-<main>
+<main class="flex flex-col items-center justify-center p-4 lg:p-0">
 	<slot></slot>
 </main>
