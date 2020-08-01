@@ -1,3 +1,6 @@
+<script>
+    import Carousel from "../components/Carousel.svelte";
+</script>
 <style>
 </style>
 
@@ -26,20 +29,18 @@
         <span class="text-xl ml-2">...or get a taste of the adventure <a href="get-a-taste">here</a></span>
     </div>
 </section>
-<section class="my-20 px-10">
-    <h5 class="text-center"><strong>AS FEATURED IN</strong></h5>
-    <div class="flex flex-row items-center justify-center">
-        <img class="max-h-20 mx-10 my-3" src="images/OverlandBound-grey.png"
-             alt="Overland Bound">
-        <img class="max-h-20 mx-10 my-3" src="images/Rider-grey.png"
-             alt="Rider Magazine">
-        <img class="max-h-20 mx-10 my-3" src="images/ADVMoto-grey.png"
-             alt="ADVMoto">
-        <img class="max-h-20 mx-10 my-3" src="images/ExcuseMyBike-grey.png"
-             alt="Excuse my bike">
-        <img class="max-h-20 mx-10 my-3" src="images/royalenfield-grey.png"
-             alt="Royal Enfield">
-        <img class="max-h-20 mx-10 my-3" src="images/cruiser-grey.png"
-             alt="Royal Enfield">
+<section class="my-20 px-10 w-full">
+    <h5 class="text-center mb-3"><strong>AS FEATURED IN</strong></h5>
+    <div class="h-20 grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-10" style="justify-items: center">
+        <img class="self-center max-h-24" src="images/OverlandBound-grey.png" alt="Overland Bound">
+        <img class="self-center max-h-24" src="images/Rider-grey.png" alt="Rider Magazine">
+        <img class="self-center max-h-24" src="images/ADVMoto-grey.png" alt="ADVMoto">
+        <img class="self-center max-h-24" src="images/ExcuseMyBike-grey.png" alt="Excuse my bike">
+        <img class="self-center max-h-24" src="images/royalenfield-grey.png" alt="Royal Enfield">
+        <img class="self-center max-h-24" src="images/cruiser-grey.png" alt="Royal Enfield">
     </div>
 </section>
+<section class="my-20 px-20 w-full">
+    <Carousel />
+</section>
+

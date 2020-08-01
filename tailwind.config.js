@@ -10,7 +10,8 @@ module.exports = {
             },
             maxHeight: {
                 '1/2vh' : '50vh',
-                '20': '5rem'
+                '20': '5rem',
+                '24': '6rem',
             },
         }
     },
