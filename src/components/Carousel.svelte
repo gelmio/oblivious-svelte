@@ -1,5 +1,6 @@
 <script>
     import {fade} from 'svelte/transition'
+    import {onDestroy} from "svelte";
 
     const carouselPhotos = [
         '/images/carousel/images(1).jpg',
@@ -17,16 +18,30 @@
 
     let index = 0
 
-    const changePhoto = (x) => {
-        index = (index + x) % carouselPhotos.length
+    const changePhoto = (step, stopInterval) => {
+        if (index === 0 && step === -1) {
+            index = carouselPhotos.length - 1
+        } else {
+            index = (index + step) % carouselPhotos.length
+        }
+        if (stopInterval) {
+            clearInterval(interval)
+        }
     }
+
+    const interval = setInterval(() => changePhoto(1), 6000)
+
+    onDestroy(() => {
+        clearInterval(interval);
+    });
 </script>
 
-{#each [carouselPhotos[index]] as src (index)}
-    <div class="relative">
-        <img class="absolute" transition:fade {src} alt="Royal Enfield in Africa" />
-    </div>
-{/each}
-
-<button on:click={() => changePhoto(-1)}>prev!</button>
-<button on:click={() => changePhoto(1)}>Next!</button>
+<div class="relative">
+    <img class="relative" transition:fade src="{carouselPhotos[index]}" alt="Royal Enfield in Africa" />
+    <button class="absolute top-1/2 transform -translate-y-1/2 left-0 z-10 bg-transparent" on:click={() => changePhoto(-1, true)}>
+        <img class="h-40 opacity-50" src="/images/icons/keyboard_arrow_left-24px.svg" alt="arrow left">
+    </button>
+    <button class="absolute top-1/2 transform -translate-y-1/2 right-0 z-10 bg-transparent" on:click={() => changePhoto(1, true)}>
+        <img class="h-40 opacity-50" src="/images/icons/keyboard_arrow_right-24px.svg" alt="arrow right">
+    </button>
+</div>

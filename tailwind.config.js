@@ -7,11 +7,15 @@ module.exports = {
             },
             colors: {
                 oblivious: '#96c8ff',
+                'oblivious-dark': '#6ea3dd',
             },
             maxHeight: {
                 '1/2vh' : '50vh',
                 '20': '5rem',
                 '24': '6rem',
+            },
+            inset: {
+                '1/2': '50%',
             },
         }
     },
