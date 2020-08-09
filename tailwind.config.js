@@ -7,7 +7,7 @@ module.exports = {
             },
             colors: {
                 oblivious: '#96c8ff',
-                'oblivious-dark': '#6ea3dd',
+                'oblivious-dark': '#1871d3',
             },
             maxHeight: {
                 '1/2vh' : '50vh',

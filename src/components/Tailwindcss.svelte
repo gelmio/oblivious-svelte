@@ -30,16 +30,10 @@
     @apply text-lg;
   }
   p {
-    @apply font-serif mb-4;
     line-height: 1.33;
     font-size: 1.25rem;
   }
   a {
     text-decoration: underline solid theme('colors.oblivious');
-  }
-  button {
-    background: theme('colors.oblivious');
-    padding: 0.5em;
-    border-radius: 0.5em;
   }
 </style>
