@@ -21,7 +21,7 @@
           content="http://www.obliviousthebook.com/img/portfolio/fullsize/3D-cover-text-twitter.jpg"/>
 </svelte:head>
 
-<section class="flex flex-col items-center max-w-4xl mb-32">
+<section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
     <h1 class="text-4xl md:text-6xl text-center">Fuck yes! The <em>Oblivious Trilogy</em> is (finally) <a href="get-the-book">here</a>!</h1>
     <img class="my-4 max-w-full max-h-1/2vh" alt='Oblivious book cover' src='/images/3D-cover.jpg'>
     <div class="text-center">
@@ -29,7 +29,7 @@
         <span class="inline-block text-xl ml-2">...or get a taste of the adventure <a href="get-a-taste">here</a></span>
     </div>
 </section>
-<section class="mb-32 px-10 w-full">
+<section class="mb-20 md:mb-32 px-10 w-full">
     <h5 class="text-center mt-3 mb-6 uppercase"><strong>As Featured In</strong></h5>
     <div class="grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-10" style="justify-items: center">
         <img class="self-center max-h-24" src="images/OverlandBound-grey.png" alt="Overland Bound">
@@ -40,19 +40,19 @@
         <img class="self-center max-h-24" src="images/cruiser-grey.png" alt="Royal Enfield">
     </div>
 </section>
-<section class="flex mb-32 sm:px-20">
+<section class="flex mb-20 md:mb-32 sm:px-20">
     <Carousel/>
 </section>
-<section class="flex flex-col justify-center items-center mb-32">
+<section class="flex flex-col justify-center items-center mb-20 md:mb-32">
     <h2 class="text-4xl md:text-6xl text-center max-w-4xl mb-4">Ride the Adventure from your phone, tablet or e-reader</h2>
     <div class="flex relative items-end justify-center max-w-6xl mx-0 lg:mx-10 mb-10">
-        <img class="relative inline-block w-full lg:w-2/3 -mr-10" src="/images/kindle-pad-phone.jpg">
+        <img class="relative inline-block w-full lg:w-2/3 lg:-mr-10" src="/images/kindle-pad-phone.jpg">
         <div class="hidden lg:inline-block w-1/3 z-10 pb-4">
             <p class="absolute top-0 right-0 left-1/2 mt-1 text-2xl">
                 "This is fascinating shit, man. You're reminding me of a modern Hemingway"<br>
                 <span class="text-oblivious-dark">- Ben Napier, <em>Scotsman.co</em></span>
             </p>
-            <p class=" text-2xl mb-10 xl:mb-32">
+            <p class=" text-2xl mb-10 xl:mb-20 md:mb-32">
                 "Jesus tap-dancing Christ these are great stories"<br>
                 <span class="text-oblivious-dark">- Zach Kelm</span>
             </p>
@@ -67,7 +67,7 @@
         <span class="inline-block text-xl ml-2">...or find out some more about the trip <a href="about">here</a></span>
     </div>
 </section>
-<section class="mb-32 sm:px-20 text-center">
+<section class="mb-20 md:mb-32 sm:px-20 text-center">
     <h2 class="text-5xl md:text-6xl">Adventure for free!</h2>
     <h3>Pay what you like to read this shit, pay nothing, pay a shit-tonne, whatever you want!</h3>
 </section>

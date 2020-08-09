@@ -25,7 +25,8 @@
 		<li class="p-1 sm:p-4"><a class="no-underline p-2" aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
 		<li class="p-1 sm:p-4"><a class="no-underline p-2" rel=prefetch aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li>
 		<li class="p-1 sm:p-4"><a class="no-underline p-2" rel=prefetch aria-current='{segment === "get-a-taste" ? "page" : undefined}' href='get-a-taste'>get a taste</a></li>
+		<li class="p-1 sm:p-4"><a class="no-underline p-2" rel=prefetch aria-current='{segment === "help" ? "page" : undefined}' href='get-a-taste'>get help</a></li>
 		<li class="p-1 sm:p-4"><a class="p-2 md:p-4 rounded-lg no-underline bg-white" href="https://transactions.sendowl.com/packages/787179/F1809FF4/purchase" rel="nofollow">get the books</a></li>
 	</ul>
-	<span class="absolute bottom-0 left-1/2 transform -translate-x-1/2 mb-2 text-sm">© Luke Gelmi</span>
+	<span class="absolute bottom-0 left-0 md:left-1/2 transform md:-translate-x-1/2 mb-2 text-sm">© Luke Gelmi</span>
 </nav>

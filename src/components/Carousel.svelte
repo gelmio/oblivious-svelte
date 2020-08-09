@@ -68,13 +68,13 @@
 <figure class="relative">
     <img class="relative" transition:fade src="{carouselPhotos[index].imageSource}"
          alt="{carouselPhotos[index].caption}"/>
-    <button class="absolute h-20 md:h-auto top-1/2 transform -translate-y-1/2 left-0 z-10 bg-transparent"
+    <button class="absolute top-1/2 transform -translate-y-1/2 left-0 z-10 bg-transparent"
             on:click={() => changePhoto(-1, true)}>
-        <img class="h-40 opacity-50" src="/images/icons/keyboard_arrow_left-24px.svg" alt="arrow left">
+        <img class="h-20 md:h-40 opacity-50" src="/images/icons/keyboard_arrow_left-24px.svg" alt="arrow left">
     </button>
     <button class="absolute h-20 md:h-auto top-1/2 transform -translate-y-1/2 right-0 z-10 bg-transparent"
             on:click={() => changePhoto(1, true)}>
-        <img class="h-40 opacity-50" src="/images/icons/keyboard_arrow_right-24px.svg" alt="arrow right">
+        <img class="h-20 md:h-40 opacity-50" src="/images/icons/keyboard_arrow_right-24px.svg" alt="arrow right">
     </button>
     <figcaption class="absolute top-100 left-0 right-0 text-center text-xl text-oblivious-dark">{carouselPhotos[index].caption}</figcaption>
 </figure>
