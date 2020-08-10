@@ -2,7 +2,7 @@
 	export async function preload({ params, query }) {
 		// the `slug` parameter is available because
 		// this file is called [slug].svelte
-		const res = await this.fetch(`blog/${params.slug}.json`);
+		const res = await this.fetch(`get-a-taste/${params.slug}.json`);
 		const data = await res.json();
 
 		if (res.status === 200) {
@@ -59,6 +59,9 @@
 
 <h1>{post.title}</h1>
 
-<div class='content'>
+<section class='max-w-4xl mb-20 md:mb-32'>
 	{@html post.html}
-</div>
+</section>
+
+<h4 class="max-w-4xl">Seen enough?</h4>
+Get the books here

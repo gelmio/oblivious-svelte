@@ -12,13 +12,13 @@
     <meta property="og:site_name" content="ObliviousTheBook.com"/>
     <meta property="fb:admins" content="563453705"/>
     <meta property="og:image"
-          content="http://www.obliviousthebook.com/img/portfolio/fullsize/3D-cover-text-farcebook.jpg"/>
+          content="/images/logo-750.png"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:description"
           content="Oblivious is the epic true-life solo overlanding journey, motorbiking through West Africa on a Royal Enfield. Come along on the unique adventure!"/>
     <meta name="twitter:title" content="Oblivious - An overlanding motorbike journey through West Africa"/>
     <meta name="twitter:image"
-          content="http://www.obliviousthebook.com/img/portfolio/fullsize/3D-cover-text-twitter.jpg"/>
+          content="/images/logo-750.png"/>
 </svelte:head>
 
 <section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
