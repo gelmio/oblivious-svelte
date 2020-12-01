@@ -30,7 +30,7 @@
     @apply text-lg;
   }
   p {
-    line-height: 1.33;
+    line-height: 1.5;
     font-size: 1.25rem;
   }
   a {

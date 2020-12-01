@@ -25,6 +25,6 @@
 		<li class="block p-1 sm:p-4"><a class="no-underline p-2" aria-current='{segment === undefined ? "page" : undefined}' href='.'>home</a></li>
 		<li class="block p-1 sm:p-4"><a class="no-underline p-2" rel=prefetch aria-current='{segment === "about" ? "page" : undefined}' href='about'>about</a></li>
 		<li class="block p-1 sm:p-4"><a class="no-underline p-2" rel=prefetch aria-current='{segment === "get-a-taste" ? "page" : undefined}' href='get-a-taste'>get a taste</a></li>
-		<li class="block p-1 sm:p-4"><a class="p-2 md:p-4 rounded-lg no-underline bg-oblivious" href="https://transactions.sendowl.com/packages/787179/F1809FF4/purchase" rel="nofollow">get the books</a></li>
+		<li class="block p-1 sm:p-4"><a class="p-2 md:p-4 rounded-lg no-underline bg-oblivious" href="https://transactions.sendowl.com/packages/787179/F1809FF4/add_to_cart" rel="nofollow">get the books</a></li>
 	</ul>
 </nav>

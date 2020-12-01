@@ -5,7 +5,7 @@
     const carouselPhotos = [
         {
             imageSource: '/images/carousel/images(1).jpg',
-            caption: "The Royal Enfield looking sensational in outback Guinea"
+            caption: "The Royal Enfield looking sensational in outback West Africa"
         },
         {
             imageSource: '/images/carousel/images(2).jpg',

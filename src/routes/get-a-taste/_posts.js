@@ -212,11 +212,11 @@ const posts = [
 		title: 'Ends: Cooked in the Congo.',
 		slug: 'ends',
 		html: `
-			<p>On the way to Immigration I grab four stodgy bottles worth of fuel. The bloke pours it through <em>a food strainer</em>and into my tank.</p>
+			<p>On the way to Immigration I grab four stodgy bottles worth of fuel. The bloke pours it through <em>a food strainer</em> and into my tank.</p>
 			<p>Righto...</p>
 			<p>The Immigration office is dimly lit, and the bloke manning it is a different guy. I sit down and we get to it.</p>
-			<p>I give him my papers, and I cop the <em>exact</em>same rigmarole from him that I copped from the blokes at the border.</p>
-			<p><em>The visa is no good</em>.</p>
+			<p>I give him my papers, and I cop the <em>exact</em> same rigmarole from him that I copped from the blokes at the border.</p>
+			<p><em>The visa is no good.</em></p>
 			<p>We’ve been through this. I don’t need this again...</p>
 			<p>The two of us make the same circular arguments over and over and over again.</p>
 			<p>Somewhere in the vicinity of an hour passes, and he's getting shitty. He's not the only one...</p>

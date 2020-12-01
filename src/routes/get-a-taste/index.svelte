@@ -33,7 +33,7 @@
 <section class="flex flex-col items-center max-w-4xl mb-16">
 	<h1 class="text-4xl md:text-6xl text-center">Want to try before you buy?</h1>
 	<h2 class="text-xl md:text-3xl text-center">You're in the right place! Here are a few select chunks from the Oblivious Trilogy adventure!</h2>
-	<h6 class="md:text-xl text-center">[Spoiler Alert!]</h6>
+	<span class="header-font md:text-xl text-center">[Spoiler Alert!]</span>
 </section>
 <ul class="flex flex-row justify-around w-full max-w-3xl mb-20">
 	{#each posts as post}

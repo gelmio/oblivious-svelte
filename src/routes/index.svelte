@@ -6,6 +6,7 @@
 
 <svelte:head>
     <title>Oblivious - An overlanding motorbike journey through West Africa</title>
+    <meta name="description" content="Oblivious is the epic true-life solo overlanding journey, motorbiking through West Africa on a Royal Enfield. Come along on the unique adventure!">
     <meta property="og:description"
           content="Oblivious is the epic true-life solo overlanding journey, motorbiking through West Africa on a Royal Enfield. Come along on the unique adventure!"/>
     <meta property="og:url" content="http://www.obliviousthebook.com/"/>
@@ -40,6 +41,9 @@
         <img class="self-center max-h-24" src="images/cruiser-grey.png" alt="Royal Enfield">
     </div>
 </section>
+<section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
+    <h1 class="text-4xl md:text-6xl text-center">Ride through Africa with me on an outrageously inappropriate <em>Royal Enfield Bullet</em></h1>
+</section>
 <section class="flex mb-20 md:mb-32 sm:px-20">
     <Carousel/>
 </section>
@@ -48,18 +52,24 @@
     <div class="flex relative items-end justify-center max-w-6xl mx-0 lg:mx-10 mb-10">
         <img class="relative inline-block w-full lg:w-2/3 lg:-mr-10" src="/images/kindle-pad-phone.jpg">
         <div class="hidden lg:inline-block w-1/3 z-10 pb-4">
-            <p class="absolute top-0 right-0 left-1/2 mt-1 text-2xl">
+            <p class="absolute top-0 right-0 left-1/2 mt-1 text-xl">
                 "This is fascinating shit, man. You're reminding me of a modern Hemingway"<br>
                 <span class="text-oblivious-dark">- Ben Napier, <em>Scotsman.co</em></span>
             </p>
-            <p class=" text-2xl mb-10 xl:mb-20 md:mb-32">
-                "Jesus tap-dancing Christ these are great stories"<br>
-                <span class="text-oblivious-dark">- Zach Kelm</span>
-            </p>
-            <p class="text-2xl">
-                "Adventure is such an abused and overused word these days... Check this out for a taste of <em>real</em> adventure."<br>
-                <span class="text-oblivious-dark">- Iron and Resin</span>
-            </p>
+            <div class="absolute top-1/4 bottom-0 pb-8 flex flex-col justify-between">
+                <p class=" text-xl">
+                    "Jesus tap-dancing Christ these are great stories"<br>
+                    <span class="text-oblivious-dark">- Zach Kelm</span>
+                </p>
+                <p class="text-xl">
+                    "Adventure is such an abused and overused word these days... Check this out for a taste of <em>real</em> adventure."<br>
+                    <span class="text-oblivious-dark">- Iron and Resin</span>
+                </p>
+                <p class="text-xl">
+                    "Don't laugh at him, he's not funny!"<br>
+                    <span class="text-oblivious-dark">- My Mum</span>
+                </p>
+            </div>
         </div>
     </div>
     <div class="text-center">
