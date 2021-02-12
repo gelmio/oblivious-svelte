@@ -23,11 +23,10 @@
 </svelte:head>
 
 <section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
-    <h1 class="text-4xl md:text-6xl text-center">Fuck yes! The <em>Oblivious Trilogy</em> is (finally) <a href="get-the-book">here</a>!</h1>
-    <img class="my-4 max-w-full max-h-1/2vh" alt='Oblivious book cover' src='/images/3D-cover.jpg'>
+    <h1 class="text-4xl md:text-6xl text-center">Yeah Buddy! Book One of the <em>Oblivious Trilogy</em> is now available for free!</h1>
+    <img class="my-12 max-w-full max-h-1/2vh" alt='Oblivious book cover' src='/images/3D-cover.jpg'>
     <div class="text-center">
-        <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="https://transactions.sendowl.com/packages/37218/89A60CC9/purchase" rel="nofollow">Get the books now</a>
-        <span class="inline-block text-xl ml-2">...or get a taste of the adventure <a href="get-a-taste">here</a></span>
+        <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="https://transactions.sendowl.com/packages/37218/89A60CC9/purchase" rel="nofollow">Get Book One Now</a>
     </div>
 </section>
 <section class="mb-20 md:mb-32 px-10 w-full">
@@ -48,7 +47,7 @@
     <Carousel/>
 </section>
 <section class="flex flex-col justify-center items-center mb-20 md:mb-32">
-    <h2 class="text-4xl md:text-6xl text-center max-w-4xl mb-4">Ride the Adventure from your phone, tablet or e-reader</h2>
+    <h2 class="text-4xl md:text-6xl text-center max-w-4xl mb-8">Ride the Adventure from your phone, tablet or e-reader</h2>
     <div class="flex relative items-end justify-center max-w-6xl mx-0 lg:mx-10 mb-10">
         <img class="relative inline-block w-full lg:w-2/3 lg:-mr-10" src="/images/kindle-pad-phone.jpg">
         <div class="hidden lg:inline-block w-1/3 z-10 pb-4">
@@ -74,10 +73,9 @@
     </div>
     <div class="text-center">
         <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="https://transactions.sendowl.com/packages/37218/89A60CC9/purchase" rel="nofollow">Get the books on any device</a>
-        <span class="inline-block text-xl ml-2">...or find out some more about the trip <a href="about">here</a></span>
     </div>
 </section>
 <section class="mb-20 md:mb-32 sm:px-20 text-center">
     <h2 class="text-5xl md:text-6xl">Adventure for free!</h2>
-    <h3>Pay what you like to read this shit, pay nothing, pay a shit-tonne, whatever you want!</h3>
+    <h3>Or... pay what you like, whatever you want!</h3>
 </section>

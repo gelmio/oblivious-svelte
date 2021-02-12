@@ -18,7 +18,7 @@
 		<h1 class="text-4xl md:text-6xl">How [not] to ride through Africa on a Royal Enfild Motorcycle</h1>
 		<span class="header-font text-xl md:text-2xl">SPOILER ALERT! Kind of...</span>
 	</div>
-	<div class="text-left">
+	<div class="prose text-left">
 		<p>So, <em>what's the story then?</em></p>
 		<p>Essentially, it's a story of things getting out of hand...</p>
 		<p>A fairly simple idea just evolved into something that was book-worthy. I still don't really know how it happened...</p>
