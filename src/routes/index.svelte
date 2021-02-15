@@ -1,5 +1,7 @@
 <script>
     import Carousel from "../components/Carousel.svelte";
+    import AsSeenIn from "../components/AsSeenIn.svelte";
+    import BuyButton from "../components/BuyButton.svelte";
 </script>
 <style>
 </style>
@@ -22,28 +24,23 @@
           content="/images/logo-750.png"/>
 </svelte:head>
 
+<section class="flex flex-col items-center max-w-4xl mt-12 md:mt-28">
+    <h1 class="text-4xl md:text-6xl text-center mb-2">Yeah Buddy!</h1>
+    <h2 class="text-xl md:text-3xl text-center">Book One of the <em>Oblivious Trilogy</em> is <a href="https://transactions.sendowl.com/packages/787179/F1809FF4/add_to_cart">here</a> and available for free! (or pay what you like...)</h2>
+</section>
 <section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
-    <h1 class="text-4xl md:text-6xl text-center">Yeah Buddy! Book One of the <em>Oblivious Trilogy</em> is now available for free!</h1>
     <img class="my-12 max-w-full max-h-1/2vh" alt='Oblivious book cover' src='/images/3D-cover.jpg'>
     <div class="text-center">
         <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="https://transactions.sendowl.com/packages/37218/89A60CC9/purchase" rel="nofollow">Get Book One Now</a>
     </div>
 </section>
 <section class="mb-20 md:mb-32 px-10 w-full">
-    <h5 class="text-center mt-3 mb-6 uppercase"><strong>As Featured In</strong></h5>
-    <div class="grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-10" style="justify-items: center">
-        <img class="self-center max-h-24" src="images/OverlandBound-grey.png" alt="Overland Bound">
-        <img class="self-center max-h-24" src="images/Rider-grey.png" alt="Rider Magazine">
-        <img class="self-center max-h-24" src="images/ADVMoto-grey.png" alt="ADVMoto">
-        <img class="self-center max-h-24" src="images/ExcuseMyBike-grey.png" alt="Excuse my bike">
-        <img class="self-center max-h-24" src="images/royalenfield-grey.png" alt="Royal Enfield">
-        <img class="self-center max-h-24" src="images/cruiser-grey.png" alt="Royal Enfield">
-    </div>
+    <AsSeenIn />
 </section>
 <section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
     <h1 class="text-4xl md:text-6xl text-center">Ride through Africa with me on an outrageously inappropriate <em>Royal Enfield Bullet</em></h1>
 </section>
-<section class="flex mb-20 md:mb-32 sm:px-20">
+<section class="flex mb-28 md:mb-32 sm:px-20">
     <Carousel/>
 </section>
 <section class="flex flex-col justify-center items-center mb-20 md:mb-32">
@@ -72,10 +69,10 @@
         </div>
     </div>
     <div class="text-center">
-        <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="https://transactions.sendowl.com/packages/37218/89A60CC9/purchase" rel="nofollow">Get the books on any device</a>
+        <BuyButton text="Get Book One on any device" />
     </div>
 </section>
 <section class="mb-20 md:mb-32 sm:px-20 text-center">
     <h2 class="text-5xl md:text-6xl">Adventure for free!</h2>
-    <h3>Or... pay what you like, whatever you want!</h3>
+    <h3>Or... pay what you like!</h3>
 </section>
