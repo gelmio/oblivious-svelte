@@ -37,6 +37,13 @@
 		</li>
 		<li class="p-1 sm:p-4">
 			<a
+				class="no-underline p-2"
+				rel="prefetch"
+				href="mailto:obliviousthebook@protonmail.com">get in touch</a
+			>
+		</li>
+		<li class="p-1 sm:p-4">
+			<a
 				class="p-2 md:p-4 rounded-lg no-underline bg-white"
 				href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart"
 				rel="nofollow">get e-book one</a
