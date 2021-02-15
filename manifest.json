@@ -1,0 +1,20 @@
+{
+	"background_color": "#ffffff",
+	"theme_color": "#333333",
+	"name": "Oblivious - An overlanding trip through Africa on a Royal Enfield",
+	"short_name": "Oblivious",
+	"display": "minimal-ui",
+	"start_url": "/",
+	"icons": [
+		{
+			"src": "./images/logo-150.png",
+			"sizes": "150x150",
+			"type": "image/png"
+		},
+		{
+			"src": "./images/logo-750.png",
+			"sizes": "750x750",
+			"type": "image/png"
+		}
+	]
+}
