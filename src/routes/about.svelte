@@ -46,5 +46,5 @@
 	<p>If you're here for a good yarn; sit back, and let me take you on the ride.</p>
 </section>
 <div class="mb-20 md:mb-32">
-	<BuyButton text="Get The Book" />
+	<BuyButton text="Get The e-Book" />
 </div>

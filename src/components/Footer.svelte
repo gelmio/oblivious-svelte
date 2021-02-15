@@ -39,7 +39,7 @@
 			<a
 				class="p-2 md:p-4 rounded-lg no-underline bg-white"
 				href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart"
-				rel="nofollow">get book one</a
+				rel="nofollow">get e-book one</a
 			>
 		</li>
 	</ul>
