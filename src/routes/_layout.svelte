@@ -1,5 +1,4 @@
 <script>
-	import Tailwindcss from '../components/Tailwindcss.svelte';
 	import Nav from '../components/Nav.svelte';
 	import Footer from '../components/Footer.svelte';
 
@@ -16,8 +15,6 @@
 		box-sizing: border-box;
 	}
 </style>
-
-<Tailwindcss />
 
 <Nav {segment}/>
 
