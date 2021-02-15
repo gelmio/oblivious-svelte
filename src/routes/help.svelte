@@ -15,7 +15,7 @@
 </svelte:head>
 
 <section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
-    <h1 class="text-4xl md:text-5xl text-center">Broken down and need a hand with getting the book onto your device?</h1>
+    <h1 class="text-4xl md:text-5xl text-center">Broken down and need a hand with getting the e-book onto your device?</h1>
     <h2 class="text-xl md:text-3xl text-center">You're in the right place! Here's how to go from zero to reading in a few minutes...</h2>
 </section>
 <section class="flex flex-col md:flex-row items-center max-w-6xl mb-20 md:mb-32 px-8">
@@ -39,12 +39,12 @@
     <img class="w-full md:w-3/5 my-4" alt='Picture of computer with sendowl payment portal' src='/images/how-step3.jpg'>
     <div class="md:pl-20">
         <h3 class="text-3xl md:text-5xl">Get Reading!</h3>
-        <h4 class="text-xl md:text-2xl">Feel free to use the book on anything with a screen! To get it onto your kindle, simply plug it in and copy the file across!</h4>
+        <h4 class="text-xl md:text-2xl">Feel free to use the e-book on anything with a screen! To get it onto your kindle, simply plug it in and copy the file across!</h4>
     </div>
 </section>
 <section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
-    <h2 class="text-2xl md:text-3xl text-center">Just looking for the link to get all of this started?</h2> <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="https://transactions.sendowl.com/packages/37218/89A60CC9/purchase" rel="nofollow">Here it is!</a>
+    <h2 class="text-2xl md:text-3xl text-center">Just looking for the link to get all of this started?</h2> <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart" rel="nofollow">Here it is!</a>
 </section>
 <section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
-    <h2 class="text-2xl md:text-3xl text-center">Still lost? Flick me an email <a href="mailto:obliviousthebook@gmail.com">here</a> and I'll sort you out.</h2>
+    <h2 class="text-2xl md:text-3xl text-center">Still lost? Flick me an email <a href="mailto:obliviousthebook@protonmail.com">here</a> and I'll sort you out.</h2>
 </section>

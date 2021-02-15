@@ -1,19 +1,15 @@
-const purgecss = require('@fullhuman/postcss-purgecss')({
-  content: [
-    './**/**/*.html',
-    './**/**/*.svelte'
-  ],
-
-  whitelistPatterns: [/svelte-/],
-
-  defaultExtractor: content => content.match(/[\w-/:]+(?<!:)/g) || []
+const tailwind = require('tailwindcss');
+const cssnano = require('cssnano');
+const postcssImport = require('postcss-import');
+const presetEnv = require('postcss-preset-env')({
+  features: {
+    'nesting-rules': true,
+  },
 });
 
-const production = process.env.NODE_ENV !== 'development'
+const plugins =
+  process.env.NODE_ENV === 'production'
+    ? [postcssImport, tailwind, presetEnv, cssnano]
+    : [postcssImport, tailwind, presetEnv];
 
-module.exports = {
-  plugins: [
-    require('tailwindcss'),
-    ...(production ? [purgecss] : [])
-  ]
-};
+module.exports = {plugins};
