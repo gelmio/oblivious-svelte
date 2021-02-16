@@ -1,6 +1,6 @@
 {
-  "name": "TODO",
-  "description": "TODO",
+  "name": "oblivious",
+  "description": "ObliviousTheBook",
   "version": "0.0.1",
   "scripts": {
     "watch:css": "postcss src/assets/global.pcss -o static/global.css -w",
@@ -9,10 +9,11 @@
     "build": "run-s build:css build:sapper",
     "build:css": "NODE_ENV=production postcss src/assets/global.pcss -o static/global.css",
     "build:sapper": "sapper build",
-    "build:export": "sapper export",
+    "build:export": "sapper export --legacy",
     "export": "run-s build:css build:export",
     "start": "node __sapper__/build",
-    "serve": "serve ___sapper__/export"
+    "serve": "serve ___sapper__/export",
+    "deploy": "npm run export && node ./scripts/gh-pages.js"
   },
   "dependencies": {
     "compression": "^1.7.1",
@@ -32,6 +33,7 @@
     "@rollup/plugin-url": "^5.0.0",
     "@tailwindcss/typography": "^0.4.0",
     "cssnano": "^4.1.10",
+    "gh-pages": "^3.1.0",
     "npm-run-all": "^4.1.5",
     "postcss": "^8.1.2",
     "postcss-cli": "^8.1.0",
