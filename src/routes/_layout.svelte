@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
 	import Nav from '../components/Nav.svelte';
 	import Footer from '../components/Footer.svelte';
 
-	export let segment;
+	export let segment: string;
 	let show = false
 	setTimeout(() => show = true, 1)
 </script>

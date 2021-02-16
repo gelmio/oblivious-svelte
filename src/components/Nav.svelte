@@ -1,5 +1,5 @@
-<script>
-	export let segment;
+<script lang="ts">
+	export let segment: string;
 </script>
 
 <nav class="flex flex-row justify-between md:justify-start items-center p-4">
