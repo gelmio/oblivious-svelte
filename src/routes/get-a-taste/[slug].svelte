@@ -26,7 +26,7 @@
 		so we have to use the :global(...) modifier to target
 		all elements inside .content
 	*/
-	.content :global(h2) {
+	/* .content :global(h2) {
 		font-size: 1.4em;
 		font-weight: 500;
 	}
@@ -50,7 +50,7 @@
 
 	.content :global(li) {
 		margin: 0 0 0.5em 0;
-	}
+	} */
 </style>
 
 <svelte:head>

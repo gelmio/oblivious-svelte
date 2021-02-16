@@ -46,7 +46,7 @@
 <section class="flex flex-col justify-center items-center mb-20 md:mb-32">
     <h2 class="text-4xl md:text-6xl text-center max-w-4xl mb-8">Ride the Adventure from your phone, tablet or e-reader</h2>
     <div class="flex relative items-end justify-center max-w-6xl mx-0 lg:mx-10 mb-10">
-        <img class="relative inline-block w-full lg:w-2/3 lg:-mr-10" src="/images/kindle-pad-phone.jpg">
+        <img class="relative inline-block w-full lg:w-2/3 lg:-mr-10" src="/images/kindle-pad-phone.jpg" alt="book being used on various platforms">
         <div class="hidden lg:inline-block w-1/3 z-10 pb-4">
             <p class="absolute top-0 right-0 left-1/2 mt-1 text-xl">
                 "This is fascinating shit, man. You're reminding me of a modern Hemingway"<br>
