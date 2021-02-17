@@ -27,11 +27,19 @@
 				href="about">about</a
 			>
 		</li>
+		<li class="block p-1 sm:p-4">
+			<a
+				class="no-underline p-2"
+				rel="prefetch"
+				href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart">download</a
+			>
+		</li>
 		<li class="block p-1 sm:p-4 my-2">
 			<a
 				class="p-2 md:p-4 rounded-lg no-underline bg-oblivious"
-				href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart"
-				rel="nofollow">get e-book one</a
+				href="read"
+				aria-current={segment === "read" ? "page" : undefined}
+				rel="nofollow">read it now</a
 			>
 		</li>
 	</ul>

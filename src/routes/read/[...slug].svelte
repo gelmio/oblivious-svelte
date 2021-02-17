@@ -2,19 +2,19 @@
 	export async function preload({ params, query }) {
 		// the `slug` parameter is available because
 		// this file is called [slug].svelte
-		const res = await this.fetch(`get-a-taste/${params.slug}.json`);
+		const [bookNumber, chapterNumber] = params.slug;
+		const res = await this.fetch(`read/${bookNumber}/${chapterNumber}.json`);
 		const data = await res.json();
-
 		if (res.status === 200) {
-			return { post: data };
+			return { chapter: data };
 		} else {
-			this.error(res.status, data.message);
+			this.error(res.status, data);
 		}
 	}
 </script>
 
 <script lang="ts">
-	export let post: { slug: string; title: string, html: any };
+	export let chapter: string;
 </script>
 
 <style>
@@ -54,13 +54,13 @@
 </style>
 
 <svelte:head>
-	<title>{post.title}</title>
+	<title>OHHAI</title>
 </svelte:head>
 
-<h1>{post.title}</h1>
+<h1>OHHAI</h1>
 
 <section class='max-w-4xl mb-20 md:mb-32'>
-	{@html post.html}
+	{@html chapter}
 </section>
 
 <h4 class="max-w-4xl">Seen enough?</h4>
