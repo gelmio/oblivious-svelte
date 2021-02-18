@@ -17,8 +17,8 @@ encoding: 'utf8'
 const splitByBook = obliviousText.split(/.*# BOOK.*\r\n/).slice(1)
 
 const splitByBookAndChapter = splitByBook.map(
-	bookString => bookString
-		.split(/.*## Chapter.*\r\n/)
+	bookString => bookString.split(/.*## Chapter.*\r\n/)
+		.map(chapter => chapter.trim())
 		.filter(chapter => !!chapter)
 )
 

@@ -2,20 +2,45 @@
 	export async function preload({ params, query }) {
 		// the `slug` parameter is available because
 		// this file is called [slug].svelte
-		const [bookNumber, chapterNumber] = params.slug;
-		const res = await this.fetch(`read/${bookNumber}/${chapterNumber}.json`);
-		const data = await res.json();
+		const [bookNumber, chapterNumber] = params.slug.map(string => +string);
+		const res = await this.fetch(
+			`read/${bookNumber}/${chapterNumber}.json`
+		);
+		const { chapter, nextChapterExists, message } = await res.json();
 		if (res.status === 200) {
-			return { chapter: data };
+			return {
+				content: chapter,
+				book: bookNumber,
+				chapter: chapterNumber,
+				nextChapterExists,
+			};
 		} else {
-			this.error(res.status, data);
+			this.error(res.status, message);
 		}
 	}
 </script>
 
 <script lang="ts">
-	export let chapter: string;
+	export let content: string;
+	export let book: number;
+	export let chapter: number;
+	export let nextChapterExists: boolean;
+	let next: [book: number, chapter: number]
+	$: next = !nextChapterExists && book < 3 ? [book + 1, 1] : [book, chapter + 1];
 </script>
+
+<svelte:head>
+	<title>OHHAI</title>
+</svelte:head>
+
+<h1>OHHAI</h1>
+<a href="read/{next[0]}/{next[1]}">Next</a>
+
+<section class="max-w-4xl mb-20 md:mb-32">
+	{@html content}
+</section>
+
+<a href="read/{next[0]}/{next[1]}">Next</a>
 
 <style>
 	/*
@@ -52,16 +77,3 @@
 		margin: 0 0 0.5em 0;
 	} */
 </style>
-
-<svelte:head>
-	<title>OHHAI</title>
-</svelte:head>
-
-<h1>OHHAI</h1>
-
-<section class='max-w-4xl mb-20 md:mb-32'>
-	{@html chapter}
-</section>
-
-<h4 class="max-w-4xl">Seen enough?</h4>
-Get the books here

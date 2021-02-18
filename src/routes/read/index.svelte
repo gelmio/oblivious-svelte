@@ -1,15 +1,15 @@
 <script context="module" lang="ts">
-	export function preload({ params, query }) {
-		return this.fetch(`read.json`)
-			.then((r: { json: () => any }) => r.json())
-			.then((posts: { slug: string; title: string; html: any }[]) => {
-				return { posts };
-			});
-	}
+	// export function preload({ params, query }) {
+	// 	return this.fetch(`read.json`)
+	// 		.then((r: { json: () => any }) => r.json())
+	// 		.then((posts: { slug: string; title: string; html: any }[]) => {
+	// 			return { posts };
+	// 		});
+	// }
 </script>
 
 <script lang="ts">
-	export let posts: { slug: string; title: string; html: any }[];
+	// export let posts: { slug: string; title: string; html: any }[];
 </script>
 
 <svelte:head>
@@ -36,24 +36,23 @@
 
 <section class="flex flex-col items-center max-w-4xl mb-16">
 	<h1 class="text-4xl md:text-6xl text-center">
-		Want to try before you buy?
+		Read Oblivious Book One right here!
 	</h1>
 	<h2 class="text-xl md:text-3xl text-center">
-		You're in the right place! Here are a few select chunks from the
-		Oblivious Trilogy adventure!
+		BLA BLA
 	</h2>
-	<span class="header-font md:text-xl text-center">[Spoiler Alert!]</span>
 </section>
 <ul class="flex flex-row justify-around w-full max-w-3xl mb-20">
-	{#each posts as post}
-		<!-- we're using the non-standard `rel=prefetch` attribute to
+	<a rel="prefetch" href="read/1/1/">Read Book One Now</a>
+	<!-- {#each posts as post}
+		 we're using the non-standard `rel=prefetch` attribute to
 				tell Sapper to load the data for the page as soon as
 				the user hovers over the link or taps it, instead of
-				waiting for the 'click' event -->
+				waiting for the 'click' event
 		<li>
 			<a rel="prefetch" href="read/{post.slug}">{post.title}</a>
 		</li>
-	{/each}
+	{/each} -->
 </ul>
 
 <style>
