@@ -21,25 +21,21 @@
 	const { page } = stores();
     $: slug = $page.params.slug;
 	$: navOpen = !slug
-	$: console.log(navOpen)
-	$: console.log(slug)
 </script>
 
-<nav class="absolute top-0 left-0 bottom-0 w-0 overflow-x-visible" class:w-32={navOpen}>
-    <div class="absolute top-0 left-0 bottom-0 w-0 overflow-y-scroll transition-all duration-1000 ease-linear" class:w-32={navOpen}>
-		{#each chapterCounts as chapterCount, bookIndex}
-			Book {bookIndex + 1}
-			<ul>
-				{#each [...Array(chapterCount)] as _, chapterIndex}
-					<li class="ml-4">
-						<a rel=prefetch href="read/{bookIndex + 1}/{chapterIndex + 1}">Chapter {chapterIndex + 1}</a>
-					</li>
-				{/each}
-			</ul>
-		{/each}
-	</div>
-	<button on:click={() => navOpen = !navOpen} class="absolute top-0 right-0 transform translate-x-full">
-		ohhai!!
-	</button>
+<button on:click={() => navOpen = !navOpen} class="absolute top-0 left-0 w-16 h-16 text-2xl bg-oblivious rounded-xl">
+	📖 <span class="absolute font-black top-1/2 right-1 transform -translate-y-1/2">{navOpen ? "‹" : "›"}</span>
+</button>
+<nav class="absolute top-16 left-0 bottom-0 right-auto overflow-y-scroll transform {navOpen ? "translate-x-0" : "-translate-x-full"} transition-all duration-1000 ease-in-out bg-white p-4 rounded-r-lg">
+    {#each chapterCounts as chapterCount, bookIndex}
+        Book {bookIndex + 1}
+		<ul>
+			{#each [...Array(chapterCount)] as _, chapterIndex}
+				<li class="ml-4">
+					<a rel=prefetch href="read/{bookIndex + 1}/{chapterIndex + 1}">Chapter {chapterIndex + 1}</a>
+				</li>
+			{/each}
+		</ul>
+    {/each}
 </nav>
 <slot></slot>
