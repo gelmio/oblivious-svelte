@@ -30,50 +30,21 @@
 </script>
 
 <svelte:head>
-	<title>OHHAI</title>
+	<title>Oblivious | Book {book}, Chapter {chapter} | An overlanding motorbike journey through West Africa</title>
 </svelte:head>
 
-<h1>OHHAI</h1>
-<a href="read/{next[0]}/{next[1]}">Next</a>
-
-<section class="max-w-4xl mb-20 md:mb-32">
-	{@html content}
-</section>
-
-<a href="read/{next[0]}/{next[1]}">Next</a>
+<article class="prose prose-lg text-justify mb-20 md:mb-32">
+	<h1>Book {book}, Chapter {chapter}</h1>
+	<section class="">
+		{@html content}
+	</section>
+	
+	<a 
+		href="read/{next[0]}/{next[1]}"
+		class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious">
+		Next {nextChapterExists ? "Chapter" : "Book"}
+	</a>
+</article>
 
 <style>
-	/*
-		By default, CSS is locally scoped to the component,
-		and any unused styles are dead-code-eliminated.
-		In this page, Svelte can't know which elements are
-		going to appear inside the {{{post.html}}} block,
-		so we have to use the :global(...) modifier to target
-		all elements inside .content
-	*/
-	/* .content :global(h2) {
-		font-size: 1.4em;
-		font-weight: 500;
-	}
-
-	.content :global(pre) {
-		background-color: #f9f9f9;
-		box-shadow: inset 1px 1px 5px rgba(0,0,0,0.05);
-		padding: 0.5em;
-		border-radius: 2px;
-		overflow-x: auto;
-	}
-
-	.content :global(pre) :global(code) {
-		background-color: transparent;
-		padding: 0;
-	}
-
-	.content :global(ul) {
-		line-height: 1.5;
-	}
-
-	.content :global(li) {
-		margin: 0 0 0.5em 0;
-	} */
 </style>

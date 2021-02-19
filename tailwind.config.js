@@ -23,6 +23,29 @@ module.exports = {
                 '1/4': '25%',
                 '1/2': '50%',
             },
+            typography: (theme) => ({
+                DEFAULT: {
+                    css: {
+                        maxWidth: "50ch",
+                        hr: {
+                            borderColor: theme("colors.oblivious"),
+                            marginTop: "2.5em",
+                            marginBottom: "2.5em"
+                        }
+                    }
+                },
+                'lg': {
+                    css: {
+                        "h1": {
+                            fontWeight: "100"
+                        },
+                        p: {
+                            marginTop: '0.5rem',
+                            marginBottom: '0.5rem',
+                        },
+                    },
+                },
+            }),
         }
     },
     variants: {},
