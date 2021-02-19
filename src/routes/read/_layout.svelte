@@ -31,11 +31,13 @@
         Book {bookIndex + 1}
 		<ul>
 			{#each [...Array(chapterCount)] as _, chapterIndex}
-				<li class="ml-4">
+				<li class="ml-4 p-2 rounded-md" class:bg-oblivious={slug && bookIndex + 1 === +slug[0] && chapterIndex + 1 === +slug[1]}>
 					<a rel=prefetch href="read/{bookIndex + 1}/{chapterIndex + 1}">Chapter {chapterIndex + 1}</a>
 				</li>
 			{/each}
 		</ul>
     {/each}
 </nav>
-<slot></slot>
+<div on:click={() => navOpen = false}>
+	<slot></slot>
+</div>
