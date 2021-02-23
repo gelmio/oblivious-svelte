@@ -54,7 +54,7 @@
                 <span class="text-oblivious-dark">- Ben Napier, <em>Scotsman.co</em></span>
             </p>
             <div class="absolute top-1/4 bottom-0 pb-8 flex flex-col justify-between">
-                <p class=" text-xl">
+                <p class="text-xl">
                     "Jesus tap-dancing Christ these are great stories"<br>
                     <span class="text-oblivious-dark">- Zach Kelm</span>
                 </p>

@@ -14,12 +14,12 @@
 
 <script lang="ts">
 	import { stores } from "@sapper/app";
+	import { fade } from "svelte/transition"
 	import PageTransition from "../../components/PageTransition.svelte";
 	import {readerPosition} from "./reader-position.js"
 	export let chapterCounts: number[];
 
 	function readersPositionHasAdvanced(storedPosition: number[], currentPosition: number[]) {
-		console.log("ohhaiiii", storedPosition, )
 		return !storedPosition && currentPosition
 			|| currentPosition[0] > storedPosition[0]
 			|| currentPosition[0] === storedPosition[0] && currentPosition[1] > storedPosition[1]
@@ -32,20 +32,20 @@
 	$: if(slug && readersPositionHasAdvanced($readerPosition, slug)) {
 		readerPosition.set(slug)
 	} else if(!slug && $readerPosition) {
-		recommendJumpToChapter = true
+		setTimeout(() => {recommendJumpToChapter = true;}, 1)
 	} else {
 		recommendJumpToChapter = false
 	}
 </script>
 {#if recommendJumpToChapter}
-	<div class="fixed inset-0 bg-oblivious opacity-50 z-10">
-	</div>
-	<div class="fixed top-1/2 left-1/2 z-20 rounded-lg bg-white p-16 flex flex-col text-center" style="transform: translate(-50%, -50%)">
-		<p class="font-header text-2xl">Looks like you've been here before...</p>
-		<p class="font-sans text-lg mb-4">Want to pick up where you left off?</p>
-		<div>
-			<a class="inline-block text-lg p-4 rounded-lg no-underline bg-oblivious" href="read/{$readerPosition[0]}/{$readerPosition[1]}">Sure, take me to chapter {$readerPosition[1]}</a>
-			<span on:click="{() => {recommendJumpToChapter = false; readerPosition.set(null)}}" class="inline-block text-lg p-4 rounded-lg no-underline bg-white border border-solid border-oblivious">Nup</span>
+	<div in:fade="{{ delay:1000 }}" out:fade class="fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10">
+		<div class="rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2">
+			<p class="font-header text-xl md:text-2xl">Looks like you've been here before...</p>
+			<p class="font-sans text-base md:text-lg mb-4">Want to pick up where you left off?</p>
+			<div>
+				<a class="inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious" href="read/{$readerPosition[0]}/{$readerPosition[1]}">Sure, take me to chapter {$readerPosition[1]}</a>
+				<span on:click="{() => {recommendJumpToChapter = false; readerPosition.set(null)}}" class="inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-white border border-solid border-oblivious">Nup</span>
+			</div>
 		</div>
 	</div>
 {/if}

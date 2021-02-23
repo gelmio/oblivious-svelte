@@ -12,6 +12,7 @@ module.exports = {
             },
             colors: {
                 oblivious: '#96c8ff',
+                'oblivious-opaque': '#96c8ffad',
                 'oblivious-dark': '#1871d3',
             },
             height: {
@@ -34,9 +35,16 @@ module.exports = {
                         maxWidth: "50ch",
                         hr: {
                             borderColor: theme("colors.oblivious"),
-                            marginTop: "2.5em",
-                            marginBottom: "2.5em"
-                        }
+                            marginTop: "1.5em",
+                            marginBottom: "1.5em"
+                        },
+                        "h1": {
+                            fontWeight: "100"
+                        },
+                        p: {
+                            marginTop: '0.5rem',
+                            marginBottom: '0.5rem',
+                        },
                     }
                 },
                 'lg': {
@@ -48,6 +56,11 @@ module.exports = {
                             marginTop: '0.5rem',
                             marginBottom: '0.5rem',
                         },
+                        hr: {
+                            borderColor: theme("colors.oblivious"),
+                            marginTop: "2.5em",
+                            marginBottom: "2.5em"
+                        }
                     },
                 },
             }),
