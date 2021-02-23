@@ -33,7 +33,7 @@
 	<title>Oblivious | Book {book}, Chapter {chapter} | An overlanding motorbike journey through West Africa</title>
 </svelte:head>
 
-<article class="prose prose-lg text-justify mb-8 pt-12">
+<article class="prose md:prose-xl text-justify mb-8 pt-12">
 	<h2 class="font-header">Book {book}, Chapter {chapter}</h2>
 	{@html content}
 </article>

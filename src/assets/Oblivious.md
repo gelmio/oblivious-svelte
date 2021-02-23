@@ -6,7 +6,6 @@ I, on my side, require of every writer, first or last, a simple and sincere acco
 - Thoreau
 
 *I hope I've done him proud...*
-![](../_images/image().jpg)
 
 To mum,
 Sorry…
@@ -105,7 +104,7 @@ I ride out of the dealership like I stole the thing.
 I’m *brutally* happy.
 Happy as a pig in shit.
 This was a great choice...
-![](../_images/image(1).jpg)
+![](/images/book-content/Image_1.jpg)
 ---
 *Disaster.*
 We *lurch*.
@@ -161,11 +160,11 @@ I take a look at the map in the morning over breakfast, find a direction that lo
 When I've got an option of different roads to take, I consult the compass while still rolling, and go with the option that best lines up with my bearing, no matter what the road looks like.
 *It's never failed me.*
 With no planned routes, I spend all of my time on wonderful one-and-a-half lane country roads, getting thoroughly, wonderfully lost in the British countryside.
-![](../_images/image(2).jpg)
+![](/images/book-content/Image_2.jpg)
 Yet, at the end of every day, I always find myself within spitting distance of where I wanted to be.
 Half the time I land on it like a fucking homing pigeon.
 And if it doesn't work out, who cares? There's always, *always* somewhere to stay at the end of a long day in the saddle; hostels, hotels, b&b's, camping, whatever; It's so bloody easy.
-![](../_images/image(3).jpg)
+![](/images/book-content/Image_3.jpg)
 *I love it to bits.*
 Britain is *wonderful.*
 I knock off three thousand clicks in twelve days. 
@@ -178,7 +177,7 @@ Set compass: North.
 *Again.*
 
 ## Chapter Four
-![](../_images/image(4).jpg)
+![](/images/book-content/Image_4.jpg)
 I gone done a whole bloody lap of England and Scotland.
 It's been *nothing* like I expected. Outside of the big city centres, it's all so *green*, so *rural.*
 When the sun's out and shining you'd be hard-pressed to top the United Kingdom for a ride...
@@ -220,7 +219,6 @@ I roll the bike into the bowels of the ship. The Enfield sounds incredible in th
 I ratchet-strap the beast down for the ride.
 *Ta ta, England.*
 It's been superb.
-![](../_images/image(5).jpg)
 
 ## Chapter Five
 *Dunkerque.*
@@ -322,7 +320,6 @@ All the freedom in the world and I don't want to do it anymore. I want to *undo*
 I don't even *like* cooking. I avoid it, like the plague. So why the fuck am I fantasising about a kitchen?? 
 I think I want it because I can't have it... Maybe that's the way things go.
 In other news, the Enfield has a new, mysterious oil leak coming from somewhere unseen...
-![](../_images/image(6).jpg)
 ---
 It's been a lot of hours with nothing but the Enfield soundtrack, the view in front of my face, and my head in my helmet.
 *A lot of hours...*
@@ -375,7 +372,7 @@ We walk to the car. Everyone's silent... You don't want to poke the bear; Jay lo
 Straight to dinner.
 Jay's nursing his sangria. He's *filthy*.
 I'm built as thick as a rake after weeks of trail running in the Pyrenees, so when I start drinking it shows, *quickly.*
-![](../_images/image(7).jpg)
+![](/images/book-content/Image_5.jpg)
 In a word: Mouthy...
 "C'mon lads, why am I setting pace here? You guys want to finish those drinks?? Come on, let's go. Flick the switch!"
 Jay gives me the look of a fucking psychopath. "Flick the switch..? Mate... You want me to *flick the switch??*"
@@ -728,7 +725,7 @@ It's either that, or go to the hospital...
 ## Chapter Eight
 *Fuck Andorra.*
 I ditched it.
-![](../_images/image(8).jpg)
+![](/images/book-content/Image_6.jpg)
 I've spent the two weeks of purgatory riding through northern Spain, and taken my munted head with me.
 Every stitch in my lip has fallen out. *Way too soon.*
 The kid intern botched the job...
@@ -827,7 +824,7 @@ Ben bought a helmet - that morning - and we were off.
 Two up, on a Royal Enfield.
 It was like something out of *The Motorcycle Diaries.* Except this guy wasn't my best mate...
 ---
-![](../_images/image(9).jpg)
+![](/images/book-content/Image_7.jpg)
 In a very short space of time we've covered some serious mileage, put in some serious hours. Ben hasn't complained *once*, even after ten hour days on that back-seat. Must've been an nightmare, *the thing's the size of a hand...* Yet, not a peep. Half the time I forget he's even there, and I start singing to myself. He's so *quiet.*
 The Enfield hasn't skipped a beat. It's handled the overload with aplomb.
 The three of us have gone down the Mediterranean coast of Spain, till now, we find ourselves, on the *rock of Gibraltar*.
@@ -836,7 +833,7 @@ The end of Europe.
 I can *see* Africa.
 I can't believe how *close* it is.
 That's bloody *Africa*, right there!
-![](../_images/image(10).jpg)
+![](/images/book-content/Image_8.jpg)
 I'm shitting bricks.
 I've asked Ben a thousand times. About everything. *Every possible thing.*
 I'm *not* convinced that Africa can be done. At least not like this...
@@ -998,13 +995,13 @@ We stroll through Tangier with a couple of girls from the hostel, Ben pipes up.
 ## Chapter Eleven
 After consuming a lot of meat sandwiches, frothy mint teas, delicious bread, addictive avocado and banana smoothies and more omelettes than I care to mention, we find ourselves at the bottom of Morocco.
 It's been about a month.
-![](../_images/image(11).jpg)
+![](/images/book-content/Image_9.jpg)
 *Nothing's gone wrong,* but I wouldn’t go rushing back to Morocco. It's a bit of a tourist trap, and I *hate* being harassed. Happy to be moving on.
 On the way through, we picked up a bald Belgian guy named Tony. He's heading south in a Volkswagen van that can best be described as a 'Swiss army knife'.
-![](../_images/image(12).jpg)
+![](/images/book-content/Image_10.jpg)
 I'm glad we found him. *He has beer and rum.*
 But, better than that, Ben's been more than happy to ride shotgun in the van, and I'm happy to chuck all of my shit in the back, leaving me, naked, on the Enfield.
-![](../_images/image(13).jpg)
+![](/images/book-content/Image_11.jpg)
 It's been *glorious.*
 We've been surfing all down the coast.
 I've learned how to shit in a 'squat toilet'. It's basically just a hole in the floor... Once you get the hang of it - and stop accidentally pissing on your shoe - it’s quite an effective way to do business. Gone in 60 seconds... And I've finally got my eye in; these day's it's *nothing but net...*
@@ -1012,10 +1009,10 @@ Swish.
 Life skills.
 I've learned how to talk with my new teeth, and I've dropped the lisp. Those front two chompers are finally beginning to 'set', and not feel so *wobbly* all the time.
 All to the good.
-![](../_images/image(14).jpg)
+![](/images/book-content/Image_12.jpg)
 Speaking of good, Shazza decided to paratroop into Marrakesh for a fun week. She managed to re-align my broken nose with a stray headbutt during some bedroom gymnastics... The pleasure and the pain...
 On the way south, Tony the Belgian picked up two other strays; a mongrel puppy that he's named Synchro (after his van), and a Greek hitchhiker named Manos.
-![](../_images/image(15).jpg)
+![](/images/book-content/Image_13.jpg)
 We've all procured Mauritanian visas at the embassy in Morocco with ease; it's just a matter of showing up, saying you want a visa, filling out your details, paying, and wham, *visa;* we're now officially welcome in the country...
 From here, the die is cast: West. *The west coast.*
 We can't change tack from here, because, *Sahara.*
@@ -1217,7 +1214,6 @@ Into Mauritania...
 *How the hell did this happen??*
 
 ## Chapter Twelve
-![](../_images/image(16).jpg)
 *Mauritania.*
 It's a country, and it's *not* Mauritius.
 Couldn't be further from it...
@@ -1286,7 +1282,7 @@ No motorbike, not a lot of cash, and just a change of clothes in a 'daypack'. Th
 Me, Manos and Ben.
 Tony the Belgian is too smart for this, and has continued on south...
 There's a sign next to the tracks, a big one, evidently put up by the mining company. It says a bunch of stuff in French and Arabic...
-![](../_images/image(17).jpg)
+![](/images/book-content/Image_14.jpg)
 I think that 'danger de mort' might mean 'danger of death'.
 It's written twice...
 I ask Manos - who has passable French - what it says.
@@ -1361,7 +1357,7 @@ Uber badass.
 I take my bandana that I usually wear inside my helmet and wrap it across my mouth and nose like a train robber from an old Western movie.
 Not so badass... But the train robber bit is topical at least. *I look the part.*
 We’re *pinging* on the awesomeness of just being here.
-![](../_images/image(18).jpg)
+![](/images/book-content/Image_15.jpg)
 We start doing dumb shit with lots of energy...
 Ben starts 'surfing' on the mattresses. Standing up. The carriages are swinging and bouncing all over the shop, but he’s making it look pretty easy. Monkey-see monkey-do, as Manos gets up there to give it a crack.
 He almost immediately comes a gutser, very fucking close to going over the edge. His sphincter won't unlock for a few hours, I reckon...
@@ -1491,12 +1487,12 @@ It's an ancient, semi-ruined half-village-half-city.
 The whole place is built out of rocks that look like they've been stacked exactly how they came out of the ground. The whole village is just shades of the colour 'sand'.
 It's beautiful.
 And empty.
-![](../_images/image(19).jpg)
+![](/images/book-content/Image_16.jpg)
 As we walk through the ancient city, we pick up kids on the way like the *Pied Piper*. They get so excited to see us that they start chanting some tribal war shit, and belting the snot out of each other with big steel *re-bars,* as if for our entertainment...
-![](../_images/image(20).jpg)
+![](/images/book-content/Image_17.jpg)
 We shake them off and, together, we roam the Sahara, because we can.
 Camels and sand...
-![](../_images/image(21).jpg)
+![](/images/book-content/Image_18.jpg)
 ---
 *Mosquitos.*
 My god, the mosquitos...
@@ -1590,7 +1586,7 @@ He's crestfallen as I chastise him for his taste in music, and drum home the poi
 "Never mind mate. If you like I can give you some new music, how does that sound"
 "Yes! Good!"
 We head back out as the sun sets.
-![](../_images/image(22).jpg)
+![](/images/book-content/Image_19.jpg)
 ---
 It's a shame, but these kinds of places, incredible as they are, don't really have any *staying power.* Once you've seen them, that's kind of it...
 So, we've gotta go... I feel like I'm abandoning Mo...
@@ -1600,7 +1596,7 @@ Seven hours of driving. I'm still not done...
 I've gotta get back to Nouadhibou, where the Enfield is...
 That's another six hours, with many time-outs for prayer to add in.
 At least the road is good...
-![](../_images/image(23).jpg)
+![](/images/book-content/Image_20.jpg)
 ---
 Success!
 The Enfield, somewhat miraculously, is *exactly* where I left it.
@@ -2490,7 +2486,7 @@ There's something very weird about cows on a beach...
 Things have become noticeably greener since heading south of the River Gambia, and this is actually quite a beautiful part of the world...
 Wetlandish and sparsely populated.
 Lining the sides of the roads are colossal, ancient looking trees. They’re bloody *huge.* They have that look where the roots start branching out above the ground, like taut tendons under skin, as they sprawl out in all directions. The circumference where the roots meet the ground has to be in the tens of meters. You could play a good game of hide and seek in one tree, easy.
-![](../_images/image(24).jpg)
+![](/images/book-content/Image_21.jpg)
 Walking through the streets of Cap-Skirring, I notice by chance a motorbike parked on the road, standing out like dogs balls...
 It means business...
 *Serious business.*
@@ -2542,7 +2538,7 @@ While I was on an iron ore train in the Sahara, JB was riding through the sand d
 JB’s *special...*
 I manage to keep the thing upright through a few hairy moments and a lot of white knuckles. We hit a river.
 It's beautiful, but we weren't expecting a river...
-![](../_images/image(25).jpg)
+![](/images/book-content/Image_22.jpg)
 There's a military checkpoint. So we go talk to them.
 *What’s all this about?*
 Apparently it's *not* a checkpoint, but a border post.
@@ -2560,7 +2556,7 @@ I was *so close* to the tarmac...
 I hit a rut in the soft stuff, which grabbed my front tyre and pushed it hard to the right.
 I bounced out of control, counter-steered hard to the left to try to bounce back upright - a fraction too late... I bury the bike in a flurry of sand and saddlebags.
 Besides a sore leg where the bike landed on me, I'm ok. The Enfield is fine except for some twists and bends that a hammer can fix...
-![](../_images/image(26).jpg)
+![](/images/book-content/Image_23.jpg)
 ---
 *Ziguinchor.*
 We shack up with the auntie’s neighbour’s brother’s family; a big mob of six.
@@ -2578,7 +2574,7 @@ It really is incredible; I wonder how I would treat my brother's neighbour's nep
 Not with warmth like this...
 The kindness is overwhelming.
 With a captive audience we tell them the best of our travelling stories over a crate of beer.
-![](../_images/image(27).jpg)
+![](/images/book-content/Image_24.jpg)
 
 ## Chapter Twenty Three
 *Guinea Bissau.*
@@ -2599,7 +2595,7 @@ Fizzing with noise and colour and people.
 Looks like they've got *loads* of food. *All I can see is food...*
 JB and I head to a campsite out of town a bit, pitch up, and take a 'share taxi' straight back into town.
 The markets are built out of ramshackle, rusted, corrugated tin. Tetanus city... Dirty and grimey and absolutely *manic.* Crazy busy. Constantly jam packed with an insane amount of people.
-![](../_images/image(28).jpg)
+![](/images/book-content/Image_25.jpg)
 It's fantastic to see, and intoxicating to be part of the melee. We're just swept along in the river of people.
 There'd be bugger all white people out here, so except for the occasional shout of *'branco!'* we're pretty much left alone. Branco would be 'white' in Portuguese, of course.
 Sure, it’s dirty and grimy and poor, but it’s also vibrant and colourful and bustling and action packed.
@@ -2671,7 +2667,7 @@ I feel like I've left the oven on...
 Nearly three hours after we arrived here everyone starts to move.
 For some reason, all the punters are starting to load the *neighbouring* boat with furious gusto.
 It’s a shitty pirogue.
-![](../_images/image(29).jpg)
+![](/images/book-content/Image_26.jpg)
 *Wait...*
 Ah... *shit.*
 *Suboptimal*.
@@ -2900,7 +2896,7 @@ Winging it: 1
 Carnet: 0
 ---
 Guinea makes an immediate impression; gone are the dry flats, replaced by big, sheer faced cliffs.
-![](../_images/image(30).jpg)
+![](/images/book-content/Image_27.jpg)
 After the flatness of Guinea-Bissau, it’s great to have some variety.
 The road turns from a goat track to some really nicely levelled red-dirt roads. We nail it. Kicking up big clouds of red dust as we put the hammer down.
 I've come to the conclusion that I’ll take a well levelled, red-dirt track over a shitty, potholed tarmac road. Any day.
@@ -2979,7 +2975,7 @@ I tell JB he can go first...
 He doesn't hesitate.
 He makes it.
 I make it.
-![](../_images/image(31).jpg)
+![](/images/book-content/Image_28.jpg)
 The path heads straight for the mountain in front of us that’s dominating the landscape; all brown with patches of green, it's like it's covered in a giant army camo.
 Seems like we're going to have to go right over it then...
 The path steepens. Becomes rocky.
@@ -3057,7 +3053,7 @@ We ride through the scorched earth till we find the line where the burnt meets t
 It's a very big, very small fire.
 The flames are only shin height, but they extend in each direction as far as we can see.
 It’s a weird thing to just casually ride on through it...
-![](../_images/image(32).jpg)
+![](/images/book-content/Image_29.jpg)
 My kick stand kill switch finally gives up the ghost. Some quick bush mechanics and it's disconnected.
 This whole afternoon has felt like we’ve been treading water. Working so hard and going nowhere. *We're not making Mali.* That's obvious. It's time to start thinking of where we're spending the night...
 JB suggests we bush camp.
@@ -3083,10 +3079,10 @@ School’s out. All the kids of the village - more than you would have expected 
 I’m pretty sure that none of these kids have ever seen anything the likes of us before...
 Everyone wants to shake hands. So much so that once they've shaken hands they walk to the back of the mob to line up for the honour again.
 I reckon I've shaken hands with everyone three times over.
-![](../_images/image(33).jpg)
+![](/images/book-content/Image_30.jpg)
 We get out cameras, and the kids go *psycho.*
 We thought we were being mobbed before, but now they go totally ape escape.
-![](../_images/image(34).jpg)
+![](/images/book-content/Image_31.jpg)
 Monsieur Papier instructs the kids to clean out our hut for us and they take to it with furious gusto.
 As we set up our tents, we're being watched with rapt attention.
 I make a song and dance of it - like a camping clown - and the kids love it.
@@ -3139,7 +3135,7 @@ A juggernaut.
 I'm bursting with pride for this little Enfield that could.
 As we pull into Mali I fall in love with the beast all over again, patting the petrol tank like it's a horse. Talking to it.
 I wouldn’t want to be doing this trip on any other bike...
-![](../_images/image(35).jpg)
+![](/images/book-content/Image_32.jpg)
 
 ## Chapter Twenty Five
 *It won't start.*
@@ -3184,7 +3180,7 @@ We find the Dame.
 She's so perfect that I have to think it was made by man. But that's impossible...
 But it's also impossible that something so perfect could be a fluke of nature...
 In either case, she has a beautiful view...
-![](../_images/image(36).jpg)
+![](/images/book-content/Image_33.jpg)
 ---
 Eighty clicks to Labe.
 I stay with JB for a bit, and then he's just *gone*, leaving me in the red dust. I could tie him down in the mountains, but on this road he's just *unleashed the beast.*
@@ -3303,7 +3299,7 @@ And it’s a shame, because this is beautiful...
 The breeze is cool and crisp on my face, the colours have taken on a richness and depth that they’ve never had before. The world around us seems to take on a calm stillness...
 Despite the madness and stress of the afternoon I’m still grinning from ear to ear in my helmet.
 *What a day.*
-![](../_images/image(37).jpg)
+![](/images/book-content/Image_34.jpg)
 ---
 Twilight quickly turns to darkness, turns to pitch.
 We have to pull off the road and set up a wild camp, in the middle of nowhere in the middle of Guinea in the middle of West Africa.
@@ -3315,10 +3311,10 @@ Half an hour later he comes back with stale bread and a packet of biscuits.
 I take out all of the money in Guinea.
 I eat and eat and eat.
 I buy all of the toilet paper.
-![](../_images/image(38).jpg)
+![](/images/book-content/Image_35.jpg)
 
 ## Chapter Twenty Six
-![](../_images/image(39).jpg)
+![](/images/book-content/Image_36.jpg)
 *Doukie.*
 JB wanted *another* detour...
 Remote. *Again.*
@@ -3336,14 +3332,14 @@ He tells us we should go on the 'Indiana Jones' hike. He's positively *busting*.
 "Why do you call it the Indiana Jones hike?"
 *"You will see!!"* he gives us a big, gap-toothed grin.
 Well, I'm not going to argue. We head down a dusty beaten path surrounded by scratchy dry scrub and bushes that are giving my calves a severe exfoliation.
-![](../_images/image(40).jpg)
+![](/images/book-content/Image_37.jpg)
 Not far down the trail we steeply descend down through gaps in massive, smooth, cool, grey rocks. Rocks the size of buses propped up on their arses.
 There are trees growing in places that no one told them it was impossible to grow. Random cracks and crevices in the rock walls are home to oversized trees - *just* clinging on - whose roots hang down to us on the floor below like thick vines. Some of the trees look like they’re just *floating in mid-air.*
 With the massive, tall rock walls all around and the trees reaching for every bit of sunlight in the canopy above us, there’s not a whole lot of sunlight left for us down below and the atmosphere is heavy and cool and damp.
 *It feels like we’re in a secret.*
 We speak in hushed tones...
 ---
-![](../_images/image(41).jpg)
+![](/images/book-content/Image_38.jpg)
 For hours we hike about in the hidden places.
 Streams of water come and go under dark and mysterious caves.
 The labyrinth just keeps going and going and going...
@@ -3397,18 +3393,18 @@ Looking down, there are vultures and eagles, *tens of them,* playing in the updr
 *Beneath us!*
 Bloody hell...
 Where the Dickens did all of this come from??
-![](../_images/image(42).jpg)
+![](/images/book-content/Image_39.jpg)
 Guinea’s showing off and there’s nowhere else I’d rather be... *No one gets to see this stuff.*
 I'm already happy to call it a day. I could sit right here and just soak it up, enjoy the air show. There’s something really special about these sorts of places. Something about being really high up and looking over the edge that I can’t put my finger on. Trouble is that when I’m close to the edge I have this weird urge to jump off, to see what it would be like.
 *Not a great idea.* There’s still more to see...
 Cutting a hole into the cliff face is a stream that meanders its gentle way diagonally the long way down to the plateau below. It occasionally spills over the edge to *waterfall.*
 It makes a perfect path for us to follow down to the savannah.
-![](../_images/image(43).jpg)
+![](/images/book-content/Image_40.jpg)
 ---
 The view from the bottom of the cliff is, if anything, even more impressive and imposing than the view from the top.
 'The Wall' stretches off in both directions as far as I can see
 Rich golds and blacks and whites all swirled about like an ice-cream.
-![](../_images/image(44).jpg)
+![](/images/book-content/Image_41.jpg)
 We strafe the cliffside on a well-worn path, that then becomes a goat track, which slowly peters out to nothing...
 Before we know it we’re bush bashing, and obviously lost. Now crawling on our bellies like under barbed wire...
 *Bugger this.*
@@ -3464,7 +3460,7 @@ What goes down must go back up, it seems. There’s a narrow cleft in the cliff 
 Where the rock face is too steep to deal with without a grappling hook and a pickaxe, the locals have built 'ladders'. These ladders aren’t really ladders at all, but more like a bunch of skinny bamboo-like branches tied into stacks with vines.
 *That’s it.*
 As big as goal posts.
-![](../_images/image(45).jpg)
+![](/images/book-content/Image_42.jpg)
 There's no cross bars to step on either, so you just have to stick your foot in the vines tying the stack together, and hope they hold.
 *Pretty fucking dodgy.*
 We climb and climb and climb, up through the waterfalls, all the way up to the top of the cliff again.
@@ -3505,7 +3501,7 @@ I feel a little violated...
 Another one comes flying right into the same spot, and gets immediately smushed by the angriest of fingers.
 Bugger that. *Kill them all!*
 ---
-![](../_images/image(46).jpg)
+![](/images/book-content/Image_43.jpg)
 *'Wet and wild'.*
 We spend the day chasing rivers through the mountainous rocky scenery. Not nearly as spectacular as the K.A.H. or the Indiana Jones, but there’s lots of monkeys and chimps around, and not so many baboons, which is a plus.
 This time Hassan took us along, and, true to form, he was bursting at the seams with enthusiasm and chatter.
@@ -3656,13 +3652,13 @@ It’s a hotel alright...
 What JB has been doing is camping out on the first floor of a five floor hotel, where they only got so far as pouring the concrete.
 No doors, no toilets, no *nothing.*
 Just concrete floors and a set of concrete stairs. A skeleton.
-![](../_images/image(47).jpg)
+![](/images/book-content/Image_44.jpg)
 The 'contact' is the friend of a guy who JB met in Bissau. He squats here with his sister. Apparently, their father owns the hotel. I'm not sure I believe it...
 I hardly recognise myself anymore... that even *this* is still preferable to paying twenty five dollars a night for a hotel... 
 I set up camp in a room on the top floor.
 *The penthouse suite.*
 I have spectacular views of downtown Conakry and the Atlantic Ocean, which is just a golf shot away.
-![](../_images/image(48).jpg)
+![](/images/book-content/Image_45.jpg)
 I’m given a bucket by our host and instructed to fill it up in the morning - which is the only time the communal water tap out the front will be dribbling out water.
 I’m instructed to shit wherever I like.
 *Really??*

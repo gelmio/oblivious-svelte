@@ -68,7 +68,7 @@
 		<ul>
 			{#each [...Array(chapterCount)] as _, chapterIndex}
 				<li
-					on:click="{() => recommendJumpToChapter = false}"
+					on:click="{() => {recommendJumpToChapter = false; navOpen = false}}"
 					class="ml-4 p-2 rounded-md"
 					class:bg-oblivious={slug &&
 						bookIndex + 1 === +slug[0] &&
