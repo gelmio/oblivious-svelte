@@ -18,8 +18,8 @@
 	export let chapterCounts: number[];
 
 	const { page } = stores();
+	let navOpen = false;
 	$: slug = $page.params.slug;
-	$: navOpen = !slug;
 </script>
 
 <button
@@ -32,9 +32,9 @@
 	>
 </button>
 <nav
-	class="absolute top-16 left-0 bottom-0 right-auto overflow-y-scroll transform {navOpen
+	class="absolute top-16 left-0 h-4/5vh right-auto overflow-y-scroll transform {navOpen
 		? 'translate-x-0'
-		: '-translate-x-full'} transition-all duration-1000 ease-in-out bg-white p-4 rounded-r-lg"
+		: '-translate-x-full'} transition-all duration-1000 ease-in-out bg-white p-4 rounded-r-lg border-solid border-oblivious-dark border-2"
 >
 	{#each chapterCounts as chapterCount, bookIndex}
 		Book {bookIndex + 1}

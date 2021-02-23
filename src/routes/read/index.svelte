@@ -23,26 +23,23 @@
 	<meta name="twitter:image" content="/images/logo-750.png" />
 </svelte:head>
 
-<section class="flex flex-col items-center max-w-4xl mb-16">
-	<h1 class="text-4xl md:text-6xl text-center">
-		Read Oblivious Book One right here!
+<section class="flex flex-col items-center max-w-4xl mt-12 md:mt-28 mb-24">
+	<h1 class="text-4xl md:text-6xl text-center mb-2">
+		Read all of Oblivious for free, right here!
 	</h1>
-	<h2 class="text-xl md:text-3xl text-center">
-		BLA BLA
+	<h2 class="text-xl md:text-3xl text-center mb-12">
+		Either hit the book icon over there on the left and pop open the index to jump to your chapter, or start at the beginning, with Chapter One.
 	</h2>
+	<div>
+		<a 
+			rel="prefetch"
+			href="read/1/1"
+			class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious">
+			Let's go already!
+		</a> ...<a href="https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart" rel="nofollow"> or flick me some money!</a>
+	</div>
+
 </section>
-<ul class="flex flex-row justify-around w-full max-w-3xl mb-20">
-	<a rel="prefetch" href="read/1/1/">Read Book One Now</a>
-	<!-- {#each posts as post}
-		 we're using the non-standard `rel=prefetch` attribute to
-				tell Sapper to load the data for the page as soon as
-				the user hovers over the link or taps it, instead of
-				waiting for the 'click' event
-		<li>
-			<a rel="prefetch" href="read/{post.slug}">{post.title}</a>
-		</li>
-	{/each} -->
-</ul>
 
 <style>
 </style>

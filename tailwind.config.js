@@ -14,8 +14,13 @@ module.exports = {
                 oblivious: '#96c8ff',
                 'oblivious-dark': '#1871d3',
             },
+            height: {
+                '1/2vh': '50vh',
+                '4/5vh': '80vh',
+            },
             maxHeight: {
                 '1/2vh': '50vh',
+                '4/5vh': '80vh',
                 '20': '5rem',
                 '24': '6rem',
             },

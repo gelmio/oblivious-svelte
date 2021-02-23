@@ -33,18 +33,21 @@
 	<title>Oblivious | Book {book}, Chapter {chapter} | An overlanding motorbike journey through West Africa</title>
 </svelte:head>
 
-<article class="prose prose-lg text-justify mb-20 md:mb-32">
+<article class="prose prose-lg text-justify mb-8">
 	<h1>Book {book}, Chapter {chapter}</h1>
-	<section class="">
-		{@html content}
-	</section>
-	
-	<a 
+	{@html content}
+</article>
+<div class="text-right mb-8 md:mb-12">
+	<a
+		rel="prefetch"
 		href="read/{next[0]}/{next[1]}"
-		class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious">
+		class="inline-block text-xl p-4 rounded-lg no-underline bg-oblivious">
 		Next {nextChapterExists ? "Chapter" : "Book"}
 	</a>
-</article>
+	{#if next[1] > 10 && !(next[1] % 5)}
+		...<a href="https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart" rel="nofollow"> or flick me some money!</a>
+	{/if}
+</div>
 
 <style>
 </style>
