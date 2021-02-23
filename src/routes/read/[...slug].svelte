@@ -33,15 +33,15 @@
 	<title>Oblivious | Book {book}, Chapter {chapter} | An overlanding motorbike journey through West Africa</title>
 </svelte:head>
 
-<article class="prose prose-lg text-justify mb-8">
-	<h1>Book {book}, Chapter {chapter}</h1>
+<article class="prose prose-lg text-justify mb-8 pt-12">
+	<h2 class="font-header">Book {book}, Chapter {chapter}</h2>
 	{@html content}
 </article>
 <div class="text-right mb-8 md:mb-12">
 	<a
 		rel="prefetch"
 		href="read/{next[0]}/{next[1]}"
-		class="inline-block text-xl p-4 rounded-lg no-underline bg-oblivious">
+		class="inline-block text-xl p-4 rounded-lg no-underline bg-oblivious mr-4">
 		Next {nextChapterExists ? "Chapter" : "Book"}
 	</a>
 	{#if next[1] > 10 && !(next[1] % 5)}

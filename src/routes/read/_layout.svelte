@@ -15,16 +15,43 @@
 <script lang="ts">
 	import { stores } from "@sapper/app";
 	import PageTransition from "../../components/PageTransition.svelte";
+	import {readerPosition} from "./reader-position.js"
 	export let chapterCounts: number[];
+
+	function readersPositionHasAdvanced(storedPosition: number[], currentPosition: number[]) {
+		console.log("ohhaiiii", storedPosition, )
+		return !storedPosition && currentPosition
+			|| currentPosition[0] > storedPosition[0]
+			|| currentPosition[0] === storedPosition[0] && currentPosition[1] > storedPosition[1]
+	}
 
 	const { page } = stores();
 	let navOpen = false;
-	$: slug = $page.params.slug;
+	let recommendJumpToChapter = false
+	$: slug = $page.params.slug ? $page.params.slug.map((x: string) => +x) : null;
+	$: if(slug && readersPositionHasAdvanced($readerPosition, slug)) {
+		readerPosition.set(slug)
+	} else if(!slug && $readerPosition) {
+		recommendJumpToChapter = true
+	} else {
+		recommendJumpToChapter = false
+	}
 </script>
-
+{#if recommendJumpToChapter}
+	<div class="fixed inset-0 bg-oblivious opacity-50 z-10">
+	</div>
+	<div class="fixed top-1/2 left-1/2 z-20 rounded-lg bg-white p-16 flex flex-col text-center" style="transform: translate(-50%, -50%)">
+		<p class="font-header text-2xl">Looks like you've been here before...</p>
+		<p class="font-sans text-lg mb-4">Want to pick up where you left off?</p>
+		<div>
+			<a class="inline-block text-lg p-4 rounded-lg no-underline bg-oblivious" href="read/{$readerPosition[0]}/{$readerPosition[1]}">Sure, take me to chapter {$readerPosition[1]}</a>
+			<span on:click="{() => {recommendJumpToChapter = false; readerPosition.set(null)}}" class="inline-block text-lg p-4 rounded-lg no-underline bg-white border border-solid border-oblivious">Nup</span>
+		</div>
+	</div>
+{/if}
 <button
 	on:click={() => (navOpen = !navOpen)}
-	class="absolute top-0 left-0 w-16 h-16 text-2xl bg-oblivious rounded-r-xl"
+	class="absolute top-0 left-0 w-12 h-12 text-lg md:w-16 md:h-16 md:text-2xl bg-oblivious rounded-r-xl"
 >
 	📖 <span
 		class="absolute font-black top-1/2 right-1 transform -translate-y-1/2"
@@ -32,7 +59,7 @@
 	>
 </button>
 <nav
-	class="absolute top-16 left-0 h-4/5vh right-auto overflow-y-scroll transform {navOpen
+	class="absolute z-10 top-16 left-0 h-4/5vh max-h-full right-auto overflow-y-scroll transform {navOpen
 		? 'translate-x-0'
 		: '-translate-x-full'} transition-all duration-1000 ease-in-out bg-white p-4 rounded-r-lg border-solid border-oblivious-dark border-2"
 >
@@ -41,6 +68,7 @@
 		<ul>
 			{#each [...Array(chapterCount)] as _, chapterIndex}
 				<li
+					on:click="{() => recommendJumpToChapter = false}"
 					class="ml-4 p-2 rounded-md"
 					class:bg-oblivious={slug &&
 						bookIndex + 1 === +slug[0] &&

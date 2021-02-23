@@ -36,7 +36,7 @@
 			href="read/1/1"
 			class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious">
 			Let's go already!
-		</a> ...<a href="https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart" rel="nofollow"> or flick me some money!</a>
+		</a>
 	</div>
 
 </section>

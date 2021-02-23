@@ -3,7 +3,7 @@
 </script>
 
 <nav
-	class="relative flex flex-row justify-between md:justify-start items-center p-4 bg-oblivious"
+	class="relative z-0 flex flex-row justify-between md:justify-start items-center p-4 bg-oblivious"
 >
 	<a href="/">
 		<img
