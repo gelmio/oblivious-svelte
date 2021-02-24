@@ -24,20 +24,20 @@
           content="/images/logo-750.png"/>
 </svelte:head>
 
-<section class="flex flex-col items-center max-w-4xl mt-12 md:mt-28">
+<section class="flex flex-col items-center max-w-4xl mt-8 md:mt-28">
     <h1 class="text-4xl md:text-6xl text-center mb-2">Yeah Buddy!</h1>
     <h2 class="text-xl md:text-3xl text-center">Book One of the <em>Oblivious Trilogy</em> is <a href="read" rel="prefetch">here</a> and available for free!</h2>
 </section>
 <section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
     <img class="my-12 max-w-full max-h-1/2vh" alt='Oblivious book cover' src='/images/3D-cover.jpg'>
-    <div class="text-center">
+    <div class="flex flex-col md:flex-row justify-center items-center">
         <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="read" rel="prefetch">Start reading now</a>
-        ... <a rel="nofollow" href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart">or download the e-book</a>
+        <span class="m-2">... <a rel="nofollow" href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart">or download the e-book</a></span>
     </div>
 </section>
-<section class="mb-20 md:mb-32 px-10 w-full">
+<!-- <section class="mb-20 md:mb-32 px-10 w-full">
     <AsSeenIn />
-</section>
+</section> -->
 <section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
     <h1 class="text-4xl md:text-6xl text-center">Ride through Africa with me on an outrageously inappropriate <em>Royal Enfield Bullet</em></h1>
 </section>
@@ -69,9 +69,9 @@
             </div>
         </div>
     </div>
-    <div class="text-center">
+    <div class="flex flex-col md:flex-row justify-center items-center">
         <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="read" rel="prefetch">Read online now</a>
-        ... <a rel="nofollow" href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart">or download the e-book</a>
+        <span class="m-2">... <a rel="nofollow" href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart">or download the e-book</a></span>
     </div>
 </section>
 <section class="mb-20 md:mb-32 sm:px-20 text-center">
