@@ -31,19 +31,28 @@
 	export let nextChapterExists: boolean;
 	let reader: HTMLElement;
 	let readerBounds: ClientRect;
+	let readerWidth: number;
 	let columnGap = 50;
 	let next: [book: number, chapter: number];
-	const setReaderBounds = () =>
-		(readerBounds = reader.getBoundingClientRect());
+	const setReaderBounds = () => {
+		readerBounds = reader.getBoundingClientRect();
+		readerWidth = Math.round(readerBounds.width)
+	};
 	const handleClick = (clientX: number) => {
+		console.log(
+			reader.scrollLeft,
+			Math.round(readerWidth) + columnGap,
+			reader.scrollLeft % (readerWidth + columnGap)
+		);
 		if (
 			clientX &&
 			readerBounds &&
 			readerBounds.left &&
-			readerBounds.width
+			readerWidth &&
+			!(reader.scrollLeft % (readerWidth + columnGap) > 2)
 		) {
-			const midwayScreenX = readerBounds.left + readerBounds.width / 2;
-			const scrollDistance = readerBounds.width + columnGap;
+			const midwayScreenX = readerBounds.left + readerWidth / 2;
+			const scrollDistance = readerWidth + columnGap;
 			reader.scrollBy({
 				top: 0,
 				left: (clientX <= midwayScreenX ? -1 : 1) * scrollDistance,
@@ -55,15 +64,16 @@
 		!nextChapterExists && book < 3 ? [book + 1, 1] : [book, chapter + 1];
 
 	onMount(() => {
-		setReaderBounds();
-		const readerTop =
-			(window.pageYOffset || document.documentElement.scrollTop) +
-			readerBounds.top;
-		console.log("readerTop", readerTop)
-		setTimeout(() =>window.scrollTo({
-			top: readerTop,
-			behavior: "smooth",
-		}), 5000)
+		setTimeout(() => {
+			setReaderBounds();
+			const readerTop =
+				(window.pageYOffset || document.documentElement.scrollTop) +
+				readerBounds.top;
+			window.scrollTo({
+				top: readerTop,
+				behavior: "smooth",
+			});
+		}, 500);
 	});
 </script>
 
@@ -83,7 +93,7 @@
 		on:click={({ clientX }) => handleClick(clientX)}
 		class="max-h-screen overflow-hidden overflow-x-scroll no-scrollbar py-6"
 		style={readerBounds?.width
-			? `columns: auto ${readerBounds.width}px; column-gap: ${columnGap}px; column-rule: 1px solid #000;`
+			? `columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000;`
 			: ""}
 	>
 		{@html content}
