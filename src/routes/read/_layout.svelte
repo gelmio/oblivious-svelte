@@ -51,7 +51,7 @@
 {/if}
 <button
 	on:click={() => (navOpen = !navOpen)}
-	class="absolute top-0 left-0 w-12 h-12 text-lg md:w-16 md:h-16 md:text-2xl bg-oblivious rounded-r-xl"
+	class="absolute top-0 md:top-12 left-0 w-12 h-12 text-lg md:w-16 md:h-16 md:text-2xl bg-oblivious rounded-r-xl"
 >
 	📖 <span
 		class="absolute font-black top-1/2 right-1 transform -translate-y-1/2"
@@ -59,7 +59,7 @@
 	>
 </button>
 <nav
-	class="absolute z-10 top-16 left-0 h-4/5vh max-h-full right-auto overflow-y-scroll transform {navOpen
+	class="absolute z-10 top-16 md:top-32 left-0 h-4/5vh max-h-full right-auto overflow-y-scroll transform {navOpen
 		? 'translate-x-0'
 		: '-translate-x-full'} transition-all duration-1000 ease-in-out bg-white p-4 rounded-r-lg border-solid border-oblivious-dark border-2"
 >

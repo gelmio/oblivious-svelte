@@ -41,7 +41,7 @@
 	<a
 		rel="prefetch"
 		href="read/{next[0]}/{next[1]}"
-		class="inline-block text-xl p-4 rounded-lg no-underline bg-oblivious mr-4">
+		class="inline-block text-lg p-2 rounded-lg no-underline bg-oblivious mr-4">
 		Next {nextChapterExists ? "Chapter" : "Book"}
 	</a>
 	{#if next[1] > 10 && !(next[1] % 5)}
