@@ -24,9 +24,8 @@
 
 <script lang="ts">
 	import { onMount } from "svelte";
-	import {fade} from "svelte/transition"
-	import {giveScrollHint} from "./reader-hints.js"
-
+	import { fade } from "svelte/transition";
+	import { giveScrollHint } from "./reader-hints.js";
 
 	export let content: string;
 	export let book: number;
@@ -54,8 +53,8 @@
 			showPhotoBox = true;
 			setTimeout(() => {
 				photoBox.innerHTML = target.outerHTML;
-				console.log(showPhotoBox)
-			}, 1)
+				console.log(showPhotoBox);
+			}, 1);
 		} else if (
 			clientX &&
 			readerBounds &&
@@ -78,6 +77,9 @@
 	onMount(() => {
 		setTimeout(() => {
 			setReaderBounds();
+		}, 600);
+		setTimeout(() => {
+			setReaderBounds();
 			const readerTop =
 				(window.pageYOffset || document.documentElement.scrollTop) +
 				readerBounds.top;
@@ -85,7 +87,7 @@
 				top: readerTop,
 				behavior: "smooth",
 			});
-		}, 3000);
+		}, 2500);
 	});
 </script>
 
@@ -109,44 +111,88 @@
 			: ""}
 	>
 		{@html content}
-		<div class="flex flex-col md:flex-row justify-end items-end mt-8">
-			<a
-				rel="prefetch"
-				href="read/{next[0]}/{next[1]}"
-				class="inline-block text-lg p-2 rounded-lg no-underline bg-oblivious mr-4"
-			>
-				Next {nextChapterExists ? "Chapter" : "Book"}
-			</a>
-			{#if next[1] > 10 && !(next[1] % 5)}
-				<span class="m-2">
-					... or <a
+		{#if next[0] < 3}
+			<div class="flex flex-col md:flex-row justify-end items-end mt-8">
+				<a
+					rel="prefetch"
+					href="read/{next[0]}/{next[1]}"
+					class="inline-block text-lg p-2 rounded-lg no-underline bg-oblivious mr-4"
+				>
+					Next {nextChapterExists ? "Chapter" : "Book"}
+				</a>
+				{#if next[1] > 10 && !(next[1] % 5)}
+					<span class="m-2">
+						... or <a
+							href="https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart"
+							rel="nofollow"
+							class="border-b border-oblivious-dark"
+						>
+							flick me some money!</a
+						>
+					</span>
+				{/if}
+			</div>
+		{:else}
+			<div class="text-center font-header mt-8">
+				<p>Congrats! You've made it to the end of Book 2!</p>
+				<p>
+					That's as far as things go for the moment, but Book 3 is on
+					the way out soon!
+				</p>
+				<p>
+					While you wait, feel free to jump on the mailing list, or <a
 						href="https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart"
 						rel="nofollow"
+						class="border-b border-oblivious-dark"
+						>flick me some money to keep the wheels rolling!</a
 					>
-						flick me some money!</a
-					>
-				</span>
-			{/if}
-		</div>
+				</p>
+			</div>
+		{/if}
 	</div>
-	<div class="text-xs text-center -mt-8">Oblivious | Luke Gelmi</div>
+	<div class="text-xs text-center -mt-10">Oblivious | Luke Gelmi</div>
 </article>
 {#if showPhotoBox}
 	<div
 		in:fade
 		bind:this={photoBox}
-		on:click={() => showPhotoBox = false}
+		on:click={() => (showPhotoBox = false)}
 		class="fixed inset-0 flex justify-center items-center cursor-zoom-out bg-oblivious-opaque"
 	/>
 {/if}
 {#if $giveScrollHint}
-	<div in:fade="{{ delay:1000 }}" out:fade class="fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10">
-		<div class="rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2">
-			<p class="font-header text-xl md:text-2xl mb-4">A couple of reading tips:</p>
-			<p class="font-sans text-base md:text-lg">Tap the text to turn the pages.</p>
-			<p class="font-sans text-base md:text-lg mb-4">Tap the images to zoom.</p>
+	<div
+		in:fade={{ delay: 1000 }}
+		out:fade
+		class="fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10"
+	>
+		<div
+			class="rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2"
+		>
+			<p class="font-header text-xl md:text-2xl mb-4">
+				Here's some tips:
+			</p>
+			<p class="font-sans text-base md:text-lg mb-1">
+				Tap the text to turn the pages.
+			</p>
+			<p class="font-sans text-base md:text-lg mb-1">
+				Tap the images to zoom.
+			</p>
+			<p class="font-sans text-base md:text-lg mb-1">
+				I'll help you out by keeping track of where you're up to.
+			</p>
+			<p class="font-sans text-base md:text-lg mb-1">
+				I'll also scroll automatically to where the pages are so you
+				don't have to bother your finger...
+			</p>
 			<div>
-				<span on:click="{() => {giveScrollHint.set(false)}}" class="inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious cursor-pointer">Got it</span>
+				<span
+					on:click={() => {
+						giveScrollHint.set(false);
+					}}
+					class="inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious cursor-pointer"
+					>Got it</span
+				>
 			</div>
 		</div>
 	</div>
