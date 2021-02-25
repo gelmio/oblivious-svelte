@@ -24,7 +24,7 @@
           content="/images/logo-750.png"/>
 </svelte:head>
 
-<section class="flex flex-col items-center max-w-4xl mt-8 md:mt-28">
+<section class="flex flex-col items-center max-w-4xl mt-8 md:mt-20">
     <h1 class="text-4xl md:text-6xl text-center mb-2">Yeah Buddy!</h1>
     <h2 class="text-xl md:text-3xl text-center">Book One of the <em>Oblivious Trilogy</em> is <a href="read" rel="prefetch">here</a> and available for free!</h2>
 </section>

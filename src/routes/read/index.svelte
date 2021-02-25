@@ -28,7 +28,7 @@
 		Read all of Oblivious for free, right here!
 	</h1>
 	<h2 class="text-xl md:text-3xl text-center mb-12">
-		Either hit the book icon over there on the left and pop open the index to jump to your chapter, or start at the beginning, with Chapter One.
+		Tap the book icon to jump to a chapter, or start at the very beginning, which is a very good place to start.
 	</h2>
 	<div>
 		<a 

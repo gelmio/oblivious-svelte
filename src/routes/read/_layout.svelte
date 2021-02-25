@@ -16,7 +16,7 @@
 	import { stores } from "@sapper/app";
 	import { fade } from "svelte/transition"
 	import PageTransition from "../../components/PageTransition.svelte";
-	import {readerPosition} from "./reader-position.js"
+	import {readerPosition} from "./reader-hints.js"
 	export let chapterCounts: number[];
 
 	function readersPositionHasAdvanced(storedPosition: number[], currentPosition: number[]) {
@@ -44,7 +44,7 @@
 			<p class="font-sans text-base md:text-lg mb-4">Want to pick up where you left off?</p>
 			<div>
 				<a class="inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious" href="read/{$readerPosition[0]}/{$readerPosition[1]}">Sure, take me to chapter {$readerPosition[1]}</a>
-				<span on:click="{() => {recommendJumpToChapter = false; readerPosition.set(null)}}" class="inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-white border border-solid border-oblivious">Nup</span>
+				<span on:click="{() => {recommendJumpToChapter = false; readerPosition.set(null)}}" class="inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-white border border-solid border-oblivious cursor-pointer">Nup</span>
 			</div>
 		</div>
 	</div>

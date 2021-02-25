@@ -24,6 +24,9 @@
 
 <script lang="ts">
 	import { onMount } from "svelte";
+	import {fade} from "svelte/transition"
+	import {giveScrollHint} from "./reader-hints.js"
+
 
 	export let content: string;
 	export let book: number;
@@ -33,18 +36,27 @@
 	let readerBounds: ClientRect;
 	let readerWidth: number;
 	let columnGap = 50;
+	let photoBox: HTMLElement;
+	let showPhotoBox = false;
 	let next: [book: number, chapter: number];
 	const setReaderBounds = () => {
 		readerBounds = reader.getBoundingClientRect();
-		readerWidth = Math.round(readerBounds.width)
+		readerWidth = Math.round(readerBounds.width);
 	};
-	const handleClick = (clientX: number) => {
-		console.log(
-			reader.scrollLeft,
-			Math.round(readerWidth) + columnGap,
-			reader.scrollLeft % (readerWidth + columnGap)
-		);
-		if (
+	const handleClick = ({
+		clientX,
+		target,
+	}: {
+		clientX: number;
+		target: HTMLElement;
+	}) => {
+		if (target.tagName === "IMG") {
+			showPhotoBox = true;
+			setTimeout(() => {
+				photoBox.innerHTML = target.outerHTML;
+				console.log(showPhotoBox)
+			}, 1)
+		} else if (
 			clientX &&
 			readerBounds &&
 			readerBounds.left &&
@@ -73,7 +85,7 @@
 				top: readerTop,
 				behavior: "smooth",
 			});
-		}, 500);
+		}, 3000);
 	});
 </script>
 
@@ -86,12 +98,12 @@
 	>
 </svelte:head>
 
-<article class="prose md:prose-xl text-justify mb-8 md:mb-12 pt-12">
+<article class="prose md:prose-xl text-justify mb-8 md:mb-12 pt-16">
 	<h2 class="font-header">Book {book}, Chapter {chapter}</h2>
 	<div
 		bind:this={reader}
-		on:click={({ clientX }) => handleClick(clientX)}
-		class="max-h-screen overflow-hidden overflow-x-scroll no-scrollbar py-6"
+		on:click={(e) => handleClick(e)}
+		class="max-h-screen overflow-hidden overflow-x-scroll no-scrollbar py-12"
 		style={readerBounds?.width
 			? `columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000;`
 			: ""}
@@ -117,7 +129,28 @@
 			{/if}
 		</div>
 	</div>
+	<div class="text-xs text-center -mt-8">Oblivious | Luke Gelmi</div>
 </article>
+{#if showPhotoBox}
+	<div
+		in:fade
+		bind:this={photoBox}
+		on:click={() => showPhotoBox = false}
+		class="fixed inset-0 flex justify-center items-center cursor-zoom-out bg-oblivious-opaque"
+	/>
+{/if}
+{#if $giveScrollHint}
+	<div in:fade="{{ delay:1000 }}" out:fade class="fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10">
+		<div class="rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2">
+			<p class="font-header text-xl md:text-2xl mb-4">A couple of reading tips:</p>
+			<p class="font-sans text-base md:text-lg">Tap the text to turn the pages.</p>
+			<p class="font-sans text-base md:text-lg mb-4">Tap the images to zoom.</p>
+			<div>
+				<span on:click="{() => {giveScrollHint.set(false)}}" class="inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious cursor-pointer">Got it</span>
+			</div>
+		</div>
+	</div>
+{/if}
 
 <style>
 	.no-scrollbar::-webkit-scrollbar {
