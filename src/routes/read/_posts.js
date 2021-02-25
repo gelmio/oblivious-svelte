@@ -10,7 +10,7 @@
 const fs = require('fs');
 const md = require('markdown-it')();
 
-const obliviousText = fs.readFileSync(`./src/assets/Oblivious.md`, {
+const obliviousText = fs.readFileSync(`./static/oblivious/Oblivious.md`, {
 encoding: 'utf8'
 });
 
