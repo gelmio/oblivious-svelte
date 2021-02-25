@@ -1,11 +1,22 @@
 <script lang="ts">
-	import Nav from '../components/Nav.svelte';
-	import Footer from '../components/Footer.svelte';
+	import Nav from "../components/Nav.svelte";
+	import Footer from "../components/Footer.svelte";
+	import PageTransition from "../components/PageTransition.svelte";
 
 	export let segment: string;
-	let show = false
-	setTimeout(() => show = true, 1)
 </script>
+
+<Nav {segment} />
+
+{#key segment}
+	<PageTransition>
+		<main class="flex flex-col items-center justify-center p-4 lg:p-0">
+			<slot />
+		</main>
+	</PageTransition>
+{/key}
+
+<Footer {segment} />
 
 <style>
 	main {
@@ -15,11 +26,3 @@
 		box-sizing: border-box;
 	}
 </style>
-
-<Nav {segment}/>
-
-<main class="flex flex-col items-center justify-center p-4 lg:p-0">
-	<slot></slot>
-</main>
-
-<Footer {segment}/>
