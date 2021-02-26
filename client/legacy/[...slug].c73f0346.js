@@ -1,5 +1,5 @@
-import { M as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, L as _createClass, S as SvelteComponentDev, a3 as globals, s as safe_not_equal, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, D as noop, t as text, h as space, n as claim_text, l as claim_space, u as append_dev, O as create_out_transition, P as empty, F as query_selector_all, a4 as HtmlTag, y as set_data_dev, I as transition_in, J as transition_out, R as check_outros, B as run_all, U as validate_store, V as component_subscribe, v as validate_slots, a5 as onMount, f as fade, z as add_render_callback, X as create_in_transition, a0 as group_outros, a6 as binding_callbacks } from './client.2cacc0c9.js';
-import { g as giveScrollHint } from './reader-hints.e0b13d52.js';
+import { M as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, L as _createClass, S as SvelteComponentDev, a3 as globals, s as safe_not_equal, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, D as noop, t as text, h as space, n as claim_text, l as claim_space, u as append_dev, O as create_out_transition, P as empty, F as query_selector_all, a4 as HtmlTag, y as set_data_dev, I as transition_in, J as transition_out, R as check_outros, B as run_all, U as validate_store, V as component_subscribe, v as validate_slots, a5 as onMount, f as fade, z as add_render_callback, X as create_in_transition, a0 as group_outros, a6 as binding_callbacks } from './client.e99d5751.js';
+import { g as giveScrollHint } from './reader-hints.6e819c03.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -666,9 +666,9 @@ function create_fragment(ctx) {
       /*columnGap*/
       ctx[11], "px;\n\t\t\t-webkit-column-gap: ").concat(
       /*columnGap*/
-      ctx[11], "em;\n\t\t\t-moz-column-gap: ").concat(
+      ctx[11], "px;\n\t\t\t-moz-column-gap: ").concat(
       /*columnGap*/
-      ctx[11], "em;\n\t\t\tcolumn-rule: 1px solid #000;\n\t\t\t-webkit-column-rule: 1px solid #000;\n     \t\t-moz-column-rule: 1px solid #000;\n\t\t\t") : "");
+      ctx[11], "px;\n\t\t\tcolumn-rule: 1px solid #000;\n\t\t\t-webkit-column-rule: 1px solid #000;\n     \t\t-moz-column-rule: 1px solid #000;\n\t\t\t") : "");
       add_location(div0, file, 97, 1, 3395);
       attr_dev(div1, "class", "text-xs text-center -mt-10");
       add_location(div1, file, 158, 1, 5147);
@@ -770,9 +770,9 @@ function create_fragment(ctx) {
       /*columnGap*/
       ctx[11], "px;\n\t\t\t-webkit-column-gap: ").concat(
       /*columnGap*/
-      ctx[11], "em;\n\t\t\t-moz-column-gap: ").concat(
+      ctx[11], "px;\n\t\t\t-moz-column-gap: ").concat(
       /*columnGap*/
-      ctx[11], "em;\n\t\t\tcolumn-rule: 1px solid #000;\n\t\t\t-webkit-column-rule: 1px solid #000;\n     \t\t-moz-column-rule: 1px solid #000;\n\t\t\t") : "")) {
+      ctx[11], "px;\n\t\t\tcolumn-rule: 1px solid #000;\n\t\t\t-webkit-column-rule: 1px solid #000;\n     \t\t-moz-column-rule: 1px solid #000;\n\t\t\t") : "")) {
         attr_dev(div0, "style", div0_style_value);
       }
 
