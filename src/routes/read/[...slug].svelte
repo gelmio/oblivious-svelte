@@ -34,6 +34,7 @@
 	let reader: HTMLElement;
 	let readerBounds: ClientRect;
 	let readerWidth: number;
+	let readerTop: number;
 	let columnGap = 50;
 	let photoBox: HTMLElement;
 	let showPhotoBox = false;
@@ -42,49 +43,69 @@
 		readerBounds = reader.getBoundingClientRect();
 		readerWidth = Math.round(readerBounds.width);
 	};
-	const handleClick = ({
-		clientX,
-		target,
-	}: {
-		clientX: number;
-		target: HTMLElement;
-	}) => {
+
+	function debounce(fn, delay) {
+		var timer;
+		return function () {
+			clearTimeout(timer);
+			timer = setTimeout(function () {
+				fn();
+			}, delay);
+		};
+	}
+
+
+	const handleClick = ({ clientX, target }) => {
 		if (target.tagName === "IMG") {
 			showPhotoBox = true;
 			setTimeout(() => {
 				photoBox.innerHTML = target.outerHTML;
-				console.log(showPhotoBox);
 			}, 1);
 		} else if (
 			clientX &&
 			readerBounds &&
 			readerBounds.left &&
-			readerWidth &&
-			!(reader.scrollLeft % (readerWidth + columnGap) > 2)
+			readerWidth
 		) {
 			const midwayScreenX = readerBounds.left + readerWidth / 2;
 			const scrollDistance = readerWidth + columnGap;
 			reader.scrollBy({
-				top: 0,
 				left: (clientX <= midwayScreenX ? -1 : 1) * scrollDistance,
 				behavior: "smooth",
 			});
+			delayedSnapToPage()
 		}
 	};
+
+	const snapToPage = () => {
+		const remainder = reader.scrollLeft % (readerWidth + columnGap)
+		reader.scrollBy({
+			left: remainder / (readerWidth + columnGap) < 0.5  // is current position less than half way across column
+				? -remainder
+				: (readerWidth + columnGap) - remainder,
+			behavior: "smooth",
+		});
+	};
+
+	const delayedSnapToPage = debounce(snapToPage, 1000)
+
+
 	$: next =
 		!nextChapterExists && book < 3 ? [book + 1, 1] : [book, chapter + 1];
 
 	onMount(() => {
 		setTimeout(() => {
 			setReaderBounds();
-			const readerTop =
+			readerTop =
 				(window.pageYOffset || document.documentElement.scrollTop) +
 				readerBounds.top;
+		}, 600);
+		setTimeout(() => {
 			window.scrollTo({
 				top: readerTop,
 				behavior: "smooth",
 			});
-		}, 2500);
+		}, 2000);
 	});
 </script>
 
@@ -93,16 +114,17 @@
 <svelte:head>
 	<title
 		>Oblivious | Book {book}, Chapter {chapter} | An overlanding motorbike journey
-		through West Africa
-	</title>
+		through West Africa</title
+	>
 </svelte:head>
 
 <article class="prose md:prose-xl text-justify mb-8 md:mb-12 pt-16">
 	<h2 class="font-header">Book {book}, Chapter {chapter}</h2>
 	<div
 		bind:this={reader}
-		on:click={(e) => handleClick(e)}
-		class="h-screen overflow-hidden py-12"
+		on:click={handleClick}
+		on:touchend={delayedSnapToPage}
+		class="max-h-screen overflow-hidden overflow-x-scroll no-scrollbar py-12"
 		style={readerBounds?.width
 			? `columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000;`
 			: ""}
@@ -196,4 +218,11 @@
 {/if}
 
 <style>
+	.no-scrollbar::-webkit-scrollbar {
+		display: none;
+	}
+	.no-scrollbar {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
 </style>
