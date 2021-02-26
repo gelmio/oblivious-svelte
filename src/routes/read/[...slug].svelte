@@ -53,7 +53,6 @@
 			showPhotoBox = true;
 			setTimeout(() => {
 				photoBox.innerHTML = target.outerHTML;
-				console.log(showPhotoBox);
 			}, 1);
 		} else if (
 			clientX &&
@@ -105,7 +104,7 @@
 	<div
 		bind:this={reader}
 		on:click={(e) => handleClick(e)}
-		class="max-h-screen overflow-hidden py-12"
+		class="max-h-screen overflow-hidden py-12 {readerBounds ? "pb-12" : "pb-11"}"
 		style={readerBounds?.width
 			? `columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000; overflow-y: visible;`
 			: "overflow-y: hidden;"}
