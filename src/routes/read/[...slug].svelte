@@ -87,7 +87,6 @@
 				top: readerTop,
 				behavior: "smooth",
 			});
-			console.log(reader.offsetHeight) // This is here to force a reflow to fix columns cutting text on mobile
 		}, 2500);
 	});
 </script>
@@ -97,8 +96,8 @@
 <svelte:head>
 	<title
 		>Oblivious | Book {book}, Chapter {chapter} | An overlanding motorbike journey
-		through West Africa</title
-	>
+		through West Africa
+	</title>
 </svelte:head>
 
 <article class="prose md:prose-xl text-justify mb-8 md:mb-12 pt-16">
@@ -106,10 +105,10 @@
 	<div
 		bind:this={reader}
 		on:click={(e) => handleClick(e)}
-		class="max-h-screen overflow-hidden overflow-x-scroll no-scrollbar py-12"
+		class="max-h-screen overflow-hidden py-12"
 		style={readerBounds?.width
-			? `columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000;`
-			: ""}
+			? `columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000; overflow-y: visible;`
+			: "overflow-y: hidden;"}
 	>
 		{@html content}
 		{#if next[0] < 3}
