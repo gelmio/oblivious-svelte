@@ -1,5 +1,5 @@
-import { M as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, L as _createClass, S as SvelteComponentDev, s as safe_not_equal, a3 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, D as noop, t as text, h as space, n as claim_text, l as claim_space, u as append_dev, O as create_out_transition, P as empty, F as query_selector_all, a4 as HtmlTag, y as set_data_dev, I as transition_in, J as transition_out, R as check_outros, B as run_all, U as validate_store, V as component_subscribe, v as validate_slots, a5 as onMount, f as fade, z as add_render_callback, X as create_in_transition, a0 as group_outros, a6 as binding_callbacks } from './client.fda3727f.js';
-import { g as giveScrollHint } from './reader-hints.ba2a8203.js';
+import { M as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, L as _createClass, S as SvelteComponentDev, s as safe_not_equal, a3 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, D as noop, t as text, h as space, n as claim_text, l as claim_space, u as append_dev, O as create_out_transition, P as empty, F as query_selector_all, a4 as HtmlTag, y as set_data_dev, I as transition_in, J as transition_out, R as check_outros, B as run_all, U as validate_store, V as component_subscribe, v as validate_slots, a5 as onMount, f as fade, z as add_render_callback, X as create_in_transition, a0 as group_outros, a6 as binding_callbacks } from './client.025cf344.js';
+import { g as giveScrollHint } from './reader-hints.6f13a9d0.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -66,15 +66,15 @@ function create_else_block(ctx) {
       this.h();
     },
     h: function hydrate() {
-      add_location(p0, file, 133, 4, 4521);
-      add_location(p1, file, 134, 4, 4579);
+      add_location(p0, file, 133, 4, 4537);
+      add_location(p1, file, 134, 4, 4595);
       attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a, "rel", "nofollow");
       attr_dev(a, "class", "border-b border-oblivious-dark");
-      add_location(a, file, 139, 63, 4751);
-      add_location(p2, file, 138, 4, 4684);
+      add_location(a, file, 139, 63, 4767);
+      add_location(p2, file, 138, 4, 4700);
       attr_dev(div, "class", "text-center font-header mt-8");
-      add_location(div, file, 132, 3, 4474);
+      add_location(div, file, 132, 3, 4490);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -157,9 +157,9 @@ function create_if_block_2(ctx) {
       /*next*/
       ctx[10][1]);
       attr_dev(a, "class", "inline-block text-lg p-2 rounded-lg no-underline bg-oblivious mr-4");
-      add_location(a, file, 112, 4, 3940);
+      add_location(a, file, 112, 4, 3956);
       attr_dev(div, "class", "flex flex-col md:flex-row justify-end items-end mt-8");
-      add_location(div, file, 111, 3, 3869);
+      add_location(div, file, 111, 3, 3885);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -251,9 +251,9 @@ function create_if_block_3(ctx) {
       attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a, "rel", "nofollow");
       attr_dev(a, "class", "border-b border-oblivious-dark");
-      add_location(a, file, 121, 13, 4224);
+      add_location(a, file, 121, 13, 4240);
       attr_dev(span, "class", "m-2");
-      add_location(span, file, 120, 5, 4192);
+      add_location(span, file, 120, 5, 4208);
     },
     m: function mount(target, anchor) {
       insert_dev(target, span, anchor);
@@ -295,7 +295,7 @@ function create_if_block_1(ctx) {
     },
     h: function hydrate() {
       attr_dev(div, "class", "fixed inset-0 flex justify-center items-center cursor-zoom-out bg-oblivious-opaque");
-      add_location(div, file, 152, 1, 5106);
+      add_location(div, file, 152, 1, 5122);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -449,22 +449,22 @@ function create_if_block(ctx) {
     },
     h: function hydrate() {
       attr_dev(p0, "class", "font-header text-xl md:text-2xl mb-4");
-      add_location(p0, file, 168, 3, 5528);
+      add_location(p0, file, 168, 3, 5544);
       attr_dev(p1, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p1, file, 171, 3, 5610);
+      add_location(p1, file, 171, 3, 5626);
       attr_dev(p2, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p2, file, 174, 3, 5705);
+      add_location(p2, file, 174, 3, 5721);
       attr_dev(p3, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p3, file, 177, 3, 5792);
+      add_location(p3, file, 177, 3, 5808);
       attr_dev(p4, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p4, file, 180, 3, 5913);
+      add_location(p4, file, 180, 3, 5929);
       attr_dev(span, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious cursor-pointer");
-      add_location(span, file, 185, 4, 6087);
-      add_location(div0, file, 184, 3, 6077);
+      add_location(span, file, 185, 4, 6103);
+      add_location(div0, file, 184, 3, 6093);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
-      add_location(div1, file, 165, 2, 5443);
+      add_location(div1, file, 165, 2, 5459);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
-      add_location(div2, file, 160, 1, 5312);
+      add_location(div2, file, 160, 1, 5328);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -543,7 +543,6 @@ function create_fragment(ctx) {
   var div0;
   var html_tag;
   var t6;
-  var div0_class_value;
   var div0_style_value;
   var t7;
   var div1;
@@ -653,19 +652,19 @@ function create_fragment(ctx) {
       attr_dev(h2, "class", "font-header");
       add_location(h2, file, 100, 1, 3449);
       html_tag = new HtmlTag(t6);
-      attr_dev(div0, "class", div0_class_value = "max-h-screen overflow-hidden py-12 " + (
-      /*shouldReflow*/
-      ctx[9] ? "pb-12" : "pb-11"));
+      attr_dev(div0, "class", "overflow-hidden py-12");
       attr_dev(div0, "style", div0_style_value = (
+      /*shouldReflow*/
+      ctx[9] ? "max-height: 100vh;" : "max-height: 99vh;") + ((
       /*readerBounds*/
       (_ctx$ = ctx[5]) === null || _ctx$ === void 0 ? void 0 : _ctx$.width) ? "columns: auto ".concat(
       /*readerWidth*/
       ctx[6], "px; column-gap: ").concat(
       /*columnGap*/
-      ctx[12], "px; column-rule: 1px solid #000; overflow-y: visible;") : "overflow-y: hidden;");
+      ctx[12], "px; column-rule: 1px solid #000; overflow-y: visible;") : "overflow-y: hidden;"));
       add_location(div0, file, 101, 1, 3510);
       attr_dev(div1, "class", "text-xs text-center -mt-10");
-      add_location(div1, file, 149, 1, 5006);
+      add_location(div1, file, 149, 1, 5022);
       attr_dev(article, "class", "prose md:prose-xl text-justify mb-8 md:mb-12 pt-16");
       add_location(article, file, 99, 0, 3379);
     },
@@ -751,22 +750,16 @@ function create_fragment(ctx) {
       }
 
       if (!current || dirty &
+      /*shouldReflow, readerBounds, readerWidth*/
+      608 && div0_style_value !== (div0_style_value = (
       /*shouldReflow*/
-      512 && div0_class_value !== (div0_class_value = "max-h-screen overflow-hidden py-12 " + (
-      /*shouldReflow*/
-      ctx[9] ? "pb-12" : "pb-11"))) {
-        attr_dev(div0, "class", div0_class_value);
-      }
-
-      if (!current || dirty &
-      /*readerBounds, readerWidth*/
-      96 && div0_style_value !== (div0_style_value = (
+      ctx[9] ? "max-height: 100vh;" : "max-height: 99vh;") + ((
       /*readerBounds*/
       (_ctx$2 = ctx[5]) === null || _ctx$2 === void 0 ? void 0 : _ctx$2.width) ? "columns: auto ".concat(
       /*readerWidth*/
       ctx[6], "px; column-gap: ").concat(
       /*columnGap*/
-      ctx[12], "px; column-rule: 1px solid #000; overflow-y: visible;") : "overflow-y: hidden;")) {
+      ctx[12], "px; column-rule: 1px solid #000; overflow-y: visible;") : "overflow-y: hidden;"))) {
         attr_dev(div0, "style", div0_style_value);
       }
 
