@@ -51,6 +51,7 @@ module.exports = {
                         p: {
                             marginTop: '0.5rem',
                             marginBottom: '0.5rem',
+                            breakInside: 'avoid-column'
                         },
                         img: {
                             // position: "relative",

@@ -53,6 +53,7 @@
 			showPhotoBox = true;
 			setTimeout(() => {
 				photoBox.innerHTML = target.outerHTML;
+				console.log(showPhotoBox);
 			}, 1);
 		} else if (
 			clientX &&
@@ -74,9 +75,6 @@
 		!nextChapterExists && book < 3 ? [book + 1, 1] : [book, chapter + 1];
 
 	onMount(() => {
-		setTimeout(() => {
-			setReaderBounds();
-		}, 600);
 		setTimeout(() => {
 			setReaderBounds();
 			const readerTop =
@@ -104,10 +102,10 @@
 	<div
 		bind:this={reader}
 		on:click={(e) => handleClick(e)}
-		class="max-h-screen overflow-hidden py-12 {readerBounds ? "pb-12" : "pb-11"}"
+		class="h-screen overflow-hidden py-12"
 		style={readerBounds?.width
-			? `columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000; overflow-y: visible;`
-			: "overflow-y: hidden;"}
+			? `columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000;`
+			: ""}
 	>
 		{@html content}
 		{#if next[0] < 3}
