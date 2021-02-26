@@ -87,6 +87,7 @@
 				top: readerTop,
 				behavior: "smooth",
 			});
+			console.log(reader.offsetHeight) // This is here to force a reflow to fix columns cutting text on mobile
 		}, 2500);
 	});
 </script>
