@@ -1,4 +1,4 @@
-import { a2 as writable } from './client.025cf344.js';
+import { a2 as writable } from './client.0970830c.js';
 
 var _a;
 let storedPosition = null;
