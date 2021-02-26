@@ -73,7 +73,7 @@
 				left: (clientX <= midwayScreenX ? -1 : 1) * scrollDistance,
 				behavior: "smooth",
 			});
-			delayedSnapToPage()
+			debounce(snapToPage, 1000)
 		}
 	};
 
@@ -86,8 +86,6 @@
 			behavior: "smooth",
 		});
 	};
-
-	const delayedSnapToPage = debounce(snapToPage, 1000)
 
 
 	$: next =
@@ -123,7 +121,7 @@
 	<div
 		bind:this={reader}
 		on:click={handleClick}
-		on:touchend={delayedSnapToPage}
+		on:touchend={debounce(snapToPage, 4000)}
 		class="max-h-screen overflow-hidden overflow-x-scroll no-scrollbar py-12"
 		style={readerBounds?.width
 			? `columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000;`
