@@ -2,7 +2,10 @@
 </script>
 
 <svelte:head>
-	<title>ohhai</title>
+	<title
+		>Oblivious | An overlanding motorbike journey
+		through West Africa</title
+	>
 	<meta
 		property="og:description"
 		content="Here's just a taste of the action from the once-in-a-lifetime trip through West Africa on a Royal Enfield."
