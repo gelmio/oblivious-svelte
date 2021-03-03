@@ -26,6 +26,7 @@
 	import { onMount } from "svelte";
 	import { fade } from "svelte/transition";
 	import { giveScrollHint } from "./reader-hints.js";
+	import smoothScroll from "./smooth-scroll";
 
 	export let content: string;
 	export let book: number;
@@ -69,22 +70,27 @@
 		) {
 			const midwayScreenX = readerBounds.left + readerWidth / 2;
 			const scrollDistance = readerWidth + columnGap;
-			reader.scrollBy({
-				left: (clientX <= midwayScreenX ? -1 : 1) * scrollDistance,
-				behavior: "smooth",
-			});
-			debounce(snapToPage, 1000)
+			smoothScroll(
+				reader,
+				[reader.scrollLeft, reader.scrollTop], 
+				[reader.scrollLeft + (clientX <= midwayScreenX ? -1 : 1) * scrollDistance, reader.scrollTop],
+				300,
+				debounce(snapToPage, 1000)
+			)
 		}
 	};
 
 	const snapToPage = () => {
 		const remainder = reader.scrollLeft % (readerWidth + columnGap)
-		reader.scrollBy({
-			left: remainder / (readerWidth + columnGap) < 0.5  // is current position less than half way across column
+		const moveLeft = remainder / (readerWidth + columnGap) < 0.5  // is current position less than half way across column
 				? -remainder
-				: (readerWidth + columnGap) - remainder,
-			behavior: "smooth",
-		});
+				: (readerWidth + columnGap) - remainder
+		smoothScroll(
+			reader,
+			[reader.scrollLeft, reader.scrollTop], 
+			[reader.scrollLeft + moveLeft, reader.scrollLeft],
+			300
+		)
 	};
 
 
@@ -99,10 +105,12 @@
 				readerBounds.top;
 		}, 600);
 		setTimeout(() => {
-			window.scrollTo({
-				top: readerTop,
-				behavior: "smooth",
-			});
+			smoothScroll(
+				window,
+				[window.scrollX, window.scrollY], 
+				[window.scrollX, readerTop],
+				600
+			)
 		}, 2000);
 	});
 </script>
@@ -121,8 +129,7 @@
 	<div
 		bind:this={reader}
 		on:click={handleClick}
-		on:touchend={debounce(snapToPage, 4000)}
-		class="max-h-screen overflow-hidden overflow-x-scroll no-scrollbar py-12"
+		class="max-h-screen overflow-hidden no-scrollbar py-12"
 		style={readerBounds?.width
 			? `columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000;`
 			: ""}
