@@ -1,12 +1,36 @@
-import { M as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, L as _createClass, S as SvelteComponentDev, s as safe_not_equal, a3 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, D as noop, t as text, h as space, n as claim_text, l as claim_space, u as append_dev, O as create_out_transition, P as empty, F as query_selector_all, a4 as HtmlTag, y as set_data_dev, I as transition_in, J as transition_out, R as check_outros, B as run_all, U as validate_store, V as component_subscribe, v as validate_slots, a5 as onMount, f as fade, z as add_render_callback, X as create_in_transition, a0 as group_outros, a6 as binding_callbacks } from './client.292728c2.js';
-import { g as giveScrollHint } from './reader-hints.6e7bbd2c.js';
+import { M as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, L as _createClass, S as SvelteComponentDev, s as safe_not_equal, a3 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, D as noop, t as text, h as space, n as claim_text, l as claim_space, u as append_dev, O as create_out_transition, P as empty, F as query_selector_all, a4 as HtmlTag, y as set_data_dev, I as transition_in, J as transition_out, R as check_outros, B as run_all, U as validate_store, V as component_subscribe, v as validate_slots, a5 as onMount, f as fade, z as add_render_callback, X as create_in_transition, a0 as group_outros, a6 as binding_callbacks } from './client.98cf4e53.js';
+import { g as giveScrollHint } from './reader-hints.10b4b4c0.js';
+
+function smoothScroll(element, initial, final, duration) {
+    console.log(...arguments);
+    let startTime;
+    const scrollOnNextTick = timestamp => {
+        const runTime = timestamp - startTime;
+        const progress = runTime / duration;
+        const newPosition = [
+            initial[0] + (final[0] - initial[0]) * progress,
+            initial[1] + (final[1] - initial[1]) * progress
+        ];
+        if (runTime < duration) {
+            element.scrollTo(newPosition[0], newPosition[1]);
+            requestAnimationFrame(scrollOnNextTick);
+        }
+        else {
+            element.scrollTo(final[0], final[1]);
+        }
+    };
+    requestAnimationFrame((timestamp) => {
+        startTime = timestamp;
+        scrollOnNextTick(timestamp);
+    });
+}
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 var document_1 = globals.document,
     window_1 = globals.window;
-var file = "src/routes/read/[...slug].svelte"; // (149:2) {:else}
+var file = "src/routes/read/[...slug].svelte"; // (142:2) {:else}
 
 function create_else_block(ctx) {
   var div;
@@ -66,15 +90,15 @@ function create_else_block(ctx) {
       this.h();
     },
     h: function hydrate() {
-      add_location(p0, file, 150, 4, 4904);
-      add_location(p1, file, 151, 4, 4962);
+      add_location(p0, file, 143, 4, 5038);
+      add_location(p1, file, 144, 4, 5096);
       attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a, "rel", "nofollow");
       attr_dev(a, "class", "border-b border-oblivious-dark");
-      add_location(a, file, 156, 63, 5134);
-      add_location(p2, file, 155, 4, 5067);
+      add_location(a, file, 149, 63, 5268);
+      add_location(p2, file, 148, 4, 5201);
       attr_dev(div, "class", "text-center font-header mt-8");
-      add_location(div, file, 149, 3, 4857);
+      add_location(div, file, 142, 3, 4991);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -98,11 +122,11 @@ function create_else_block(ctx) {
     block: block,
     id: create_else_block.name,
     type: "else",
-    source: "(149:2) {:else}",
+    source: "(142:2) {:else}",
     ctx: ctx
   });
   return block;
-} // (128:2) {#if next[0] < 3}
+} // (121:2) {#if next[0] < 3}
 
 
 function create_if_block_2(ctx) {
@@ -157,9 +181,9 @@ function create_if_block_2(ctx) {
       /*next*/
       ctx[9][1]);
       attr_dev(a, "class", "inline-block text-lg p-2 rounded-lg no-underline bg-oblivious mr-4");
-      add_location(a, file, 129, 4, 4323);
+      add_location(a, file, 122, 4, 4457);
       attr_dev(div, "class", "flex flex-col md:flex-row justify-end items-end mt-8");
-      add_location(div, file, 128, 3, 4252);
+      add_location(div, file, 121, 3, 4386);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -210,11 +234,11 @@ function create_if_block_2(ctx) {
     block: block,
     id: create_if_block_2.name,
     type: "if",
-    source: "(128:2) {#if next[0] < 3}",
+    source: "(121:2) {#if next[0] < 3}",
     ctx: ctx
   });
   return block;
-} // (137:4) {#if next[1] > 10 && !(next[1] % 5)}
+} // (130:4) {#if next[1] > 10 && !(next[1] % 5)}
 
 
 function create_if_block_3(ctx) {
@@ -251,9 +275,9 @@ function create_if_block_3(ctx) {
       attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a, "rel", "nofollow");
       attr_dev(a, "class", "border-b border-oblivious-dark");
-      add_location(a, file, 138, 13, 4607);
+      add_location(a, file, 131, 13, 4741);
       attr_dev(span, "class", "m-2");
-      add_location(span, file, 137, 5, 4575);
+      add_location(span, file, 130, 5, 4709);
     },
     m: function mount(target, anchor) {
       insert_dev(target, span, anchor);
@@ -269,11 +293,11 @@ function create_if_block_3(ctx) {
     block: block,
     id: create_if_block_3.name,
     type: "if",
-    source: "(137:4) {#if next[1] > 10 && !(next[1] % 5)}",
+    source: "(130:4) {#if next[1] > 10 && !(next[1] % 5)}",
     ctx: ctx
   });
   return block;
-} // (169:0) {#if showPhotoBox}
+} // (162:0) {#if showPhotoBox}
 
 
 function create_if_block_1(ctx) {
@@ -295,7 +319,7 @@ function create_if_block_1(ctx) {
     },
     h: function hydrate() {
       attr_dev(div, "class", "fixed inset-0 flex justify-center items-center cursor-zoom-out bg-oblivious-opaque");
-      add_location(div, file, 169, 1, 5489);
+      add_location(div, file, 162, 1, 5623);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -333,11 +357,11 @@ function create_if_block_1(ctx) {
     block: block,
     id: create_if_block_1.name,
     type: "if",
-    source: "(169:0) {#if showPhotoBox}",
+    source: "(162:0) {#if showPhotoBox}",
     ctx: ctx
   });
   return block;
-} // (177:0) {#if $giveScrollHint}
+} // (170:0) {#if $giveScrollHint}
 
 
 function create_if_block(ctx) {
@@ -449,22 +473,22 @@ function create_if_block(ctx) {
     },
     h: function hydrate() {
       attr_dev(p0, "class", "font-header text-xl md:text-2xl mb-4");
-      add_location(p0, file, 185, 3, 5911);
+      add_location(p0, file, 178, 3, 6045);
       attr_dev(p1, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p1, file, 188, 3, 5993);
+      add_location(p1, file, 181, 3, 6127);
       attr_dev(p2, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p2, file, 191, 3, 6088);
+      add_location(p2, file, 184, 3, 6222);
       attr_dev(p3, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p3, file, 194, 3, 6175);
+      add_location(p3, file, 187, 3, 6309);
       attr_dev(p4, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p4, file, 197, 3, 6296);
+      add_location(p4, file, 190, 3, 6430);
       attr_dev(span, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious cursor-pointer");
-      add_location(span, file, 202, 4, 6470);
-      add_location(div0, file, 201, 3, 6460);
+      add_location(span, file, 195, 4, 6604);
+      add_location(div0, file, 194, 3, 6594);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
-      add_location(div1, file, 182, 2, 5826);
+      add_location(div1, file, 175, 2, 5960);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
-      add_location(div2, file, 177, 1, 5695);
+      add_location(div2, file, 170, 1, 5829);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -524,7 +548,7 @@ function create_if_block(ctx) {
     block: block,
     id: create_if_block.name,
     type: "if",
-    source: "(177:0) {#if $giveScrollHint}",
+    source: "(170:0) {#if $giveScrollHint}",
     ctx: ctx
   });
   return block;
@@ -650,7 +674,7 @@ function create_fragment(ctx) {
       var _ctx$;
 
       attr_dev(h2, "class", "font-header");
-      add_location(h2, file, 116, 1, 3843);
+      add_location(h2, file, 109, 1, 3977);
       html_tag = new HtmlTag(t6);
       attr_dev(div0, "class", "max-h-screen overflow-hidden overflow-x-scroll no-scrollbar py-12 svelte-sokgus");
       attr_dev(div0, "style", div0_style_value = (
@@ -660,11 +684,11 @@ function create_fragment(ctx) {
       ctx[6], "px; column-gap: ").concat(
       /*columnGap*/
       ctx[11], "px; column-rule: 1px solid #000;") : "");
-      add_location(div0, file, 117, 1, 3904);
+      add_location(div0, file, 110, 1, 4038);
       attr_dev(div1, "class", "text-xs text-center -mt-10");
-      add_location(div1, file, 166, 1, 5389);
+      add_location(div1, file, 159, 1, 5523);
       attr_dev(article, "class", "prose md:prose-xl text-justify mb-8 md:mb-12 pt-16");
-      add_location(article, file, 115, 0, 3773);
+      add_location(article, file, 108, 0, 3907);
     },
     m: function mount(target, anchor) {
       insert_dev(target, t0, anchor);
@@ -979,20 +1003,16 @@ function instance($$self, $$props, $$invalidate) {
     } else if (clientX && readerBounds && readerBounds.left && readerWidth) {
       var midwayScreenX = readerBounds.left + readerWidth / 2;
       var scrollDistance = readerWidth + columnGap;
-      reader.scrollBy({
-        left: (clientX <= midwayScreenX ? -1 : 1) * scrollDistance,
-        behavior: "smooth"
-      });
+      smoothScroll(reader, [reader.scrollLeft, reader.scrollTop], [reader.scrollLeft + (clientX <= midwayScreenX ? -1 : 1) * scrollDistance, reader.scrollTop], 300);
+      debounce(snapToPage, 1000)();
     }
   };
 
   var snapToPage = function snapToPage() {
     var remainder = reader.scrollLeft % (readerWidth + columnGap);
-    reader.scrollBy({
-      left: remainder / (readerWidth + columnGap) < 0.5 ? -remainder : readerWidth + columnGap - remainder,
-      // is current position less than half way across column
-      behavior: "smooth"
-    });
+    var moveLeft = remainder / (readerWidth + columnGap) < 0.5 ? -remainder : readerWidth + columnGap - remainder; // is current position less than half way across column
+
+    smoothScroll(reader, [reader.scrollLeft, reader.scrollTop], [reader.scrollLeft + moveLeft, reader.scrollLeft], 300);
   };
 
   onMount(function () {
@@ -1001,10 +1021,7 @@ function instance($$self, $$props, $$invalidate) {
       readerTop = (window.pageYOffset || document.documentElement.scrollTop) + readerBounds.top;
     }, 600);
     setTimeout(function () {
-      window.scrollTo({
-        top: readerTop,
-        behavior: "smooth"
-      });
+      smoothScroll(window, [window.scrollX, window.scrollY], [window.scrollX, readerTop], 300);
     }, 2000);
   });
   var writable_props = ["content", "book", "chapter", "nextChapterExists"];
@@ -1052,6 +1069,7 @@ function instance($$self, $$props, $$invalidate) {
       onMount: onMount,
       fade: fade,
       giveScrollHint: giveScrollHint,
+      smoothScroll: smoothScroll,
       content: content,
       book: book,
       chapter: chapter,
