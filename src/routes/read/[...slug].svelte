@@ -47,14 +47,39 @@
 
 	function debounce(fn, delay) {
 		var timer;
+		console.log("timer", timer)
 		return function () {
 			clearTimeout(timer);
+			console.log("cleared timeout")
 			timer = setTimeout(function () {
 				fn();
 			}, delay);
 		};
 	}
 
+	const snapToPage = () => {
+		const currentScroll = reader.scrollLeft;
+		setTimeout(() => {
+			const remainder = reader.scrollLeft % (readerWidth + columnGap);
+			if (currentScroll === reader.scrollLeft && remainder) {
+				console.log("PAss")
+				const moveLeft =
+					remainder / (readerWidth + columnGap) < 0.5 // is current position less than half way across column
+						? -remainder
+						: readerWidth + columnGap - remainder;
+				smoothScroll(
+					reader,
+					[reader.scrollLeft, reader.scrollTop],
+					[reader.scrollLeft + moveLeft, reader.scrollLeft],
+					300
+				);
+			} else {
+				console.log("No PAss", currentScroll === reader.scrollLeft, remainder)
+			}
+		}, 50);
+	};
+
+	const debouncedSnap = debounce(snapToPage, 1000)
 
 	const handleClick = ({ clientX, target }) => {
 		if (target.tagName === "IMG") {
@@ -72,27 +97,17 @@
 			const scrollDistance = readerWidth + columnGap;
 			smoothScroll(
 				reader,
-				[reader.scrollLeft, reader.scrollTop], 
-				[reader.scrollLeft + (clientX <= midwayScreenX ? -1 : 1) * scrollDistance, reader.scrollTop],
+				[reader.scrollLeft, reader.scrollTop],
+				[
+					reader.scrollLeft +
+						(clientX <= midwayScreenX ? -1 : 1) * scrollDistance,
+					reader.scrollTop,
+				],
 				300,
-				debounce(snapToPage, 1000)
-			)
+				debouncedSnap
+			);
 		}
 	};
-
-	const snapToPage = () => {
-		const remainder = reader.scrollLeft % (readerWidth + columnGap)
-		const moveLeft = remainder / (readerWidth + columnGap) < 0.5  // is current position less than half way across column
-				? -remainder
-				: (readerWidth + columnGap) - remainder
-		smoothScroll(
-			reader,
-			[reader.scrollLeft, reader.scrollTop], 
-			[reader.scrollLeft + moveLeft, reader.scrollLeft],
-			300
-		)
-	};
-
 
 	$: next =
 		!nextChapterExists && book < 3 ? [book + 1, 1] : [book, chapter + 1];
@@ -107,10 +122,10 @@
 		setTimeout(() => {
 			smoothScroll(
 				window,
-				[window.scrollX, window.scrollY], 
+				[window.scrollX, window.scrollY],
 				[window.scrollX, readerTop],
 				600
-			)
+			);
 		}, 2000);
 	});
 </script>
