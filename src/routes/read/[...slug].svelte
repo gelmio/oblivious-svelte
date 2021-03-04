@@ -47,10 +47,8 @@
 
 	function debounce(fn, delay) {
 		var timer;
-		console.log("timer", timer)
 		return function () {
 			clearTimeout(timer);
-			console.log("cleared timeout")
 			timer = setTimeout(function () {
 				fn();
 			}, delay);
@@ -62,7 +60,6 @@
 		setTimeout(() => {
 			const remainder = reader.scrollLeft % (readerWidth + columnGap);
 			if (currentScroll === reader.scrollLeft && remainder) {
-				console.log("PAss")
 				const moveLeft =
 					remainder / (readerWidth + columnGap) < 0.5 // is current position less than half way across column
 						? -remainder
@@ -74,7 +71,6 @@
 					300
 				);
 			} else {
-				console.log("No PAss", currentScroll === reader.scrollLeft, remainder)
 			}
 		}, 50);
 	};
