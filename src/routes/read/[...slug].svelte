@@ -155,7 +155,7 @@
 </svelte:head>
 
 <article class="prose md:prose-xl text-justify mb-8 md:mb-12 pt-16">
-	<h2 class="font-header">Book {book}, Chapter {chapter} {readerHeight}</h2>
+	<h2 class="font-header">Book {book}, Chapter {chapter}</h2>
 	<div
 		bind:this={reader}
 		on:click={handleClick}
