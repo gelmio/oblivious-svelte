@@ -1,5 +1,5 @@
-import { L as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, s as safe_not_equal, a2 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, G as noop, t as text, h as space, n as claim_text, l as claim_space, u as append_dev, N as create_out_transition, O as empty, D as query_selector_all, a3 as HtmlTag, y as set_data_dev, H as transition_in, I as transition_out, Q as check_outros, B as run_all, T as validate_store, U as component_subscribe, v as validate_slots, a4 as onMount, f as fade, z as add_render_callback, W as create_in_transition, $ as group_outros, a5 as binding_callbacks } from './client.0070c41e.js';
-import { g as giveScrollHint } from './reader-hints.dd8edaa1.js';
+import { L as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, s as safe_not_equal, a2 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, G as noop, t as text, h as space, n as claim_text, l as claim_space, u as append_dev, N as create_out_transition, O as empty, D as query_selector_all, a3 as HtmlTag, y as set_data_dev, H as transition_in, I as transition_out, Q as check_outros, B as run_all, T as validate_store, U as component_subscribe, v as validate_slots, a4 as onMount, f as fade, z as add_render_callback, W as create_in_transition, $ as group_outros, a5 as binding_callbacks } from './client.eee84464.js';
+import { g as giveScrollHint } from './reader-hints.bf7b2d8e.js';
 
 function smoothScroll(element, initial, final, duration, callback = null) {
     let startTime;
@@ -92,15 +92,15 @@ function create_else_block(ctx) {
       this.h();
     },
     h: function hydrate() {
-      add_location(p0, file, 168, 4, 5853);
-      add_location(p1, file, 169, 4, 5911);
+      add_location(p0, file, 168, 4, 5856);
+      add_location(p1, file, 169, 4, 5914);
       attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a, "rel", "nofollow");
       attr_dev(a, "class", "border-b border-oblivious-dark");
-      add_location(a, file, 174, 63, 6083);
-      add_location(p2, file, 173, 4, 6016);
+      add_location(a, file, 174, 63, 6086);
+      add_location(p2, file, 173, 4, 6019);
       attr_dev(div, "class", "text-center font-header mt-8");
-      add_location(div, file, 167, 3, 5806);
+      add_location(div, file, 167, 3, 5809);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -183,9 +183,9 @@ function create_if_block_2(ctx) {
       /*next*/
       ctx[10][1]);
       attr_dev(a, "class", "inline-block text-lg p-2 rounded-lg no-underline bg-oblivious mr-4");
-      add_location(a, file, 147, 4, 5272);
+      add_location(a, file, 147, 4, 5275);
       attr_dev(div, "class", "flex flex-col md:flex-row justify-end items-end mt-8");
-      add_location(div, file, 146, 3, 5201);
+      add_location(div, file, 146, 3, 5204);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -277,9 +277,9 @@ function create_if_block_3(ctx) {
       attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a, "rel", "nofollow");
       attr_dev(a, "class", "border-b border-oblivious-dark");
-      add_location(a, file, 156, 13, 5556);
+      add_location(a, file, 156, 13, 5559);
       attr_dev(span, "class", "m-2");
-      add_location(span, file, 155, 5, 5524);
+      add_location(span, file, 155, 5, 5527);
     },
     m: function mount(target, anchor) {
       insert_dev(target, span, anchor);
@@ -321,7 +321,7 @@ function create_if_block_1(ctx) {
     },
     h: function hydrate() {
       attr_dev(div, "class", "fixed inset-0 flex justify-center items-center cursor-zoom-out bg-oblivious-opaque");
-      add_location(div, file, 187, 1, 6438);
+      add_location(div, file, 187, 1, 6441);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -475,22 +475,22 @@ function create_if_block(ctx) {
     },
     h: function hydrate() {
       attr_dev(p0, "class", "font-header text-xl md:text-2xl mb-4");
-      add_location(p0, file, 203, 3, 6860);
+      add_location(p0, file, 203, 3, 6863);
       attr_dev(p1, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p1, file, 206, 3, 6942);
+      add_location(p1, file, 206, 3, 6945);
       attr_dev(p2, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p2, file, 209, 3, 7037);
+      add_location(p2, file, 209, 3, 7040);
       attr_dev(p3, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p3, file, 212, 3, 7124);
+      add_location(p3, file, 212, 3, 7127);
       attr_dev(p4, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p4, file, 215, 3, 7245);
+      add_location(p4, file, 215, 3, 7248);
       attr_dev(span, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious cursor-pointer");
-      add_location(span, file, 220, 4, 7419);
-      add_location(div0, file, 219, 3, 7409);
+      add_location(span, file, 220, 4, 7422);
+      add_location(div0, file, 219, 3, 7412);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
-      add_location(div1, file, 200, 2, 6775);
+      add_location(div1, file, 200, 2, 6778);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
-      add_location(div2, file, 195, 1, 6644);
+      add_location(div2, file, 195, 1, 6647);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -693,9 +693,9 @@ function create_fragment(ctx) {
       attr_dev(meta, "content",
       /*snippet*/
       ctx[1]);
-      add_location(meta, file, 131, 4, 4684);
+      add_location(meta, file, 131, 4, 4687);
       attr_dev(h2, "class", "font-header");
-      add_location(h2, file, 135, 1, 4816);
+      add_location(h2, file, 135, 1, 4819);
       html_tag = new HtmlTag(t8);
       attr_dev(div0, "class", "overflow-hidden no-scrollbar py-12 svelte-sokgus");
       attr_dev(div0, "style", div0_style_value =
@@ -709,11 +709,11 @@ function create_fragment(ctx) {
       ctx[6], "px; column-gap: ").concat(
       /*columnGap*/
       ctx[12], "px; column-rule: 1px solid #000;") : "");
-      add_location(div0, file, 136, 1, 4892);
+      add_location(div0, file, 136, 1, 4895);
       attr_dev(div1, "class", "text-xs text-center -mt-10");
-      add_location(div1, file, 184, 1, 6338);
+      add_location(div1, file, 184, 1, 6341);
       attr_dev(article, "class", "prose md:prose-xl text-justify mb-8 md:mb-12 pt-16");
-      add_location(article, file, 134, 0, 4746);
+      add_location(article, file, 134, 0, 4749);
     },
     m: function mount(target, anchor) {
       append_dev(document_1.head, meta);
@@ -1038,9 +1038,9 @@ function instance($$self, $$props, $$invalidate) {
     windowBounds = [window.innerWidth, window.innerHeight];
 
     if (!readerBounds || !readerHeight || !readerWidth || windowBounds[0] < readerWidth || windowBounds[1] < readerHeight || windowBounds[0] > readerWidth + resizeTolerance || windowBounds[1] > readerHeight + resizeTolerance) {
-      $$invalidate(6, readerWidth = Math.round(windowBounds[0]));
       $$invalidate(7, readerHeight = Math.round(windowBounds[1]));
       readerBounds = reader.getBoundingClientRect();
+      $$invalidate(6, readerWidth = Math.round(readerBounds.width));
     }
   }
 
