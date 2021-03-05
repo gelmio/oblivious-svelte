@@ -22,10 +22,14 @@ const splitByBookAndChapter = splitByBook.map(
 		.filter(chapter => !!chapter)
 )
 
-const markdownChaptersByBook = splitByBookAndChapter.map(
+export const markdownChaptersByBook = splitByBookAndChapter.map(
 	book => book.map(
 		chapterString => md.render(chapterString.replace(/\n/g, "\n\n"))
 	)
+)
+
+export const snippets = splitByBookAndChapter.map(
+	book => book.map(chapterString => chapterString.slice(0, 160))
 )
 
 export default markdownChaptersByBook;
