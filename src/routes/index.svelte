@@ -1,16 +1,14 @@
 <script>
     import Carousel from "../components/Carousel.svelte";
-    import AsSeenIn from "../components/AsSeenIn.svelte";
-    import BuyButton from "../components/BuyButton.svelte";
 </script>
 <style>
 </style>
 
 <svelte:head>
-    <title>Oblivious - An overlanding motorbike journey through West Africa</title>
-    <meta name="description" content="Oblivious is the epic true-life solo overlanding journey, motorbiking through West Africa on a Royal Enfield. Come along on the unique adventure!">
+    <title>Oblivious | An outrageously inappropriate journey through West Africa</title>
+    <meta name="description" content="Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!">
     <meta property="og:description"
-          content="Oblivious is the epic true-life solo overlanding journey, motorbiking through West Africa on a Royal Enfield. Come along on the unique adventure!"/>
+          content="Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!"/>
     <meta property="og:url" content="http://www.obliviousthebook.com/"/>
     <meta property="og:site_name" content="ObliviousTheBook.com"/>
     <meta property="fb:admins" content="563453705"/>
@@ -18,15 +16,15 @@
           content="/images/logo-750.png"/>
     <meta name="twitter:card" content="summary_large_image"/>
     <meta name="twitter:description"
-          content="Oblivious is the epic true-life solo overlanding journey, motorbiking through West Africa on a Royal Enfield. Come along on the unique adventure!"/>
-    <meta name="twitter:title" content="Oblivious - An overlanding motorbike journey through West Africa"/>
+          content="Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!"/>
+    <meta name="twitter:title" content="Oblivious | An outrageously inappropriate journey through West Africa"/>
     <meta name="twitter:image"
           content="/images/logo-750.png"/>
 </svelte:head>
 
 <section class="flex flex-col items-center max-w-4xl mt-8 md:mt-20">
     <h1 class="text-4xl md:text-6xl text-center mb-2">Yeah Buddy!</h1>
-    <h2 class="text-xl md:text-3xl text-center">Book One of the <em>Oblivious Trilogy</em> is <a href="read" rel="prefetch">here</a> and available for free!</h2>
+    <h2 class="text-xl md:text-3xl text-center">Book two of the <em>Oblivious Trilogy</em> is <a href="read" rel="prefetch">here</a> and available for free!</h2>
 </section>
 <section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
     <img class="my-12 max-w-full max-h-1/2vh" alt='Oblivious book cover' src='/images/3D-cover.jpg'>

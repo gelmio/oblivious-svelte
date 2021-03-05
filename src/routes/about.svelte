@@ -2,7 +2,7 @@
     import BuyButton from "../components/BuyButton.svelte";
 </script>
 <svelte:head>
-	<title>About the Oblivious Trilogy</title>
+	<title>About the Oblivious Trilogy | A wild journey through West Africa</title>
 	<meta name="description" content="How a ride through England on a Royal Enfield motorcycle turned into an epic journey through Europe and Africa.">
 	<meta property="og:description" content="How a ride through England on a Royal Enfield motorcycle turned into an epic journey through Europe and Africa."/>
 	<meta property="og:url" content="http://www.obliviousthebook.com/"/>

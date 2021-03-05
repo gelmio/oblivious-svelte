@@ -8,10 +8,11 @@
 		const res = await this.fetch(
 			`read/${bookNumber}/${chapterNumber}.json`
 		);
-		const { chapter, nextChapterExists, message } = await res.json();
+		const { chapter, snippet, nextChapterExists, message } = await res.json();
 		if (res.status === 200) {
 			return {
 				content: chapter,
+				snippet,
 				book: bookNumber,
 				chapter: chapterNumber,
 				nextChapterExists,
@@ -29,6 +30,7 @@
 	import smoothScroll from "./smooth-scroll";
 
 	export let content: string;
+	export let snippet: string;
 	export let book: number;
 	export let chapter: number;
 	export let nextChapterExists: boolean;
@@ -133,6 +135,7 @@
 		>Oblivious | Book {book}, Chapter {chapter} | An overlanding motorbike journey
 		through West Africa</title
 	>
+    <meta name="description" content="{snippet}">
 </svelte:head>
 
 <article class="prose md:prose-xl text-justify mb-8 md:mb-12 pt-16">

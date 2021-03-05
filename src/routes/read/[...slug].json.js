@@ -1,10 +1,11 @@
-import markdownChaptersByBook from './_posts.js';
+import {markdownChaptersByBook, snippets} from './_posts.js';
 
 export function get(req, res, next) {
 	// the `slug` parameter is available because
 	// this file is called [slug].json.js
 	const [bookNumber, chapterNumber] = req.params.slug.map(string => +string);
 	const chapterContents = markdownChaptersByBook[bookNumber - 1][chapterNumber - 1]
+	const snippet = snippets[bookNumber - 1][chapterNumber - 1]
 	const nextChapterExists = chapterNumber < markdownChaptersByBook[bookNumber - 1].length
 
 	if (chapterContents) {
@@ -14,6 +15,7 @@ export function get(req, res, next) {
 
 		res.end(JSON.stringify({
 			chapter: chapterContents,
+			snippet: snippet,
 			nextChapterExists
 		}));
 	} else {

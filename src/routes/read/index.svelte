@@ -2,13 +2,10 @@
 </script>
 
 <svelte:head>
-	<title
-		>Oblivious | An overlanding motorbike journey
-		through West Africa</title
-	>
+	<title>Read the Oblivious Trilogy for Free | An outrageously inappropriate journey through West Africa on a Royal Enfield</title>
 	<meta
 		property="og:description"
-		content="Here's just a taste of the action from the once-in-a-lifetime trip through West Africa on a Royal Enfield."
+		content="Come along on the adventure, while we make our way through West Africa on a wildly inappropriate Royal Enfield!"
 	/>
 	<meta property="og:url" content="http://www.obliviousthebook.com/" />
 	<meta property="og:site_name" content="ObliviousTheBook.com" />
@@ -17,18 +14,18 @@
 	<meta name="twitter:card" content="summary_large_image" />
 	<meta
 		name="twitter:description"
-		content="Here's just a taste of the action from the once-in-a-lifetime trip through West Africa on a Royal Enfield."
+		content="Come along on the adventure, while we make our way through West Africa on a wildly inappropriate Royal Enfield!"
 	/>
 	<meta
 		name="twitter:title"
-		content="Get a taste of the adventure, with a couple of chunks of the Oblivious Trilogy"
+		content="Read the Oblivious Trilogy for Free | An outrageously inappropriate journey through West Africa on a Royal Enfield."
 	/>
 	<meta name="twitter:image" content="/images/logo-750.png" />
 </svelte:head>
 
 <section class="flex flex-col items-center max-w-4xl mt-12 md:mt-28 mb-24">
 	<h1 class="text-4xl md:text-6xl text-center mb-2">
-		Read all of Oblivious for free, right here!
+		Read the Oblivious Trilogy for free, right here!
 	</h1>
 	<h2 class="text-xl md:text-3xl text-center mb-12">
 		Tap the book icon to jump to a chapter, or start at the very beginning, which is a very good place to start.

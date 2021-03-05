@@ -4,7 +4,7 @@
 </style>
 
 <svelte:head>
-    <title>Great Work, Oblivious book one is on ehte way!</title>
+    <title>Great Work, Oblivious book one is on the way!</title>
     <meta property="og:description"
           content="Your order of Oblivious is on the way"/>
     <meta property="og:url" content="http://www.obliviousthebook.com/awww-yeah"/>
