@@ -1190,10 +1190,6 @@ function claim_space(nodes) {
   return claim_text(nodes, ' ');
 }
 
-function set_style(node, key, value, important) {
-  node.style.setProperty(key, value, important ? 'important' : '');
-}
-
 function toggle_class(element, name, toggle) {
   element.classList[toggle ? 'add' : 'remove'](name);
 }
@@ -4518,31 +4514,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.96b93109.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.62f47ffc.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./awww-yeah.0f54b71b.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./awww-yeah.c211d3a0.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.78d1f0b3.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.7716a785.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.30d56af3.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.802a54c6.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.5f6b5192.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.5b1d30d7.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.673dfdb9.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.3535823c.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[...slug].5e00b0b7.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].70e48afe.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
@@ -5484,6 +5480,6 @@ start$1({
     target: document.querySelector('#sapper')
 });
 
-export { create_slot as $, create_bidirectional_transition as A, run_all as B, set_style as C, noop as D, create_component as E, query_selector_all as F, claim_component as G, mount_component as H, transition_in as I, transition_out as J, destroy_component as K, _createClass as L, regenerator as M, validate_each_argument as N, create_out_transition as O, empty as P, PageTransition as Q, check_outros as R, SvelteComponentDev as S, destroy_each as T, validate_store as U, component_subscribe as V, stores$1 as W, create_in_transition as X, _toConsumableArray as Y, toggle_class as Z, _inherits as _, _getPrototypeOf as a, group_outros as a0, update_slot as a1, writable as a2, globals as a3, HtmlTag as a4, onMount as a5, binding_callbacks as a6, _possibleConstructorReturn as b, _classCallCheck as c, _assertThisInitialized as d, dispatch_dev as e, fade as f, element as g, space as h, init as i, claim_element as j, children as k, claim_space as l, detach_dev as m, claim_text as n, onDestroy as o, attr_dev as p, add_location as q, insert_dev as r, safe_not_equal as s, text as t, append_dev as u, validate_slots as v, listen_dev as w, _slicedToArray as x, set_data_dev as y, add_render_callback as z };
+export { group_outros as $, create_bidirectional_transition as A, run_all as B, create_component as C, query_selector_all as D, claim_component as E, mount_component as F, noop as G, transition_in as H, transition_out as I, destroy_component as J, _createClass as K, regenerator as L, validate_each_argument as M, create_out_transition as N, empty as O, PageTransition as P, check_outros as Q, destroy_each as R, SvelteComponentDev as S, validate_store as T, component_subscribe as U, stores$1 as V, create_in_transition as W, _toConsumableArray as X, toggle_class as Y, create_slot as Z, _inherits as _, _getPrototypeOf as a, update_slot as a0, writable as a1, globals as a2, HtmlTag as a3, onMount as a4, binding_callbacks as a5, _possibleConstructorReturn as b, _classCallCheck as c, _assertThisInitialized as d, dispatch_dev as e, fade as f, element as g, space as h, init as i, claim_element as j, children as k, claim_space as l, detach_dev as m, claim_text as n, onDestroy as o, attr_dev as p, add_location as q, insert_dev as r, safe_not_equal as s, text as t, append_dev as u, validate_slots as v, listen_dev as w, _slicedToArray as x, set_data_dev as y, add_render_callback as z };
 
 import __inject_styles from './inject_styles.fe622066.js';

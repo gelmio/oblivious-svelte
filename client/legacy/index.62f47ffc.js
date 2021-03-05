@@ -1,5 +1,4 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, v as validate_slots, o as onDestroy, f as fade, g as element, h as space, t as text, j as claim_element, k as children, l as claim_space, m as detach_dev, n as claim_text, p as attr_dev, q as add_location, r as insert_dev, u as append_dev, w as listen_dev, x as _slicedToArray, y as set_data_dev, z as add_render_callback, A as create_bidirectional_transition, B as run_all, C as set_style, D as noop, E as create_component, F as query_selector_all, G as claim_component, H as mount_component, I as transition_in, J as transition_out, K as destroy_component } from './client.102bf39e.js';
-import { B as BuyButton } from './BuyButton.76907791.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, v as validate_slots, o as onDestroy, f as fade, g as element, h as space, t as text, j as claim_element, k as children, l as claim_space, m as detach_dev, n as claim_text, p as attr_dev, q as add_location, r as insert_dev, u as append_dev, w as listen_dev, x as _slicedToArray, y as set_data_dev, z as add_render_callback, A as create_bidirectional_transition, B as run_all, C as create_component, D as query_selector_all, E as claim_component, F as mount_component, G as noop, H as transition_in, I as transition_out, J as destroy_component } from './client.ff39acd7.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -321,216 +320,9 @@ var Carousel = /*#__PURE__*/function (_SvelteComponentDev) {
 function _createSuper$1(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$1(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _isNativeReflectConstruct$1() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$1 = "src/components/AsSeenIn.svelte";
+var file$1 = "src/routes/index.svelte";
 
 function create_fragment$1(ctx) {
-  var h5;
-  var strong;
-  var t0;
-  var t1;
-  var div;
-  var img0;
-  var img0_src_value;
-  var t2;
-  var img1;
-  var img1_src_value;
-  var t3;
-  var img2;
-  var img2_src_value;
-  var t4;
-  var img3;
-  var img3_src_value;
-  var t5;
-  var img4;
-  var img4_src_value;
-  var t6;
-  var img5;
-  var img5_src_value;
-  var block = {
-    c: function create() {
-      h5 = element("h5");
-      strong = element("strong");
-      t0 = text("As Featured In");
-      t1 = space();
-      div = element("div");
-      img0 = element("img");
-      t2 = space();
-      img1 = element("img");
-      t3 = space();
-      img2 = element("img");
-      t4 = space();
-      img3 = element("img");
-      t5 = space();
-      img4 = element("img");
-      t6 = space();
-      img5 = element("img");
-      this.h();
-    },
-    l: function claim(nodes) {
-      h5 = claim_element(nodes, "H5", {
-        class: true
-      });
-      var h5_nodes = children(h5);
-      strong = claim_element(h5_nodes, "STRONG", {});
-      var strong_nodes = children(strong);
-      t0 = claim_text(strong_nodes, "As Featured In");
-      strong_nodes.forEach(detach_dev);
-      h5_nodes.forEach(detach_dev);
-      t1 = claim_space(nodes);
-      div = claim_element(nodes, "DIV", {
-        class: true,
-        style: true
-      });
-      var div_nodes = children(div);
-      img0 = claim_element(div_nodes, "IMG", {
-        class: true,
-        src: true,
-        alt: true
-      });
-      t2 = claim_space(div_nodes);
-      img1 = claim_element(div_nodes, "IMG", {
-        class: true,
-        src: true,
-        alt: true
-      });
-      t3 = claim_space(div_nodes);
-      img2 = claim_element(div_nodes, "IMG", {
-        class: true,
-        src: true,
-        alt: true
-      });
-      t4 = claim_space(div_nodes);
-      img3 = claim_element(div_nodes, "IMG", {
-        class: true,
-        src: true,
-        alt: true
-      });
-      t5 = claim_space(div_nodes);
-      img4 = claim_element(div_nodes, "IMG", {
-        class: true,
-        src: true,
-        alt: true
-      });
-      t6 = claim_space(div_nodes);
-      img5 = claim_element(div_nodes, "IMG", {
-        class: true,
-        src: true,
-        alt: true
-      });
-      div_nodes.forEach(detach_dev);
-      this.h();
-    },
-    h: function hydrate() {
-      add_location(strong, file$1, 0, 44, 44);
-      attr_dev(h5, "class", "text-center mt-3 mb-6 uppercase");
-      add_location(h5, file$1, 0, 0, 0);
-      attr_dev(img0, "class", "self-center max-h-12 md:max-h-24");
-      if (img0.src !== (img0_src_value = "images/OverlandBound-grey.png")) attr_dev(img0, "src", img0_src_value);
-      attr_dev(img0, "alt", "Overland Bound");
-      add_location(img0, file$1, 2, 4, 201);
-      attr_dev(img1, "class", "self-center max-h-12 md:max-h-24");
-      if (img1.src !== (img1_src_value = "images/Rider-grey.png")) attr_dev(img1, "src", img1_src_value);
-      attr_dev(img1, "alt", "Rider Magazine");
-      add_location(img1, file$1, 3, 4, 309);
-      attr_dev(img2, "class", "self-center max-h-12 md:max-h-24");
-      if (img2.src !== (img2_src_value = "images/ADVMoto-grey.png")) attr_dev(img2, "src", img2_src_value);
-      attr_dev(img2, "alt", "ADVMoto");
-      add_location(img2, file$1, 4, 4, 409);
-      attr_dev(img3, "class", "self-center max-h-12 md:max-h-24");
-      if (img3.src !== (img3_src_value = "images/ExcuseMyBike-grey.png")) attr_dev(img3, "src", img3_src_value);
-      attr_dev(img3, "alt", "Excuse my bike");
-      add_location(img3, file$1, 5, 4, 504);
-      attr_dev(img4, "class", "self-center max-h-12 md:max-h-24");
-      if (img4.src !== (img4_src_value = "images/royalenfield-grey.png")) attr_dev(img4, "src", img4_src_value);
-      attr_dev(img4, "alt", "Royal Enfield");
-      add_location(img4, file$1, 6, 4, 611);
-      attr_dev(img5, "class", "self-center max-h-12 md:max-h-24");
-      if (img5.src !== (img5_src_value = "images/cruiser-grey.png")) attr_dev(img5, "src", img5_src_value);
-      attr_dev(img5, "alt", "Royal Enfield");
-      add_location(img5, file$1, 7, 4, 717);
-      attr_dev(div, "class", "grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-10");
-      set_style(div, "justify-items", "center");
-      add_location(div, file$1, 1, 0, 81);
-    },
-    m: function mount(target, anchor) {
-      insert_dev(target, h5, anchor);
-      append_dev(h5, strong);
-      append_dev(strong, t0);
-      insert_dev(target, t1, anchor);
-      insert_dev(target, div, anchor);
-      append_dev(div, img0);
-      append_dev(div, t2);
-      append_dev(div, img1);
-      append_dev(div, t3);
-      append_dev(div, img2);
-      append_dev(div, t4);
-      append_dev(div, img3);
-      append_dev(div, t5);
-      append_dev(div, img4);
-      append_dev(div, t6);
-      append_dev(div, img5);
-    },
-    p: noop,
-    i: noop,
-    o: noop,
-    d: function destroy(detaching) {
-      if (detaching) detach_dev(h5);
-      if (detaching) detach_dev(t1);
-      if (detaching) detach_dev(div);
-    }
-  };
-  dispatch_dev("SvelteRegisterBlock", {
-    block: block,
-    id: create_fragment$1.name,
-    type: "component",
-    source: "",
-    ctx: ctx
-  });
-  return block;
-}
-
-function instance$1($$self, $$props) {
-  var _$$props$$$slots = $$props.$$slots,
-      slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
-      $$scope = $$props.$$scope;
-  validate_slots("AsSeenIn", slots, []);
-  var writable_props = [];
-  Object.keys($$props).forEach(function (key) {
-    if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn("<AsSeenIn> was created with unknown prop '".concat(key, "'"));
-  });
-  return [];
-}
-
-var AsSeenIn = /*#__PURE__*/function (_SvelteComponentDev) {
-  _inherits(AsSeenIn, _SvelteComponentDev);
-
-  var _super = _createSuper$1(AsSeenIn);
-
-  function AsSeenIn(options) {
-    var _this;
-
-    _classCallCheck(this, AsSeenIn);
-
-    _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance$1, create_fragment$1, safe_not_equal, {});
-    dispatch_dev("SvelteRegisterComponent", {
-      component: _assertThisInitialized(_this),
-      tagName: "AsSeenIn",
-      options: options,
-      id: create_fragment$1.name
-    });
-    return _this;
-  }
-
-  return AsSeenIn;
-}(SvelteComponentDev);
-
-function _createSuper$2(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$2(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _isNativeReflectConstruct$2() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$2 = "src/routes/index.svelte";
-
-function create_fragment$2(ctx) {
   var meta0;
   var meta1;
   var meta2;
@@ -657,7 +449,7 @@ function create_fragment$2(ctx) {
       t1 = text("Yeah Buddy!");
       t2 = space();
       h20 = element("h2");
-      t3 = text("Book One of the ");
+      t3 = text("Book two of the ");
       em0 = element("em");
       t4 = text("Oblivious Trilogy");
       t5 = text(" is ");
@@ -746,7 +538,7 @@ function create_fragment$2(ctx) {
       this.h();
     },
     l: function claim(nodes) {
-      var head_nodes = query_selector_all("[data-svelte=\"svelte-orerit\"]", document.head);
+      var head_nodes = query_selector_all("[data-svelte=\"svelte-d7849z\"]", document.head);
       meta0 = claim_element(head_nodes, "META", {
         name: true,
         content: true
@@ -804,7 +596,7 @@ function create_fragment$2(ctx) {
         class: true
       });
       var h20_nodes = children(h20);
-      t3 = claim_text(h20_nodes, "Book One of the ");
+      t3 = claim_text(h20_nodes, "Book two of the ");
       em0 = claim_element(h20_nodes, "EM", {});
       var em0_nodes = children(em0);
       t4 = claim_text(em0_nodes, "Oblivious Trilogy");
@@ -1032,123 +824,123 @@ function create_fragment$2(ctx) {
       this.h();
     },
     h: function hydrate() {
-      document.title = "Oblivious - An overlanding motorbike journey through West Africa";
+      document.title = "Oblivious | An outrageously inappropriate journey through West Africa";
       attr_dev(meta0, "name", "description");
-      attr_dev(meta0, "content", "Oblivious is the epic true-life solo overlanding journey, motorbiking through West Africa on a Royal Enfield. Come along on the unique adventure!");
-      add_location(meta0, file$2, 10, 4, 480);
+      attr_dev(meta0, "content", "Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!");
+      add_location(meta0, file$1, 8, 4, 367);
       attr_dev(meta1, "property", "og:description");
-      attr_dev(meta1, "content", "Oblivious is the epic true-life solo overlanding journey, motorbiking through West Africa on a Royal Enfield. Come along on the unique adventure!");
-      add_location(meta1, file$2, 11, 4, 666);
+      attr_dev(meta1, "content", "Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!");
+      add_location(meta1, file$1, 9, 4, 558);
       attr_dev(meta2, "property", "og:url");
       attr_dev(meta2, "content", "http://www.obliviousthebook.com/");
-      add_location(meta2, file$2, 13, 4, 870);
+      add_location(meta2, file$1, 11, 4, 767);
       attr_dev(meta3, "property", "og:site_name");
       attr_dev(meta3, "content", "ObliviousTheBook.com");
-      add_location(meta3, file$2, 14, 4, 943);
+      add_location(meta3, file$1, 12, 4, 840);
       attr_dev(meta4, "property", "fb:admins");
       attr_dev(meta4, "content", "563453705");
-      add_location(meta4, file$2, 15, 4, 1010);
+      add_location(meta4, file$1, 13, 4, 907);
       attr_dev(meta5, "property", "og:image");
       attr_dev(meta5, "content", "/images/logo-750.png");
-      add_location(meta5, file$2, 16, 4, 1063);
+      add_location(meta5, file$1, 14, 4, 960);
       attr_dev(meta6, "name", "twitter:card");
       attr_dev(meta6, "content", "summary_large_image");
-      add_location(meta6, file$2, 18, 4, 1136);
+      add_location(meta6, file$1, 16, 4, 1033);
       attr_dev(meta7, "name", "twitter:description");
-      attr_dev(meta7, "content", "Oblivious is the epic true-life solo overlanding journey, motorbiking through West Africa on a Royal Enfield. Come along on the unique adventure!");
-      add_location(meta7, file$2, 19, 4, 1198);
+      attr_dev(meta7, "content", "Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!");
+      add_location(meta7, file$1, 17, 4, 1095);
       attr_dev(meta8, "name", "twitter:title");
-      attr_dev(meta8, "content", "Oblivious - An overlanding motorbike journey through West Africa");
-      add_location(meta8, file$2, 21, 4, 1403);
+      attr_dev(meta8, "content", "Oblivious | An outrageously inappropriate journey through West Africa");
+      add_location(meta8, file$1, 19, 4, 1305);
       attr_dev(meta9, "name", "twitter:image");
       attr_dev(meta9, "content", "/images/logo-750.png");
-      add_location(meta9, file$2, 22, 4, 1511);
+      add_location(meta9, file$1, 20, 4, 1418);
       attr_dev(h10, "class", "text-4xl md:text-6xl text-center mb-2");
-      add_location(h10, file$2, 27, 4, 1670);
-      add_location(em0, file$2, 28, 64, 1801);
+      add_location(h10, file$1, 25, 4, 1577);
+      add_location(em0, file$1, 26, 64, 1708);
       attr_dev(a0, "href", "read");
       attr_dev(a0, "rel", "prefetch");
-      add_location(a0, file$2, 28, 94, 1831);
+      add_location(a0, file$1, 26, 94, 1738);
       attr_dev(h20, "class", "text-xl md:text-3xl text-center");
-      add_location(h20, file$2, 28, 4, 1741);
+      add_location(h20, file$1, 26, 4, 1648);
       attr_dev(section0, "class", "flex flex-col items-center max-w-4xl mt-8 md:mt-20");
-      add_location(section0, file$2, 26, 0, 1597);
+      add_location(section0, file$1, 24, 0, 1504);
       attr_dev(img0, "class", "my-12 max-w-full max-h-1/2vh");
       attr_dev(img0, "alt", "Oblivious book cover");
       if (img0.src !== (img0_src_value = "/images/3D-cover.jpg")) attr_dev(img0, "src", img0_src_value);
-      add_location(img0, file$2, 31, 4, 1984);
+      add_location(img0, file$1, 29, 4, 1891);
       attr_dev(a1, "class", "inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious");
       attr_dev(a1, "href", "read");
       attr_dev(a1, "rel", "prefetch");
-      add_location(a1, file$2, 33, 8, 2161);
+      add_location(a1, file$1, 31, 8, 2068);
       attr_dev(a2, "rel", "nofollow");
       attr_dev(a2, "href", "https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart");
-      add_location(a2, file$2, 34, 30, 2325);
+      add_location(a2, file$1, 32, 30, 2232);
       attr_dev(span0, "class", "m-2");
-      add_location(span0, file$2, 34, 8, 2303);
+      add_location(span0, file$1, 32, 8, 2210);
       attr_dev(div0, "class", "flex flex-col md:flex-row justify-center items-center");
-      add_location(div0, file$2, 32, 4, 2085);
+      add_location(div0, file$1, 30, 4, 1992);
       attr_dev(section1, "class", "flex flex-col items-center max-w-4xl mb-20 md:mb-32");
-      add_location(section1, file$2, 30, 0, 1910);
-      add_location(em1, file$2, 41, 110, 2738);
+      add_location(section1, file$1, 28, 0, 1817);
+      add_location(em1, file$1, 39, 110, 2645);
       attr_dev(h11, "class", "text-4xl md:text-6xl text-center");
-      add_location(h11, file$2, 41, 4, 2632);
+      add_location(h11, file$1, 39, 4, 2539);
       attr_dev(section2, "class", "flex flex-col items-center max-w-4xl mb-20 md:mb-32");
-      add_location(section2, file$2, 40, 0, 2558);
+      add_location(section2, file$1, 38, 0, 2465);
       attr_dev(section3, "class", "flex mb-28 md:mb-32 sm:px-20");
-      add_location(section3, file$2, 43, 0, 2784);
+      add_location(section3, file$1, 41, 0, 2691);
       attr_dev(h21, "class", "text-4xl md:text-6xl text-center max-w-4xl mb-8");
-      add_location(h21, file$2, 47, 4, 2937);
+      add_location(h21, file$1, 45, 4, 2844);
       attr_dev(img1, "class", "relative inline-block w-full lg:w-2/3 lg:-mr-10");
       if (img1.src !== (img1_src_value = "/images/kindle-pad-phone.jpg")) attr_dev(img1, "src", img1_src_value);
       attr_dev(img1, "alt", "book being used on various platforms");
-      add_location(img1, file$2, 49, 8, 3152);
-      add_location(br0, file$2, 52, 90, 3512);
-      add_location(em2, file$2, 53, 64, 3581);
+      add_location(img1, file$1, 47, 8, 3059);
+      add_location(br0, file$1, 50, 90, 3419);
+      add_location(em2, file$1, 51, 64, 3488);
       attr_dev(span1, "class", "text-oblivious-dark");
-      add_location(span1, file$2, 53, 16, 3533);
+      add_location(span1, file$1, 51, 16, 3440);
       attr_dev(p0, "class", "absolute top-0 right-0 left-1/2 mt-1 text-xl");
-      add_location(p0, file$2, 51, 12, 3365);
-      add_location(br1, file$2, 57, 70, 3819);
+      add_location(p0, file$1, 49, 12, 3272);
+      add_location(br1, file$1, 55, 70, 3726);
       attr_dev(span2, "class", "text-oblivious-dark");
-      add_location(span2, file$2, 58, 20, 3844);
+      add_location(span2, file$1, 56, 20, 3751);
       attr_dev(p1, "class", "text-xl");
-      add_location(p1, file$2, 56, 16, 3729);
-      add_location(em3, file$2, 61, 111, 4065);
-      add_location(br2, file$2, 61, 136, 4090);
+      add_location(p1, file$1, 54, 16, 3636);
+      add_location(em3, file$1, 59, 111, 3972);
+      add_location(br2, file$1, 59, 136, 3997);
       attr_dev(span3, "class", "text-oblivious-dark");
-      add_location(span3, file$2, 62, 20, 4115);
+      add_location(span3, file$1, 60, 20, 4022);
       attr_dev(p2, "class", "text-xl");
-      add_location(p2, file$2, 60, 16, 3934);
-      add_location(br3, file$2, 65, 57, 4287);
+      add_location(p2, file$1, 58, 16, 3841);
+      add_location(br3, file$1, 63, 57, 4194);
       attr_dev(span4, "class", "text-oblivious-dark");
-      add_location(span4, file$2, 66, 20, 4312);
+      add_location(span4, file$1, 64, 20, 4219);
       attr_dev(p3, "class", "text-xl");
-      add_location(p3, file$2, 64, 16, 4210);
+      add_location(p3, file$1, 62, 16, 4117);
       attr_dev(div1, "class", "absolute top-1/4 bottom-0 pb-8 flex flex-col justify-between");
-      add_location(div1, file$2, 55, 12, 3638);
+      add_location(div1, file$1, 53, 12, 3545);
       attr_dev(div2, "class", "hidden lg:inline-block w-1/3 z-10 pb-4");
-      add_location(div2, file$2, 50, 8, 3300);
+      add_location(div2, file$1, 48, 8, 3207);
       attr_dev(div3, "class", "flex relative items-end justify-center max-w-6xl mx-0 lg:mx-10 mb-10");
-      add_location(div3, file$2, 48, 4, 3061);
+      add_location(div3, file$1, 46, 4, 2968);
       attr_dev(a3, "class", "inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious");
       attr_dev(a3, "href", "read");
       attr_dev(a3, "rel", "prefetch");
-      add_location(a3, file$2, 72, 8, 4508);
+      add_location(a3, file$1, 70, 8, 4415);
       attr_dev(a4, "rel", "nofollow");
       attr_dev(a4, "href", "https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart");
-      add_location(a4, file$2, 73, 30, 4670);
+      add_location(a4, file$1, 71, 30, 4577);
       attr_dev(span5, "class", "m-2");
-      add_location(span5, file$2, 73, 8, 4648);
+      add_location(span5, file$1, 71, 8, 4555);
       attr_dev(div4, "class", "flex flex-col md:flex-row justify-center items-center");
-      add_location(div4, file$2, 71, 4, 4432);
+      add_location(div4, file$1, 69, 4, 4339);
       attr_dev(section4, "class", "flex flex-col justify-center items-center mb-20 md:mb-32");
-      add_location(section4, file$2, 46, 0, 2858);
+      add_location(section4, file$1, 44, 0, 2765);
       attr_dev(h22, "class", "text-5xl md:text-6xl");
-      add_location(h22, file$2, 77, 4, 4878);
-      add_location(h3, file$2, 78, 4, 4940);
+      add_location(h22, file$1, 75, 4, 4785);
+      add_location(h3, file$1, 76, 4, 4847);
       attr_dev(section5, "class", "mb-20 md:mb-32 sm:px-20 text-center");
-      add_location(section5, file$2, 76, 0, 4820);
+      add_location(section5, file$1, 74, 0, 4727);
     },
     m: function mount(target, anchor) {
       append_dev(document.head, meta0);
@@ -1293,7 +1085,7 @@ function create_fragment$2(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$2.name,
+    id: create_fragment$1.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -1301,7 +1093,7 @@ function create_fragment$2(ctx) {
   return block;
 }
 
-function instance$2($$self, $$props, $$invalidate) {
+function instance$1($$self, $$props, $$invalidate) {
   var _$$props$$$slots = $$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
       $$scope = $$props.$$scope;
@@ -1313,9 +1105,7 @@ function instance$2($$self, $$props, $$invalidate) {
 
   $$self.$capture_state = function () {
     return {
-      Carousel: Carousel,
-      AsSeenIn: AsSeenIn,
-      BuyButton: BuyButton
+      Carousel: Carousel
     };
   };
 
@@ -1325,7 +1115,7 @@ function instance$2($$self, $$props, $$invalidate) {
 var Routes = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Routes, _SvelteComponentDev);
 
-  var _super = _createSuper$2(Routes);
+  var _super = _createSuper$1(Routes);
 
   function Routes(options) {
     var _this;
@@ -1333,12 +1123,12 @@ var Routes = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Routes);
 
     _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance$2, create_fragment$2, safe_not_equal, {});
+    init(_assertThisInitialized(_this), options, instance$1, create_fragment$1, safe_not_equal, {});
     dispatch_dev("SvelteRegisterComponent", {
       component: _assertThisInitialized(_this),
       tagName: "Routes",
       options: options,
-      id: create_fragment$2.name
+      id: create_fragment$1.name
     });
     return _this;
   }

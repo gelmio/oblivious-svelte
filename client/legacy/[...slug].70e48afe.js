@@ -1,5 +1,5 @@
-import { M as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, L as _createClass, S as SvelteComponentDev, s as safe_not_equal, a3 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, D as noop, t as text, h as space, n as claim_text, l as claim_space, u as append_dev, O as create_out_transition, P as empty, F as query_selector_all, a4 as HtmlTag, y as set_data_dev, I as transition_in, J as transition_out, R as check_outros, B as run_all, U as validate_store, V as component_subscribe, v as validate_slots, a5 as onMount, f as fade, z as add_render_callback, X as create_in_transition, a0 as group_outros, a6 as binding_callbacks } from './client.102bf39e.js';
-import { g as giveScrollHint } from './reader-hints.795f66dc.js';
+import { L as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, s as safe_not_equal, a2 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, G as noop, t as text, h as space, n as claim_text, l as claim_space, u as append_dev, N as create_out_transition, O as empty, D as query_selector_all, a3 as HtmlTag, y as set_data_dev, H as transition_in, I as transition_out, Q as check_outros, B as run_all, T as validate_store, U as component_subscribe, v as validate_slots, a4 as onMount, f as fade, z as add_render_callback, W as create_in_transition, $ as group_outros, a5 as binding_callbacks } from './client.ff39acd7.js';
+import { g as giveScrollHint } from './reader-hints.e1cf5932.js';
 
 function smoothScroll(element, initial, final, duration, callback = null) {
     let startTime;
@@ -32,7 +32,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 var document_1 = globals.document,
     window_1 = globals.window;
-var file = "src/routes/read/[...slug].svelte"; // (152:2) {:else}
+var file = "src/routes/read/[...slug].svelte"; // (155:2) {:else}
 
 function create_else_block(ctx) {
   var div;
@@ -92,15 +92,15 @@ function create_else_block(ctx) {
       this.h();
     },
     h: function hydrate() {
-      add_location(p0, file, 153, 4, 5268);
-      add_location(p1, file, 154, 4, 5326);
+      add_location(p0, file, 156, 4, 5372);
+      add_location(p1, file, 157, 4, 5430);
       attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a, "rel", "nofollow");
       attr_dev(a, "class", "border-b border-oblivious-dark");
-      add_location(a, file, 159, 63, 5498);
-      add_location(p2, file, 158, 4, 5431);
+      add_location(a, file, 162, 63, 5602);
+      add_location(p2, file, 161, 4, 5535);
       attr_dev(div, "class", "text-center font-header mt-8");
-      add_location(div, file, 152, 3, 5221);
+      add_location(div, file, 155, 3, 5325);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -124,11 +124,11 @@ function create_else_block(ctx) {
     block: block,
     id: create_else_block.name,
     type: "else",
-    source: "(152:2) {:else}",
+    source: "(155:2) {:else}",
     ctx: ctx
   });
   return block;
-} // (131:2) {#if next[0] < 3}
+} // (134:2) {#if next[0] < 3}
 
 
 function create_if_block_2(ctx) {
@@ -137,15 +137,15 @@ function create_if_block_2(ctx) {
   var t0;
   var t1_value = (
   /*nextChapterExists*/
-  ctx[3] ? "Chapter" : "Book") + "";
+  ctx[4] ? "Chapter" : "Book") + "";
   var t1;
   var a_href_value;
   var t2;
   var if_block =
   /*next*/
-  ctx[9][1] > 10 && !(
+  ctx[10][1] > 10 && !(
   /*next*/
-  ctx[9][1] % 5) && create_if_block_3(ctx);
+  ctx[10][1] % 5) && create_if_block_3(ctx);
   var block = {
     c: function create() {
       div = element("div");
@@ -179,13 +179,13 @@ function create_if_block_2(ctx) {
       attr_dev(a, "rel", "prefetch");
       attr_dev(a, "href", a_href_value = "read/" +
       /*next*/
-      ctx[9][0] + "/" +
+      ctx[10][0] + "/" +
       /*next*/
-      ctx[9][1]);
+      ctx[10][1]);
       attr_dev(a, "class", "inline-block text-lg p-2 rounded-lg no-underline bg-oblivious mr-4");
-      add_location(a, file, 132, 4, 4687);
+      add_location(a, file, 135, 4, 4791);
       attr_dev(div, "class", "flex flex-col md:flex-row justify-end items-end mt-8");
-      add_location(div, file, 131, 3, 4616);
+      add_location(div, file, 134, 3, 4720);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -198,25 +198,25 @@ function create_if_block_2(ctx) {
     p: function update(ctx, dirty) {
       if (dirty &
       /*nextChapterExists*/
-      8 && t1_value !== (t1_value = (
+      16 && t1_value !== (t1_value = (
       /*nextChapterExists*/
-      ctx[3] ? "Chapter" : "Book") + "")) set_data_dev(t1, t1_value);
+      ctx[4] ? "Chapter" : "Book") + "")) set_data_dev(t1, t1_value);
 
       if (dirty &
       /*next*/
-      512 && a_href_value !== (a_href_value = "read/" +
+      1024 && a_href_value !== (a_href_value = "read/" +
       /*next*/
-      ctx[9][0] + "/" +
+      ctx[10][0] + "/" +
       /*next*/
-      ctx[9][1])) {
+      ctx[10][1])) {
         attr_dev(a, "href", a_href_value);
       }
 
       if (
       /*next*/
-      ctx[9][1] > 10 && !(
+      ctx[10][1] > 10 && !(
       /*next*/
-      ctx[9][1] % 5)) {
+      ctx[10][1] % 5)) {
         if (if_block) ; else {
           if_block = create_if_block_3(ctx);
           if_block.c();
@@ -236,11 +236,11 @@ function create_if_block_2(ctx) {
     block: block,
     id: create_if_block_2.name,
     type: "if",
-    source: "(131:2) {#if next[0] < 3}",
+    source: "(134:2) {#if next[0] < 3}",
     ctx: ctx
   });
   return block;
-} // (140:4) {#if next[1] > 10 && !(next[1] % 5)}
+} // (143:4) {#if next[1] > 10 && !(next[1] % 5)}
 
 
 function create_if_block_3(ctx) {
@@ -277,9 +277,9 @@ function create_if_block_3(ctx) {
       attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a, "rel", "nofollow");
       attr_dev(a, "class", "border-b border-oblivious-dark");
-      add_location(a, file, 141, 13, 4971);
+      add_location(a, file, 144, 13, 5075);
       attr_dev(span, "class", "m-2");
-      add_location(span, file, 140, 5, 4939);
+      add_location(span, file, 143, 5, 5043);
     },
     m: function mount(target, anchor) {
       insert_dev(target, span, anchor);
@@ -295,11 +295,11 @@ function create_if_block_3(ctx) {
     block: block,
     id: create_if_block_3.name,
     type: "if",
-    source: "(140:4) {#if next[1] > 10 && !(next[1] % 5)}",
+    source: "(143:4) {#if next[1] > 10 && !(next[1] % 5)}",
     ctx: ctx
   });
   return block;
-} // (172:0) {#if showPhotoBox}
+} // (175:0) {#if showPhotoBox}
 
 
 function create_if_block_1(ctx) {
@@ -321,18 +321,18 @@ function create_if_block_1(ctx) {
     },
     h: function hydrate() {
       attr_dev(div, "class", "fixed inset-0 flex justify-center items-center cursor-zoom-out bg-oblivious-opaque");
-      add_location(div, file, 172, 1, 5853);
+      add_location(div, file, 175, 1, 5957);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
       /*div_binding*/
 
-      ctx[16](div);
+      ctx[17](div);
 
       if (!mounted) {
         dispose = listen_dev(div, "click",
         /*click_handler*/
-        ctx[17], false, false, false);
+        ctx[18], false, false, false);
         mounted = true;
       }
     },
@@ -350,7 +350,7 @@ function create_if_block_1(ctx) {
       if (detaching) detach_dev(div);
       /*div_binding*/
 
-      ctx[16](null);
+      ctx[17](null);
       mounted = false;
       dispose();
     }
@@ -359,11 +359,11 @@ function create_if_block_1(ctx) {
     block: block,
     id: create_if_block_1.name,
     type: "if",
-    source: "(172:0) {#if showPhotoBox}",
+    source: "(175:0) {#if showPhotoBox}",
     ctx: ctx
   });
   return block;
-} // (180:0) {#if $giveScrollHint}
+} // (183:0) {#if $giveScrollHint}
 
 
 function create_if_block(ctx) {
@@ -475,22 +475,22 @@ function create_if_block(ctx) {
     },
     h: function hydrate() {
       attr_dev(p0, "class", "font-header text-xl md:text-2xl mb-4");
-      add_location(p0, file, 188, 3, 6275);
+      add_location(p0, file, 191, 3, 6379);
       attr_dev(p1, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p1, file, 191, 3, 6357);
+      add_location(p1, file, 194, 3, 6461);
       attr_dev(p2, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p2, file, 194, 3, 6452);
+      add_location(p2, file, 197, 3, 6556);
       attr_dev(p3, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p3, file, 197, 3, 6539);
+      add_location(p3, file, 200, 3, 6643);
       attr_dev(p4, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p4, file, 200, 3, 6660);
+      add_location(p4, file, 203, 3, 6764);
       attr_dev(span, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious cursor-pointer");
-      add_location(span, file, 205, 4, 6834);
-      add_location(div0, file, 204, 3, 6824);
+      add_location(span, file, 208, 4, 6938);
+      add_location(div0, file, 207, 3, 6928);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
-      add_location(div1, file, 185, 2, 6190);
+      add_location(div1, file, 188, 2, 6294);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
-      add_location(div2, file, 180, 1, 6059);
+      add_location(div2, file, 183, 1, 6163);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -518,7 +518,7 @@ function create_if_block(ctx) {
       if (!mounted) {
         dispose = listen_dev(span, "click",
         /*click_handler_1*/
-        ctx[18], false, false, false);
+        ctx[19], false, false, false);
         mounted = true;
       }
     },
@@ -550,7 +550,7 @@ function create_if_block(ctx) {
     block: block,
     id: create_if_block.name,
     type: "if",
-    source: "(180:0) {#if $giveScrollHint}",
+    source: "(183:0) {#if $giveScrollHint}",
     ctx: ctx
   });
   return block;
@@ -558,6 +558,7 @@ function create_if_block(ctx) {
 
 function create_fragment(ctx) {
   var title_value;
+  var meta;
   var t0;
   var article;
   var h2;
@@ -581,14 +582,14 @@ function create_fragment(ctx) {
   var dispose;
   document_1.title = title_value = "Oblivious | Book " +
   /*book*/
-  ctx[1] + ", Chapter " +
+  ctx[2] + ", Chapter " +
   /*chapter*/
-  ctx[2] + " | An overlanding motorbike journey\n\t\tthrough West Africa";
+  ctx[3] + " | An overlanding motorbike journey\n\t\tthrough West Africa";
 
   function select_block_type(ctx, dirty) {
     if (
     /*next*/
-    ctx[9][0] < 3) return create_if_block_2;
+    ctx[10][0] < 3) return create_if_block_2;
     return create_else_block;
   }
 
@@ -596,23 +597,24 @@ function create_fragment(ctx) {
   var if_block0 = current_block_type(ctx);
   var if_block1 =
   /*showPhotoBox*/
-  ctx[8] && create_if_block_1(ctx);
+  ctx[9] && create_if_block_1(ctx);
   var if_block2 =
   /*$giveScrollHint*/
-  ctx[10] && create_if_block(ctx);
+  ctx[11] && create_if_block(ctx);
   var block = {
     c: function create() {
+      meta = element("meta");
       t0 = space();
       article = element("article");
       h2 = element("h2");
       t1 = text("Book ");
       t2 = text(
       /*book*/
-      ctx[1]);
+      ctx[2]);
       t3 = text(", Chapter ");
       t4 = text(
       /*chapter*/
-      ctx[2]);
+      ctx[3]);
       t5 = space();
       div0 = element("div");
       t6 = space();
@@ -628,7 +630,11 @@ function create_fragment(ctx) {
       this.h();
     },
     l: function claim(nodes) {
-      var head_nodes = query_selector_all("[data-svelte=\"svelte-ngr10r\"]", document_1.head);
+      var head_nodes = query_selector_all("[data-svelte=\"svelte-gmim4n\"]", document_1.head);
+      meta = claim_element(head_nodes, "META", {
+        name: true,
+        content: true
+      });
       head_nodes.forEach(detach_dev);
       t0 = claim_space(nodes);
       article = claim_element(nodes, "ARTICLE", {
@@ -642,11 +648,11 @@ function create_fragment(ctx) {
       t1 = claim_text(h2_nodes, "Book ");
       t2 = claim_text(h2_nodes,
       /*book*/
-      ctx[1]);
+      ctx[2]);
       t3 = claim_text(h2_nodes, ", Chapter ");
       t4 = claim_text(h2_nodes,
       /*chapter*/
-      ctx[2]);
+      ctx[3]);
       h2_nodes.forEach(detach_dev);
       t5 = claim_space(article_nodes);
       div0 = claim_element(article_nodes, "DIV", {
@@ -675,24 +681,30 @@ function create_fragment(ctx) {
     h: function hydrate() {
       var _ctx$;
 
+      attr_dev(meta, "name", "description");
+      attr_dev(meta, "content",
+      /*snippet*/
+      ctx[1]);
+      add_location(meta, file, 119, 4, 4240);
       attr_dev(h2, "class", "font-header");
-      add_location(h2, file, 120, 1, 4268);
+      add_location(h2, file, 123, 1, 4372);
       html_tag = new HtmlTag(t6);
       attr_dev(div0, "class", "max-h-screen overflow-hidden no-scrollbar py-12 svelte-sokgus");
       attr_dev(div0, "style", div0_style_value = (
       /*readerBounds*/
-      (_ctx$ = ctx[5]) === null || _ctx$ === void 0 ? void 0 : _ctx$.width) ? "columns: auto ".concat(
+      (_ctx$ = ctx[6]) === null || _ctx$ === void 0 ? void 0 : _ctx$.width) ? "columns: auto ".concat(
       /*readerWidth*/
-      ctx[6], "px; column-gap: ").concat(
+      ctx[7], "px; column-gap: ").concat(
       /*columnGap*/
-      ctx[11], "px; column-rule: 1px solid #000;") : "");
-      add_location(div0, file, 121, 1, 4329);
+      ctx[12], "px; column-rule: 1px solid #000;") : "");
+      add_location(div0, file, 124, 1, 4433);
       attr_dev(div1, "class", "text-xs text-center -mt-10");
-      add_location(div1, file, 169, 1, 5753);
+      add_location(div1, file, 172, 1, 5857);
       attr_dev(article, "class", "prose md:prose-xl text-justify mb-8 md:mb-12 pt-16");
-      add_location(article, file, 119, 0, 4198);
+      add_location(article, file, 122, 0, 4302);
     },
     m: function mount(target, anchor) {
+      append_dev(document_1.head, meta);
       insert_dev(target, t0, anchor);
       insert_dev(target, article, anchor);
       append_dev(article, h2);
@@ -709,7 +721,7 @@ function create_fragment(ctx) {
       if_block0.m(div0, null);
       /*div0_binding*/
 
-      ctx[15](div0);
+      ctx[16](div0);
       append_dev(article, t7);
       append_dev(article, div1);
       append_dev(div1, t8);
@@ -723,9 +735,9 @@ function create_fragment(ctx) {
       if (!mounted) {
         dispose = [listen_dev(window_1, "resize",
         /*resize_handler*/
-        ctx[14], false, false, false), listen_dev(div0, "click",
+        ctx[15], false, false, false), listen_dev(div0, "click",
         /*handleClick*/
-        ctx[13], false, false, false)];
+        ctx[14], false, false, false)];
         mounted = true;
       }
     },
@@ -737,24 +749,32 @@ function create_fragment(ctx) {
 
       if ((!current || dirty &
       /*book, chapter*/
-      6) && title_value !== (title_value = "Oblivious | Book " +
+      12) && title_value !== (title_value = "Oblivious | Book " +
       /*book*/
-      ctx[1] + ", Chapter " +
+      ctx[2] + ", Chapter " +
       /*chapter*/
-      ctx[2] + " | An overlanding motorbike journey\n\t\tthrough West Africa")) {
+      ctx[3] + " | An overlanding motorbike journey\n\t\tthrough West Africa")) {
         document_1.title = title_value;
       }
 
       if (!current || dirty &
+      /*snippet*/
+      2) {
+        attr_dev(meta, "content",
+        /*snippet*/
+        ctx[1]);
+      }
+
+      if (!current || dirty &
       /*book*/
-      2) set_data_dev(t2,
+      4) set_data_dev(t2,
       /*book*/
-      ctx[1]);
+      ctx[2]);
       if (!current || dirty &
       /*chapter*/
-      4) set_data_dev(t4,
+      8) set_data_dev(t4,
       /*chapter*/
-      ctx[2]);
+      ctx[3]);
       if (!current || dirty &
       /*content*/
       1) html_tag.p(
@@ -775,25 +795,25 @@ function create_fragment(ctx) {
 
       if (!current || dirty &
       /*readerBounds, readerWidth*/
-      96 && div0_style_value !== (div0_style_value = (
+      192 && div0_style_value !== (div0_style_value = (
       /*readerBounds*/
-      (_ctx$2 = ctx[5]) === null || _ctx$2 === void 0 ? void 0 : _ctx$2.width) ? "columns: auto ".concat(
+      (_ctx$2 = ctx[6]) === null || _ctx$2 === void 0 ? void 0 : _ctx$2.width) ? "columns: auto ".concat(
       /*readerWidth*/
-      ctx[6], "px; column-gap: ").concat(
+      ctx[7], "px; column-gap: ").concat(
       /*columnGap*/
-      ctx[11], "px; column-rule: 1px solid #000;") : "")) {
+      ctx[12], "px; column-rule: 1px solid #000;") : "")) {
         attr_dev(div0, "style", div0_style_value);
       }
 
       if (
       /*showPhotoBox*/
-      ctx[8]) {
+      ctx[9]) {
         if (if_block1) {
           if_block1.p(ctx, dirty);
 
           if (dirty &
           /*showPhotoBox*/
-          256) {
+          512) {
             transition_in(if_block1, 1);
           }
         } else {
@@ -809,13 +829,13 @@ function create_fragment(ctx) {
 
       if (
       /*$giveScrollHint*/
-      ctx[10]) {
+      ctx[11]) {
         if (if_block2) {
           if_block2.p(ctx, dirty);
 
           if (dirty &
           /*$giveScrollHint*/
-          1024) {
+          2048) {
             transition_in(if_block2, 1);
           }
         } else {
@@ -843,12 +863,13 @@ function create_fragment(ctx) {
       current = false;
     },
     d: function destroy(detaching) {
+      detach_dev(meta);
       if (detaching) detach_dev(t0);
       if (detaching) detach_dev(article);
       if_block0.d();
       /*div0_binding*/
 
-      ctx[15](null);
+      ctx[16](null);
       if (detaching) detach_dev(t9);
       if (if_block1) if_block1.d(detaching);
       if (detaching) detach_dev(t10);
@@ -904,7 +925,7 @@ function preload(_ref3) {
   var params = _ref3.params,
       query = _ref3.query;
   return __awaiter(this, void 0, void 0, /*#__PURE__*/regenerator.mark(function _callee() {
-    var _params$slug$map, _params$slug$map2, bookNumber, chapterNumber, res, _yield$res$json, chapter, nextChapterExists, message;
+    var _params$slug$map, _params$slug$map2, bookNumber, chapterNumber, res, _yield$res$json, chapter, snippet, nextChapterExists, message;
 
     return regenerator.wrap(function _callee$(_context) {
       while (1) {
@@ -926,25 +947,27 @@ function preload(_ref3) {
           case 6:
             _yield$res$json = _context.sent;
             chapter = _yield$res$json.chapter;
+            snippet = _yield$res$json.snippet;
             nextChapterExists = _yield$res$json.nextChapterExists;
             message = _yield$res$json.message;
 
             if (!(res.status === 200)) {
-              _context.next = 14;
+              _context.next = 15;
               break;
             }
 
             return _context.abrupt("return", {
               content: chapter,
+              snippet: snippet,
               book: bookNumber,
               chapter: chapterNumber,
               nextChapterExists: nextChapterExists
             });
 
-          case 14:
+          case 15:
             this.error(res.status, message);
 
-          case 15:
+          case 16:
           case "end":
             return _context.stop();
         }
@@ -967,13 +990,14 @@ function instance($$self, $$props, $$invalidate) {
   var $giveScrollHint;
   validate_store(giveScrollHint, "giveScrollHint");
   component_subscribe($$self, giveScrollHint, function ($$value) {
-    return $$invalidate(10, $giveScrollHint = $$value);
+    return $$invalidate(11, $giveScrollHint = $$value);
   });
   var _$$props$$$slots = $$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
       $$scope = $$props.$$scope;
   validate_slots("U5B_slugu5D", slots, []);
   var content = $$props.content;
+  var snippet = $$props.snippet;
   var book = $$props.book;
   var chapter = $$props.chapter;
   var nextChapterExists = $$props.nextChapterExists;
@@ -987,8 +1011,8 @@ function instance($$self, $$props, $$invalidate) {
   var next;
 
   var setReaderBounds = function setReaderBounds() {
-    $$invalidate(5, readerBounds = reader.getBoundingClientRect());
-    $$invalidate(6, readerWidth = Math.round(readerBounds.width));
+    $$invalidate(6, readerBounds = reader.getBoundingClientRect());
+    $$invalidate(7, readerWidth = Math.round(readerBounds.width));
   };
 
   var snapToPage = function snapToPage() {
@@ -1011,9 +1035,9 @@ function instance($$self, $$props, $$invalidate) {
         target = _ref4.target;
 
     if (target.tagName === "IMG") {
-      $$invalidate(8, showPhotoBox = true);
+      $$invalidate(9, showPhotoBox = true);
       setTimeout(function () {
-        $$invalidate(7, photoBox.innerHTML = target.outerHTML, photoBox);
+        $$invalidate(8, photoBox.innerHTML = target.outerHTML, photoBox);
       }, 1);
     } else if (clientX && readerBounds && readerBounds.left && readerWidth) {
       var midwayScreenX = readerBounds.left + readerWidth / 2;
@@ -1031,7 +1055,7 @@ function instance($$self, $$props, $$invalidate) {
       smoothScroll(window, [window.scrollX, window.scrollY], [window.scrollX, readerTop], 600);
     }, 2000);
   });
-  var writable_props = ["content", "book", "chapter", "nextChapterExists"];
+  var writable_props = ["content", "snippet", "book", "chapter", "nextChapterExists"];
   Object.keys($$props).forEach(function (key) {
     if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn("<U5B_slugu5D> was created with unknown prop '".concat(key, "'"));
   });
@@ -1043,19 +1067,19 @@ function instance($$self, $$props, $$invalidate) {
   function div0_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](function () {
       reader = $$value;
-      $$invalidate(4, reader);
+      $$invalidate(5, reader);
     });
   }
 
   function div_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](function () {
       photoBox = $$value;
-      $$invalidate(7, photoBox);
+      $$invalidate(8, photoBox);
     });
   }
 
   var click_handler = function click_handler() {
-    return $$invalidate(8, showPhotoBox = false);
+    return $$invalidate(9, showPhotoBox = false);
   };
 
   var click_handler_1 = function click_handler_1() {
@@ -1064,9 +1088,10 @@ function instance($$self, $$props, $$invalidate) {
 
   $$self.$$set = function ($$props) {
     if ("content" in $$props) $$invalidate(0, content = $$props.content);
-    if ("book" in $$props) $$invalidate(1, book = $$props.book);
-    if ("chapter" in $$props) $$invalidate(2, chapter = $$props.chapter);
-    if ("nextChapterExists" in $$props) $$invalidate(3, nextChapterExists = $$props.nextChapterExists);
+    if ("snippet" in $$props) $$invalidate(1, snippet = $$props.snippet);
+    if ("book" in $$props) $$invalidate(2, book = $$props.book);
+    if ("chapter" in $$props) $$invalidate(3, chapter = $$props.chapter);
+    if ("nextChapterExists" in $$props) $$invalidate(4, nextChapterExists = $$props.nextChapterExists);
   };
 
   $$self.$capture_state = function () {
@@ -1078,6 +1103,7 @@ function instance($$self, $$props, $$invalidate) {
       giveScrollHint: giveScrollHint,
       smoothScroll: smoothScroll,
       content: content,
+      snippet: snippet,
       book: book,
       chapter: chapter,
       nextChapterExists: nextChapterExists,
@@ -1100,17 +1126,18 @@ function instance($$self, $$props, $$invalidate) {
 
   $$self.$inject_state = function ($$props) {
     if ("content" in $$props) $$invalidate(0, content = $$props.content);
-    if ("book" in $$props) $$invalidate(1, book = $$props.book);
-    if ("chapter" in $$props) $$invalidate(2, chapter = $$props.chapter);
-    if ("nextChapterExists" in $$props) $$invalidate(3, nextChapterExists = $$props.nextChapterExists);
-    if ("reader" in $$props) $$invalidate(4, reader = $$props.reader);
-    if ("readerBounds" in $$props) $$invalidate(5, readerBounds = $$props.readerBounds);
-    if ("readerWidth" in $$props) $$invalidate(6, readerWidth = $$props.readerWidth);
+    if ("snippet" in $$props) $$invalidate(1, snippet = $$props.snippet);
+    if ("book" in $$props) $$invalidate(2, book = $$props.book);
+    if ("chapter" in $$props) $$invalidate(3, chapter = $$props.chapter);
+    if ("nextChapterExists" in $$props) $$invalidate(4, nextChapterExists = $$props.nextChapterExists);
+    if ("reader" in $$props) $$invalidate(5, reader = $$props.reader);
+    if ("readerBounds" in $$props) $$invalidate(6, readerBounds = $$props.readerBounds);
+    if ("readerWidth" in $$props) $$invalidate(7, readerWidth = $$props.readerWidth);
     if ("readerTop" in $$props) readerTop = $$props.readerTop;
-    if ("columnGap" in $$props) $$invalidate(11, columnGap = $$props.columnGap);
-    if ("photoBox" in $$props) $$invalidate(7, photoBox = $$props.photoBox);
-    if ("showPhotoBox" in $$props) $$invalidate(8, showPhotoBox = $$props.showPhotoBox);
-    if ("next" in $$props) $$invalidate(9, next = $$props.next);
+    if ("columnGap" in $$props) $$invalidate(12, columnGap = $$props.columnGap);
+    if ("photoBox" in $$props) $$invalidate(8, photoBox = $$props.photoBox);
+    if ("showPhotoBox" in $$props) $$invalidate(9, showPhotoBox = $$props.showPhotoBox);
+    if ("next" in $$props) $$invalidate(10, next = $$props.next);
   };
 
   if ($$props && "$$inject" in $$props) {
@@ -1120,12 +1147,12 @@ function instance($$self, $$props, $$invalidate) {
   $$self.$$.update = function () {
     if ($$self.$$.dirty &
     /*nextChapterExists, book, chapter*/
-    14) {
-       $$invalidate(9, next = !nextChapterExists && book < 3 ? [book + 1, 1] : [book, chapter + 1]);
+    28) {
+       $$invalidate(10, next = !nextChapterExists && book < 3 ? [book + 1, 1] : [book, chapter + 1]);
     }
   };
 
-  return [content, book, chapter, nextChapterExists, reader, readerBounds, readerWidth, photoBox, showPhotoBox, next, $giveScrollHint, columnGap, setReaderBounds, handleClick, resize_handler, div0_binding, div_binding, click_handler, click_handler_1];
+  return [content, snippet, book, chapter, nextChapterExists, reader, readerBounds, readerWidth, photoBox, showPhotoBox, next, $giveScrollHint, columnGap, setReaderBounds, handleClick, resize_handler, div0_binding, div_binding, click_handler, click_handler_1];
 }
 
 var U5B_slugu5D = /*#__PURE__*/function (_SvelteComponentDev) {
@@ -1141,9 +1168,10 @@ var U5B_slugu5D = /*#__PURE__*/function (_SvelteComponentDev) {
     _this = _super.call(this, options);
     init(_assertThisInitialized(_this), options, instance, create_fragment, safe_not_equal, {
       content: 0,
-      book: 1,
-      chapter: 2,
-      nextChapterExists: 3
+      snippet: 1,
+      book: 2,
+      chapter: 3,
+      nextChapterExists: 4
     });
     dispatch_dev("SvelteRegisterComponent", {
       component: _assertThisInitialized(_this),
@@ -1161,20 +1189,26 @@ var U5B_slugu5D = /*#__PURE__*/function (_SvelteComponentDev) {
     }
 
     if (
+    /*snippet*/
+    ctx[1] === undefined && !("snippet" in props)) {
+      console.warn("<U5B_slugu5D> was created without expected prop 'snippet'");
+    }
+
+    if (
     /*book*/
-    ctx[1] === undefined && !("book" in props)) {
+    ctx[2] === undefined && !("book" in props)) {
       console.warn("<U5B_slugu5D> was created without expected prop 'book'");
     }
 
     if (
     /*chapter*/
-    ctx[2] === undefined && !("chapter" in props)) {
+    ctx[3] === undefined && !("chapter" in props)) {
       console.warn("<U5B_slugu5D> was created without expected prop 'chapter'");
     }
 
     if (
     /*nextChapterExists*/
-    ctx[3] === undefined && !("nextChapterExists" in props)) {
+    ctx[4] === undefined && !("nextChapterExists" in props)) {
       console.warn("<U5B_slugu5D> was created without expected prop 'nextChapterExists'");
     }
 
@@ -1183,6 +1217,14 @@ var U5B_slugu5D = /*#__PURE__*/function (_SvelteComponentDev) {
 
   _createClass(U5B_slugu5D, [{
     key: "content",
+    get: function get() {
+      throw new Error("<U5B_slugu5D>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    },
+    set: function set(value) {
+      throw new Error("<U5B_slugu5D>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
+    }
+  }, {
+    key: "snippet",
     get: function get() {
       throw new Error("<U5B_slugu5D>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     },
