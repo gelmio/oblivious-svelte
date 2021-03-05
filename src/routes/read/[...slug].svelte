@@ -36,15 +36,30 @@
 	export let nextChapterExists: boolean;
 	let reader: HTMLElement;
 	let readerBounds: ClientRect;
+	let windowBounds: [x: number, y: number];
 	let readerWidth: number;
+	let readerHeight: number;
 	let readerTop: number;
 	let columnGap = 50;
+	let resizeTolerance = 100;
 	let photoBox: HTMLElement;
 	let showPhotoBox = false;
 	let next: [book: number, chapter: number];
-	const setReaderBounds = () => {
-		readerBounds = reader.getBoundingClientRect();
-		readerWidth = Math.round(readerBounds.width);
+	
+	
+	function setReaderBounds () {
+		windowBounds = [window.innerWidth, window.innerHeight]
+		if(
+			!readerBounds || !readerHeight || !readerWidth
+			|| windowBounds[0] < readerWidth 
+			|| windowBounds[1] < readerHeight
+			|| windowBounds[0] > readerWidth + resizeTolerance
+			|| windowBounds[1] > readerHeight + resizeTolerance
+		) {
+			readerHeight = Math.round(windowBounds[1]);
+			readerBounds = reader.getBoundingClientRect();
+			readerWidth = Math.round(readerBounds.width);
+		}
 	};
 
 	function debounce(fn, delay) {
@@ -113,11 +128,12 @@
 	onMount(() => {
 		setTimeout(() => {
 			setReaderBounds();
+			
+		}, 600);
+		setTimeout(() => {
 			readerTop =
 				(window.pageYOffset || document.documentElement.scrollTop) +
 				readerBounds.top;
-		}, 600);
-		setTimeout(() => {
 			smoothScroll(
 				window,
 				[window.scrollX, window.scrollY],
@@ -139,13 +155,13 @@
 </svelte:head>
 
 <article class="prose md:prose-xl text-justify mb-8 md:mb-12 pt-16">
-	<h2 class="font-header">Book {book}, Chapter {chapter}</h2>
+	<h2 class="font-header">Book {book}, Chapter {chapter} {readerHeight}</h2>
 	<div
 		bind:this={reader}
 		on:click={handleClick}
-		class="max-h-screen overflow-hidden no-scrollbar py-12"
-		style={readerBounds?.width
-			? `columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000;`
+		class="overflow-hidden no-scrollbar py-12"
+		style={readerWidth && readerHeight
+			? `height: ${readerHeight}px; columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000;`
 			: ""}
 	>
 		{@html content}
