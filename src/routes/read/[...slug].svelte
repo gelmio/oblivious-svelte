@@ -8,7 +8,12 @@
 		const res = await this.fetch(
 			`read/${bookNumber}/${chapterNumber}.json`
 		);
-		const { chapter, snippet, nextChapterExists, message } = await res.json();
+		const {
+			chapter,
+			snippet,
+			nextChapterExists,
+			message,
+		} = await res.json();
 		if (res.status === 200) {
 			return {
 				content: chapter,
@@ -25,8 +30,9 @@
 
 <script lang="ts">
 	import { onMount } from "svelte";
+	import { stores } from "@sapper/app";
 	import { fade } from "svelte/transition";
-	import { giveScrollHint } from "./reader-hints.js";
+	import { giveScrollHint, readerPosition } from "./reader-hints.js";
 	import smoothScroll from "./smooth-scroll";
 
 	export let content: string;
@@ -44,23 +50,45 @@
 	let resizeTolerance = 100;
 	let photoBox: HTMLElement;
 	let showPhotoBox = false;
+	let shouldJumpToPosition = false;
 	let next: [book: number, chapter: number];
-	
-	
-	function setReaderBounds () {
-		windowBounds = [window.innerWidth, window.innerHeight]
-		if(
-			!readerBounds || !readerHeight || !readerWidth
-			|| windowBounds[0] < readerWidth 
-			|| windowBounds[1] < readerHeight
-			|| windowBounds[0] > readerWidth + resizeTolerance
-			|| windowBounds[1] > readerHeight + resizeTolerance
+	let observer: IntersectionObserver;
+	let paragraphElements: NodeList;
+
+	const { page } = stores();
+	$: slug = $page.params.slug
+		? $page.params.slug.map((x: string) => +x)
+		: null;
+
+	function readersPositionHasAdvanced(
+		storedPosition: number[],
+		currentPosition: number[]
+	) {
+		return (
+			((!storedPosition || !storedPosition[0] || !storedPosition[1]) &&
+				currentPosition) ||
+			currentPosition[0] > storedPosition[0] ||
+			(currentPosition[0] === storedPosition[0] &&
+				currentPosition[1] > storedPosition[1])
+		);
+	}
+
+	function setReaderBounds() {
+		windowBounds = [window.innerWidth, window.innerHeight];
+		if (
+			!readerBounds ||
+			!readerHeight ||
+			!readerWidth ||
+			windowBounds[0] < readerWidth ||
+			windowBounds[1] < readerHeight ||
+			windowBounds[0] > readerWidth + resizeTolerance ||
+			windowBounds[1] > readerHeight + resizeTolerance
 		) {
 			readerHeight = Math.round(windowBounds[1]);
 			readerBounds = reader.getBoundingClientRect();
 			readerWidth = Math.round(readerBounds.width);
 		}
-	};
+	}
 
 	function debounce(fn, delay) {
 		var timer;
@@ -92,7 +120,7 @@
 		}, 50);
 	};
 
-	const debouncedSnap = debounce(snapToPage, 1000)
+	const debouncedSnap = debounce(snapToPage, 1000);
 
 	const handleClick = ({ clientX, target }) => {
 		if (target.tagName === "IMG") {
@@ -122,15 +150,67 @@
 		}
 	};
 
+	function jumpToParagraph() {
+		const elementToJumpTo = paragraphElements[$readerPosition[2] - 1];
+		if (elementToJumpTo instanceof HTMLElement) {
+			smoothScroll(
+				reader,
+				[reader.scrollLeft, reader.scrollTop],
+				[elementToJumpTo.offsetLeft, reader.scrollTop],
+				300,
+				debouncedSnap
+			);
+		}
+	}
+
+	function setupObservers() {
+		if(paragraphElements && paragraphElements.length > 0) {
+			observer = new IntersectionObserver(
+				(entries) => {
+					if (entries[0].isIntersecting === true) {
+						const currentIndex = Array.from(paragraphElements).indexOf(
+							(entries[0].target)
+						);
+						if (currentIndex > -1 && currentIndex > $readerPosition[2] - 1) {
+							readerPosition.set([slug[0], slug[1], currentIndex + 1])
+						}
+					}
+				},
+				{ threshold: [0] }
+			);
+			Array.from(paragraphElements).forEach((paragraphElement) =>
+				observer.observe(paragraphElement as HTMLElement)
+			);
+		}
+	}
+
 	$: next =
 		!nextChapterExists && book < 3 ? [book + 1, 1] : [book, chapter + 1];
 
 	onMount(() => {
+		paragraphElements = document.querySelectorAll(".reader p");
+		if (slug && readersPositionHasAdvanced($readerPosition, slug)) {
+			readerPosition.set([slug[0], slug[1], 1]);
+			setupObservers();
+		} else if (
+			$readerPosition[0] === slug[0] &&
+			$readerPosition[1] === slug[1] &&
+			$readerPosition[2] > 1
+		) {
+			shouldJumpToPosition = true;
+			setupObservers();
+		} else if (
+			$readerPosition[0] === slug[0] &&
+			$readerPosition[1] === slug[1] &&
+			$readerPosition[2] === 1
+		) {
+			setupObservers();
+		}
+
+
+		setReaderBounds();
 		setTimeout(() => {
 			setReaderBounds();
-			
-		}, 600);
-		setTimeout(() => {
 			readerTop =
 				(window.pageYOffset || document.documentElement.scrollTop) +
 				readerBounds.top;
@@ -151,7 +231,7 @@
 		>Oblivious | Book {book}, Chapter {chapter} | An overlanding motorbike journey
 		through West Africa</title
 	>
-    <meta name="description" content="{snippet}">
+	<meta name="description" content={snippet} />
 </svelte:head>
 
 <article class="prose md:prose-xl text-justify mb-8 md:mb-12 pt-16">
@@ -159,7 +239,7 @@
 	<div
 		bind:this={reader}
 		on:click={handleClick}
-		class="overflow-hidden no-scrollbar py-12"
+		class="reader relative overflow-hidden no-scrollbar py-12"
 		style={readerWidth && readerHeight
 			? `height: ${readerHeight}px; columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000;`
 			: ""}
@@ -246,6 +326,45 @@
 					}}
 					class="inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious cursor-pointer"
 					>Got it</span
+				>
+			</div>
+		</div>
+	</div>
+{:else if shouldJumpToPosition}
+	<div
+		in:fade={{ delay: 1000 }}
+		out:fade
+		class="fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10"
+	>
+		<div
+			class="rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2"
+		>
+			<p class="font-header text-xl md:text-2xl">
+				Looks like you've been here before...
+			</p>
+			<p class="font-sans text-base md:text-lg mb-4">
+				Want to jump to the last page you were reading?
+			</p>
+			<div>
+				<button
+					on:click={() => {
+						shouldJumpToPosition = false;
+						jumpToParagraph();
+					}}
+					class="inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious"
+					>Sure</button
+				>
+				<button
+					on:click={() => {
+						shouldJumpToPosition = false;
+						readerPosition.set([
+							readerPosition[0],
+							readerPosition[1],
+							1,
+						]);
+					}}
+					class="inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-white border border-solid border-oblivious cursor-pointer"
+					>Nup</button
 				>
 			</div>
 		</div>

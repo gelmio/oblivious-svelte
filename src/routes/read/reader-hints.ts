@@ -1,7 +1,7 @@
 import { writable } from 'svelte/store';
 
-let storedPosition = null
-let storedGiveScrollHint = null
+let storedPosition: [book: number, chapter: number, paragraph: number] = null
+let storedGiveScrollHint: boolean = null
 
 if(typeof window !== 'undefined') {
     storedPosition = JSON.parse(window.localStorage.getItem("readerPosition")) || null
