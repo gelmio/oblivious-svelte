@@ -1,5 +1,5 @@
-import { L as regenerator, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, M as validate_each_argument, s as safe_not_equal, g as element, t as text, h as space, j as claim_element, k as children, n as claim_text, m as detach_dev, l as claim_space, p as attr_dev, q as add_location, r as insert_dev, u as append_dev, w as listen_dev, y as set_data_dev, N as create_out_transition, O as empty, P as PageTransition, C as create_component, E as claim_component, F as mount_component, H as transition_in, I as transition_out, J as destroy_component, x as _slicedToArray, Q as check_outros, R as destroy_each, B as run_all, T as validate_store, U as component_subscribe, v as validate_slots, V as stores$1, f as fade, z as add_render_callback, W as create_in_transition, X as _toConsumableArray, Y as toggle_class, Z as create_slot, $ as group_outros, G as noop, a0 as update_slot } from './client.f4120dad.js';
-import { r as readerPosition } from './reader-hints.52854ea7.js';
+import { L as regenerator, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, M as validate_each_argument, s as safe_not_equal, g as element, t as text, h as space, j as claim_element, k as children, n as claim_text, m as detach_dev, l as claim_space, p as attr_dev, q as add_location, r as insert_dev, u as append_dev, w as listen_dev, y as set_data_dev, N as create_out_transition, O as empty, P as PageTransition, C as create_component, E as claim_component, F as mount_component, H as transition_in, I as transition_out, J as destroy_component, x as _slicedToArray, Q as check_outros, R as destroy_each, B as run_all, T as validate_store, U as component_subscribe, v as validate_slots, V as stores$1, f as fade, z as add_render_callback, W as create_in_transition, X as _toConsumableArray, Y as toggle_class, Z as create_slot, $ as group_outros, G as noop, a0 as update_slot } from './client.f9dd3df9.js';
+import { r as readerPosition } from './reader-hints.754023e6.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -18,7 +18,7 @@ function get_each_context(ctx, list, i) {
   child_ctx[13] = list[i];
   child_ctx[15] = i;
   return child_ctx;
-} // (56:0) {#if recommendJumpToChapter}
+} // (48:0) {#if recommendJumpToChapter}
 
 
 function create_if_block_1(ctx) {
@@ -112,23 +112,23 @@ function create_if_block_1(ctx) {
     },
     h: function hydrate() {
       attr_dev(p0, "class", "font-header text-xl md:text-2xl");
-      add_location(p0, file, 64, 3, 2326);
+      add_location(p0, file, 56, 3, 1957);
       attr_dev(p1, "class", "font-sans text-base md:text-lg mb-4");
-      add_location(p1, file, 67, 3, 2423);
+      add_location(p1, file, 59, 3, 2054);
       attr_dev(a, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious");
       attr_dev(a, "href", a_href_value = "read/" +
       /*$readerPosition*/
       ctx[4][0] + "/" +
       /*$readerPosition*/
       ctx[4][1]);
-      add_location(a, file, 71, 4, 2532);
+      add_location(a, file, 63, 4, 2163);
       attr_dev(span, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-white border border-solid border-oblivious cursor-pointer");
-      add_location(span, file, 76, 4, 2747);
-      add_location(div0, file, 70, 3, 2522);
+      add_location(span, file, 68, 4, 2378);
+      add_location(div0, file, 62, 3, 2153);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
-      add_location(div1, file, 61, 2, 2241);
+      add_location(div1, file, 53, 2, 1872);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
-      add_location(div2, file, 56, 1, 2110);
+      add_location(div2, file, 48, 1, 1741);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -199,11 +199,11 @@ function create_if_block_1(ctx) {
     block: block,
     id: create_if_block_1.name,
     type: "if",
-    source: "(56:0) {#if recommendJumpToChapter}",
+    source: "(48:0) {#if recommendJumpToChapter}",
     ctx: ctx
   });
   return block;
-} // (104:2) {#if bookIndex + 1 < 3}
+} // (96:2) {#if bookIndex + 1 < 3}
 
 
 function create_if_block(ctx) {
@@ -257,7 +257,7 @@ function create_if_block(ctx) {
       this.h();
     },
     h: function hydrate() {
-      add_location(ul, file, 105, 3, 3714);
+      add_location(ul, file, 97, 3, 3345);
     },
     m: function mount(target, anchor) {
       insert_dev(target, t0, anchor);
@@ -315,11 +315,11 @@ function create_if_block(ctx) {
     block: block,
     id: create_if_block.name,
     type: "if",
-    source: "(104:2) {#if bookIndex + 1 < 3}",
+    source: "(96:2) {#if bookIndex + 1 < 3}",
     ctx: ctx
   });
   return block;
-} // (107:4) {#each [...Array(chapterCount)] as _, chapterIndex}
+} // (99:4) {#each [...Array(chapterCount)] as _, chapterIndex}
 
 
 function create_each_block_1(ctx) {
@@ -364,7 +364,7 @@ function create_each_block_1(ctx) {
       ctx[15] + 1) + "/" + (
       /*chapterIndex*/
       ctx[18] + 1));
-      add_location(a, file, 117, 6, 4036);
+      add_location(a, file, 109, 6, 3667);
       attr_dev(li, "class", "ml-4 p-2 rounded-md");
       toggle_class(li, "bg-oblivious",
       /*slug*/
@@ -377,7 +377,7 @@ function create_each_block_1(ctx) {
       ctx[18] + 1 === +
       /*slug*/
       ctx[3][1]);
-      add_location(li, file, 107, 5, 3780);
+      add_location(li, file, 99, 5, 3411);
     },
     m: function mount(target, anchor) {
       insert_dev(target, li, anchor);
@@ -419,11 +419,11 @@ function create_each_block_1(ctx) {
     block: block,
     id: create_each_block_1.name,
     type: "each",
-    source: "(107:4) {#each [...Array(chapterCount)] as _, chapterIndex}",
+    source: "(99:4) {#each [...Array(chapterCount)] as _, chapterIndex}",
     ctx: ctx
   });
   return block;
-} // (103:1) {#each chapterCounts as chapterCount, bookIndex}
+} // (95:1) {#each chapterCounts as chapterCount, bookIndex}
 
 
 function create_each_block(ctx) {
@@ -458,11 +458,11 @@ function create_each_block(ctx) {
     block: block,
     id: create_each_block.name,
     type: "each",
-    source: "(103:1) {#each chapterCounts as chapterCount, bookIndex}",
+    source: "(95:1) {#each chapterCounts as chapterCount, bookIndex}",
     ctx: ctx
   });
   return block;
-} // (131:2) <PageTransition>
+} // (123:2) <PageTransition>
 
 
 function create_default_slot(ctx) {
@@ -515,11 +515,11 @@ function create_default_slot(ctx) {
     block: block,
     id: create_default_slot.name,
     type: "slot",
-    source: "(131:2) <PageTransition>",
+    source: "(123:2) <PageTransition>",
     ctx: ctx
   });
   return block;
-} // (130:1) {#key slug}
+} // (122:1) {#key slug}
 
 
 function create_key_block(ctx) {
@@ -578,7 +578,7 @@ function create_key_block(ctx) {
     block: block,
     id: create_key_block.name,
     type: "key",
-    source: "(130:1) {#key slug}",
+    source: "(122:1) {#key slug}",
     ctx: ctx
   });
   return block;
@@ -673,14 +673,14 @@ function create_fragment(ctx) {
     },
     h: function hydrate() {
       attr_dev(span, "class", "absolute font-black top-1/2 right-1 transform -translate-y-1/2");
-      add_location(span, file, 92, 4, 3211);
+      add_location(span, file, 84, 4, 2842);
       attr_dev(button, "class", "absolute top-0 md:top-12 left-0 w-12 h-12 text-lg md:w-16 md:h-16 md:text-2xl bg-oblivious rounded-r-xl");
-      add_location(button, file, 88, 0, 3045);
+      add_location(button, file, 80, 0, 2676);
       attr_dev(nav, "class", nav_class_value = "absolute z-10 top-16 md:top-32 left-0 h-4/5vh max-h-full right-auto overflow-y-scroll transform " + (
       /*navOpen*/
       ctx[1] ? "translate-x-0" : "-translate-x-full") + " transition-all duration-1000 ease-in-out bg-white p-4 rounded-r-lg border-solid border-oblivious-dark border-2");
-      add_location(nav, file, 97, 0, 3334);
-      add_location(div, file, 128, 0, 4217);
+      add_location(nav, file, 89, 0, 2965);
+      add_location(div, file, 120, 0, 3848);
     },
     m: function mount(target, anchor) {
       if (if_block) if_block.m(target, anchor);
@@ -908,10 +908,6 @@ function preload(_ref3) {
   }));
 }
 
-function readersPositionHasAdvanced(storedPosition, currentPosition) {
-  return !storedPosition && currentPosition || currentPosition[0] > storedPosition[0] || currentPosition[0] === storedPosition[0] && currentPosition[1] > storedPosition[1];
-}
-
 function instance($$self, $$props, $$invalidate) {
   var $page;
   var $readerPosition;
@@ -971,7 +967,6 @@ function instance($$self, $$props, $$invalidate) {
       PageTransition: PageTransition,
       readerPosition: readerPosition,
       chapterCounts: chapterCounts,
-      readersPositionHasAdvanced: readersPositionHasAdvanced,
       page: page,
       navOpen: navOpen,
       recommendJumpToChapter: recommendJumpToChapter,
@@ -1006,12 +1001,8 @@ function instance($$self, $$props, $$invalidate) {
     if ($$self.$$.dirty &
     /*slug, $readerPosition*/
     24) {
-       if (slug && readersPositionHasAdvanced($readerPosition, slug)) {
-        readerPosition.set(slug);
-      } else if (!slug && $readerPosition) {
-        setTimeout(function () {
-          $$invalidate(2, recommendJumpToChapter = true);
-        }, 1);
+       if (!slug && $readerPosition && $readerPosition[0] && $readerPosition[1]) {
+        $$invalidate(2, recommendJumpToChapter = true);
       } else {
         $$invalidate(2, recommendJumpToChapter = false);
       }

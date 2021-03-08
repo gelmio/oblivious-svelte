@@ -1,4 +1,4 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, g as element, h as space, t as text, D as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, G as noop, v as validate_slots } from './client.f4120dad.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, g as element, h as space, t as text, D as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, G as noop, v as validate_slots } from './client.f9dd3df9.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -24,8 +24,11 @@ function create_fragment(ctx) {
   var t3;
   var t4;
   var div;
-  var a;
+  var a0;
   var t5;
+  var t6;
+  var a1;
+  var t7;
   var block = {
     c: function create() {
       meta0 = element("meta");
@@ -46,8 +49,11 @@ function create_fragment(ctx) {
       t3 = text("Tap the book icon to jump to a chapter, or start at the very beginning, which is a very good place to start.");
       t4 = space();
       div = element("div");
-      a = element("a");
+      a0 = element("a");
       t5 = text("Let's go already!");
+      t6 = space();
+      a1 = element("a");
+      t7 = text("Jump me to Book 2!");
       this.h();
     },
     l: function claim(nodes) {
@@ -108,16 +114,27 @@ function create_fragment(ctx) {
       t3 = claim_text(h2_nodes, "Tap the book icon to jump to a chapter, or start at the very beginning, which is a very good place to start.");
       h2_nodes.forEach(detach_dev);
       t4 = claim_space(section_nodes);
-      div = claim_element(section_nodes, "DIV", {});
+      div = claim_element(section_nodes, "DIV", {
+        class: true
+      });
       var div_nodes = children(div);
-      a = claim_element(div_nodes, "A", {
+      a0 = claim_element(div_nodes, "A", {
         rel: true,
         href: true,
         class: true
       });
-      var a_nodes = children(a);
-      t5 = claim_text(a_nodes, "Let's go already!");
-      a_nodes.forEach(detach_dev);
+      var a0_nodes = children(a0);
+      t5 = claim_text(a0_nodes, "Let's go already!");
+      a0_nodes.forEach(detach_dev);
+      t6 = claim_space(div_nodes);
+      a1 = claim_element(div_nodes, "A", {
+        rel: true,
+        href: true,
+        class: true
+      });
+      var a1_nodes = children(a1);
+      t7 = claim_text(a1_nodes, "Jump me to Book 2!");
+      a1_nodes.forEach(detach_dev);
       div_nodes.forEach(detach_dev);
       section_nodes.forEach(detach_dev);
       this.h();
@@ -155,10 +172,15 @@ function create_fragment(ctx) {
       add_location(h1, file, 25, 1, 1126);
       attr_dev(h2, "class", "text-xl md:text-3xl text-center mb-12");
       add_location(h2, file, 28, 1, 1236);
-      attr_dev(a, "rel", "prefetch");
-      attr_dev(a, "href", "read/1/1");
-      attr_dev(a, "class", "inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious");
-      add_location(a, file, 32, 2, 1414);
+      attr_dev(a0, "rel", "prefetch");
+      attr_dev(a0, "href", "read/1/1");
+      attr_dev(a0, "class", "inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-oblivious");
+      add_location(a0, file, 32, 2, 1476);
+      attr_dev(a1, "rel", "prefetch");
+      attr_dev(a1, "href", "read/2/1");
+      attr_dev(a1, "class", "inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-white border border-solid border-oblivious");
+      add_location(a1, file, 38, 2, 1643);
+      attr_dev(div, "class", "flex flex-col md:flex-row justify-center items-center");
       add_location(div, file, 31, 1, 1406);
       attr_dev(section, "class", "flex flex-col items-center max-w-4xl mt-12 md:mt-28 mb-24");
       add_location(section, file, 24, 0, 1049);
@@ -182,8 +204,11 @@ function create_fragment(ctx) {
       append_dev(h2, t3);
       append_dev(section, t4);
       append_dev(section, div);
-      append_dev(div, a);
-      append_dev(a, t5);
+      append_dev(div, a0);
+      append_dev(a0, t5);
+      append_dev(div, t6);
+      append_dev(div, a1);
+      append_dev(a1, t7);
     },
     p: noop,
     i: noop,
