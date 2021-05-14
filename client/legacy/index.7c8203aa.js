@@ -1,4 +1,4 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, g as element, h as space, t as text, D as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, G as noop, v as validate_slots } from './client.89580cf8.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, g as element, h as space, t as text, D as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, G as noop, v as validate_slots } from './client.00008a5c.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -46,7 +46,7 @@ function create_fragment(ctx) {
       t1 = text("Read the Oblivious Trilogy for free, right here!");
       t2 = space();
       h2 = element("h2");
-      t3 = text("Tap the book icon to jump to a chapter, or start at the very beginning, which is a very good place to start.");
+      t3 = text("Tap the book icon and jump to a chapter, or start at the very beginning, which is a very good place to start.");
       t4 = space();
       div = element("div");
       a0 = element("a");
@@ -111,7 +111,7 @@ function create_fragment(ctx) {
         class: true
       });
       var h2_nodes = children(h2);
-      t3 = claim_text(h2_nodes, "Tap the book icon to jump to a chapter, or start at the very beginning, which is a very good place to start.");
+      t3 = claim_text(h2_nodes, "Tap the book icon and jump to a chapter, or start at the very beginning, which is a very good place to start.");
       h2_nodes.forEach(detach_dev);
       t4 = claim_space(section_nodes);
       div = claim_element(section_nodes, "DIV", {
@@ -175,13 +175,13 @@ function create_fragment(ctx) {
       attr_dev(a0, "rel", "prefetch");
       attr_dev(a0, "href", "read/1/1");
       attr_dev(a0, "class", "inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-oblivious");
-      add_location(a0, file, 32, 2, 1476);
+      add_location(a0, file, 32, 2, 1477);
       attr_dev(a1, "rel", "prefetch");
       attr_dev(a1, "href", "read/2/1");
       attr_dev(a1, "class", "inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-white border border-solid border-oblivious");
-      add_location(a1, file, 38, 2, 1643);
+      add_location(a1, file, 38, 2, 1644);
       attr_dev(div, "class", "flex flex-col md:flex-row justify-center items-center");
-      add_location(div, file, 31, 1, 1406);
+      add_location(div, file, 31, 1, 1407);
       attr_dev(section, "class", "flex flex-col items-center max-w-4xl mt-12 md:mt-28 mb-24");
       add_location(section, file, 24, 0, 1049);
     },
