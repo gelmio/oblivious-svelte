@@ -1,5 +1,5 @@
-import { L as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, s as safe_not_equal, a2 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, G as noop, h as space, t as text, O as empty, D as query_selector_all, l as claim_space, n as claim_text, a3 as HtmlTag, u as append_dev, y as set_data_dev, H as transition_in, I as transition_out, Q as check_outros, B as run_all, T as validate_store, U as component_subscribe, v as validate_slots, V as stores$1, a4 as onMount, f as fade, z as add_render_callback, W as create_in_transition, $ as group_outros, a5 as binding_callbacks, N as create_out_transition } from './client.217b7cd8.js';
-import { g as giveScrollHint, r as readerPosition } from './reader-hints.8172d83d.js';
+import { L as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, s as safe_not_equal, a2 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, G as noop, h as space, t as text, O as empty, D as query_selector_all, l as claim_space, n as claim_text, a3 as HtmlTag, u as append_dev, y as set_data_dev, H as transition_in, I as transition_out, Q as check_outros, B as run_all, T as validate_store, U as component_subscribe, v as validate_slots, V as stores$1, a4 as onMount, f as fade, z as add_render_callback, W as create_in_transition, $ as group_outros, a5 as binding_callbacks, N as create_out_transition } from './client.7a75f86f.js';
+import { g as giveScrollHint, r as readerPosition } from './reader-hints.1f541efc.js';
 
 function smoothScroll(element, initial, final, duration, callback = null) {
     let startTime;
@@ -32,7 +32,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 var document_1 = globals.document,
     window_1 = globals.window;
-var file = "src/routes/read/[...slug].svelte"; // (219:2) {:else}
+var file = "src/routes/read/[...slug].svelte"; // (217:2) {:else}
 
 function create_else_block(ctx) {
   var div;
@@ -94,15 +94,15 @@ function create_else_block(ctx) {
       this.h();
     },
     h: function hydrate() {
-      add_location(p0, file, 220, 4, 8026);
-      add_location(p1, file, 221, 4, 8084);
+      add_location(p0, file, 218, 4, 7972);
+      add_location(p1, file, 219, 4, 8030);
       attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a, "rel", "nofollow");
       attr_dev(a, "class", "border-b border-oblivious-dark");
-      add_location(a, file, 226, 74, 8267);
-      add_location(p2, file, 225, 4, 8189);
+      add_location(a, file, 224, 74, 8213);
+      add_location(p2, file, 223, 4, 8135);
       attr_dev(div, "class", "text-center font-header mt-8");
-      add_location(div, file, 219, 3, 7979);
+      add_location(div, file, 217, 3, 7925);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -133,11 +133,11 @@ function create_else_block(ctx) {
     block: block,
     id: create_else_block.name,
     type: "else",
-    source: "(219:2) {:else}",
+    source: "(217:2) {:else}",
     ctx: ctx
   });
   return block;
-} // (196:2) {#if next[0] < 3}
+} // (194:2) {#if next[0] < 3}
 
 
 function create_if_block_3(ctx) {
@@ -194,9 +194,9 @@ function create_if_block_3(ctx) {
       /*next*/
       ctx[10][1]);
       attr_dev(a, "class", "inline-block text-lg p-2 rounded-lg no-underline bg-oblivious mr-4");
-      add_location(a, file, 197, 4, 7361);
+      add_location(a, file, 195, 4, 7307);
       attr_dev(div, "class", "flex flex-col md:flex-row justify-end items-end mt-8");
-      add_location(div, file, 196, 3, 7290);
+      add_location(div, file, 194, 3, 7236);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -254,11 +254,11 @@ function create_if_block_3(ctx) {
     block: block,
     id: create_if_block_3.name,
     type: "if",
-    source: "(196:2) {#if next[0] < 3}",
+    source: "(194:2) {#if next[0] < 3}",
     ctx: ctx
   });
   return block;
-} // (206:4) {#if next[1] > 10 && !(next[1] % 5)}
+} // (204:4) {#if next[1] > 10 && !(next[1] % 5)}
 
 
 function create_if_block_4(ctx) {
@@ -297,9 +297,9 @@ function create_if_block_4(ctx) {
       attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a, "rel", "nofollow");
       attr_dev(a, "class", "border-b border-oblivious-dark");
-      add_location(a, file, 207, 13, 7688);
+      add_location(a, file, 205, 13, 7634);
       attr_dev(span, "class", "m-2");
-      add_location(span, file, 206, 5, 7656);
+      add_location(span, file, 204, 5, 7602);
     },
     m: function mount(target, anchor) {
       insert_dev(target, span, anchor);
@@ -322,11 +322,11 @@ function create_if_block_4(ctx) {
     block: block,
     id: create_if_block_4.name,
     type: "if",
-    source: "(206:4) {#if next[1] > 10 && !(next[1] % 5)}",
+    source: "(204:4) {#if next[1] > 10 && !(next[1] % 5)}",
     ctx: ctx
   });
   return block;
-} // (240:0) {#if showPhotoBox}
+} // (238:0) {#if showPhotoBox}
 
 
 function create_if_block_2(ctx) {
@@ -348,18 +348,18 @@ function create_if_block_2(ctx) {
     },
     h: function hydrate() {
       attr_dev(div, "class", "fixed inset-0 flex justify-center items-center cursor-zoom-out bg-oblivious-opaque");
-      add_location(div, file, 240, 1, 8636);
+      add_location(div, file, 238, 1, 8582);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
       /*div_binding*/
 
-      ctx[20](div);
+      ctx[19](div);
 
       if (!mounted) {
         dispose = listen_dev(div, "click",
         /*click_handler_3*/
-        ctx[21], false, false, false);
+        ctx[20], false, false, false);
         mounted = true;
       }
     },
@@ -377,7 +377,7 @@ function create_if_block_2(ctx) {
       if (detaching) detach_dev(div);
       /*div_binding*/
 
-      ctx[20](null);
+      ctx[19](null);
       mounted = false;
       dispose();
     }
@@ -386,11 +386,11 @@ function create_if_block_2(ctx) {
     block: block,
     id: create_if_block_2.name,
     type: "if",
-    source: "(240:0) {#if showPhotoBox}",
+    source: "(238:0) {#if showPhotoBox}",
     ctx: ctx
   });
   return block;
-} // (284:31) 
+} // (282:31) 
 
 
 function create_if_block_1(ctx) {
@@ -474,18 +474,18 @@ function create_if_block_1(ctx) {
     },
     h: function hydrate() {
       attr_dev(p0, "class", "font-header text-xl md:text-2xl");
-      add_location(p0, file, 291, 3, 10080);
+      add_location(p0, file, 289, 3, 10026);
       attr_dev(p1, "class", "font-sans text-base md:text-lg mb-4");
-      add_location(p1, file, 294, 3, 10177);
+      add_location(p1, file, 292, 3, 10123);
       attr_dev(button0, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious");
-      add_location(button0, file, 298, 4, 10298);
+      add_location(button0, file, 296, 4, 10244);
       attr_dev(button1, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-white border border-solid border-oblivious cursor-pointer");
-      add_location(button1, file, 306, 4, 10515);
-      add_location(div0, file, 297, 3, 10288);
+      add_location(button1, file, 304, 4, 10461);
+      add_location(div0, file, 295, 3, 10234);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
-      add_location(div1, file, 288, 2, 9995);
+      add_location(div1, file, 286, 2, 9941);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
-      add_location(div2, file, 284, 1, 9875);
+      add_location(div2, file, 282, 1, 9821);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -506,9 +506,9 @@ function create_if_block_1(ctx) {
       if (!mounted) {
         dispose = [listen_dev(button0, "click",
         /*click_handler_5*/
-        ctx[23], false, false, false), listen_dev(button1, "click",
+        ctx[22], false, false, false), listen_dev(button1, "click",
         /*click_handler_6*/
-        ctx[24], false, false, false)];
+        ctx[23], false, false, false)];
         mounted = true;
       }
     },
@@ -534,11 +534,11 @@ function create_if_block_1(ctx) {
     block: block,
     id: create_if_block_1.name,
     type: "if",
-    source: "(284:31) ",
+    source: "(282:31) ",
     ctx: ctx
   });
   return block;
-} // (248:0) {#if $giveScrollHint}
+} // (246:0) {#if $giveScrollHint}
 
 
 function create_if_block(ctx) {
@@ -650,22 +650,22 @@ function create_if_block(ctx) {
     },
     h: function hydrate() {
       attr_dev(p0, "class", "font-header text-xl md:text-2xl mb-4");
-      add_location(p0, file, 256, 3, 9058);
+      add_location(p0, file, 254, 3, 9004);
       attr_dev(p1, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p1, file, 259, 3, 9140);
+      add_location(p1, file, 257, 3, 9086);
       attr_dev(p2, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p2, file, 262, 3, 9235);
+      add_location(p2, file, 260, 3, 9181);
       attr_dev(p3, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p3, file, 265, 3, 9322);
+      add_location(p3, file, 263, 3, 9268);
       attr_dev(p4, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p4, file, 268, 3, 9443);
+      add_location(p4, file, 266, 3, 9389);
       attr_dev(span, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious cursor-pointer");
-      add_location(span, file, 273, 4, 9617);
-      add_location(div0, file, 272, 3, 9607);
+      add_location(span, file, 271, 4, 9563);
+      add_location(div0, file, 270, 3, 9553);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
-      add_location(div1, file, 253, 2, 8973);
+      add_location(div1, file, 251, 2, 8919);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
-      add_location(div2, file, 248, 1, 8842);
+      add_location(div2, file, 246, 1, 8788);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -693,7 +693,7 @@ function create_if_block(ctx) {
       if (!mounted) {
         dispose = listen_dev(span, "click",
         /*click_handler_4*/
-        ctx[22], false, false, false);
+        ctx[21], false, false, false);
         mounted = true;
       }
     },
@@ -725,7 +725,7 @@ function create_if_block(ctx) {
     block: block,
     id: create_if_block.name,
     type: "if",
-    source: "(248:0) {#if $giveScrollHint}",
+    source: "(246:0) {#if $giveScrollHint}",
     ctx: ctx
   });
   return block;
@@ -865,7 +865,7 @@ function create_fragment(ctx) {
     },
     h: function hydrate() {
       attr_dev(h2, "class", "font-header");
-      add_location(h2, file, 185, 1, 6904);
+      add_location(h2, file, 183, 1, 6850);
       html_tag = new HtmlTag(t6);
       attr_dev(div0, "class", "reader relative overflow-hidden no-scrollbar py-12 svelte-sokgus");
       attr_dev(div0, "style", div0_style_value =
@@ -879,11 +879,11 @@ function create_fragment(ctx) {
       ctx[5], "px; column-gap: ").concat(
       /*columnGap*/
       ctx[12], "px; column-rule: 1px solid #000;") : "");
-      add_location(div0, file, 186, 1, 6965);
+      add_location(div0, file, 184, 1, 6911);
       attr_dev(div1, "class", "text-xs text-center -mt-10");
-      add_location(div1, file, 237, 1, 8536);
+      add_location(div1, file, 235, 1, 8482);
       attr_dev(article, "class", "prose md:prose-xl text-justify mb-8 md:mb-12 pt-16");
-      add_location(article, file, 184, 0, 6834);
+      add_location(article, file, 182, 0, 6780);
     },
     m: function mount(target, anchor) {
       insert_dev(target, t0, anchor);
@@ -902,7 +902,7 @@ function create_fragment(ctx) {
       if_block0.m(div0, null);
       /*div0_binding*/
 
-      ctx[19](div0);
+      ctx[18](div0);
       append_dev(article, t7);
       append_dev(article, div1);
       append_dev(div1, t8);
@@ -920,7 +920,7 @@ function create_fragment(ctx) {
       if (!mounted) {
         dispose = [listen_dev(window_1, "resize",
         /*resize_handler*/
-        ctx[18], false, false, false), listen_dev(div0, "click",
+        ctx[17], false, false, false), listen_dev(div0, "click",
         /*handleClick*/
         ctx[15], false, false, false)];
         mounted = true;
@@ -1050,7 +1050,7 @@ function create_fragment(ctx) {
       if_block0.d();
       /*div0_binding*/
 
-      ctx[19](null);
+      ctx[18](null);
       if (detaching) detach_dev(t9);
       if (if_block1) if_block1.d(detaching);
       if (detaching) detach_dev(t10);
@@ -1110,7 +1110,7 @@ function preload(_ref) {
   var params = _ref.params,
       query = _ref.query;
   return __awaiter(this, void 0, void 0, /*#__PURE__*/regenerator.mark(function _callee() {
-    var _params$slug$map, _params$slug$map2, bookNumber, chapterNumber, res, _yield$res$json, chapter, snippet, nextChapterExists, message;
+    var _params$slug$map, _params$slug$map2, bookNumber, chapterNumber, res, _yield$res$json, chapter, nextChapterExists, message;
 
     return regenerator.wrap(function _callee$(_context) {
       while (1) {
@@ -1132,27 +1132,25 @@ function preload(_ref) {
           case 6:
             _yield$res$json = _context.sent;
             chapter = _yield$res$json.chapter;
-            snippet = _yield$res$json.snippet;
             nextChapterExists = _yield$res$json.nextChapterExists;
             message = _yield$res$json.message;
 
             if (!(res.status === 200)) {
-              _context.next = 15;
+              _context.next = 14;
               break;
             }
 
             return _context.abrupt("return", {
               content: chapter,
-              snippet: snippet,
               book: bookNumber,
               chapter: chapterNumber,
               nextChapterExists: nextChapterExists
             });
 
-          case 15:
+          case 14:
             this.error(res.status, message);
 
-          case 16:
+          case 15:
           case "end":
             return _context.stop();
         }
@@ -1193,7 +1191,7 @@ function instance($$self, $$props, $$invalidate) {
   var $giveScrollHint;
   validate_store(readerPosition, "readerPosition");
   component_subscribe($$self, readerPosition, function ($$value) {
-    return $$invalidate(32, $readerPosition = $$value);
+    return $$invalidate(31, $readerPosition = $$value);
   });
   validate_store(giveScrollHint, "giveScrollHint");
   component_subscribe($$self, giveScrollHint, function ($$value) {
@@ -1204,7 +1202,6 @@ function instance($$self, $$props, $$invalidate) {
       $$scope = $$props.$$scope;
   validate_slots("U5B_slugu5D", slots, []);
   var content = $$props.content;
-  var snippet = $$props.snippet;
   var book = $$props.book;
   var chapter = $$props.chapter;
   var nextChapterExists = $$props.nextChapterExists;
@@ -1228,7 +1225,7 @@ function instance($$self, $$props, $$invalidate) {
 
   validate_store(page, "page");
   component_subscribe($$self, page, function (value) {
-    return $$invalidate(31, $page = value);
+    return $$invalidate(30, $page = value);
   });
 
   function setReaderBounds() {
@@ -1321,7 +1318,7 @@ function instance($$self, $$props, $$invalidate) {
       smoothScroll(window, [window.scrollX, window.scrollY], [window.scrollX, readerTop], 600);
     }, 2000);
   });
-  var writable_props = ["content", "snippet", "book", "chapter", "nextChapterExists"];
+  var writable_props = ["content", "book", "chapter", "nextChapterExists"];
   Object.keys($$props).forEach(function (key) {
     if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn("<U5B_slugu5D> was created with unknown prop '".concat(key, "'"));
   });
@@ -1364,7 +1361,6 @@ function instance($$self, $$props, $$invalidate) {
 
   $$self.$$set = function ($$props) {
     if ("content" in $$props) $$invalidate(0, content = $$props.content);
-    if ("snippet" in $$props) $$invalidate(17, snippet = $$props.snippet);
     if ("book" in $$props) $$invalidate(1, book = $$props.book);
     if ("chapter" in $$props) $$invalidate(2, chapter = $$props.chapter);
     if ("nextChapterExists" in $$props) $$invalidate(3, nextChapterExists = $$props.nextChapterExists);
@@ -1381,7 +1377,6 @@ function instance($$self, $$props, $$invalidate) {
       readerPosition: readerPosition,
       smoothScroll: smoothScroll,
       content: content,
-      snippet: snippet,
       book: book,
       chapter: chapter,
       nextChapterExists: nextChapterExists,
@@ -1417,7 +1412,6 @@ function instance($$self, $$props, $$invalidate) {
 
   $$self.$inject_state = function ($$props) {
     if ("content" in $$props) $$invalidate(0, content = $$props.content);
-    if ("snippet" in $$props) $$invalidate(17, snippet = $$props.snippet);
     if ("book" in $$props) $$invalidate(1, book = $$props.book);
     if ("chapter" in $$props) $$invalidate(2, chapter = $$props.chapter);
     if ("nextChapterExists" in $$props) $$invalidate(3, nextChapterExists = $$props.nextChapterExists);
@@ -1445,9 +1439,9 @@ function instance($$self, $$props, $$invalidate) {
   }
 
   $$self.$$.update = function () {
-    if ($$self.$$.dirty[1] &
+    if ($$self.$$.dirty[0] &
     /*$page*/
-    1) {
+    1073741824) {
        slug = $page.params.slug ? $page.params.slug.map(function (x) {
         return +x;
       }) : null;
@@ -1460,7 +1454,7 @@ function instance($$self, $$props, $$invalidate) {
     }
   };
 
-  return [content, book, chapter, nextChapterExists, reader, readerWidth, readerHeight, photoBox, showPhotoBox, shouldJumpToPosition, next, $giveScrollHint, columnGap, page, setReaderBounds, handleClick, jumpToParagraph, snippet, resize_handler, div0_binding, div_binding, click_handler_3, click_handler_4, click_handler_5, click_handler_6];
+  return [content, book, chapter, nextChapterExists, reader, readerWidth, readerHeight, photoBox, showPhotoBox, shouldJumpToPosition, next, $giveScrollHint, columnGap, page, setReaderBounds, handleClick, jumpToParagraph, resize_handler, div0_binding, div_binding, click_handler_3, click_handler_4, click_handler_5, click_handler_6];
 }
 
 var U5B_slugu5D = /*#__PURE__*/function (_SvelteComponentDev) {
@@ -1476,7 +1470,6 @@ var U5B_slugu5D = /*#__PURE__*/function (_SvelteComponentDev) {
     _this = _super.call(this, options);
     init(_assertThisInitialized(_this), options, instance, create_fragment, safe_not_equal, {
       content: 0,
-      snippet: 17,
       book: 1,
       chapter: 2,
       nextChapterExists: 3
@@ -1494,12 +1487,6 @@ var U5B_slugu5D = /*#__PURE__*/function (_SvelteComponentDev) {
     /*content*/
     ctx[0] === undefined && !("content" in props)) {
       console.warn("<U5B_slugu5D> was created without expected prop 'content'");
-    }
-
-    if (
-    /*snippet*/
-    ctx[17] === undefined && !("snippet" in props)) {
-      console.warn("<U5B_slugu5D> was created without expected prop 'snippet'");
     }
 
     if (
@@ -1525,14 +1512,6 @@ var U5B_slugu5D = /*#__PURE__*/function (_SvelteComponentDev) {
 
   _createClass(U5B_slugu5D, [{
     key: "content",
-    get: function get() {
-      throw new Error("<U5B_slugu5D>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    },
-    set: function set(value) {
-      throw new Error("<U5B_slugu5D>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    }
-  }, {
-    key: "snippet",
     get: function get() {
       throw new Error("<U5B_slugu5D>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
     },
