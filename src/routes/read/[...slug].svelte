@@ -74,19 +74,21 @@
 	}
 
 	function setReaderBounds() {
-		windowBounds = [window.innerWidth, window.innerHeight];
-		if (
-			!readerBounds ||
-			!readerHeight ||
-			!readerWidth ||
-			windowBounds[0] < readerWidth ||
-			windowBounds[1] < readerHeight ||
-			windowBounds[0] > readerWidth + resizeTolerance ||
-			windowBounds[1] > readerHeight + resizeTolerance
-		) {
-			readerHeight = Math.round(windowBounds[1]);
-			readerBounds = reader.getBoundingClientRect();
-			readerWidth = Math.round(readerBounds.width);
+		if(reader) {
+			windowBounds = [window.innerWidth, window.innerHeight];
+			if (
+				!readerBounds ||
+				!readerHeight ||
+				!readerWidth ||
+				windowBounds[0] < readerWidth ||
+				windowBounds[1] < readerHeight ||
+				windowBounds[0] > readerWidth + resizeTolerance ||
+				windowBounds[1] > readerHeight + resizeTolerance
+			) {
+				readerHeight = Math.round(windowBounds[1]);
+				readerBounds = reader.getBoundingClientRect();
+				readerWidth = Math.round(readerBounds.width);
+			}
 		}
 	}
 
@@ -263,7 +265,7 @@
 							rel="nofollow"
 							class="border-b border-oblivious-dark"
 						>
-							flick me some money!</a
+							buy me a coffee!</a
 						>
 					</span>
 				{/if}
@@ -276,12 +278,12 @@
 					the way out soon!
 				</p>
 				<p>
-					While you wait, feel free to jump on the mailing list, or <a
+					While you wait, feel free to jump on the mailing list, or maybe even <a
 						on:click={(e) => e.stopPropagation()}	
 						href="https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart"
 						rel="nofollow"
 						class="border-b border-oblivious-dark"
-						>flick me some money to keep the wheels rolling!</a
+						>buy me a coffee!</a
 					>
 				</p>
 			</div>

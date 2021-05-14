@@ -28,7 +28,7 @@
 		Read the Oblivious Trilogy for free, right here!
 	</h1>
 	<h2 class="text-xl md:text-3xl text-center mb-12">
-		Tap the book icon to jump to a chapter, or start at the very beginning, which is a very good place to start.
+		Tap the book icon and jump to a chapter, or start at the very beginning, which is a very good place to start.
 	</h2>
 	<div class="flex flex-col md:flex-row justify-center items-center">
 		<a 
