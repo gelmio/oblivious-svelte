@@ -10,14 +10,12 @@
 		);
 		const {
 			chapter,
-			snippet,
 			nextChapterExists,
 			message,
 		} = await res.json();
 		if (res.status === 200) {
 			return {
 				content: chapter,
-				snippet,
 				book: bookNumber,
 				chapter: chapterNumber,
 				nextChapterExists,
@@ -36,7 +34,6 @@
 	import smoothScroll from "./smooth-scroll";
 
 	export let content: string;
-	export let snippet: string;
 	export let book: number;
 	export let chapter: number;
 	export let nextChapterExists: boolean;

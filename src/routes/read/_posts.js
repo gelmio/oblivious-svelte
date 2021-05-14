@@ -28,8 +28,4 @@ export const markdownChaptersByBook = splitByBookAndChapter.map(
 	)
 )
 
-export const snippets = splitByBookAndChapter.map(
-	book => book.map(chapterString => chapterString.replace(/.*\[\].*/, "").trim().slice(0, 160))
-)
-
 export default markdownChaptersByBook;
