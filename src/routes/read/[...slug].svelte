@@ -338,7 +338,6 @@
 {:else if shouldJumpToPosition}
 	<div
 		in:fade={{ delay: 1000 }}
-		out:fade
 		class="fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10"
 	>
 		<div
