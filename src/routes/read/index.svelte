@@ -7,11 +7,6 @@
 		property="og:description"
 		content="Come along on the adventure, while we make our way through West Africa on a wildly inappropriate Royal Enfield!"
 	/>
-	<meta property="og:url" content="http://www.obliviousthebook.com/" />
-	<meta property="og:site_name" content="ObliviousTheBook.com" />
-	<meta property="fb:admins" content="563453705" />
-	<meta property="og:image" content="/images/logo-750.png" />
-	<meta name="twitter:card" content="summary_large_image" />
 	<meta
 		name="twitter:description"
 		content="Come along on the adventure, while we make our way through West Africa on a wildly inappropriate Royal Enfield!"
@@ -20,7 +15,6 @@
 		name="twitter:title"
 		content="Read the Oblivious Trilogy for Free | An outrageously inappropriate journey through West Africa on a Royal Enfield."
 	/>
-	<meta name="twitter:image" content="/images/logo-750.png" />
 </svelte:head>
 
 <section class="flex flex-col items-center max-w-4xl mt-12 md:mt-28 mb-24">

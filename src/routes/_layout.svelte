@@ -6,6 +6,13 @@
 	export let segment: string;
 </script>
 
+<svelte:head>
+	<meta property="og:site_name" content="ObliviousTheBook.com" />
+	<meta property="fb:admins" content="563453705" />
+	<meta property="og:image" content="/images/carousel/images(1).jpg" />
+	<meta name="twitter:card" content="summary_large_image" />
+	<meta name="twitter:image" content="/images/carousel/images(1).jpg" />
+</svelte:head>
 <Nav {segment} />
 
 {#key segment}

@@ -230,10 +230,8 @@
 
 <svelte:head>
 	<title
-		>Oblivious | Book {book}, Chapter {chapter} | An overlanding motorbike journey
-		through West Africa</title
+		>Oblivious | Book {book}, Chapter {chapter} | An overlanding motorbike journey through West Africa</title
 	>
-	<meta name="description" content={snippet} />
 </svelte:head>
 
 <article class="prose md:prose-xl text-justify mb-8 md:mb-12 pt-16">
