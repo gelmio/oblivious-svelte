@@ -16,20 +16,8 @@
 	import { stores } from "@sapper/app";
 	import { fade } from "svelte/transition";
 	import PageTransition from "../../components/PageTransition.svelte";
-	import { readerPosition } from "./reader-hints.js";
+	import { readerPosition } from "./reader-hints";
 	export let chapterCounts: number[];
-
-	function readersPositionHasAdvanced(
-		storedPosition: number[],
-		currentPosition: number[]
-	) {
-		return (
-			(!storedPosition && currentPosition) ||
-			currentPosition[0] > storedPosition[0] ||
-			(currentPosition[0] === storedPosition[0] &&
-				currentPosition[1] > storedPosition[1])
-		);
-	}
 
 	const { page } = stores();
 	let navOpen = false;
@@ -37,12 +25,13 @@
 	$: slug = $page.params.slug
 		? $page.params.slug.map((x: string) => +x)
 		: null;
-	$: if (slug && readersPositionHasAdvanced($readerPosition, slug)) {
-		readerPosition.set(slug);
-	} else if (!slug && $readerPosition) {
-		setTimeout(() => {
-			recommendJumpToChapter = true;
-		}, 1);
+	$: if (
+		!slug &&
+		$readerPosition &&
+		$readerPosition[0] &&
+		$readerPosition[1]
+	) {
+		recommendJumpToChapter = true;
 	} else {
 		recommendJumpToChapter = false;
 	}

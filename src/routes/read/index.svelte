@@ -30,12 +30,18 @@
 	<h2 class="text-xl md:text-3xl text-center mb-12">
 		Tap the book icon to jump to a chapter, or start at the very beginning, which is a very good place to start.
 	</h2>
-	<div>
+	<div class="flex flex-col md:flex-row justify-center items-center">
 		<a 
 			rel="prefetch"
 			href="read/1/1"
-			class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious">
+			class="inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-oblivious">
 			Let's go already!
+		</a>
+		<a 
+			rel="prefetch"
+			href="read/2/1"
+			class="inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-white border border-solid border-oblivious">
+			Jump me to Book 2!
 		</a>
 	</div>
 
