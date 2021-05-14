@@ -808,7 +808,7 @@ It's a vow I plan to keep.
 
 ## Chapter Nine
 Winter is coming...
-I've done a half decent job of outrunning the winter so far, with only the occasional hyperthermia-inducing downpour, but I've run out of mainland Europe to escape south to.
+I've done a half decent job of outrunning the winter so far, with only the occasional hypothermia-inducing downpour, but I've run out of mainland Europe to escape south to.
 There's nowhere else left to hide.
 Except *Africa.*
 I was going to garage the bike and go skiing till the weather came good again...
@@ -825,7 +825,7 @@ Two up, on a Royal Enfield.
 It was like something out of *The Motorcycle Diaries.* Except this guy wasn't my best mate...
 ---
 ![](/oblivious/images/Image_7.jpg)
-In a very short space of time we've covered some serious mileage, put in some serious hours. Ben hasn't complained *once*, even after ten hour days on that back-seat. Must've been an nightmare, *the thing's the size of a hand...* Yet, not a peep. Half the time I forget he's even there, and I start singing to myself. He's so *quiet.*
+In a very short space of time we've covered some serious mileage, put in some serious hours. Ben hasn't complained *once*, even after ten hour days on that back-seat. Must've been a nightmare, *the thing's the size of a hand...* Yet, not a peep. Half the time I forget he's even there, and I start singing to myself. He's so *quiet.*
 The Enfield hasn't skipped a beat. It's handled the overload with aplomb.
 The three of us have gone down the Mediterranean coast of Spain, till now, we find ourselves, on the *rock of Gibraltar*.
 The end of Europe.
@@ -962,7 +962,7 @@ A relief. But it's coming, I can *feel* it.
 We spend the night hanging out with a couple of other backpackers. I can't really focus on the conversation; every ounce of my mental energy is funnelled into feeling for the *slightest* movement from my bowels, and hearing every noise that's coming from outside in case someone's stealing or defiling my Enfield.
 *I can't believe I have to leave it out on the street.*
 Disaster's imminent. One way or the other. I can *feel* it.
-The second time I head to the window to make sure there's no one there, Ben gives me disappointed look and a shake of the head.
+The second time I head to the window to make sure there's no one there, Ben gives me a disappointed look and a shake of the head.
 *He looks a little angry.*
 Five minutes later and I hear *another* noise. I have to get up to check, but Ben stops me dead.
 "Get up one more time and I'll belt the shit out of you. *Stop* it."
