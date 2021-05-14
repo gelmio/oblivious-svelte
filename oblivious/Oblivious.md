@@ -2402,7 +2402,7 @@ We stare at each other in silence for a long moment.
 Nah. Fuck off!
 This is a joke.
 I break off the staring contest and look around at the mob of blokes who have walked over. They all look serious.
-I eventually find my voice. "*This* is the boat??
+I eventually find my voice. "*This* is the boat??"
 "Yes."
 *"This??"*
 "Yes."
@@ -2578,7 +2578,7 @@ With a captive audience we tell them the best of our travelling stories over a c
 
 ## Chapter Twenty Three
 *Guinea Bissau.*
-Yes, that's a countries name...
+Yes, that's a country's name...
 It's an old Portuguese colony. That's what they speak here; Portuguese. In *Africa...* It's *bizarre.*
 Things are really starting to heat up now. It's getting *tropical.*
 The air temp on JB's bike registered 37 celsius today. That's nearly 100...
@@ -3108,7 +3108,7 @@ Even I can understand that.
 Shit, I’m not sure if I could even do yesterday’s ride over again, let alone taking it up a level. I can't even imagine what that would look like without needing a rope and tackle...
 Shit... What happens if there’s a bit that we just can’t get past? A bit that’s impossible? Or we get lost again or something?
 This trip to Mali was supposed to be a little morning detour... A *jaunt.*
-We buy some donkey piss in bottles on the way out of the village with almost the last of our money.
+We buy some donkey piss petrol in bottles on the way out of the village with almost the last of our money.
 We’re off into the unknown. Again...
 ---
 Immediately things are tougher; the track is steeper; the rocks are bigger and seem to be arranged in such a way to make passage as difficult as possible.
@@ -3227,7 +3227,7 @@ Fucking JB...
 Even if I could do the tube change myself, I don’t have an air pump. So I’m buggered.
 Should I walk the ten clicks back to Mali to get help? That'll take a good hour and a half...
 Why hasn’t JB realised that something’s up and come back to check on me?
-While I ponder that, a couple of African blokes wearing filthy rags rock up on a scooter.
+While I ponder that, a couple of blokes wearing filthy rags rock up on a scooter.
 They have with them a big set of 'tyre irons', and the equivalent of a football pump.
 *You ripper.*
 Without much said between us, they get to it like it’s no biggie.
@@ -3290,7 +3290,7 @@ I pull my punctured tube out of my bags and JB goes to work re-patching it and r
 In the meantime I bandage up the two poor old ladies, who seem to have sprained their wrists in the fall.
 It's interesting that the order went: 1) bikes 2) the old ladies.
 Everybody's coming up to me saying that *I* need to pay. I tell them to go and talk to JB...
-JB bodges through the tube repair and I bodge through the first aid. It looks like it's going to be two placebo's of uselessness, but everyone seems to be feeling better.
+JB bodges through the tube repair and I bodge through the first aid. It looks like it's going to be two placebos of uselessness, but everyone seems to be feeling better.
 Money exchanges hands - about ten dollars worth - and everyone is now suddenly happy again. *No hard feelings.*
 By the time we get away from the crash-site it’s twilight.
 That’s another first.
@@ -3560,7 +3560,7 @@ It's another road that's not on the GPS, and looking like being another tortuous
 ---
 It's going to be *a lot* longer than I expected...
 About half way into the ride I get to a river, which is serviced by a little floating barge.
-While I wait for the barge to come over this side of the river I get to talking with a local lad, doing his laundry on the riverbank.
+While I wait for the barge to come over this side of the river I get to talking with a young lad, doing his laundry on the riverbank.
 “Comby-en lays urs ah Kindia?”
 "Sank"
 *“Sank??!”* I was expecting more like three hours... *Max...*
@@ -3686,7 +3686,7 @@ By the time I'm done with the extermination the tent walls look like a scene fro
 I lie down in a pool of my own sweat, and try to sleep.
 *Bbbbzzzzzzzzzzzzztt...*
 Fucking *bastard...*
-I get up, locate the little mongrel - not easily, mind you - and kill it.
+I get up, locate the little mongrel mozzie - not easily, mind you - and kill it.
 ---
 I'm woken up once, twice, three times...
 By the fourth I'm going *insane...*
@@ -4000,9 +4000,9 @@ The bike is melting a hole in my jeans, and dripping oil everywhere while the mi
 _We're not in Kansas anymore..._
 Freetown.
 Sierra Leone...
-Blood fuckin Diamond in proper west fuckin Africa.
+Blood fuckin Diamond in proper West fuckin Africa.
 _The_ wild wild west.
-I muscle my way through the pile. The thump of the bike is finding competition for attention with the rest of the cacophony, so much so that no ones really making room for me.
+I muscle my way through the pile. The thump of the bike is finding competition for attention with the rest of the cacophony, so much so that no one's really making room for me.
 The whole place is *pumping.*
 Hope it's not like this all the way to my accommodations...
 ---
@@ -4066,7 +4066,7 @@ Funny that this place scared the shit out of me just yesterday.
 From break-out-in-a-cold-sweat-and-crap-your-pants to now: freely walking the crazy city streets, eating at the markets, squeezing through the crush and scrum of the locals as they go about it in the heat of the day. I feel as safe as houses.
 It's a delightful surprise; I can’t wipe the smile off my face.
 _What a place._
-Surprise number one: People line up for things. _Unbelievable._ People, actually waiting patiently in line for busses or taxis or anything. _That’s unique;_ lines are normally treated the same way that they are by Asian tourists: non-existent. Here, people get served in the order that they arrived in. It's refreshing.
+Surprise number one: People line up for things. _Unbelievable._ People, actually waiting patiently in line for buses or taxis or anything. _That’s unique;_ lines are normally treated the same way that they are by Asian tourists: non-existent. Here, people get served in the order that they arrived in. It's refreshing.
 Next surprise. They seem to give a shit. About stuff. About improving their standard of living. Or at least trying to.
 They have *bins*.
 Now, that’s probably not going to sound like much, but Africa doesn’t _have_ bins; they have streets.
@@ -4291,7 +4291,7 @@ This is a very, very pretty place.
 I’ve got high hopes for Freetown, I reckon it's going to do just fine.
 The bike is still cooking itself in the sun and pissing an oil slick as it goes. It’s starting to make an oily mess of my saddle bags.
 *Not good.*
-Putting that aside, the Freetown peninsular is bloody a nice ride; the ocean to the right, good blacktop under the wheels, and mountains on the left covered in thick greenery.
+Putting that aside, the Freetown peninsular is a bloody nice ride; the ocean to the right, good blacktop under the wheels, and mountains on the left covered in thick greenery.
 This is just fine and dandy.
 ---
 I see a wooden sign in the side of the road for *'No.2 River Beach'*. Hardly inspiring, but I’ve been told by locals back in Freetown that it's worth checking out.
@@ -4320,7 +4320,7 @@ The leap at the waters edge feels like slow motion...
 The water is a perfect flat teal with a swell breaking neatly across the beach.
 The mountains surround the beach like a bowl.
 The peaks almost seem to come straight up out of the sea.
-It’s all achingly beautiful and utterly unspoilt. I set my mind to soaking in every single detail as I sit all alone in the crystal clear ocean, just me and my board, waiting for the next set to come it.
+It’s all achingly beautiful and utterly unspoilt. I set my mind to soaking in every single detail as I sit all alone in the crystal clear ocean, just me and my board, waiting for the next set to come in.
 *Fan-bloody-tastic.*
 The water temperature is “stay in all day”.
 *I think I'll do just that...*
@@ -4345,7 +4345,7 @@ He's weird.
 *Really weird.*
 In fact, he's just like me... One day he he decided to drive down here from the UK in his Landcruiser.
 He points it out. It looks absolutely knackered... In fact, it looks completely fucked.
-"Yep, it broke down. That was about, what? ten years ago now? I think...?"
+"Yep, it broke down. That was about, what? Ten years ago now? I think...?"
 "You've been here for *ten* years??"
 "Yeah. Yeah, I've got a wife and two kids."
 "What? *Here??*"
@@ -5046,7 +5046,7 @@ All of them are grinning at me.
 They must've thought I was trying to make a getaway...
 *Unnecessary.*
 I give the cop the twenty bucks, and his scooter rider guns it down the street, tearing away from the police checkpoint. The prick on the back is laughing.
-Jokes on you, ya spud.
+Joke's on you, ya spud.
 I go to leave in the hole they've made to my right, but the guy on the scooter in front of me moves his scooter back to block my path. *Grinning.*
 I'm going to use my last ounce of strength to deck him...
 I rock back, change direction, and ride off.
@@ -5104,7 +5104,7 @@ It's been an hour.
 No people. No food.
 It’s the hottest, most stifling, most humid day I’ve had on the whole trip. The sun is *brutal*, and there's absolutely zero shade.
 Being crook, I was dehydrated before I even started.
-It feels like my body's got nothing left.
+It feels like my bodys got nothing left.
 I’m riding around using only half a brain; if that.
 In the distance, I see a tiny village.
 There's a shack. *They're selling food.*
@@ -5132,7 +5132,7 @@ Once I'm back up on the road, one of the police unhooks the rope and gestures fo
 I ride slowly, casually past the cop holding the rope, and then gun it.
 *Flee.*
 Even through my helmet and the roar of the bike I can hear the cops losing their shit behind me, and I can see them wigging out in my mirrors.
-I get far enough down the road to know I’m not being chased - and that I can't be shot... - and I start breathing again.
+I get far enough down the road to know I’m not being chased - and that I can't be shot - and I start breathing again.
 It might be the dumbest thing I’ve ever done.
 It’s the sort of blatantly retarded thing that could land you in the deepest of shit. *Or worse...*
 
@@ -5182,7 +5182,7 @@ I hardly notice any of this.
 I’m a man on a mission.
 Eyes on the prize as I chop down the road, destroying the serenity as I smash around in top gear.
 I’m all negativity; flying in a mad rush to get to nowhere in particular.
-I’m in such a hurry that the only times I ever stop are when my bowels tell me that won't wait another second. Or I’m stopped at a checkpoint... 
+I’m in such a hurry that the only times I ever stop are when my bowels tell me they won't wait another second. Or I’m stopped at a checkpoint... 
 Never trust a fart in Africa... Or the police...
 I'm not sure which I dread more.
 But both turn out to be non-events; I squatted in the forest and let go of one of my top farts of all time; a spectacular ten second duration which somehow managed to stay dry, to great surprise and delight; and the checkpoint officials being all smiles and handshakes and well wishing.
@@ -5370,8 +5370,8 @@ Left to its own devices, nature has filled the derelict concrete shells that wer
 *Everywhere.*
 Creeping vegetation has coated the walls - inside and out - with living wallpaper.
 It’s an indoor garden of Eden.
-Parked in old living rooms are huge trees that have made the space their own - punching a hole in the roof as it grows to fill the space.
-House after house, mansion after mansion, exploring them all; it’s all the same bittersweet scene. It leaves me with a sad smile at the tragedy of Liberia, yet the beauty of nature; it take's everything back once we're gone.
+Parked in old living rooms are huge trees that have made the space their own; punching a hole in the roof as it grows to fill the space.
+House after house, mansion after mansion, exploring them all; it’s all the same bittersweet scene. It leaves me with a sad smile at the tragedy of Liberia, yet the beauty of nature; it takes everything back once we're gone.
 But if that was the beauty of nature over humanity, the beach is surely humanity over the beauty of nature.
 The sandy beach stretches away to a long vanishing point. Infinite stretch. A long row of palm trees separates the ocean from an inland lake.
 What should have been a beautiful stretch of pristine coastline has been soiled - literally - by shit.
@@ -5493,7 +5493,7 @@ We gently chug across the border.
 ---
 Back to French...
 Half-Mo ends up sharking me on the deal by using a very favourable exchange rate.
-There’s less people over this side who are keen to help lift the bike out of the boat, so it’s heavy as hell, leaving me literally dripping sweat in my leathers from the back breaking effort.
+There’s less people over this side who are keen to help lift the bike out of the boat, so it’s heavy as hell, leaving me literally dripping sweat in my leathers from the back-breaking effort.
 Onto the border post.
 It's a handful of buildings with a village market attached to it like a parasite.
 Immigration is easy. Fill out a form, get the stamp. Immigration always seems to be a breeze, never complicated, never a hassle.
@@ -5577,7 +5577,7 @@ I thank him for his time and walk out.
 ---
 Despite the bad start I reckon I’m going to like Cote d’Ivoire. It’s a bit more modern than most places in this neck of the woods, I can see that already; the toothpaste here is *actually* toothpaste.
 Things are looking up.
-I want to get to Yamoussoukro, the countries capital (wrap your mouth around that one: Ya-moh-sue-crow). Yamoussoukro is the capital of CI in the same way that Canberra is the capital of Australia, or Washington the capital of the States.
+I want to get to Yamoussoukro, the country's capital (wrap your mouth around that one: Ya-moh-sue-crow). Yamoussoukro is the capital of CI in the same way that Canberra is the capital of Australia, or Washington the capital of the States.
 It’s the capital, sure, but it’s not really.
 Anyway, I’ve been told that there’s some stuff out there that’s worth a look.
 It’d want to be pretty special. There’s four hundred clicks to cover, into roads I don’t know, for a destination I know nothing about.
@@ -5672,7 +5672,7 @@ Finally we get to the front doors. It’s obvious that there’s already somethi
 Our whole group gets hosed down with an overly generous lashing of holy water. We’re let in.
 The place is packed. Everyone is already seated. There’s gotta be *thousands* in here.
 I take one of the last seats available with the rest of my group.
-I don't think I'm meant to be here... I think I might have just jagged a massive win: right place, right time.
+I don't think I'm meant to be here... I think I might have just jagged a massive win; right place, right time.
 I've got my own air conditioning vent in the seat in front of me...
 *Opulence.*
 From the outside it was imposing and impressive, from the inside it’s just plain beautiful.
@@ -5761,7 +5761,7 @@ I changed my attitude, and riding went from being a purgatory to a pleasure.
 Over the last few days I’ve ridden through - and out of - Cote d'Ivoire, with barely a hitch; no issues with the cops, military, anyone.
 I’ve got a new visa in my passport for Togo. 
 The only flaky moment was when my clutch cable snapped in a place called Abidjan; the skyscrapered "true capital" of Ivory Coast.
-I’d never really paid that much attention to the clutch cable, but it essentially connected the hand lever on the handle bars to the engine in much the same way that a those steel wires on a bicycle connect your handles to the brakes.
+I’d never really paid that much attention to the clutch cable, but it essentially connects the hand lever on the handle bars to the engine in much the same way that a those steel wires on a bicycle connect your handles to the brakes.
 I’m lucky enough to have a spare. *Two spares,* even. Easy enough then...
 *Nope.*
 For the life of me I couldn't figure the bloody thing out. After hours of sitting on the floor, hours of looking at the spare and the existing cable, hours of scratching my head, hours in the blazing, maddening heat, I was no closer to fixing the thing.
@@ -5809,7 +5809,7 @@ People everywhere.
 Getting the bike to the front is like riding through a mosh pit of a thousand people who are all head and shoulders taller than you.
 I crush some toes and park up.
 I hustle and muscle *hard* to get to the poor swamped bastard sitting behind the desk at Immigration.
-It's like Wall Street on day one of the great depression; people throwing paper everywhere.
+It's like a scene from Wall Street during the Great Depression; people frantically throwing paper everywhere.
 Once through the melee I’m stamped out of Cote d'Ivoire. It's too busy here for anyone to give a fuck about my bike or the fact I've ridden though all of the country without the correct papers...
 Stoked with that.
 I cross a river (with a bridge, for a change) and I'm on to the Ghana post.
@@ -5830,7 +5830,7 @@ He softens. I don't know why. “Why do you want a TIP? Why don’t you have you
 He laughs his head off.
 I didn’t think it was that funny...
 He good-naturedly waggles his finger at me, smiling “You travellers, eh!? Where have you come from?”
-I sound off the roll call of countries travelled and show him my passport, which is starting to become quite the document, and point out the bike I've done it on.
+I sound off the roll call of countries travelled and show him my passport - which is starting to become quite the document - and point out the bike I've done it on.
 He fuckin' *loves* it.
 “Haha, ok, ok. The TIP’s are for ECOWAS citizens only, but for you we will have an exception.”
 You fuckin *beauty.*
@@ -6175,7 +6175,7 @@ All the adrenaline blows up and I'm suddenly knackered.
 I melt into a pile and sit back on my haunches.
 *Fine.* It's someone else’s problem now...
 They drag him off; a man to a limb again; face down, again; running, ungraceful and uncaring. *He looks dead.*
-Poor bastards gonna die twice in a day.
+Poor bastard's gonna die twice in a day.
 *I feel sick.*
 ---
 His name is Richard.
@@ -6191,7 +6191,7 @@ Seems crazy to me.
 Apparently; people drown here on the coast all the time.
 And despite their predisposition to sinking like rocks, they all hang out down at the beach, and just fuck about in the shallows.
 Which is just plain thick, I reckon.
-A big wave comes in - take everyone by surprise - and whip someone out of the shallows, off their feet and into the waves. Their mates - who also can’t swim - can only watch as their mate drowns. Powerless to help.
+A big wave comes in - takes everyone by surprise - and whips someone out of the shallows, off their feet and into the waves. Their mates - who also can’t swim - can only watch as their mate drowns. Powerless to help.
 Fucking *awful*.
 And that's just what happened to Richard.
 ---
@@ -6390,7 +6390,7 @@ When I give him a 10,000CFA note he - of course - doesn’t have change. No doub
 Nope.
 So to break the deadlock we head to the “bijouterie” - which I imagine is French for a "corner store".
 On the way he asks if I can buy him a water. *Sure.* Why not?
-We get to the store and I buy a couple of big bottles of water to crack the ten. The lady only has one bottle, and while she’s running off to grab another my mate casually reaches into the fridge, grabs a beer, crack it, and starts pouring it out into a glass.
+We get to the store and I buy a couple of big bottles of water to crack the ten. The lady only has one bottle, and while she’s running off to grab another my mate casually reaches into the fridge, grabs a beer, cracks it, and starts pouring it out into a glass.
 *It's 10 in the morning...*
 I see what he’s getting at...
 “voo meh ashtray”. *You buy me*. Great.
@@ -6528,7 +6528,7 @@ I can *see* my hotel from here, for fuck's sake.
 I get stopped at the gates at the front by a bunch of grunts lazing about with big guns. Folks are coming and going all the time but *I* get stopped.
 I tell them I'm here to pick up a "permit de residence".
 *Come right in...*
-One of the grunts who's taken me under his wing wants a copy of my passport page, my address, and my mum and dads name.
+One of the grunts who's taken me under his wing wants a copy of my passport page, my address, and my mum and dad's names.
 *That’s it?*
 Oh, no, he wants cash. Of course. 8,500 CFA. Twenty-ish bucks. Which is actually quite a bit. It’s obvious that this isn’t going to be done “on the record”.
 *Fine by me.*
@@ -6543,7 +6543,7 @@ So, *that* now opens the doors for that DRC visa.
 In my dreams I'm carefree. Happy.
 Sleep is my happy place.
 I cling to sleep as I sense it slipping away from me - all too soon.
-My eyes unwillingly open a crack, and I can’t place where I am. Groggy. Confused for a split.
+My eyes unwillingly open a crack, and I can’t place where I am. Groggy. Confused for a split second.
 Then I see the familiar mosquito net that looks like a prop from a D grade slasher movie, covered in streaks of mosquito blood; the spinning, wobbling fan; the peeling paint and the smashed window. And the dream vanishes and reality becomes clear, and hot on its heels comes a sense of foreboding, dripping dread. That grips me and crushes me from the instant my conscious mind starts turning the cogs - before I’ve moved my head even a smidgen on the greasy pillow.
 *Another day.*
 I don’t want to get out of bed. I never do.
@@ -6802,7 +6802,7 @@ It’s dimly lit inside, and with the dark clouds outside it doesn’t make thin
 I step over the threshold.
 I make introductions, shake hands and explain the situation. He asks for my carnet. I explain that I don’t have one. And he flatly rejects me.
 No carnet, No TIP.
-What would be the point in getting a fucking TIP if I had a Carnet already??
+What would be the point in getting a fucking TIP if I had a carnet already??
 I ignore that and throw up the usual tactic of verbal diarrhoeaing all the places I’ve managed to go without a carnet, all with no problem.
 He thinks about this...
 "Let me talk to my boss."
@@ -6910,7 +6910,7 @@ I can't look back again. I wouldn't learn anything new, and I'd crash.
 I run over what I just saw in my head again. His head is twisted around enough that he’d be uncomfortable if he was alive... He’s only got about half his mouth out of the wet mud.
 He didn't move. *Not an inch.*
 Either died there or dumped there...
-Nah. *Surely not... *
+Nah. *Surely not...*
 How come no one’s *doing* anything? People are walking past him at the shops, people are driving past him in their cars.
 No one gave him the *slightest* attention. As much attention as if it was a dead cat...
 *Fuck.* If no one cares that must mean that it’s par-for-the-course here; dead bodies in the fucking mud.
@@ -7060,7 +7060,7 @@ I walk in my best guess of a single direction, and walk, and walk, and walk...
 The market opens up, and I burst out onto an open road in full sunshine.
 Thank *Christ*.
 I suck in the air and try to calm the fuck down.
-With the sun back I can get a rough idea of the points of compass - a very rough idea - but I've got no fucking idea where *I* am. Zero. With all that walking I could be anywhere...
+With the sun back I can get a rough idea of the points of the compass - a very rough idea - but I've got no fucking idea where *I* am. Zero. With all that walking I could be anywhere...
 I take a guess; south.
 And set off.
 ---
@@ -7080,7 +7080,7 @@ I'm going to find my way home.
 *I survived the market quarter of Lagos.*
 Weirdly, I feel a sense of both achievement and of being short-changed.
 But if you’d told me just a year ago while I was back in the sky prison that in 365 days time I’d be walking - alone - through market quarter Lagos in Nigeria I wouldn’t have believed it. I’d have said you’re full of shit.
-Funny, the turn’s life can take.
+Funny, the turns life can take.
 Lagos has been one giant surprise, but tomorrow it’s time to move on.
 
 ## Chapter Thirty Four
@@ -7534,7 +7534,7 @@ Things slow down, but besides the occasional puddle it’s actually not too bad.
 What was left of the traffic - if you could call it that - evaporates. All that’s left is me and the occasional small roadside village.
 I'll be buggered if I know what they do for a crust out here, this remote.
 After I've passed a few I start to notice a pattern emerging; half are very friendly - all waves and smiles and welcoming; I wave and smile back; the other half I leave angry yelling in my wake...
-I don't get it; whole groups of people gesturing *furiously* from their houses, *"PSSSSST!"*ing their heads off.
+I don't get it; whole groups of people gesturing *furiously* from their houses, "PSSSSST!"ing their heads off.
 Of course, I never stop for this type of shit, but I do wonder just what they're getting at.
 Do they want me to buy something?
 Or maybe just want to have a chat?
@@ -7546,7 +7546,7 @@ My way of dealing with it is to ignore it. The moment that I hear anyone making 
 In any case, good riddance to those guys. I’m sure that it can’t be good news, right?
 Also, I'm not a huge fan of having *"WHITE MAN!!"* yelled at me.
 Shits me.
-Kids are exempt, I guess; *they’re* yelling it - shrieking it, even - in pure, unbridled excitement - like kids might yell *"SANTA!!"*.
+Kids are exempt, I guess; *they’re* yelling it in pure, unbridled excitement; kind of in the same way that kids might yell *"SANTA!!"*.
 As I ponder it I nearly hit a spike strip laid out over the road...
 *Stickman!*
 It's a very agricultural looking spike strip - planks of wood connected together with rope. The spikes are rusty nails...
@@ -7819,7 +7819,7 @@ Finally, *finally* I pop out onto the main road.
 We're filthy, but unscathed; well, except my shin...
 The main road is tarmac. Crappy, *glorious* tarmac.
 There’s a unit of Gendarmes here at the crossroads, and I take the risk of asking them where Customs are, even if it reveals to them that I probably don't have the correct papers...
-They point me off up the tarmac'd main road I probably should have taken to get here; back West in the direction of Nigeria...
+They point me off up the tarmac main road I probably should have taken to get here; back West in the direction of Nigeria...
 *Nope.*
 I don't want to re-live the going backwards to a border-post balls-up that happened in Senegal...
 Plus, I’m tired, and I’ve no desire to be going in the “wrong” direction; adding clicks onto my already long day.
@@ -7827,10 +7827,11 @@ I just want to lie flat somewhere.
 I ask them if there’s any Customs in the village at *Mamfe*, the village I had my eyes on to spend the night.
 There is!
 The Gendarmes, to their credit, let me go with no questions asked.
-After a bit of shitty road and that awful clanking tonking sound coming back I hit beautiful Chinese tarmac.
+After a bit of shitty road the awful clanking tonking sound comes back... I don't need this...
+Then I hit beautiful Chinese tarmac.
 Flawless, magnificent, Chinese ‘mac.
 I could fucking *kiss* it.
-Say what you like about the Chinese, they make a damn fine road.
+Say what you like about the Chinese and their African shenanigans, they make a damn fine road.
 ---
 Checkpoints. Loads of them. I’m always waved through.
 The tonking stops.
@@ -7856,8 +7857,7 @@ Despite the never ending stream of "WHITEMAN!" that I cop - and not being able t
 I hit-up breakfast. Black beans with rice; The best I reckon I’ve ever had - and I've had my fair share.
 Sometimes it’s the little things in life...
 While I’m chowing down about 50 cents worth for breakfast, I watch some blokes hauling thick bundles of long, awkward, heavy-as-fuck iron re-bar for concrete support from out of the back of a truck.
-Doing the lion’s share of the work is maybe the strongest bloke I reckon I’ve *ever* seen. I'm not being racist or nothing - but there's no other way to describe him; this guy is a deadset shaved-down silverback gorilla.
-And I mean that in only a complimentary way.
+Doing the lion’s share of the work is maybe the strongest bloke I reckon I’ve *ever* seen.
 You’ve never seen nothing like this guy. Not in your life.
 Of middling height, with a bulging pot belly on him that - somehow - is covered in a painted-on looking, *monstrous* six-pack.
 *Or is it an eight pack??*
@@ -7873,7 +7873,6 @@ Anyway, enough of that.
 ---
 After some Marco Polo with the locals I find the Customs building for the village.
 The chief bloke is an albino.
-That’s a first. Not an albino, that is, I mean an albino in a position of authority. I haven't seen that before.
 Albinos are everywhere here. Surprisingly common, and some more proof to add to the "there is no god" pile.
 It's just fucking cruel.
 How do they do it?
@@ -7985,7 +7984,7 @@ It feels strange; being cold.
 It's the kind of cold where your breath fogs... Unbelievable; we're a stone’s throw from the equator, in *Africa*, and my breath is fogging.
 Bizarre...
 I don't relish the idea of tonight’s shower though...
-That ring road around here that I've been told to have a go at looks like it will take a couple of days to go full circle, and given the remoteness I'd probably have to camp out. So I've decided to can it; I don't have the spurs to do it by myself. I've had mixed reports on its condition, and I don't relish the idea of being stuck in my tent while I fucking freeze to death.
+That ring road around here that I've been told to have a go at looks like it will take a couple of days to go full circle, and given the remoteness I'd probably have to camp out. So I've decided to *can* it; I don't have the spurs to do it by myself. I've had mixed reports on its condition, and I don't relish the idea of being stuck in my tent while I fucking freeze to death.
 ---
 Morning.
 Even though it was pretty filthy in my bed, I still didn't want to leave it's smelly warmth...
@@ -8022,7 +8021,7 @@ The adventurers of yesteryear would think that my "adventure" is a cakewalk...
 But, for my two cents, I reckon that now is a fantastic time to overland Africa; it’s Goldilocks.
 One or two decades ago it would have been gnarly as hell - *all* the time. No respite. No fun. No choice.
 In another decade - once everywhere's been ‘mac’d by the Chinese - it will be easy as pie.
-I think right now you've got adventure when and where you want it. You don't have to go very far to find it. You can be as sedate or as hard-core as you like.
+I think right now you've got adventure when and where you want it. You don't have to go very far to find it. You can be as sedate or as hardcore as you like.
 Today, I guess, is going to be that in a nutshell. I’ve got two roads I can take: One known and easy, the other unknown and potentially a nightmare/amazing.
 The real question is this: Do I feel like being surprised today?
 *No.* Not really.
@@ -8077,7 +8076,7 @@ I want out of this shitheap.
 ## Chapter Fourty Two
 It's another beautiful ride through the green. The road has switched from crappy to perfect, and my mind free-wheels as it's given its reins.
 Humour me; I'm going to talk about what's going on in my head...
-Don't worry, it'll be a short ## chapter (zing).
+Don't worry, it'll be a short chapter (zing).
 So. Here's what I think about when I'm riding.
 My mate Victor Hugo (I'm chewing through *Les Miserables*) has told me off for thinking that *reverie* and *thinking* are the same things. Apparently they’re not. So I’m going to be more careful to make the distinction. I reckon that what I mostly do on the bike is *think*.
 It’s some deep and profound shit.
@@ -8110,7 +8109,7 @@ I've also had fantasies about not working at a desk job anymore, and being a lab
 I think the way I want to structure my life when I get back home is of physical and mental exhaustion, *every day*. Have the eyes roll into the back of my head even before it hits the pillow.
 That's what brings happiness and contentment, I reckon.
 An honest day's work and an honest day's learning.
-I think that when I was back home - pre-trip - I had the physical side down-pat. Logging big miles into my running shoes every day was making me sleep like a baby at night. But I neglected the other side - the mental side. Almost completely - in the four years I worked at the desk I don't think that I learned hardly any new practical skills or absorbed any real practical knowledge about *anything*.
+I think that before the trip I had the physical side down-pat. Logging big miles into my running shoes every day was making me sleep like a baby at night. But I neglected the mental side almost completely; in the four years I worked at the desk I don't think that I learned hardly any new practical skills or absorbed any real practical knowledge about *anything*.
 I ceased to be a student.
 I settled in to knowing what I needed to know in order to do my job, and no more.
 Not through lack of opportunity, but rather through a lack of gumption. Lack of curiosity. I didn’t give a shit for it. I tried - half-arsed - with music. I put too much faith in osmosis - the idea that if I put myself in the right environment, that I'll just "pick it up"; if I soak myself in something that it will sink in eventually.
