@@ -1,4 +1,4 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, g as element, h as space, t as text, D as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, G as noop, v as validate_slots } from './client.15597ec4.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, g as element, h as space, t as text, D as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, G as noop, v as validate_slots } from './client.217b7cd8.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -9,12 +9,6 @@ function create_fragment(ctx) {
   var meta0;
   var meta1;
   var meta2;
-  var meta3;
-  var meta4;
-  var meta5;
-  var meta6;
-  var meta7;
-  var meta8;
   var t0;
   var section;
   var h1;
@@ -34,12 +28,6 @@ function create_fragment(ctx) {
       meta0 = element("meta");
       meta1 = element("meta");
       meta2 = element("meta");
-      meta3 = element("meta");
-      meta4 = element("meta");
-      meta5 = element("meta");
-      meta6 = element("meta");
-      meta7 = element("meta");
-      meta8 = element("meta");
       t0 = space();
       section = element("section");
       h1 = element("h1");
@@ -57,40 +45,16 @@ function create_fragment(ctx) {
       this.h();
     },
     l: function claim(nodes) {
-      var head_nodes = query_selector_all("[data-svelte=\"svelte-1fllgsw\"]", document.head);
+      var head_nodes = query_selector_all("[data-svelte=\"svelte-nvuwvw\"]", document.head);
       meta0 = claim_element(head_nodes, "META", {
         property: true,
         content: true
       });
       meta1 = claim_element(head_nodes, "META", {
-        property: true,
+        name: true,
         content: true
       });
       meta2 = claim_element(head_nodes, "META", {
-        property: true,
-        content: true
-      });
-      meta3 = claim_element(head_nodes, "META", {
-        property: true,
-        content: true
-      });
-      meta4 = claim_element(head_nodes, "META", {
-        property: true,
-        content: true
-      });
-      meta5 = claim_element(head_nodes, "META", {
-        name: true,
-        content: true
-      });
-      meta6 = claim_element(head_nodes, "META", {
-        name: true,
-        content: true
-      });
-      meta7 = claim_element(head_nodes, "META", {
-        name: true,
-        content: true
-      });
-      meta8 = claim_element(head_nodes, "META", {
         name: true,
         content: true
       });
@@ -144,57 +108,33 @@ function create_fragment(ctx) {
       attr_dev(meta0, "property", "og:description");
       attr_dev(meta0, "content", "Come along on the adventure, while we make our way through West Africa on a wildly inappropriate Royal Enfield!");
       add_location(meta0, file, 4, 1, 175);
-      attr_dev(meta1, "property", "og:url");
-      attr_dev(meta1, "content", "http://www.obliviousthebook.com/");
+      attr_dev(meta1, "name", "twitter:description");
+      attr_dev(meta1, "content", "Come along on the adventure, while we make our way through West Africa on a wildly inappropriate Royal Enfield!");
       add_location(meta1, file, 8, 1, 338);
-      attr_dev(meta2, "property", "og:site_name");
-      attr_dev(meta2, "content", "ObliviousTheBook.com");
-      add_location(meta2, file, 9, 1, 409);
-      attr_dev(meta3, "property", "fb:admins");
-      attr_dev(meta3, "content", "563453705");
-      add_location(meta3, file, 10, 1, 474);
-      attr_dev(meta4, "property", "og:image");
-      attr_dev(meta4, "content", "/images/logo-750.png");
-      add_location(meta4, file, 11, 1, 525);
-      attr_dev(meta5, "name", "twitter:card");
-      attr_dev(meta5, "content", "summary_large_image");
-      add_location(meta5, file, 12, 1, 586);
-      attr_dev(meta6, "name", "twitter:description");
-      attr_dev(meta6, "content", "Come along on the adventure, while we make our way through West Africa on a wildly inappropriate Royal Enfield!");
-      add_location(meta6, file, 13, 1, 646);
-      attr_dev(meta7, "name", "twitter:title");
-      attr_dev(meta7, "content", "Read the Oblivious Trilogy for Free | An outrageously inappropriate journey through West Africa on a Royal Enfield.");
-      add_location(meta7, file, 17, 1, 810);
-      attr_dev(meta8, "name", "twitter:image");
-      attr_dev(meta8, "content", "/images/logo-750.png");
-      add_location(meta8, file, 21, 1, 972);
+      attr_dev(meta2, "name", "twitter:title");
+      attr_dev(meta2, "content", "Read the Oblivious Trilogy for Free | An outrageously inappropriate journey through West Africa on a Royal Enfield.");
+      add_location(meta2, file, 12, 1, 502);
       attr_dev(h1, "class", "text-4xl md:text-6xl text-center mb-2");
-      add_location(h1, file, 25, 1, 1126);
+      add_location(h1, file, 19, 1, 756);
       attr_dev(h2, "class", "text-xl md:text-3xl text-center mb-12");
-      add_location(h2, file, 28, 1, 1236);
+      add_location(h2, file, 22, 1, 866);
       attr_dev(a0, "rel", "prefetch");
       attr_dev(a0, "href", "read/1/1");
       attr_dev(a0, "class", "inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-oblivious");
-      add_location(a0, file, 32, 2, 1477);
+      add_location(a0, file, 26, 2, 1107);
       attr_dev(a1, "rel", "prefetch");
       attr_dev(a1, "href", "read/2/1");
       attr_dev(a1, "class", "inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-white border border-solid border-oblivious");
-      add_location(a1, file, 38, 2, 1644);
+      add_location(a1, file, 32, 2, 1274);
       attr_dev(div, "class", "flex flex-col md:flex-row justify-center items-center");
-      add_location(div, file, 31, 1, 1407);
+      add_location(div, file, 25, 1, 1037);
       attr_dev(section, "class", "flex flex-col items-center max-w-4xl mt-12 md:mt-28 mb-24");
-      add_location(section, file, 24, 0, 1049);
+      add_location(section, file, 18, 0, 679);
     },
     m: function mount(target, anchor) {
       append_dev(document.head, meta0);
       append_dev(document.head, meta1);
       append_dev(document.head, meta2);
-      append_dev(document.head, meta3);
-      append_dev(document.head, meta4);
-      append_dev(document.head, meta5);
-      append_dev(document.head, meta6);
-      append_dev(document.head, meta7);
-      append_dev(document.head, meta8);
       insert_dev(target, t0, anchor);
       insert_dev(target, section, anchor);
       append_dev(section, h1);
@@ -217,12 +157,6 @@ function create_fragment(ctx) {
       detach_dev(meta0);
       detach_dev(meta1);
       detach_dev(meta2);
-      detach_dev(meta3);
-      detach_dev(meta4);
-      detach_dev(meta5);
-      detach_dev(meta6);
-      detach_dev(meta7);
-      detach_dev(meta8);
       if (detaching) detach_dev(t0);
       if (detaching) detach_dev(section);
     }

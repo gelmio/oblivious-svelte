@@ -1,4 +1,4 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, v as validate_slots, o as onDestroy, f as fade, g as element, h as space, t as text, j as claim_element, k as children, l as claim_space, m as detach_dev, n as claim_text, p as attr_dev, q as add_location, r as insert_dev, u as append_dev, w as listen_dev, x as _slicedToArray, y as set_data_dev, z as add_render_callback, A as create_bidirectional_transition, B as run_all, C as create_component, D as query_selector_all, E as claim_component, F as mount_component, G as noop, H as transition_in, I as transition_out, J as destroy_component } from './client.15597ec4.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, v as validate_slots, o as onDestroy, f as fade, g as element, h as space, t as text, j as claim_element, k as children, l as claim_space, m as detach_dev, n as claim_text, p as attr_dev, q as add_location, r as insert_dev, u as append_dev, w as listen_dev, x as _slicedToArray, y as set_data_dev, z as add_render_callback, A as create_bidirectional_transition, B as run_all, C as create_component, D as query_selector_all, E as claim_component, F as mount_component, G as noop, H as transition_in, I as transition_out, J as destroy_component } from './client.217b7cd8.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -330,9 +330,6 @@ function create_fragment$1(ctx) {
   var meta4;
   var meta5;
   var meta6;
-  var meta7;
-  var meta8;
-  var meta9;
   var t0;
   var section0;
   var h10;
@@ -440,9 +437,6 @@ function create_fragment$1(ctx) {
       meta4 = element("meta");
       meta5 = element("meta");
       meta6 = element("meta");
-      meta7 = element("meta");
-      meta8 = element("meta");
-      meta9 = element("meta");
       t0 = space();
       section0 = element("section");
       h10 = element("h1");
@@ -538,7 +532,7 @@ function create_fragment$1(ctx) {
       this.h();
     },
     l: function claim(nodes) {
-      var head_nodes = query_selector_all("[data-svelte=\"svelte-d7849z\"]", document.head);
+      var head_nodes = query_selector_all("[data-svelte=\"svelte-w4oja5\"]", document.head);
       meta0 = claim_element(head_nodes, "META", {
         name: true,
         content: true
@@ -560,22 +554,10 @@ function create_fragment$1(ctx) {
         content: true
       });
       meta5 = claim_element(head_nodes, "META", {
-        property: true,
+        name: true,
         content: true
       });
       meta6 = claim_element(head_nodes, "META", {
-        name: true,
-        content: true
-      });
-      meta7 = claim_element(head_nodes, "META", {
-        name: true,
-        content: true
-      });
-      meta8 = claim_element(head_nodes, "META", {
-        name: true,
-        content: true
-      });
-      meta9 = claim_element(head_nodes, "META", {
         name: true,
         content: true
       });
@@ -840,107 +822,98 @@ function create_fragment$1(ctx) {
       attr_dev(meta4, "property", "fb:admins");
       attr_dev(meta4, "content", "563453705");
       add_location(meta4, file$1, 13, 4, 907);
-      attr_dev(meta5, "property", "og:image");
-      attr_dev(meta5, "content", "/images/logo-750.png");
+      attr_dev(meta5, "name", "twitter:description");
+      attr_dev(meta5, "content", "Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!");
       add_location(meta5, file$1, 14, 4, 960);
-      attr_dev(meta6, "name", "twitter:card");
-      attr_dev(meta6, "content", "summary_large_image");
-      add_location(meta6, file$1, 16, 4, 1033);
-      attr_dev(meta7, "name", "twitter:description");
-      attr_dev(meta7, "content", "Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!");
-      add_location(meta7, file$1, 17, 4, 1095);
-      attr_dev(meta8, "name", "twitter:title");
-      attr_dev(meta8, "content", "Oblivious | An outrageously inappropriate journey through West Africa");
-      add_location(meta8, file$1, 19, 4, 1305);
-      attr_dev(meta9, "name", "twitter:image");
-      attr_dev(meta9, "content", "/images/logo-750.png");
-      add_location(meta9, file$1, 20, 4, 1418);
+      attr_dev(meta6, "name", "twitter:title");
+      attr_dev(meta6, "content", "Oblivious | An outrageously inappropriate journey through West Africa");
+      add_location(meta6, file$1, 16, 4, 1170);
       attr_dev(h10, "class", "text-4xl md:text-6xl text-center mb-2");
-      add_location(h10, file$1, 25, 4, 1577);
-      add_location(em0, file$1, 26, 64, 1708);
+      add_location(h10, file$1, 20, 4, 1368);
+      add_location(em0, file$1, 21, 64, 1499);
       attr_dev(a0, "href", "read");
       attr_dev(a0, "rel", "prefetch");
-      add_location(a0, file$1, 26, 94, 1738);
+      add_location(a0, file$1, 21, 94, 1529);
       attr_dev(h20, "class", "text-xl md:text-3xl text-center");
-      add_location(h20, file$1, 26, 4, 1648);
+      add_location(h20, file$1, 21, 4, 1439);
       attr_dev(section0, "class", "flex flex-col items-center max-w-4xl mt-8 md:mt-20");
-      add_location(section0, file$1, 24, 0, 1504);
+      add_location(section0, file$1, 19, 0, 1295);
       attr_dev(img0, "class", "my-12 max-w-full max-h-1/2vh");
       attr_dev(img0, "alt", "Oblivious book cover");
       if (img0.src !== (img0_src_value = "/images/3D-cover.jpg")) attr_dev(img0, "src", img0_src_value);
-      add_location(img0, file$1, 29, 4, 1891);
+      add_location(img0, file$1, 24, 4, 1682);
       attr_dev(a1, "class", "inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious");
       attr_dev(a1, "href", "read");
       attr_dev(a1, "rel", "prefetch");
-      add_location(a1, file$1, 31, 8, 2068);
+      add_location(a1, file$1, 26, 8, 1859);
       attr_dev(a2, "rel", "nofollow");
       attr_dev(a2, "href", "https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart");
-      add_location(a2, file$1, 32, 30, 2232);
+      add_location(a2, file$1, 27, 30, 2023);
       attr_dev(span0, "class", "m-2");
-      add_location(span0, file$1, 32, 8, 2210);
+      add_location(span0, file$1, 27, 8, 2001);
       attr_dev(div0, "class", "flex flex-col md:flex-row justify-center items-center");
-      add_location(div0, file$1, 30, 4, 1992);
+      add_location(div0, file$1, 25, 4, 1783);
       attr_dev(section1, "class", "flex flex-col items-center max-w-4xl mb-20 md:mb-32");
-      add_location(section1, file$1, 28, 0, 1817);
-      add_location(em1, file$1, 39, 110, 2645);
+      add_location(section1, file$1, 23, 0, 1608);
+      add_location(em1, file$1, 34, 110, 2436);
       attr_dev(h11, "class", "text-4xl md:text-6xl text-center");
-      add_location(h11, file$1, 39, 4, 2539);
+      add_location(h11, file$1, 34, 4, 2330);
       attr_dev(section2, "class", "flex flex-col items-center max-w-4xl mb-20 md:mb-32");
-      add_location(section2, file$1, 38, 0, 2465);
+      add_location(section2, file$1, 33, 0, 2256);
       attr_dev(section3, "class", "flex mb-28 md:mb-32 sm:px-20");
-      add_location(section3, file$1, 41, 0, 2691);
+      add_location(section3, file$1, 36, 0, 2482);
       attr_dev(h21, "class", "text-4xl md:text-6xl text-center max-w-4xl mb-8");
-      add_location(h21, file$1, 45, 4, 2844);
+      add_location(h21, file$1, 40, 4, 2635);
       attr_dev(img1, "class", "relative inline-block w-full lg:w-2/3 lg:-mr-10");
       if (img1.src !== (img1_src_value = "/images/kindle-pad-phone.jpg")) attr_dev(img1, "src", img1_src_value);
       attr_dev(img1, "alt", "book being used on various platforms");
-      add_location(img1, file$1, 47, 8, 3059);
-      add_location(br0, file$1, 50, 90, 3419);
-      add_location(em2, file$1, 51, 64, 3488);
+      add_location(img1, file$1, 42, 8, 2850);
+      add_location(br0, file$1, 45, 90, 3210);
+      add_location(em2, file$1, 46, 64, 3279);
       attr_dev(span1, "class", "text-oblivious-dark");
-      add_location(span1, file$1, 51, 16, 3440);
+      add_location(span1, file$1, 46, 16, 3231);
       attr_dev(p0, "class", "absolute top-0 right-0 left-1/2 mt-1 text-xl");
-      add_location(p0, file$1, 49, 12, 3272);
-      add_location(br1, file$1, 55, 70, 3726);
+      add_location(p0, file$1, 44, 12, 3063);
+      add_location(br1, file$1, 50, 70, 3517);
       attr_dev(span2, "class", "text-oblivious-dark");
-      add_location(span2, file$1, 56, 20, 3751);
+      add_location(span2, file$1, 51, 20, 3542);
       attr_dev(p1, "class", "text-xl");
-      add_location(p1, file$1, 54, 16, 3636);
-      add_location(em3, file$1, 59, 111, 3972);
-      add_location(br2, file$1, 59, 136, 3997);
+      add_location(p1, file$1, 49, 16, 3427);
+      add_location(em3, file$1, 54, 111, 3763);
+      add_location(br2, file$1, 54, 136, 3788);
       attr_dev(span3, "class", "text-oblivious-dark");
-      add_location(span3, file$1, 60, 20, 4022);
+      add_location(span3, file$1, 55, 20, 3813);
       attr_dev(p2, "class", "text-xl");
-      add_location(p2, file$1, 58, 16, 3841);
-      add_location(br3, file$1, 63, 57, 4194);
+      add_location(p2, file$1, 53, 16, 3632);
+      add_location(br3, file$1, 58, 57, 3985);
       attr_dev(span4, "class", "text-oblivious-dark");
-      add_location(span4, file$1, 64, 20, 4219);
+      add_location(span4, file$1, 59, 20, 4010);
       attr_dev(p3, "class", "text-xl");
-      add_location(p3, file$1, 62, 16, 4117);
+      add_location(p3, file$1, 57, 16, 3908);
       attr_dev(div1, "class", "absolute top-1/4 bottom-0 pb-8 flex flex-col justify-between");
-      add_location(div1, file$1, 53, 12, 3545);
+      add_location(div1, file$1, 48, 12, 3336);
       attr_dev(div2, "class", "hidden lg:inline-block w-1/3 z-10 pb-4");
-      add_location(div2, file$1, 48, 8, 3207);
+      add_location(div2, file$1, 43, 8, 2998);
       attr_dev(div3, "class", "flex relative items-end justify-center max-w-6xl mx-0 lg:mx-10 mb-10");
-      add_location(div3, file$1, 46, 4, 2968);
+      add_location(div3, file$1, 41, 4, 2759);
       attr_dev(a3, "class", "inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious");
       attr_dev(a3, "href", "read");
       attr_dev(a3, "rel", "prefetch");
-      add_location(a3, file$1, 70, 8, 4415);
+      add_location(a3, file$1, 65, 8, 4206);
       attr_dev(a4, "rel", "nofollow");
       attr_dev(a4, "href", "https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart");
-      add_location(a4, file$1, 71, 30, 4577);
+      add_location(a4, file$1, 66, 30, 4368);
       attr_dev(span5, "class", "m-2");
-      add_location(span5, file$1, 71, 8, 4555);
+      add_location(span5, file$1, 66, 8, 4346);
       attr_dev(div4, "class", "flex flex-col md:flex-row justify-center items-center");
-      add_location(div4, file$1, 69, 4, 4339);
+      add_location(div4, file$1, 64, 4, 4130);
       attr_dev(section4, "class", "flex flex-col justify-center items-center mb-20 md:mb-32");
-      add_location(section4, file$1, 44, 0, 2765);
+      add_location(section4, file$1, 39, 0, 2556);
       attr_dev(h22, "class", "text-5xl md:text-6xl");
-      add_location(h22, file$1, 75, 4, 4785);
-      add_location(h3, file$1, 76, 4, 4847);
+      add_location(h22, file$1, 70, 4, 4576);
+      add_location(h3, file$1, 71, 4, 4638);
       attr_dev(section5, "class", "mb-20 md:mb-32 sm:px-20 text-center");
-      add_location(section5, file$1, 74, 0, 4727);
+      add_location(section5, file$1, 69, 0, 4518);
     },
     m: function mount(target, anchor) {
       append_dev(document.head, meta0);
@@ -950,9 +923,6 @@ function create_fragment$1(ctx) {
       append_dev(document.head, meta4);
       append_dev(document.head, meta5);
       append_dev(document.head, meta6);
-      append_dev(document.head, meta7);
-      append_dev(document.head, meta8);
-      append_dev(document.head, meta9);
       insert_dev(target, t0, anchor);
       insert_dev(target, section0, anchor);
       append_dev(section0, h10);
@@ -1065,9 +1035,6 @@ function create_fragment$1(ctx) {
       detach_dev(meta4);
       detach_dev(meta5);
       detach_dev(meta6);
-      detach_dev(meta7);
-      detach_dev(meta8);
-      detach_dev(meta9);
       if (detaching) detach_dev(t0);
       if (detaching) detach_dev(section0);
       if (detaching) detach_dev(t8);

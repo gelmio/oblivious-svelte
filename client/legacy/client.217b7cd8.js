@@ -3137,7 +3137,7 @@ var PageTransition = /*#__PURE__*/function (_SvelteComponentDev) {
 function _createSuper$4(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$4(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _isNativeReflectConstruct$4() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$3 = "src/routes/_layout.svelte"; // (10:1) <PageTransition>
+var file$3 = "src/routes/_layout.svelte"; // (17:1) <PageTransition>
 
 function create_default_slot(ctx) {
   var main;
@@ -3165,7 +3165,7 @@ function create_default_slot(ctx) {
     },
     h: function hydrate() {
       attr_dev(main, "class", "flex flex-col items-center justify-center p-4 lg:p-0 svelte-1fbdjsw");
-      add_location(main, file$3, 10, 2, 263);
+      add_location(main, file$3, 17, 2, 611);
     },
     m: function mount(target, anchor) {
       insert_dev(target, main, anchor);
@@ -3205,11 +3205,11 @@ function create_default_slot(ctx) {
     block: block,
     id: create_default_slot.name,
     type: "slot",
-    source: "(10:1) <PageTransition>",
+    source: "(17:1) <PageTransition>",
     ctx: ctx
   });
   return block;
-} // (9:0) {#key segment}
+} // (16:0) {#key segment}
 
 
 function create_key_block(ctx) {
@@ -3268,19 +3268,25 @@ function create_key_block(ctx) {
     block: block,
     id: create_key_block.name,
     type: "key",
-    source: "(9:0) {#key segment}",
+    source: "(16:0) {#key segment}",
     ctx: ctx
   });
   return block;
 }
 
 function create_fragment$3(ctx) {
-  var nav;
+  var meta0;
+  var meta1;
+  var meta2;
+  var meta3;
+  var meta4;
   var t0;
+  var nav;
+  var t1;
   var previous_key =
   /*segment*/
   ctx[0];
-  var t1;
+  var t2;
   var footer;
   var current;
   nav = new Nav({
@@ -3302,24 +3308,78 @@ function create_fragment$3(ctx) {
   });
   var block = {
     c: function create() {
-      create_component(nav.$$.fragment);
+      meta0 = element("meta");
+      meta1 = element("meta");
+      meta2 = element("meta");
+      meta3 = element("meta");
+      meta4 = element("meta");
       t0 = space();
-      key_block.c();
+      create_component(nav.$$.fragment);
       t1 = space();
+      key_block.c();
+      t2 = space();
       create_component(footer.$$.fragment);
+      this.h();
     },
     l: function claim(nodes) {
-      claim_component(nav.$$.fragment, nodes);
+      var head_nodes = query_selector_all("[data-svelte=\"svelte-gvmthf\"]", document.head);
+      meta0 = claim_element(head_nodes, "META", {
+        property: true,
+        content: true
+      });
+      meta1 = claim_element(head_nodes, "META", {
+        property: true,
+        content: true
+      });
+      meta2 = claim_element(head_nodes, "META", {
+        property: true,
+        content: true
+      });
+      meta3 = claim_element(head_nodes, "META", {
+        name: true,
+        content: true
+      });
+      meta4 = claim_element(head_nodes, "META", {
+        name: true,
+        content: true
+      });
+      head_nodes.forEach(detach_dev);
       t0 = claim_space(nodes);
-      key_block.l(nodes);
+      claim_component(nav.$$.fragment, nodes);
       t1 = claim_space(nodes);
+      key_block.l(nodes);
+      t2 = claim_space(nodes);
       claim_component(footer.$$.fragment, nodes);
+      this.h();
+    },
+    h: function hydrate() {
+      attr_dev(meta0, "property", "og:site_name");
+      attr_dev(meta0, "content", "ObliviousTheBook.com");
+      add_location(meta0, file$3, 7, 1, 224);
+      attr_dev(meta1, "property", "fb:admins");
+      attr_dev(meta1, "content", "563453705");
+      add_location(meta1, file$3, 8, 1, 289);
+      attr_dev(meta2, "property", "og:image");
+      attr_dev(meta2, "content", "/images/carousel/images(1).jpg");
+      add_location(meta2, file$3, 9, 1, 340);
+      attr_dev(meta3, "name", "twitter:card");
+      attr_dev(meta3, "content", "summary_large_image");
+      add_location(meta3, file$3, 10, 1, 411);
+      attr_dev(meta4, "name", "twitter:image");
+      attr_dev(meta4, "content", "/images/carousel/images(1).jpg");
+      add_location(meta4, file$3, 11, 1, 471);
     },
     m: function mount(target, anchor) {
-      mount_component(nav, target, anchor);
+      append_dev(document.head, meta0);
+      append_dev(document.head, meta1);
+      append_dev(document.head, meta2);
+      append_dev(document.head, meta3);
+      append_dev(document.head, meta4);
       insert_dev(target, t0, anchor);
-      key_block.m(target, anchor);
+      mount_component(nav, target, anchor);
       insert_dev(target, t1, anchor);
+      key_block.m(target, anchor);
+      insert_dev(target, t2, anchor);
       mount_component(footer, target, anchor);
       current = true;
     },
@@ -3346,7 +3406,7 @@ function create_fragment$3(ctx) {
         key_block = create_key_block(ctx);
         key_block.c();
         transition_in(key_block);
-        key_block.m(t1.parentNode, t1);
+        key_block.m(t2.parentNode, t2);
       } else {
         key_block.p(ctx, dirty);
       }
@@ -3373,10 +3433,16 @@ function create_fragment$3(ctx) {
       current = false;
     },
     d: function destroy(detaching) {
-      destroy_component(nav, detaching);
+      detach_dev(meta0);
+      detach_dev(meta1);
+      detach_dev(meta2);
+      detach_dev(meta3);
+      detach_dev(meta4);
       if (detaching) detach_dev(t0);
-      key_block.d(detaching);
+      destroy_component(nav, detaching);
       if (detaching) detach_dev(t1);
+      key_block.d(detaching);
+      if (detaching) detach_dev(t2);
       destroy_component(footer, detaching);
     }
   };
@@ -4514,31 +4580,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.bd888fe4.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.ee8b905d.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./awww-yeah.69437e69.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./awww-yeah.6c9d235b.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.31efc69d.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.313c75b6.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.b4c1f74a.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.ae4c2c37.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.9970b8cc.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.0cd0ad9b.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.ef58a9b5.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.72a2a911.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[...slug].909dc9e7.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].a444d36e.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {

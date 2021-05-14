@@ -1,5 +1,5 @@
-import { L as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, s as safe_not_equal, a2 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, G as noop, h as space, t as text, O as empty, D as query_selector_all, l as claim_space, n as claim_text, a3 as HtmlTag, u as append_dev, y as set_data_dev, H as transition_in, I as transition_out, Q as check_outros, B as run_all, T as validate_store, U as component_subscribe, v as validate_slots, V as stores$1, a4 as onMount, f as fade, z as add_render_callback, W as create_in_transition, $ as group_outros, a5 as binding_callbacks, N as create_out_transition } from './client.15597ec4.js';
-import { g as giveScrollHint, r as readerPosition } from './reader-hints.5f15adb9.js';
+import { L as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, s as safe_not_equal, a2 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, G as noop, h as space, t as text, O as empty, D as query_selector_all, l as claim_space, n as claim_text, a3 as HtmlTag, u as append_dev, y as set_data_dev, H as transition_in, I as transition_out, Q as check_outros, B as run_all, T as validate_store, U as component_subscribe, v as validate_slots, V as stores$1, a4 as onMount, f as fade, z as add_render_callback, W as create_in_transition, $ as group_outros, a5 as binding_callbacks, N as create_out_transition } from './client.217b7cd8.js';
+import { g as giveScrollHint, r as readerPosition } from './reader-hints.8172d83d.js';
 
 function smoothScroll(element, initial, final, duration, callback = null) {
     let startTime;
@@ -32,7 +32,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 var document_1 = globals.document,
     window_1 = globals.window;
-var file = "src/routes/read/[...slug].svelte"; // (221:2) {:else}
+var file = "src/routes/read/[...slug].svelte"; // (219:2) {:else}
 
 function create_else_block(ctx) {
   var div;
@@ -94,15 +94,15 @@ function create_else_block(ctx) {
       this.h();
     },
     h: function hydrate() {
-      add_location(p0, file, 222, 4, 8075);
-      add_location(p1, file, 223, 4, 8133);
+      add_location(p0, file, 220, 4, 8026);
+      add_location(p1, file, 221, 4, 8084);
       attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a, "rel", "nofollow");
       attr_dev(a, "class", "border-b border-oblivious-dark");
-      add_location(a, file, 228, 74, 8316);
-      add_location(p2, file, 227, 4, 8238);
+      add_location(a, file, 226, 74, 8267);
+      add_location(p2, file, 225, 4, 8189);
       attr_dev(div, "class", "text-center font-header mt-8");
-      add_location(div, file, 221, 3, 8028);
+      add_location(div, file, 219, 3, 7979);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -133,11 +133,11 @@ function create_else_block(ctx) {
     block: block,
     id: create_else_block.name,
     type: "else",
-    source: "(221:2) {:else}",
+    source: "(219:2) {:else}",
     ctx: ctx
   });
   return block;
-} // (198:2) {#if next[0] < 3}
+} // (196:2) {#if next[0] < 3}
 
 
 function create_if_block_3(ctx) {
@@ -146,7 +146,7 @@ function create_if_block_3(ctx) {
   var t0;
   var t1_value = (
   /*nextChapterExists*/
-  ctx[4] ? "Chapter" : "Book") + "";
+  ctx[3] ? "Chapter" : "Book") + "";
   var t1;
   var a_href_value;
   var t2;
@@ -154,9 +154,9 @@ function create_if_block_3(ctx) {
   var dispose;
   var if_block =
   /*next*/
-  ctx[11][1] > 10 && !(
+  ctx[10][1] > 10 && !(
   /*next*/
-  ctx[11][1] % 5) && create_if_block_4(ctx);
+  ctx[10][1] % 5) && create_if_block_4(ctx);
   var block = {
     c: function create() {
       div = element("div");
@@ -190,13 +190,13 @@ function create_if_block_3(ctx) {
       attr_dev(a, "rel", "prefetch");
       attr_dev(a, "href", a_href_value = "read/" +
       /*next*/
-      ctx[11][0] + "/" +
+      ctx[10][0] + "/" +
       /*next*/
-      ctx[11][1]);
+      ctx[10][1]);
       attr_dev(a, "class", "inline-block text-lg p-2 rounded-lg no-underline bg-oblivious mr-4");
-      add_location(a, file, 199, 4, 7410);
+      add_location(a, file, 197, 4, 7361);
       attr_dev(div, "class", "flex flex-col md:flex-row justify-end items-end mt-8");
-      add_location(div, file, 198, 3, 7339);
+      add_location(div, file, 196, 3, 7290);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -214,25 +214,25 @@ function create_if_block_3(ctx) {
     p: function update(ctx, dirty) {
       if (dirty[0] &
       /*nextChapterExists*/
-      16 && t1_value !== (t1_value = (
+      8 && t1_value !== (t1_value = (
       /*nextChapterExists*/
-      ctx[4] ? "Chapter" : "Book") + "")) set_data_dev(t1, t1_value);
+      ctx[3] ? "Chapter" : "Book") + "")) set_data_dev(t1, t1_value);
 
       if (dirty[0] &
       /*next*/
-      2048 && a_href_value !== (a_href_value = "read/" +
+      1024 && a_href_value !== (a_href_value = "read/" +
       /*next*/
-      ctx[11][0] + "/" +
+      ctx[10][0] + "/" +
       /*next*/
-      ctx[11][1])) {
+      ctx[10][1])) {
         attr_dev(a, "href", a_href_value);
       }
 
       if (
       /*next*/
-      ctx[11][1] > 10 && !(
+      ctx[10][1] > 10 && !(
       /*next*/
-      ctx[11][1] % 5)) {
+      ctx[10][1] % 5)) {
         if (if_block) ; else {
           if_block = create_if_block_4(ctx);
           if_block.c();
@@ -254,11 +254,11 @@ function create_if_block_3(ctx) {
     block: block,
     id: create_if_block_3.name,
     type: "if",
-    source: "(198:2) {#if next[0] < 3}",
+    source: "(196:2) {#if next[0] < 3}",
     ctx: ctx
   });
   return block;
-} // (208:4) {#if next[1] > 10 && !(next[1] % 5)}
+} // (206:4) {#if next[1] > 10 && !(next[1] % 5)}
 
 
 function create_if_block_4(ctx) {
@@ -297,9 +297,9 @@ function create_if_block_4(ctx) {
       attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a, "rel", "nofollow");
       attr_dev(a, "class", "border-b border-oblivious-dark");
-      add_location(a, file, 209, 13, 7737);
+      add_location(a, file, 207, 13, 7688);
       attr_dev(span, "class", "m-2");
-      add_location(span, file, 208, 5, 7705);
+      add_location(span, file, 206, 5, 7656);
     },
     m: function mount(target, anchor) {
       insert_dev(target, span, anchor);
@@ -322,11 +322,11 @@ function create_if_block_4(ctx) {
     block: block,
     id: create_if_block_4.name,
     type: "if",
-    source: "(208:4) {#if next[1] > 10 && !(next[1] % 5)}",
+    source: "(206:4) {#if next[1] > 10 && !(next[1] % 5)}",
     ctx: ctx
   });
   return block;
-} // (242:0) {#if showPhotoBox}
+} // (240:0) {#if showPhotoBox}
 
 
 function create_if_block_2(ctx) {
@@ -348,7 +348,7 @@ function create_if_block_2(ctx) {
     },
     h: function hydrate() {
       attr_dev(div, "class", "fixed inset-0 flex justify-center items-center cursor-zoom-out bg-oblivious-opaque");
-      add_location(div, file, 242, 1, 8685);
+      add_location(div, file, 240, 1, 8636);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -386,11 +386,11 @@ function create_if_block_2(ctx) {
     block: block,
     id: create_if_block_2.name,
     type: "if",
-    source: "(242:0) {#if showPhotoBox}",
+    source: "(240:0) {#if showPhotoBox}",
     ctx: ctx
   });
   return block;
-} // (286:31) 
+} // (284:31) 
 
 
 function create_if_block_1(ctx) {
@@ -474,18 +474,18 @@ function create_if_block_1(ctx) {
     },
     h: function hydrate() {
       attr_dev(p0, "class", "font-header text-xl md:text-2xl");
-      add_location(p0, file, 293, 3, 10129);
+      add_location(p0, file, 291, 3, 10080);
       attr_dev(p1, "class", "font-sans text-base md:text-lg mb-4");
-      add_location(p1, file, 296, 3, 10226);
+      add_location(p1, file, 294, 3, 10177);
       attr_dev(button0, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious");
-      add_location(button0, file, 300, 4, 10347);
+      add_location(button0, file, 298, 4, 10298);
       attr_dev(button1, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-white border border-solid border-oblivious cursor-pointer");
-      add_location(button1, file, 308, 4, 10564);
-      add_location(div0, file, 299, 3, 10337);
+      add_location(button1, file, 306, 4, 10515);
+      add_location(div0, file, 297, 3, 10288);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
-      add_location(div1, file, 290, 2, 10044);
+      add_location(div1, file, 288, 2, 9995);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
-      add_location(div2, file, 286, 1, 9924);
+      add_location(div2, file, 284, 1, 9875);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -534,11 +534,11 @@ function create_if_block_1(ctx) {
     block: block,
     id: create_if_block_1.name,
     type: "if",
-    source: "(286:31) ",
+    source: "(284:31) ",
     ctx: ctx
   });
   return block;
-} // (250:0) {#if $giveScrollHint}
+} // (248:0) {#if $giveScrollHint}
 
 
 function create_if_block(ctx) {
@@ -650,22 +650,22 @@ function create_if_block(ctx) {
     },
     h: function hydrate() {
       attr_dev(p0, "class", "font-header text-xl md:text-2xl mb-4");
-      add_location(p0, file, 258, 3, 9107);
+      add_location(p0, file, 256, 3, 9058);
       attr_dev(p1, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p1, file, 261, 3, 9189);
+      add_location(p1, file, 259, 3, 9140);
       attr_dev(p2, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p2, file, 264, 3, 9284);
+      add_location(p2, file, 262, 3, 9235);
       attr_dev(p3, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p3, file, 267, 3, 9371);
+      add_location(p3, file, 265, 3, 9322);
       attr_dev(p4, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p4, file, 270, 3, 9492);
+      add_location(p4, file, 268, 3, 9443);
       attr_dev(span, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious cursor-pointer");
-      add_location(span, file, 275, 4, 9666);
-      add_location(div0, file, 274, 3, 9656);
+      add_location(span, file, 273, 4, 9617);
+      add_location(div0, file, 272, 3, 9607);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
-      add_location(div1, file, 255, 2, 9022);
+      add_location(div1, file, 253, 2, 8973);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
-      add_location(div2, file, 250, 1, 8891);
+      add_location(div2, file, 248, 1, 8842);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -725,7 +725,7 @@ function create_if_block(ctx) {
     block: block,
     id: create_if_block.name,
     type: "if",
-    source: "(250:0) {#if $giveScrollHint}",
+    source: "(248:0) {#if $giveScrollHint}",
     ctx: ctx
   });
   return block;
@@ -733,7 +733,6 @@ function create_if_block(ctx) {
 
 function create_fragment(ctx) {
   var title_value;
-  var meta;
   var t0;
   var article;
   var h2;
@@ -759,14 +758,14 @@ function create_fragment(ctx) {
   var dispose;
   document_1.title = title_value = "Oblivious | Book " +
   /*book*/
-  ctx[2] + ", Chapter " +
+  ctx[1] + ", Chapter " +
   /*chapter*/
-  ctx[3] + " | An overlanding motorbike journey\n\t\tthrough West Africa";
+  ctx[2] + " | An overlanding motorbike journey through West Africa";
 
   function select_block_type(ctx, dirty) {
     if (
     /*next*/
-    ctx[11][0] < 3) return create_if_block_3;
+    ctx[10][0] < 3) return create_if_block_3;
     return create_else_block;
   }
 
@@ -774,17 +773,17 @@ function create_fragment(ctx) {
   var if_block0 = current_block_type(ctx);
   var if_block1 =
   /*showPhotoBox*/
-  ctx[9] && create_if_block_2(ctx);
+  ctx[8] && create_if_block_2(ctx);
   var if_block_creators = [create_if_block, create_if_block_1];
   var if_blocks = [];
 
   function select_block_type_1(ctx, dirty) {
     if (
     /*$giveScrollHint*/
-    ctx[12]) return 0;
+    ctx[11]) return 0;
     if (
     /*shouldJumpToPosition*/
-    ctx[10]) return 1;
+    ctx[9]) return 1;
     return -1;
   }
 
@@ -794,18 +793,17 @@ function create_fragment(ctx) {
 
   var block = {
     c: function create() {
-      meta = element("meta");
       t0 = space();
       article = element("article");
       h2 = element("h2");
       t1 = text("Book ");
       t2 = text(
       /*book*/
-      ctx[2]);
+      ctx[1]);
       t3 = text(", Chapter ");
       t4 = text(
       /*chapter*/
-      ctx[3]);
+      ctx[2]);
       t5 = space();
       div0 = element("div");
       t6 = space();
@@ -821,11 +819,7 @@ function create_fragment(ctx) {
       this.h();
     },
     l: function claim(nodes) {
-      var head_nodes = query_selector_all("[data-svelte=\"svelte-jk3wt5\"]", document_1.head);
-      meta = claim_element(head_nodes, "META", {
-        name: true,
-        content: true
-      });
+      var head_nodes = query_selector_all("[data-svelte=\"svelte-1uu6ren\"]", document_1.head);
       head_nodes.forEach(detach_dev);
       t0 = claim_space(nodes);
       article = claim_element(nodes, "ARTICLE", {
@@ -839,11 +833,11 @@ function create_fragment(ctx) {
       t1 = claim_text(h2_nodes, "Book ");
       t2 = claim_text(h2_nodes,
       /*book*/
-      ctx[2]);
+      ctx[1]);
       t3 = claim_text(h2_nodes, ", Chapter ");
       t4 = claim_text(h2_nodes,
       /*chapter*/
-      ctx[3]);
+      ctx[2]);
       h2_nodes.forEach(detach_dev);
       t5 = claim_space(article_nodes);
       div0 = claim_element(article_nodes, "DIV", {
@@ -870,34 +864,28 @@ function create_fragment(ctx) {
       this.h();
     },
     h: function hydrate() {
-      attr_dev(meta, "name", "description");
-      attr_dev(meta, "content",
-      /*snippet*/
-      ctx[1]);
-      add_location(meta, file, 183, 1, 6821);
       attr_dev(h2, "class", "font-header");
-      add_location(h2, file, 187, 1, 6953);
+      add_location(h2, file, 185, 1, 6904);
       html_tag = new HtmlTag(t6);
       attr_dev(div0, "class", "reader relative overflow-hidden no-scrollbar py-12 svelte-sokgus");
       attr_dev(div0, "style", div0_style_value =
       /*readerWidth*/
-      ctx[6] &&
+      ctx[5] &&
       /*readerHeight*/
-      ctx[7] ? "height: ".concat(
+      ctx[6] ? "height: ".concat(
       /*readerHeight*/
-      ctx[7], "px; columns: auto ").concat(
+      ctx[6], "px; columns: auto ").concat(
       /*readerWidth*/
-      ctx[6], "px; column-gap: ").concat(
+      ctx[5], "px; column-gap: ").concat(
       /*columnGap*/
-      ctx[13], "px; column-rule: 1px solid #000;") : "");
-      add_location(div0, file, 188, 1, 7014);
+      ctx[12], "px; column-rule: 1px solid #000;") : "");
+      add_location(div0, file, 186, 1, 6965);
       attr_dev(div1, "class", "text-xs text-center -mt-10");
-      add_location(div1, file, 239, 1, 8585);
+      add_location(div1, file, 237, 1, 8536);
       attr_dev(article, "class", "prose md:prose-xl text-justify mb-8 md:mb-12 pt-16");
-      add_location(article, file, 186, 0, 6883);
+      add_location(article, file, 184, 0, 6834);
     },
     m: function mount(target, anchor) {
-      append_dev(document_1.head, meta);
       insert_dev(target, t0, anchor);
       insert_dev(target, article, anchor);
       append_dev(article, h2);
@@ -934,39 +922,31 @@ function create_fragment(ctx) {
         /*resize_handler*/
         ctx[18], false, false, false), listen_dev(div0, "click",
         /*handleClick*/
-        ctx[16], false, false, false)];
+        ctx[15], false, false, false)];
         mounted = true;
       }
     },
     p: function update(ctx, dirty) {
       if ((!current || dirty[0] &
       /*book, chapter*/
-      12) && title_value !== (title_value = "Oblivious | Book " +
+      6) && title_value !== (title_value = "Oblivious | Book " +
       /*book*/
-      ctx[2] + ", Chapter " +
+      ctx[1] + ", Chapter " +
       /*chapter*/
-      ctx[3] + " | An overlanding motorbike journey\n\t\tthrough West Africa")) {
+      ctx[2] + " | An overlanding motorbike journey through West Africa")) {
         document_1.title = title_value;
       }
 
       if (!current || dirty[0] &
-      /*snippet*/
-      2) {
-        attr_dev(meta, "content",
-        /*snippet*/
-        ctx[1]);
-      }
-
+      /*book*/
+      2) set_data_dev(t2,
+      /*book*/
+      ctx[1]);
       if (!current || dirty[0] &
-      /*book*/
-      4) set_data_dev(t2,
-      /*book*/
+      /*chapter*/
+      4) set_data_dev(t4,
+      /*chapter*/
       ctx[2]);
-      if (!current || dirty[0] &
-      /*chapter*/
-      8) set_data_dev(t4,
-      /*chapter*/
-      ctx[3]);
       if (!current || dirty[0] &
       /*content*/
       1) html_tag.p(
@@ -987,29 +967,29 @@ function create_fragment(ctx) {
 
       if (!current || dirty[0] &
       /*readerWidth, readerHeight*/
-      192 && div0_style_value !== (div0_style_value =
+      96 && div0_style_value !== (div0_style_value =
       /*readerWidth*/
-      ctx[6] &&
+      ctx[5] &&
       /*readerHeight*/
-      ctx[7] ? "height: ".concat(
+      ctx[6] ? "height: ".concat(
       /*readerHeight*/
-      ctx[7], "px; columns: auto ").concat(
+      ctx[6], "px; columns: auto ").concat(
       /*readerWidth*/
-      ctx[6], "px; column-gap: ").concat(
+      ctx[5], "px; column-gap: ").concat(
       /*columnGap*/
-      ctx[13], "px; column-rule: 1px solid #000;") : "")) {
+      ctx[12], "px; column-rule: 1px solid #000;") : "")) {
         attr_dev(div0, "style", div0_style_value);
       }
 
       if (
       /*showPhotoBox*/
-      ctx[9]) {
+      ctx[8]) {
         if (if_block1) {
           if_block1.p(ctx, dirty);
 
           if (dirty[0] &
           /*showPhotoBox*/
-          512) {
+          256) {
             transition_in(if_block1, 1);
           }
         } else {
@@ -1065,7 +1045,6 @@ function create_fragment(ctx) {
       current = false;
     },
     d: function destroy(detaching) {
-      detach_dev(meta);
       if (detaching) detach_dev(t0);
       if (detaching) detach_dev(article);
       if_block0.d();
@@ -1218,7 +1197,7 @@ function instance($$self, $$props, $$invalidate) {
   });
   validate_store(giveScrollHint, "giveScrollHint");
   component_subscribe($$self, giveScrollHint, function ($$value) {
-    return $$invalidate(12, $giveScrollHint = $$value);
+    return $$invalidate(11, $giveScrollHint = $$value);
   });
   var _$$props$$$slots = $$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
@@ -1257,9 +1236,9 @@ function instance($$self, $$props, $$invalidate) {
       windowBounds = [window.innerWidth, window.innerHeight];
 
       if (!readerBounds || !readerHeight || !readerWidth || windowBounds[0] < readerWidth || windowBounds[1] < readerHeight || windowBounds[0] > readerWidth + resizeTolerance || windowBounds[1] > readerHeight + resizeTolerance) {
-        $$invalidate(7, readerHeight = Math.round(windowBounds[1]));
+        $$invalidate(6, readerHeight = Math.round(windowBounds[1]));
         readerBounds = reader.getBoundingClientRect();
-        $$invalidate(6, readerWidth = Math.round(readerBounds.width));
+        $$invalidate(5, readerWidth = Math.round(readerBounds.width));
       }
     }
   }
@@ -1284,9 +1263,9 @@ function instance($$self, $$props, $$invalidate) {
         target = _ref2.target;
 
     if (target.tagName === "IMG") {
-      $$invalidate(9, showPhotoBox = true);
+      $$invalidate(8, showPhotoBox = true);
       setTimeout(function () {
-        $$invalidate(8, photoBox.innerHTML = target.outerHTML, photoBox);
+        $$invalidate(7, photoBox.innerHTML = target.outerHTML, photoBox);
       }, 1);
     } else if (clientX && readerBounds && readerBounds.left && readerWidth) {
       var midwayScreenX = readerBounds.left + readerWidth / 2;
@@ -1329,7 +1308,7 @@ function instance($$self, $$props, $$invalidate) {
       readerPosition.set([slug[0], slug[1], 1]);
       setupObservers();
     } else if ($readerPosition[0] === slug[0] && $readerPosition[1] === slug[1] && $readerPosition[2] > 1) {
-      $$invalidate(10, shouldJumpToPosition = true);
+      $$invalidate(9, shouldJumpToPosition = true);
       setupObservers();
     } else if ($readerPosition[0] === slug[0] && $readerPosition[1] === slug[1] && $readerPosition[2] === 1) {
       setupObservers();
@@ -1354,19 +1333,19 @@ function instance($$self, $$props, $$invalidate) {
   function div0_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](function () {
       reader = $$value;
-      $$invalidate(5, reader);
+      $$invalidate(4, reader);
     });
   }
 
   function div_binding($$value) {
     binding_callbacks[$$value ? "unshift" : "push"](function () {
       photoBox = $$value;
-      $$invalidate(8, photoBox);
+      $$invalidate(7, photoBox);
     });
   }
 
   var click_handler_3 = function click_handler_3() {
-    return $$invalidate(9, showPhotoBox = false);
+    return $$invalidate(8, showPhotoBox = false);
   };
 
   var click_handler_4 = function click_handler_4() {
@@ -1374,21 +1353,21 @@ function instance($$self, $$props, $$invalidate) {
   };
 
   var click_handler_5 = function click_handler_5() {
-    $$invalidate(10, shouldJumpToPosition = false);
+    $$invalidate(9, shouldJumpToPosition = false);
     jumpToParagraph();
   };
 
   var click_handler_6 = function click_handler_6() {
-    $$invalidate(10, shouldJumpToPosition = false);
+    $$invalidate(9, shouldJumpToPosition = false);
     readerPosition.set([readerPosition[0], readerPosition[1], 1]);
   };
 
   $$self.$$set = function ($$props) {
     if ("content" in $$props) $$invalidate(0, content = $$props.content);
-    if ("snippet" in $$props) $$invalidate(1, snippet = $$props.snippet);
-    if ("book" in $$props) $$invalidate(2, book = $$props.book);
-    if ("chapter" in $$props) $$invalidate(3, chapter = $$props.chapter);
-    if ("nextChapterExists" in $$props) $$invalidate(4, nextChapterExists = $$props.nextChapterExists);
+    if ("snippet" in $$props) $$invalidate(17, snippet = $$props.snippet);
+    if ("book" in $$props) $$invalidate(1, book = $$props.book);
+    if ("chapter" in $$props) $$invalidate(2, chapter = $$props.chapter);
+    if ("nextChapterExists" in $$props) $$invalidate(3, nextChapterExists = $$props.nextChapterExists);
   };
 
   $$self.$capture_state = function () {
@@ -1438,22 +1417,22 @@ function instance($$self, $$props, $$invalidate) {
 
   $$self.$inject_state = function ($$props) {
     if ("content" in $$props) $$invalidate(0, content = $$props.content);
-    if ("snippet" in $$props) $$invalidate(1, snippet = $$props.snippet);
-    if ("book" in $$props) $$invalidate(2, book = $$props.book);
-    if ("chapter" in $$props) $$invalidate(3, chapter = $$props.chapter);
-    if ("nextChapterExists" in $$props) $$invalidate(4, nextChapterExists = $$props.nextChapterExists);
-    if ("reader" in $$props) $$invalidate(5, reader = $$props.reader);
+    if ("snippet" in $$props) $$invalidate(17, snippet = $$props.snippet);
+    if ("book" in $$props) $$invalidate(1, book = $$props.book);
+    if ("chapter" in $$props) $$invalidate(2, chapter = $$props.chapter);
+    if ("nextChapterExists" in $$props) $$invalidate(3, nextChapterExists = $$props.nextChapterExists);
+    if ("reader" in $$props) $$invalidate(4, reader = $$props.reader);
     if ("readerBounds" in $$props) readerBounds = $$props.readerBounds;
     if ("windowBounds" in $$props) windowBounds = $$props.windowBounds;
-    if ("readerWidth" in $$props) $$invalidate(6, readerWidth = $$props.readerWidth);
-    if ("readerHeight" in $$props) $$invalidate(7, readerHeight = $$props.readerHeight);
+    if ("readerWidth" in $$props) $$invalidate(5, readerWidth = $$props.readerWidth);
+    if ("readerHeight" in $$props) $$invalidate(6, readerHeight = $$props.readerHeight);
     if ("readerTop" in $$props) readerTop = $$props.readerTop;
-    if ("columnGap" in $$props) $$invalidate(13, columnGap = $$props.columnGap);
+    if ("columnGap" in $$props) $$invalidate(12, columnGap = $$props.columnGap);
     if ("resizeTolerance" in $$props) resizeTolerance = $$props.resizeTolerance;
-    if ("photoBox" in $$props) $$invalidate(8, photoBox = $$props.photoBox);
-    if ("showPhotoBox" in $$props) $$invalidate(9, showPhotoBox = $$props.showPhotoBox);
-    if ("shouldJumpToPosition" in $$props) $$invalidate(10, shouldJumpToPosition = $$props.shouldJumpToPosition);
-    if ("next" in $$props) $$invalidate(11, next = $$props.next);
+    if ("photoBox" in $$props) $$invalidate(7, photoBox = $$props.photoBox);
+    if ("showPhotoBox" in $$props) $$invalidate(8, showPhotoBox = $$props.showPhotoBox);
+    if ("shouldJumpToPosition" in $$props) $$invalidate(9, shouldJumpToPosition = $$props.shouldJumpToPosition);
+    if ("next" in $$props) $$invalidate(10, next = $$props.next);
     if ("observer" in $$props) observer = $$props.observer;
     if ("paragraphElements" in $$props) paragraphElements = $$props.paragraphElements;
     if ("slug" in $$props) slug = $$props.slug;
@@ -1476,12 +1455,12 @@ function instance($$self, $$props, $$invalidate) {
 
     if ($$self.$$.dirty[0] &
     /*nextChapterExists, book, chapter*/
-    28) {
-       $$invalidate(11, next = !nextChapterExists && book < 3 ? [book + 1, 1] : [book, chapter + 1]);
+    14) {
+       $$invalidate(10, next = !nextChapterExists && book < 3 ? [book + 1, 1] : [book, chapter + 1]);
     }
   };
 
-  return [content, snippet, book, chapter, nextChapterExists, reader, readerWidth, readerHeight, photoBox, showPhotoBox, shouldJumpToPosition, next, $giveScrollHint, columnGap, page, setReaderBounds, handleClick, jumpToParagraph, resize_handler, div0_binding, div_binding, click_handler_3, click_handler_4, click_handler_5, click_handler_6];
+  return [content, book, chapter, nextChapterExists, reader, readerWidth, readerHeight, photoBox, showPhotoBox, shouldJumpToPosition, next, $giveScrollHint, columnGap, page, setReaderBounds, handleClick, jumpToParagraph, snippet, resize_handler, div0_binding, div_binding, click_handler_3, click_handler_4, click_handler_5, click_handler_6];
 }
 
 var U5B_slugu5D = /*#__PURE__*/function (_SvelteComponentDev) {
@@ -1497,10 +1476,10 @@ var U5B_slugu5D = /*#__PURE__*/function (_SvelteComponentDev) {
     _this = _super.call(this, options);
     init(_assertThisInitialized(_this), options, instance, create_fragment, safe_not_equal, {
       content: 0,
-      snippet: 1,
-      book: 2,
-      chapter: 3,
-      nextChapterExists: 4
+      snippet: 17,
+      book: 1,
+      chapter: 2,
+      nextChapterExists: 3
     }, [-1, -1]);
     dispatch_dev("SvelteRegisterComponent", {
       component: _assertThisInitialized(_this),
@@ -1519,25 +1498,25 @@ var U5B_slugu5D = /*#__PURE__*/function (_SvelteComponentDev) {
 
     if (
     /*snippet*/
-    ctx[1] === undefined && !("snippet" in props)) {
+    ctx[17] === undefined && !("snippet" in props)) {
       console.warn("<U5B_slugu5D> was created without expected prop 'snippet'");
     }
 
     if (
     /*book*/
-    ctx[2] === undefined && !("book" in props)) {
+    ctx[1] === undefined && !("book" in props)) {
       console.warn("<U5B_slugu5D> was created without expected prop 'book'");
     }
 
     if (
     /*chapter*/
-    ctx[3] === undefined && !("chapter" in props)) {
+    ctx[2] === undefined && !("chapter" in props)) {
       console.warn("<U5B_slugu5D> was created without expected prop 'chapter'");
     }
 
     if (
     /*nextChapterExists*/
-    ctx[4] === undefined && !("nextChapterExists" in props)) {
+    ctx[3] === undefined && !("nextChapterExists" in props)) {
       console.warn("<U5B_slugu5D> was created without expected prop 'nextChapterExists'");
     }
 
