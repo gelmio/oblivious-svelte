@@ -1,5 +1,5 @@
-import { L as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, s as safe_not_equal, a2 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, G as noop, h as space, t as text, O as empty, D as query_selector_all, l as claim_space, n as claim_text, a3 as HtmlTag, u as append_dev, y as set_data_dev, H as transition_in, I as transition_out, Q as check_outros, B as run_all, T as validate_store, U as component_subscribe, v as validate_slots, V as stores$1, a4 as onMount, f as fade, z as add_render_callback, W as create_in_transition, $ as group_outros, a5 as binding_callbacks, N as create_out_transition } from './client.b4f461d1.js';
-import { g as giveScrollHint, r as readerPosition } from './reader-hints.b9aaf539.js';
+import { L as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, s as safe_not_equal, a2 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, G as noop, h as space, t as text, O as empty, D as query_selector_all, l as claim_space, n as claim_text, a3 as HtmlTag, u as append_dev, y as set_data_dev, H as transition_in, I as transition_out, Q as check_outros, B as run_all, T as validate_store, U as component_subscribe, v as validate_slots, V as stores$1, a4 as onMount, f as fade, z as add_render_callback, W as create_in_transition, $ as group_outros, a5 as binding_callbacks, N as create_out_transition } from './client.15597ec4.js';
+import { g as giveScrollHint, r as readerPosition } from './reader-hints.5f15adb9.js';
 
 function smoothScroll(element, initial, final, duration, callback = null) {
     let startTime;
@@ -409,8 +409,6 @@ function create_if_block_1(ctx) {
   var button1;
   var t6;
   var div2_intro;
-  var div2_outro;
-  var current;
   var mounted;
   var dispose;
   var block = {
@@ -476,16 +474,16 @@ function create_if_block_1(ctx) {
     },
     h: function hydrate() {
       attr_dev(p0, "class", "font-header text-xl md:text-2xl");
-      add_location(p0, file, 294, 3, 10140);
+      add_location(p0, file, 293, 3, 10129);
       attr_dev(p1, "class", "font-sans text-base md:text-lg mb-4");
-      add_location(p1, file, 297, 3, 10237);
+      add_location(p1, file, 296, 3, 10226);
       attr_dev(button0, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious");
-      add_location(button0, file, 301, 4, 10358);
+      add_location(button0, file, 300, 4, 10347);
       attr_dev(button1, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-white border border-solid border-oblivious cursor-pointer");
-      add_location(button1, file, 309, 4, 10575);
-      add_location(div0, file, 300, 3, 10348);
+      add_location(button1, file, 308, 4, 10564);
+      add_location(div0, file, 299, 3, 10337);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
-      add_location(div1, file, 291, 2, 10055);
+      add_location(div1, file, 290, 2, 10044);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
       add_location(div2, file, 286, 1, 9924);
     },
@@ -504,7 +502,6 @@ function create_if_block_1(ctx) {
       append_dev(div0, t5);
       append_dev(div0, button1);
       append_dev(button1, t6);
-      current = true;
 
       if (!mounted) {
         dispose = [listen_dev(button0, "click",
@@ -517,24 +514,18 @@ function create_if_block_1(ctx) {
     },
     p: noop,
     i: function intro(local) {
-      if (current) return;
-      add_render_callback(function () {
-        if (div2_outro) div2_outro.end(1);
-        if (!div2_intro) div2_intro = create_in_transition(div2, fade, {
-          delay: 1000
+      if (!div2_intro) {
+        add_render_callback(function () {
+          div2_intro = create_in_transition(div2, fade, {
+            delay: 1000
+          });
+          div2_intro.start();
         });
-        div2_intro.start();
-      });
-      current = true;
+      }
     },
-    o: function outro(local) {
-      if (div2_intro) div2_intro.invalidate();
-      div2_outro = create_out_transition(div2, fade, {});
-      current = false;
-    },
+    o: noop,
     d: function destroy(detaching) {
       if (detaching) detach_dev(div2);
-      if (detaching && div2_outro) div2_outro.end();
       mounted = false;
       run_all(dispose);
     }
