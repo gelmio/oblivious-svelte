@@ -1,6 +1,5 @@
 const updateCart = (callback) => {
     const messageHandler = (m) => {
-        console.log({ m });
         if (m?.data === "sendowl:loaded") {
             callback();
             window.removeEventListener("message", messageHandler);
