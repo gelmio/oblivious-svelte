@@ -1,5 +1,6 @@
 <script>
     import Carousel from "../components/Carousel.svelte";
+    import OpenCart from "../components/OpenCart.svelte";
 </script>
 <style>
 </style>
@@ -25,7 +26,7 @@
     <img class="my-12 max-w-full max-h-1/2vh" alt='Oblivious book cover' src='/images/3D-cover.jpg'>
     <div class="flex flex-col md:flex-row justify-center items-center">
         <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="read" rel="prefetch">Start reading now</a>
-        <span class="m-2">... <a rel="nofollow" href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart">or download the e-book</a></span>
+        <span class="m-2">... <span class="underline"><OpenCart text="or download the e-book"></OpenCart></span></span>
     </div>
 </section>
 <!-- <section class="mb-20 md:mb-32 px-10 w-full">
@@ -64,7 +65,7 @@
     </div>
     <div class="flex flex-col md:flex-row justify-center items-center">
         <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="read" rel="prefetch">Read online now</a>
-        <span class="m-2">... <a rel="nofollow" href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart">or download the e-book</a></span>
+        <span class="m-2">... <span class="underline"><OpenCart text="or download the e-book"></OpenCart></span></span>
     </div>
 </section>
 <section class="mb-20 md:mb-32 sm:px-20 text-center">

@@ -32,6 +32,8 @@
 	import { fade } from "svelte/transition";
 	import { giveScrollHint, readerPosition } from "./reader-hints.js";
 	import smoothScroll from "./smooth-scroll";
+    import OpenCart from "../../components/OpenCart.svelte";
+
 
 	export let content: string;
 	export let book: number;
@@ -254,13 +256,11 @@
 				</a>
 				{#if next[1] > 10 && !(next[1] % 5)}
 					<span class="m-2">
-						... or <a
+						... or <span
 							on:click={(e) => e.stopPropagation()}
-							href="https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart"
-							rel="nofollow"
 							class="border-b border-oblivious-dark"
 						>
-							buy me a coffee!</a
+							<OpenCart text="buy me a coffee"></OpenCart></span
 						>
 					</span>
 				{/if}
@@ -273,12 +273,10 @@
 					the way out soon!
 				</p>
 				<p>
-					While you wait, feel free to jump on the mailing list, or maybe even <a
+					While you wait, feel free to jump on the mailing list, or maybe even <span
 						on:click={(e) => e.stopPropagation()}	
-						href="https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart"
-						rel="nofollow"
 						class="border-b border-oblivious-dark"
-						>buy me a coffee!</a
+						><OpenCart text="buy me a coffee"></OpenCart></span
 					>
 				</p>
 			</div>
