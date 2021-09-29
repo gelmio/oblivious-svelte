@@ -11,8 +11,9 @@ const updateCart = (callback) => {
 
         const addComplete = (r) => {
             loadedCount = loadedCount + 1;
-            window.alert("c: " + loadedCount + " " + r);
-            loadedCount === 3
+            console.log({ r });
+            window.alert("c: " + loadedCount + " " + JSON.stringify(r));
+            loadedCount === 1
                 ? setTimeout(() => {
                       initiateCheckout();
                   }, 10000)
