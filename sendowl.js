@@ -334,10 +334,11 @@ else {
             e && e.remove();
         },
         isSafariBrowser: function () {
-            return (
-                navigator.userAgent.indexOf("Safari") >= 0 &&
-                navigator.userAgent.indexOf("Chrome") < 0
-            );
+            return false;
+            // return (
+            //     navigator.userAgent.indexOf("Safari") >= 0 &&
+            //     navigator.userAgent.indexOf("Chrome") < 0
+            // );
         },
         appendGoogleAnalyticsTracking: function (e) {
             if ("undefined" != typeof _gat && null != typeof _gat) {
