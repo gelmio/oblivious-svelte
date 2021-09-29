@@ -9,9 +9,9 @@ const updateCart = (callback) => {
         window.addEventListener("message", messageHandler, !1);
         let loadedCount = 0;
 
-        const addComplete = () => {
+        const addComplete = (r) => {
             loadedCount = loadedCount + 1;
-            window.alert("c: " + loadedCount);
+            window.alert("c: " + loadedCount + " " + r);
             loadedCount === 3
                 ? setTimeout(() => {
                       initiateCheckout();
@@ -28,9 +28,9 @@ const updateCart = (callback) => {
         };
 
         sendOwl.emptyCart(35479, () => {
-            sendOwl.addBundleToCart(37218, "89A60CC9", () => addComplete());
-            sendOwl.addBundleToCart(812169, "A234B840", () => addComplete());
-            sendOwl.addProductToCart(78458726, "77A44CD1", () => addComplete());
+            sendOwl.addBundleToCart(37218, "89A60CC9", (r) => addComplete(r));
+            // sendOwl.addBundleToCart(812169, "A234B840", (r) => addComplete(r));
+            // sendOwl.addProductToCart(78458726, "77A44CD1", (r) => addComplete(r));
         });
     } catch {
         console.log("Cart update failed");
