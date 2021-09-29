@@ -290,7 +290,7 @@ else {
                 xmlhttp.send();
         },
         showCheckout: function (e, t, n) {
-            window.alert("E", e, "T", t, "N", n);
+            window.alert("E" + e + "T" + t + "N" + n);
             var a = window,
                 o = document,
                 r = o.documentElement,
