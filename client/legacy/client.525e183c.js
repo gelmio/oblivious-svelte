@@ -2187,12 +2187,8 @@ var CONTEXT_KEY = {};
 
 var updateCart = function updateCart(callback) {
   var messageHandler = function messageHandler(m) {
-    console.log({
-      m: m
-    });
-
     if ((m === null || m === void 0 ? void 0 : m.data) === "sendowl:loaded") {
-      callback();
+      // callback();
       window.removeEventListener("message", messageHandler);
     }
   };
@@ -2203,7 +2199,7 @@ var updateCart = function updateCart(callback) {
 
     var addComplete = function addComplete() {
       loadedCount = loadedCount + 1;
-      loadedCount === 3 ? initiateCheckout() : null;
+      callback(); // loadedCount === 3 ? initiateCheckout() : null;
     };
 
     var initiateCheckout = function initiateCheckout() {
@@ -2538,7 +2534,7 @@ var Spinner = /*#__PURE__*/function (_SvelteComponentDev) {
 function _createSuper$2(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$2(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _isNativeReflectConstruct$2() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$1 = "src/components/OpenCart.svelte"; // (16:0) {:else}
+var file$1 = "src/components/OpenCart.svelte"; // (20:0) {:else}
 
 function create_else_block(ctx) {
   var span;
@@ -2566,7 +2562,7 @@ function create_else_block(ctx) {
     },
     h: function hydrate() {
       attr_dev(span, "class", "cursor-pointer");
-      add_location(span, file$1, 16, 4, 342);
+      add_location(span, file$1, 20, 4, 393);
     },
     m: function mount(target, anchor) {
       insert_dev(target, span, anchor);
@@ -2575,7 +2571,7 @@ function create_else_block(ctx) {
       if (!mounted) {
         dispose = listen_dev(span, "click",
         /*click_handler*/
-        ctx[3], false, false, false);
+        ctx[4], false, false, false);
         mounted = true;
       }
     },
@@ -2598,14 +2594,17 @@ function create_else_block(ctx) {
     block: block,
     id: create_else_block.name,
     type: "else",
-    source: "(16:0) {:else}",
+    source: "(20:0) {:else}",
     ctx: ctx
   });
   return block;
-} // (14:0) {#if cartLoading}
+} // (17:0) {#if cartLoading}
 
 
 function create_if_block(ctx) {
+  var t0;
+  var t1;
+  var t2;
   var spinner;
   var current;
   spinner = new Spinner({
@@ -2613,16 +2612,35 @@ function create_if_block(ctx) {
   });
   var block = {
     c: function create() {
+      t0 = text("c:");
+      t1 = text(
+      /*count*/
+      ctx[2]);
+      t2 = space();
       create_component(spinner.$$.fragment);
     },
     l: function claim(nodes) {
+      t0 = claim_text(nodes, "c:");
+      t1 = claim_text(nodes,
+      /*count*/
+      ctx[2]);
+      t2 = claim_space(nodes);
       claim_component(spinner.$$.fragment, nodes);
     },
     m: function mount(target, anchor) {
+      insert_dev(target, t0, anchor);
+      insert_dev(target, t1, anchor);
+      insert_dev(target, t2, anchor);
       mount_component(spinner, target, anchor);
       current = true;
     },
-    p: noop,
+    p: function update(ctx, dirty) {
+      if (!current || dirty &
+      /*count*/
+      4) set_data_dev(t1,
+      /*count*/
+      ctx[2]);
+    },
     i: function intro(local) {
       if (current) return;
       transition_in(spinner.$$.fragment, local);
@@ -2633,6 +2651,9 @@ function create_if_block(ctx) {
       current = false;
     },
     d: function destroy(detaching) {
+      if (detaching) detach_dev(t0);
+      if (detaching) detach_dev(t1);
+      if (detaching) detach_dev(t2);
       destroy_component(spinner, detaching);
     }
   };
@@ -2640,7 +2661,7 @@ function create_if_block(ctx) {
     block: block,
     id: create_if_block.name,
     type: "if",
-    source: "(14:0) {#if cartLoading}",
+    source: "(17:0) {#if cartLoading}",
     ctx: ctx
   });
   return block;
@@ -2735,12 +2756,13 @@ function instance$1($$self, $$props, $$invalidate) {
   var _$$props$text = $$props.text,
       text = _$$props$text === void 0 ? "download" : _$$props$text;
   var cartLoading = false;
+  var count = 0;
 
   var handleOpenCart = function handleOpenCart() {
     $$invalidate(1, cartLoading = true);
     updateCart(function () {
-      $$invalidate(1, cartLoading = false);
-    });
+      $$invalidate(2, count = count + 1);
+    }); // cartLoading = false
   };
 
   var writable_props = ["text"];
@@ -2762,6 +2784,7 @@ function instance$1($$self, $$props, $$invalidate) {
       updateCart: updateCart,
       Spinner: Spinner,
       cartLoading: cartLoading,
+      count: count,
       handleOpenCart: handleOpenCart
     };
   };
@@ -2769,13 +2792,14 @@ function instance$1($$self, $$props, $$invalidate) {
   $$self.$inject_state = function ($$props) {
     if ("text" in $$props) $$invalidate(0, text = $$props.text);
     if ("cartLoading" in $$props) $$invalidate(1, cartLoading = $$props.cartLoading);
+    if ("count" in $$props) $$invalidate(2, count = $$props.count);
   };
 
   if ($$props && "$$inject" in $$props) {
     $$self.$inject_state($$props.$$inject);
   }
 
-  return [text, cartLoading, handleOpenCart, click_handler];
+  return [text, cartLoading, count, handleOpenCart, click_handler];
 }
 
 var OpenCart = /*#__PURE__*/function (_SvelteComponentDev) {
@@ -5213,31 +5237,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.4bbea422.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.5a6c0b4e.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./success.96e40edc.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./success.fc215cde.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.754e61ae.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.eaf79fc4.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.745f4161.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.cecf6f89.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.bc1db90d.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.000d3e07.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.6bd6e9b6.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.e0c1887c.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[...slug].d3066d94.js'), __inject_styles(["client-9c3ffec9.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].18eb7a72.js'), __inject_styles(["client-9c3ffec9.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
