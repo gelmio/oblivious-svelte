@@ -376,7 +376,9 @@ else {
             return window.top !== window.self;
         },
         loadIframe: function (e) {
-            (iframe = document.createElement("iframe")),
+            console.log({ e }),
+                window.alert("IFRAME" + e),
+                (iframe = document.createElement("iframe")),
                 iframe.setAttribute("id", "sendowl-checkout"),
                 iframe.setAttribute("frameBorder", "0"),
                 iframe.setAttribute("allowtransparency", "true"),
