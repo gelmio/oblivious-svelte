@@ -2836,10 +2836,13 @@ function create_fragment$2(ctx) {
   var li2;
   var opencart;
   var t5;
-  var li3;
   var a3;
   var t6;
-  var a3_aria_current_value;
+  var t7;
+  var li3;
+  var a4;
+  var t8;
+  var a4_aria_current_value;
   var current;
   opencart = new OpenCart({
     $$inline: true
@@ -2862,9 +2865,12 @@ function create_fragment$2(ctx) {
       li2 = element("li");
       create_component(opencart.$$.fragment);
       t5 = space();
-      li3 = element("li");
       a3 = element("a");
-      t6 = text("read it now");
+      t6 = text("x");
+      t7 = space();
+      li3 = element("li");
+      a4 = element("a");
+      t8 = text("read it now");
       this.h();
     },
     l: function claim(nodes) {
@@ -2920,21 +2926,29 @@ function create_fragment$2(ctx) {
       });
       var li2_nodes = children(li2);
       claim_component(opencart.$$.fragment, li2_nodes);
+      t5 = claim_space(li2_nodes);
+      a3 = claim_element(li2_nodes, "A", {
+        href: true,
+        rel: true
+      });
+      var a3_nodes = children(a3);
+      t6 = claim_text(a3_nodes, "x");
+      a3_nodes.forEach(detach_dev);
       li2_nodes.forEach(detach_dev);
-      t5 = claim_space(ul_nodes);
+      t7 = claim_space(ul_nodes);
       li3 = claim_element(ul_nodes, "LI", {
         class: true
       });
       var li3_nodes = children(li3);
-      a3 = claim_element(li3_nodes, "A", {
+      a4 = claim_element(li3_nodes, "A", {
         class: true,
         href: true,
         "aria-current": true,
         rel: true
       });
-      var a3_nodes = children(a3);
-      t6 = claim_text(a3_nodes, "read it now");
-      a3_nodes.forEach(detach_dev);
+      var a4_nodes = children(a4);
+      t8 = claim_text(a4_nodes, "read it now");
+      a4_nodes.forEach(detach_dev);
       li3_nodes.forEach(detach_dev);
       ul_nodes.forEach(detach_dev);
       nav_nodes.forEach(detach_dev);
@@ -2963,17 +2977,20 @@ function create_fragment$2(ctx) {
       add_location(a2, file$2, 23, 3, 581);
       attr_dev(li1, "class", "block p-1 sm:p-4");
       add_location(li1, file$2, 22, 2, 548);
+      attr_dev(a3, "href", "https://transactions.sendowl.com/packages/812169/A234B840/add_to_cart");
+      attr_dev(a3, "rel", "nofollow");
+      add_location(a3, file$2, 32, 3, 806);
       attr_dev(li2, "class", "block p-1 sm:p-4 no-underline");
       add_location(li2, file$2, 30, 2, 733);
-      attr_dev(a3, "class", "p-2 md:p-4 rounded-lg no-underline bg-oblivious svelte-avwnlm");
-      attr_dev(a3, "href", "read");
-      attr_dev(a3, "aria-current", a3_aria_current_value =
+      attr_dev(a4, "class", "p-2 md:p-4 rounded-lg no-underline bg-oblivious svelte-avwnlm");
+      attr_dev(a4, "href", "read");
+      attr_dev(a4, "aria-current", a4_aria_current_value =
       /*segment*/
       ctx[0] === "read" ? "page" : undefined);
-      attr_dev(a3, "rel", "nofollow");
-      add_location(a3, file$2, 34, 3, 849);
+      attr_dev(a4, "rel", "nofollow");
+      add_location(a4, file$2, 35, 3, 955);
       attr_dev(li3, "class", "block p-1 sm:p-4 my-2");
-      add_location(li3, file$2, 33, 2, 811);
+      add_location(li3, file$2, 34, 2, 917);
       attr_dev(ul, "class", "flex flex-col md:flex-row text-base md:text-xl items-center ml-4");
       add_location(ul, file$2, 12, 1, 301);
       attr_dev(nav, "class", "flex flex-row justify-between md:justify-start items-center p-4");
@@ -2995,10 +3012,13 @@ function create_fragment$2(ctx) {
       append_dev(ul, t4);
       append_dev(ul, li2);
       mount_component(opencart, li2, null);
-      append_dev(ul, t5);
-      append_dev(ul, li3);
-      append_dev(li3, a3);
+      append_dev(li2, t5);
+      append_dev(li2, a3);
       append_dev(a3, t6);
+      append_dev(ul, t7);
+      append_dev(ul, li3);
+      append_dev(li3, a4);
+      append_dev(a4, t8);
       current = true;
     },
     p: function update(ctx, _ref) {
@@ -3023,10 +3043,10 @@ function create_fragment$2(ctx) {
 
       if (!current || dirty &
       /*segment*/
-      1 && a3_aria_current_value !== (a3_aria_current_value =
+      1 && a4_aria_current_value !== (a4_aria_current_value =
       /*segment*/
       ctx[0] === "read" ? "page" : undefined)) {
-        attr_dev(a3, "aria-current", a3_aria_current_value);
+        attr_dev(a4, "aria-current", a4_aria_current_value);
       }
     },
     i: function intro(local) {
@@ -5210,31 +5230,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.63fada80.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.0f56245a.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./success.7259fbe0.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./success.cae95b88.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.9a998e9f.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.d36fb2f6.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.b6b4bf9d.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.b75d2e4a.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.60d3dfa0.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.2212b686.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.ece545a8.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.66154d66.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[...slug].3f195363.js'), __inject_styles(["client-9c3ffec9.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].b32866e9.js'), __inject_styles(["client-9c3ffec9.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {

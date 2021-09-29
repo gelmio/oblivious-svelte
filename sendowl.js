@@ -298,11 +298,11 @@ else {
                     d <= 479);
             if (true || (window.postMessage && n && !s)) {
                 console.log("yoyo");
-                if (t)
-                    e =
-                        e +
-                        (e.match(/\?/) ? "&" : "?") +
-                        sendOwl.readCookie("_sendowl_cart");
+                // if (t)
+                //     e =
+                //         e +
+                //         (e.match(/\?/) ? "&" : "?") +
+                //         sendOwl.readCookie("_sendowl_cart");
                 sendOwl.loadIframe(e);
             } else
                 (window.location.href = sendOwl.appendBackUrl(
