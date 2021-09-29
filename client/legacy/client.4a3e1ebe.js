@@ -2209,7 +2209,7 @@ var updateCart = function updateCart(callback) {
     };
 
     var initiateCheckout = function initiateCheckout() {
-      sendOwl.showCheckout("https://transactions.sendowl.com/cart?merchant_id=35479", true, true);
+      sendOwl.showCheckout("https://transactions.sendowl.com/cart?merchant_id=35479", false, true);
     };
 
     sendOwl.emptyCart(35479, function () {
@@ -5210,31 +5210,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.2cb7c94a.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.63fada80.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./success.6fb2232c.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./success.7259fbe0.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.63c3b6c1.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.9a998e9f.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.bc04c207.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.b6b4bf9d.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.c4ad4f7b.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.60d3dfa0.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.28c3c029.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.ece545a8.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[...slug].22c39d75.js'), __inject_styles(["client-9c3ffec9.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].3f195363.js'), __inject_styles(["client-9c3ffec9.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
