@@ -180,6 +180,7 @@ else {
                 (a.id = "tempscript"),
                 (a.src = e),
                 document.body.appendChild(a);
+            window.alert(JSON.stringify(e));
         },
         performSafeJSONPRequest: function (e, t) {
             if (sendOwl.isSafariBrowser()) {
