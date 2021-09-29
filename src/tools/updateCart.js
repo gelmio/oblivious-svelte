@@ -1,7 +1,7 @@
 const updateCart = (callback) => {
     const messageHandler = (m) => {
         if (m?.data === "sendowl:loaded") {
-            callback();
+            // callback();
             window.removeEventListener("message", messageHandler);
         }
     };
@@ -11,7 +11,8 @@ const updateCart = (callback) => {
 
         const addComplete = () => {
             loadedCount = loadedCount + 1;
-            loadedCount === 3 ? initiateCheckout() : null;
+            callback();
+            // loadedCount === 3 ? initiateCheckout() : null;
         };
 
         const initiateCheckout = () => {
