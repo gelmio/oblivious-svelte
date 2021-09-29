@@ -184,6 +184,7 @@ else {
         },
         performSafeJSONPRequest: function (e, t) {
             if (sendOwl.isSafariBrowser()) {
+                window.alert("Im a safari browser");
                 var n = sendOwl.readCookie("_sendowl_cart");
                 (xmlhttp = sendOwl.getXMLHttp()),
                     xmlhttp.open(
