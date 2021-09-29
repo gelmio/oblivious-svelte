@@ -2197,9 +2197,9 @@ var updateCart = function updateCart(callback) {
     window.addEventListener("message", messageHandler, !1);
     var loadedCount = 0;
 
-    var addComplete = function addComplete() {
+    var addComplete = function addComplete(r) {
       loadedCount = loadedCount + 1;
-      window.alert("c: " + loadedCount);
+      window.alert("c: " + loadedCount + " " + r);
       loadedCount === 3 ? setTimeout(function () {
         initiateCheckout();
       }, 10000) : null;
@@ -2210,15 +2210,10 @@ var updateCart = function updateCart(callback) {
     };
 
     sendOwl.emptyCart(35479, function () {
-      sendOwl.addBundleToCart(37218, "89A60CC9", function () {
-        return addComplete();
-      });
-      sendOwl.addBundleToCart(812169, "A234B840", function () {
-        return addComplete();
-      });
-      sendOwl.addProductToCart(78458726, "77A44CD1", function () {
-        return addComplete();
-      });
+      sendOwl.addBundleToCart(37218, "89A60CC9", function (r) {
+        return addComplete(r);
+      }); // sendOwl.addBundleToCart(812169, "A234B840", (r) => addComplete(r));
+      // sendOwl.addProductToCart(78458726, "77A44CD1", (r) => addComplete(r));
     });
   } catch (_unused) {
     console.log("Cart update failed");
@@ -5212,31 +5207,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.50306b60.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.015ddede.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./success.2ddf4e5e.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./success.1da42f52.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.53cbdc96.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.d346d1a0.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.b3d4b5d4.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.9a6ca270.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.ce00edca.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.c5c3b7f9.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.8eb08dcb.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.e657f899.js'), __inject_styles(["client-9c3ffec9.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[...slug].c381c7dc.js'), __inject_styles(["client-9c3ffec9.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].b0ab6322.js'), __inject_styles(["client-9c3ffec9.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
