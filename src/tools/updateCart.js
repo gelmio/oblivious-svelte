@@ -23,7 +23,7 @@ const updateCart = (callback) => {
         const initiateCheckout = () => {
             sendOwl.showCheckout(
                 "https://transactions.sendowl.com/cart?merchant_id=35479",
-                true,
+                false,
                 true
             );
         };
