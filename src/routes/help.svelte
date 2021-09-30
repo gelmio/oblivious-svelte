@@ -1,4 +1,6 @@
 <script>
+import DownloadBox from "../components/DownloadBox.svelte";
+
 </script>
 <style>
 </style>
@@ -43,7 +45,8 @@
     </div>
 </section>
 <section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
-    <h2 class="text-2xl md:text-3xl text-center">Just looking for the link to get all of this started?</h2> <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart" rel="nofollow">Here it is!</a>
+    <h2 class="text-2xl md:text-3xl text-center">Just looking for the link to get all of this started?</h2>
+    <div class="inline-block text-xl sm:text-2xl p-4 mt-4 rounded-lg no-underline bg-oblivious" ><DownloadBox>Here it is!</DownloadBox></div>
 </section>
 <section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
     <h2 class="text-2xl md:text-3xl text-center">Still lost? Flick me an email <a href="mailto:obliviousthebook@protonmail.com">here</a> and I'll sort you out.</h2>

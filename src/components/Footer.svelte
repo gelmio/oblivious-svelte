@@ -1,4 +1,6 @@
 <script>
+import DownloadBox from "./DownloadBox.svelte";
+
 	export let segment;
 </script>
 
@@ -50,11 +52,7 @@
 			>
 		</li>
 		<li class="p-1 sm:p-4">
-			<a
-				class="no-underline p-2"
-				href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart"
-				rel="nofollow">download</a
-			>
+			<DownloadBox>download</DownloadBox>
 		</li>
 		<li class="p-1 sm:p-4">
 			<a
