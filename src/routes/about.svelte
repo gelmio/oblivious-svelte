@@ -1,5 +1,4 @@
 <script>
-    import BuyButton from "../components/BuyButton.svelte";
 </script>
 <svelte:head>
 	<title>About the Oblivious Trilogy | A wild journey through West Africa</title>
