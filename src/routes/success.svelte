@@ -7,7 +7,7 @@
     <title>Great Work, Oblivious is on the way!</title>
     <meta property="og:description"
           content="Your order of Oblivious is on the way"/>
-    <meta property="og:url" content="http://www.obliviousthebook.com/awww-yeah"/>
+    <meta property="og:url" content="http://www.obliviousthebook.com/success"/>
     <meta property="og:site_name" content="ObliviousTheBook.com"/>
     <meta property="fb:admins" content="563453705"/>
     <meta property="og:image"
