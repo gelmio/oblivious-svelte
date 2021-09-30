@@ -1,5 +1,5 @@
-import { K as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, L as _createClass, S as SvelteComponentDev, s as safe_not_equal, a3 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, G as noop, h as space, t as text, P as empty, D as query_selector_all, l as claim_space, n as claim_text, a4 as HtmlTag, u as append_dev, y as set_data_dev, I as transition_out, R as check_outros, H as transition_in, B as run_all, U as validate_store, V as component_subscribe, v as validate_slots, W as stores$1, a5 as onMount, f as fade, O as OpenCart, C as create_component, E as claim_component, F as mount_component, J as destroy_component, z as add_render_callback, X as create_in_transition, a0 as group_outros, a6 as binding_callbacks, N as create_out_transition } from './client.baa43eb5.js';
-import { g as giveScrollHint, r as readerPosition } from './reader-hints.cd1d2e4c.js';
+import { L as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, s as safe_not_equal, a2 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, G as noop, h as space, t as text, O as empty, D as query_selector_all, l as claim_space, n as claim_text, a3 as HtmlTag, u as append_dev, y as set_data_dev, H as transition_in, I as transition_out, Q as check_outros, B as run_all, T as validate_store, U as component_subscribe, v as validate_slots, V as stores$1, a4 as onMount, f as fade, z as add_render_callback, W as create_in_transition, $ as group_outros, a5 as binding_callbacks, N as create_out_transition } from './client.e05bae4b.js';
+import { g as giveScrollHint, r as readerPosition } from './reader-hints.da25eb8c.js';
 
 function smoothScroll(element, initial, final, duration, callback = null) {
     let startTime;
@@ -32,7 +32,7 @@ function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflec
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 var document_1 = globals.document,
     window_1 = globals.window;
-var file = "src/routes/read/[...slug].svelte"; // (216:2) {:else}
+var file = "src/routes/read/[...slug].svelte"; // (217:2) {:else}
 
 function create_else_block(ctx) {
   var div;
@@ -44,17 +44,10 @@ function create_else_block(ctx) {
   var t3;
   var p2;
   var t4;
-  var span;
-  var opencart;
-  var current;
+  var a;
+  var t5;
   var mounted;
   var dispose;
-  opencart = new OpenCart({
-    props: {
-      text: "buy me a coffee"
-    },
-    $$inline: true
-  });
   var block = {
     c: function create() {
       div = element("div");
@@ -66,8 +59,8 @@ function create_else_block(ctx) {
       t3 = space();
       p2 = element("p");
       t4 = text("While you wait, feel free to jump on the mailing list, or maybe even ");
-      span = element("span");
-      create_component(opencart.$$.fragment);
+      a = element("a");
+      t5 = text("buy me a coffee!");
       this.h();
     },
     l: function claim(nodes) {
@@ -88,24 +81,28 @@ function create_else_block(ctx) {
       p2 = claim_element(div_nodes, "P", {});
       var p2_nodes = children(p2);
       t4 = claim_text(p2_nodes, "While you wait, feel free to jump on the mailing list, or maybe even ");
-      span = claim_element(p2_nodes, "SPAN", {
+      a = claim_element(p2_nodes, "A", {
+        href: true,
+        rel: true,
         class: true
       });
-      var span_nodes = children(span);
-      claim_component(opencart.$$.fragment, span_nodes);
-      span_nodes.forEach(detach_dev);
+      var a_nodes = children(a);
+      t5 = claim_text(a_nodes, "buy me a coffee!");
+      a_nodes.forEach(detach_dev);
       p2_nodes.forEach(detach_dev);
       div_nodes.forEach(detach_dev);
       this.h();
     },
     h: function hydrate() {
-      add_location(p0, file, 217, 4, 7955);
-      add_location(p1, file, 218, 4, 8013);
-      attr_dev(span, "class", "border-b border-oblivious-dark");
-      add_location(span, file, 223, 74, 8196);
-      add_location(p2, file, 222, 4, 8118);
+      add_location(p0, file, 218, 4, 7972);
+      add_location(p1, file, 219, 4, 8030);
+      attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
+      attr_dev(a, "rel", "nofollow");
+      attr_dev(a, "class", "border-b border-oblivious-dark");
+      add_location(a, file, 224, 74, 8213);
+      add_location(p2, file, 223, 4, 8135);
       attr_dev(div, "class", "text-center font-header mt-8");
-      add_location(div, file, 216, 3, 7908);
+      add_location(div, file, 217, 3, 7925);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -117,28 +114,17 @@ function create_else_block(ctx) {
       append_dev(div, t3);
       append_dev(div, p2);
       append_dev(p2, t4);
-      append_dev(p2, span);
-      mount_component(opencart, span, null);
-      current = true;
+      append_dev(p2, a);
+      append_dev(a, t5);
 
       if (!mounted) {
-        dispose = listen_dev(span, "click", click_handler_2, false, false, false);
+        dispose = listen_dev(a, "click", click_handler_2, false, false, false);
         mounted = true;
       }
     },
     p: noop,
-    i: function intro(local) {
-      if (current) return;
-      transition_in(opencart.$$.fragment, local);
-      current = true;
-    },
-    o: function outro(local) {
-      transition_out(opencart.$$.fragment, local);
-      current = false;
-    },
     d: function destroy(detaching) {
       if (detaching) detach_dev(div);
-      destroy_component(opencart);
       mounted = false;
       dispose();
     }
@@ -147,11 +133,11 @@ function create_else_block(ctx) {
     block: block,
     id: create_else_block.name,
     type: "else",
-    source: "(216:2) {:else}",
+    source: "(217:2) {:else}",
     ctx: ctx
   });
   return block;
-} // (195:2) {#if next[0] < 3}
+} // (194:2) {#if next[0] < 3}
 
 
 function create_if_block_3(ctx) {
@@ -164,7 +150,6 @@ function create_if_block_3(ctx) {
   var t1;
   var a_href_value;
   var t2;
-  var current;
   var mounted;
   var dispose;
   var if_block =
@@ -209,9 +194,9 @@ function create_if_block_3(ctx) {
       /*next*/
       ctx[10][1]);
       attr_dev(a, "class", "inline-block text-lg p-2 rounded-lg no-underline bg-oblivious mr-4");
-      add_location(a, file, 196, 4, 7364);
+      add_location(a, file, 195, 4, 7307);
       attr_dev(div, "class", "flex flex-col md:flex-row justify-end items-end mt-8");
-      add_location(div, file, 195, 3, 7293);
+      add_location(div, file, 194, 3, 7236);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -220,7 +205,6 @@ function create_if_block_3(ctx) {
       append_dev(a, t1);
       append_dev(div, t2);
       if (if_block) if_block.m(div, null);
-      current = true;
 
       if (!mounted) {
         dispose = listen_dev(a, "click", click_handler, false, false, false);
@@ -228,13 +212,13 @@ function create_if_block_3(ctx) {
       }
     },
     p: function update(ctx, dirty) {
-      if ((!current || dirty[0] &
+      if (dirty[0] &
       /*nextChapterExists*/
-      8) && t1_value !== (t1_value = (
+      8 && t1_value !== (t1_value = (
       /*nextChapterExists*/
       ctx[3] ? "Chapter" : "Book") + "")) set_data_dev(t1, t1_value);
 
-      if (!current || dirty[0] &
+      if (dirty[0] &
       /*next*/
       1024 && a_href_value !== (a_href_value = "read/" +
       /*next*/
@@ -249,34 +233,15 @@ function create_if_block_3(ctx) {
       ctx[10][1] > 10 && !(
       /*next*/
       ctx[10][1] % 5)) {
-        if (if_block) {
-          if (dirty[0] &
-          /*next*/
-          1024) {
-            transition_in(if_block, 1);
-          }
-        } else {
+        if (if_block) ; else {
           if_block = create_if_block_4(ctx);
           if_block.c();
-          transition_in(if_block, 1);
           if_block.m(div, null);
         }
       } else if (if_block) {
-        group_outros();
-        transition_out(if_block, 1, 1, function () {
-          if_block = null;
-        });
-        check_outros();
+        if_block.d(1);
+        if_block = null;
       }
-    },
-    i: function intro(local) {
-      if (current) return;
-      transition_in(if_block);
-      current = true;
-    },
-    o: function outro(local) {
-      transition_out(if_block);
-      current = false;
     },
     d: function destroy(detaching) {
       if (detaching) detach_dev(div);
@@ -289,80 +254,66 @@ function create_if_block_3(ctx) {
     block: block,
     id: create_if_block_3.name,
     type: "if",
-    source: "(195:2) {#if next[0] < 3}",
+    source: "(194:2) {#if next[0] < 3}",
     ctx: ctx
   });
   return block;
-} // (205:4) {#if next[1] > 10 && !(next[1] % 5)}
+} // (204:4) {#if next[1] > 10 && !(next[1] % 5)}
 
 
 function create_if_block_4(ctx) {
-  var span1;
-  var t;
-  var span0;
-  var opencart;
-  var current;
+  var span;
+  var t0;
+  var a;
+  var t1;
   var mounted;
   var dispose;
-  opencart = new OpenCart({
-    props: {
-      text: "buy me a coffee"
-    },
-    $$inline: true
-  });
   var block = {
     c: function create() {
-      span1 = element("span");
-      t = text("... or ");
-      span0 = element("span");
-      create_component(opencart.$$.fragment);
+      span = element("span");
+      t0 = text("... or ");
+      a = element("a");
+      t1 = text("buy me a coffee!");
       this.h();
     },
     l: function claim(nodes) {
-      span1 = claim_element(nodes, "SPAN", {
+      span = claim_element(nodes, "SPAN", {
         class: true
       });
-      var span1_nodes = children(span1);
-      t = claim_text(span1_nodes, "... or ");
-      span0 = claim_element(span1_nodes, "SPAN", {
+      var span_nodes = children(span);
+      t0 = claim_text(span_nodes, "... or ");
+      a = claim_element(span_nodes, "A", {
+        href: true,
+        rel: true,
         class: true
       });
-      var span0_nodes = children(span0);
-      claim_component(opencart.$$.fragment, span0_nodes);
-      span0_nodes.forEach(detach_dev);
-      span1_nodes.forEach(detach_dev);
+      var a_nodes = children(a);
+      t1 = claim_text(a_nodes, "buy me a coffee!");
+      a_nodes.forEach(detach_dev);
+      span_nodes.forEach(detach_dev);
       this.h();
     },
     h: function hydrate() {
-      attr_dev(span0, "class", "border-b border-oblivious-dark");
-      add_location(span0, file, 206, 13, 7691);
-      attr_dev(span1, "class", "m-2");
-      add_location(span1, file, 205, 5, 7659);
+      attr_dev(a, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
+      attr_dev(a, "rel", "nofollow");
+      attr_dev(a, "class", "border-b border-oblivious-dark");
+      add_location(a, file, 205, 13, 7634);
+      attr_dev(span, "class", "m-2");
+      add_location(span, file, 204, 5, 7602);
     },
     m: function mount(target, anchor) {
-      insert_dev(target, span1, anchor);
-      append_dev(span1, t);
-      append_dev(span1, span0);
-      mount_component(opencart, span0, null);
-      current = true;
+      insert_dev(target, span, anchor);
+      append_dev(span, t0);
+      append_dev(span, a);
+      append_dev(a, t1);
 
       if (!mounted) {
-        dispose = listen_dev(span0, "click", click_handler_1, false, false, false);
+        dispose = listen_dev(a, "click", click_handler_1, false, false, false);
         mounted = true;
       }
     },
-    i: function intro(local) {
-      if (current) return;
-      transition_in(opencart.$$.fragment, local);
-      current = true;
-    },
-    o: function outro(local) {
-      transition_out(opencart.$$.fragment, local);
-      current = false;
-    },
     d: function destroy(detaching) {
-      if (detaching) detach_dev(span1);
-      destroy_component(opencart);
+      if (detaching) detach_dev(span);
       mounted = false;
       dispose();
     }
@@ -371,11 +322,11 @@ function create_if_block_4(ctx) {
     block: block,
     id: create_if_block_4.name,
     type: "if",
-    source: "(205:4) {#if next[1] > 10 && !(next[1] % 5)}",
+    source: "(204:4) {#if next[1] > 10 && !(next[1] % 5)}",
     ctx: ctx
   });
   return block;
-} // (235:0) {#if showPhotoBox}
+} // (238:0) {#if showPhotoBox}
 
 
 function create_if_block_2(ctx) {
@@ -397,7 +348,7 @@ function create_if_block_2(ctx) {
     },
     h: function hydrate() {
       attr_dev(div, "class", "fixed inset-0 flex justify-center items-center cursor-zoom-out bg-oblivious-opaque");
-      add_location(div, file, 235, 1, 8493);
+      add_location(div, file, 238, 1, 8582);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -435,11 +386,11 @@ function create_if_block_2(ctx) {
     block: block,
     id: create_if_block_2.name,
     type: "if",
-    source: "(235:0) {#if showPhotoBox}",
+    source: "(238:0) {#if showPhotoBox}",
     ctx: ctx
   });
   return block;
-} // (279:31) 
+} // (282:31) 
 
 
 function create_if_block_1(ctx) {
@@ -523,18 +474,18 @@ function create_if_block_1(ctx) {
     },
     h: function hydrate() {
       attr_dev(p0, "class", "font-header text-xl md:text-2xl");
-      add_location(p0, file, 286, 3, 9937);
+      add_location(p0, file, 289, 3, 10026);
       attr_dev(p1, "class", "font-sans text-base md:text-lg mb-4");
-      add_location(p1, file, 289, 3, 10034);
+      add_location(p1, file, 292, 3, 10123);
       attr_dev(button0, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious");
-      add_location(button0, file, 293, 4, 10155);
+      add_location(button0, file, 296, 4, 10244);
       attr_dev(button1, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-white border border-solid border-oblivious cursor-pointer");
-      add_location(button1, file, 301, 4, 10372);
-      add_location(div0, file, 292, 3, 10145);
+      add_location(button1, file, 304, 4, 10461);
+      add_location(div0, file, 295, 3, 10234);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
-      add_location(div1, file, 283, 2, 9852);
+      add_location(div1, file, 286, 2, 9941);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
-      add_location(div2, file, 279, 1, 9732);
+      add_location(div2, file, 282, 1, 9821);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -583,11 +534,11 @@ function create_if_block_1(ctx) {
     block: block,
     id: create_if_block_1.name,
     type: "if",
-    source: "(279:31) ",
+    source: "(282:31) ",
     ctx: ctx
   });
   return block;
-} // (243:0) {#if $giveScrollHint}
+} // (246:0) {#if $giveScrollHint}
 
 
 function create_if_block(ctx) {
@@ -699,22 +650,22 @@ function create_if_block(ctx) {
     },
     h: function hydrate() {
       attr_dev(p0, "class", "font-header text-xl md:text-2xl mb-4");
-      add_location(p0, file, 251, 3, 8915);
+      add_location(p0, file, 254, 3, 9004);
       attr_dev(p1, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p1, file, 254, 3, 8997);
+      add_location(p1, file, 257, 3, 9086);
       attr_dev(p2, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p2, file, 257, 3, 9092);
+      add_location(p2, file, 260, 3, 9181);
       attr_dev(p3, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p3, file, 260, 3, 9179);
+      add_location(p3, file, 263, 3, 9268);
       attr_dev(p4, "class", "font-sans text-base md:text-lg mb-1");
-      add_location(p4, file, 263, 3, 9300);
+      add_location(p4, file, 266, 3, 9389);
       attr_dev(span, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious cursor-pointer");
-      add_location(span, file, 268, 4, 9474);
-      add_location(div0, file, 267, 3, 9464);
+      add_location(span, file, 271, 4, 9563);
+      add_location(div0, file, 270, 3, 9553);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
-      add_location(div1, file, 248, 2, 8830);
+      add_location(div1, file, 251, 2, 8919);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
-      add_location(div2, file, 243, 1, 8699);
+      add_location(div2, file, 246, 1, 8788);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
@@ -774,7 +725,7 @@ function create_if_block(ctx) {
     block: block,
     id: create_if_block.name,
     type: "if",
-    source: "(243:0) {#if $giveScrollHint}",
+    source: "(246:0) {#if $giveScrollHint}",
     ctx: ctx
   });
   return block;
@@ -793,15 +744,13 @@ function create_fragment(ctx) {
   var div0;
   var html_tag;
   var t6;
-  var current_block_type_index;
-  var if_block0;
   var div0_style_value;
   var t7;
   var div1;
   var t8;
   var t9;
   var t10;
-  var current_block_type_index_1;
+  var current_block_type_index;
   var if_block2;
   var if_block2_anchor;
   var current;
@@ -812,23 +761,21 @@ function create_fragment(ctx) {
   ctx[1] + ", Chapter " +
   /*chapter*/
   ctx[2] + " | An overlanding motorbike journey through West Africa";
-  var if_block_creators = [create_if_block_3, create_else_block];
-  var if_blocks = [];
 
   function select_block_type(ctx, dirty) {
     if (
     /*next*/
-    ctx[10][0] < 3) return 0;
-    return 1;
+    ctx[10][0] < 3) return create_if_block_3;
+    return create_else_block;
   }
 
-  current_block_type_index = select_block_type(ctx);
-  if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+  var current_block_type = select_block_type(ctx);
+  var if_block0 = current_block_type(ctx);
   var if_block1 =
   /*showPhotoBox*/
   ctx[8] && create_if_block_2(ctx);
-  var if_block_creators_1 = [create_if_block, create_if_block_1];
-  var if_blocks_1 = [];
+  var if_block_creators = [create_if_block, create_if_block_1];
+  var if_blocks = [];
 
   function select_block_type_1(ctx, dirty) {
     if (
@@ -840,8 +787,8 @@ function create_fragment(ctx) {
     return -1;
   }
 
-  if (~(current_block_type_index_1 = select_block_type_1(ctx))) {
-    if_block2 = if_blocks_1[current_block_type_index_1] = if_block_creators_1[current_block_type_index_1](ctx);
+  if (~(current_block_type_index = select_block_type_1(ctx))) {
+    if_block2 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
   }
 
   var block = {
@@ -918,7 +865,7 @@ function create_fragment(ctx) {
     },
     h: function hydrate() {
       attr_dev(h2, "class", "font-header");
-      add_location(h2, file, 184, 1, 6907);
+      add_location(h2, file, 183, 1, 6850);
       html_tag = new HtmlTag(t6);
       attr_dev(div0, "class", "reader relative overflow-hidden no-scrollbar py-12 svelte-sokgus");
       attr_dev(div0, "style", div0_style_value =
@@ -932,11 +879,11 @@ function create_fragment(ctx) {
       ctx[5], "px; column-gap: ").concat(
       /*columnGap*/
       ctx[12], "px; column-rule: 1px solid #000;") : "");
-      add_location(div0, file, 185, 1, 6968);
+      add_location(div0, file, 184, 1, 6911);
       attr_dev(div1, "class", "text-xs text-center -mt-10");
-      add_location(div1, file, 232, 1, 8393);
+      add_location(div1, file, 235, 1, 8482);
       attr_dev(article, "class", "prose md:prose-xl text-justify mb-8 md:mb-12 pt-16");
-      add_location(article, file, 183, 0, 6837);
+      add_location(article, file, 182, 0, 6780);
     },
     m: function mount(target, anchor) {
       insert_dev(target, t0, anchor);
@@ -952,7 +899,7 @@ function create_fragment(ctx) {
       /*content*/
       ctx[0], div0);
       append_dev(div0, t6);
-      if_blocks[current_block_type_index].m(div0, null);
+      if_block0.m(div0, null);
       /*div0_binding*/
 
       ctx[18](div0);
@@ -963,8 +910,8 @@ function create_fragment(ctx) {
       if (if_block1) if_block1.m(target, anchor);
       insert_dev(target, t10, anchor);
 
-      if (~current_block_type_index_1) {
-        if_blocks_1[current_block_type_index_1].m(target, anchor);
+      if (~current_block_type_index) {
+        if_blocks[current_block_type_index].m(target, anchor);
       }
 
       insert_dev(target, if_block2_anchor, anchor);
@@ -1005,26 +952,17 @@ function create_fragment(ctx) {
       1) html_tag.p(
       /*content*/
       ctx[0]);
-      var previous_block_index = current_block_type_index;
-      current_block_type_index = select_block_type(ctx);
 
-      if (current_block_type_index === previous_block_index) {
-        if_blocks[current_block_type_index].p(ctx, dirty);
+      if (current_block_type === (current_block_type = select_block_type(ctx)) && if_block0) {
+        if_block0.p(ctx, dirty);
       } else {
-        group_outros();
-        transition_out(if_blocks[previous_block_index], 1, 1, function () {
-          if_blocks[previous_block_index] = null;
-        });
-        check_outros();
-        if_block0 = if_blocks[current_block_type_index];
+        if_block0.d(1);
+        if_block0 = current_block_type(ctx);
 
-        if (!if_block0) {
-          if_block0 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
+        if (if_block0) {
           if_block0.c();
+          if_block0.m(div0, null);
         }
-
-        transition_in(if_block0, 1);
-        if_block0.m(div0, null);
       }
 
       if (!current || dirty[0] &
@@ -1065,27 +1003,27 @@ function create_fragment(ctx) {
         if_block1 = null;
       }
 
-      var previous_block_index_1 = current_block_type_index_1;
-      current_block_type_index_1 = select_block_type_1(ctx);
+      var previous_block_index = current_block_type_index;
+      current_block_type_index = select_block_type_1(ctx);
 
-      if (current_block_type_index_1 === previous_block_index_1) {
-        if (~current_block_type_index_1) {
-          if_blocks_1[current_block_type_index_1].p(ctx, dirty);
+      if (current_block_type_index === previous_block_index) {
+        if (~current_block_type_index) {
+          if_blocks[current_block_type_index].p(ctx, dirty);
         }
       } else {
         if (if_block2) {
           group_outros();
-          transition_out(if_blocks_1[previous_block_index_1], 1, 1, function () {
-            if_blocks_1[previous_block_index_1] = null;
+          transition_out(if_blocks[previous_block_index], 1, 1, function () {
+            if_blocks[previous_block_index] = null;
           });
           check_outros();
         }
 
-        if (~current_block_type_index_1) {
-          if_block2 = if_blocks_1[current_block_type_index_1];
+        if (~current_block_type_index) {
+          if_block2 = if_blocks[current_block_type_index];
 
           if (!if_block2) {
-            if_block2 = if_blocks_1[current_block_type_index_1] = if_block_creators_1[current_block_type_index_1](ctx);
+            if_block2 = if_blocks[current_block_type_index] = if_block_creators[current_block_type_index](ctx);
             if_block2.c();
           }
 
@@ -1098,20 +1036,18 @@ function create_fragment(ctx) {
     },
     i: function intro(local) {
       if (current) return;
-      transition_in(if_block0);
       transition_in(if_block1);
       transition_in(if_block2);
       current = true;
     },
     o: function outro(local) {
-      transition_out(if_block0);
       transition_out(if_block2);
       current = false;
     },
     d: function destroy(detaching) {
       if (detaching) detach_dev(t0);
       if (detaching) detach_dev(article);
-      if_blocks[current_block_type_index].d();
+      if_block0.d();
       /*div0_binding*/
 
       ctx[18](null);
@@ -1119,8 +1055,8 @@ function create_fragment(ctx) {
       if (if_block1) if_block1.d(detaching);
       if (detaching) detach_dev(t10);
 
-      if (~current_block_type_index_1) {
-        if_blocks_1[current_block_type_index_1].d(detaching);
+      if (~current_block_type_index) {
+        if_blocks[current_block_type_index].d(detaching);
       }
 
       if (detaching) detach_dev(if_block2_anchor);
@@ -1440,7 +1376,6 @@ function instance($$self, $$props, $$invalidate) {
       giveScrollHint: giveScrollHint,
       readerPosition: readerPosition,
       smoothScroll: smoothScroll,
-      OpenCart: OpenCart,
       content: content,
       book: book,
       chapter: chapter,
