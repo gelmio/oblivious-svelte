@@ -1,9 +1,35 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, g as element, h as space, t as text, D as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, G as noop, v as validate_slots } from './client.e05bae4b.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, D as DownloadBox, s as safe_not_equal, g as element, h as space, t as text, C as create_component, E as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, F as claim_component, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, G as mount_component, x as _slicedToArray, H as transition_in, I as transition_out, J as destroy_component, v as validate_slots } from './client.1edd80e5.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file = "src/routes/help.svelte";
+var file = "src/routes/help.svelte"; // (49:97) <DownloadBox>
+
+function create_default_slot(ctx) {
+  var t;
+  var block = {
+    c: function create() {
+      t = text("Here it is!");
+    },
+    l: function claim(nodes) {
+      t = claim_text(nodes, "Here it is!");
+    },
+    m: function mount(target, anchor) {
+      insert_dev(target, t, anchor);
+    },
+    d: function destroy(detaching) {
+      if (detaching) detach_dev(t);
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block: block,
+    id: create_default_slot.name,
+    type: "slot",
+    source: "(49:97) <DownloadBox>",
+    ctx: ctx
+  });
+  return block;
+}
 
 function create_fragment(ctx) {
   var meta0;
@@ -60,15 +86,27 @@ function create_fragment(ctx) {
   var h22;
   var t22;
   var t23;
-  var a0;
+  var div3;
+  var downloadbox;
   var t24;
-  var t25;
   var section6;
   var h23;
+  var t25;
+  var a;
   var t26;
-  var a1;
   var t27;
-  var t28;
+  var current;
+  downloadbox = new DownloadBox({
+    props: {
+      $$slots: {
+        default: [create_default_slot]
+      },
+      $$scope: {
+        ctx: ctx
+      }
+    },
+    $$inline: true
+  });
   var block = {
     c: function create() {
       meta0 = element("meta");
@@ -122,15 +160,15 @@ function create_fragment(ctx) {
       h22 = element("h2");
       t22 = text("Just looking for the link to get all of this started?");
       t23 = space();
-      a0 = element("a");
-      t24 = text("Here it is!");
-      t25 = space();
+      div3 = element("div");
+      create_component(downloadbox.$$.fragment);
+      t24 = space();
       section6 = element("section");
       h23 = element("h2");
-      t26 = text("Still lost? Flick me an email ");
-      a1 = element("a");
-      t27 = text("here");
-      t28 = text(" and I'll sort you out.");
+      t25 = text("Still lost? Flick me an email ");
+      a = element("a");
+      t26 = text("here");
+      t27 = text(" and I'll sort you out.");
       this.h();
     },
     l: function claim(nodes) {
@@ -289,16 +327,14 @@ function create_fragment(ctx) {
       t22 = claim_text(h22_nodes, "Just looking for the link to get all of this started?");
       h22_nodes.forEach(detach_dev);
       t23 = claim_space(section5_nodes);
-      a0 = claim_element(section5_nodes, "A", {
-        class: true,
-        href: true,
-        rel: true
+      div3 = claim_element(section5_nodes, "DIV", {
+        class: true
       });
-      var a0_nodes = children(a0);
-      t24 = claim_text(a0_nodes, "Here it is!");
-      a0_nodes.forEach(detach_dev);
+      var div3_nodes = children(div3);
+      claim_component(downloadbox.$$.fragment, div3_nodes);
+      div3_nodes.forEach(detach_dev);
       section5_nodes.forEach(detach_dev);
-      t25 = claim_space(nodes);
+      t24 = claim_space(nodes);
       section6 = claim_element(nodes, "SECTION", {
         class: true
       });
@@ -307,14 +343,14 @@ function create_fragment(ctx) {
         class: true
       });
       var h23_nodes = children(h23);
-      t26 = claim_text(h23_nodes, "Still lost? Flick me an email ");
-      a1 = claim_element(h23_nodes, "A", {
+      t25 = claim_text(h23_nodes, "Still lost? Flick me an email ");
+      a = claim_element(h23_nodes, "A", {
         href: true
       });
-      var a1_nodes = children(a1);
-      t27 = claim_text(a1_nodes, "here");
-      a1_nodes.forEach(detach_dev);
-      t28 = claim_text(h23_nodes, " and I'll sort you out.");
+      var a_nodes = children(a);
+      t26 = claim_text(a_nodes, "here");
+      a_nodes.forEach(detach_dev);
+      t27 = claim_text(h23_nodes, " and I'll sort you out.");
       h23_nodes.forEach(detach_dev);
       section6_nodes.forEach(detach_dev);
       this.h();
@@ -323,79 +359,77 @@ function create_fragment(ctx) {
       document.title = "Getting help for your Oblivious Trilogy order";
       attr_dev(meta0, "property", "og:description");
       attr_dev(meta0, "content", "Broken down? Here's where to go to get help on getting your Oblivious Trilogy order");
-      add_location(meta0, file, 7, 4, 285);
+      add_location(meta0, file, 9, 4, 346);
       attr_dev(meta1, "property", "og:url");
       attr_dev(meta1, "content", "http://www.obliviousthebook.com/help");
-      add_location(meta1, file, 9, 4, 427);
+      add_location(meta1, file, 11, 4, 488);
       attr_dev(meta2, "property", "og:site_name");
       attr_dev(meta2, "content", "ObliviousTheBook.com");
-      add_location(meta2, file, 10, 4, 504);
+      add_location(meta2, file, 12, 4, 565);
       attr_dev(meta3, "property", "fb:admins");
       attr_dev(meta3, "content", "563453705");
-      add_location(meta3, file, 11, 4, 571);
+      add_location(meta3, file, 13, 4, 632);
       attr_dev(meta4, "property", "og:image");
       attr_dev(meta4, "content", "/images/logo-750.png");
-      add_location(meta4, file, 12, 4, 624);
+      add_location(meta4, file, 14, 4, 685);
       attr_dev(h1, "class", "text-4xl md:text-5xl text-center");
-      add_location(h1, file, 17, 4, 783);
+      add_location(h1, file, 19, 4, 844);
       attr_dev(h20, "class", "text-xl md:text-3xl text-center");
-      add_location(h20, file, 18, 4, 907);
+      add_location(h20, file, 20, 4, 968);
       attr_dev(section0, "class", "flex flex-col items-center max-w-4xl mb-20 md:mb-32");
-      add_location(section0, file, 16, 0, 709);
+      add_location(section0, file, 18, 0, 770);
       attr_dev(img0, "class", "w-full md:w-3/5 my-4");
       attr_dev(img0, "alt", "computer with sendowl payment portal");
       if (img0.src !== (img0_src_value = "/images/how-step1.jpg")) attr_dev(img0, "src", img0_src_value);
-      add_location(img0, file, 21, 4, 1143);
+      add_location(img0, file, 23, 4, 1204);
       attr_dev(h30, "class", "text-3xl md:text-5xl");
-      add_location(h30, file, 23, 8, 1284);
+      add_location(h30, file, 25, 8, 1345);
       attr_dev(h40, "class", "text-xl md:text-2xl");
-      add_location(h40, file, 24, 8, 1339);
+      add_location(h40, file, 26, 8, 1400);
       attr_dev(div0, "class", "md:pl-20");
-      add_location(div0, file, 22, 4, 1253);
+      add_location(div0, file, 24, 4, 1314);
       attr_dev(section1, "class", "flex flex-col md:flex-row items-center max-w-6xl mb-20 md:mb-32 px-8");
-      add_location(section1, file, 20, 0, 1052);
+      add_location(section1, file, 22, 0, 1113);
       attr_dev(h21, "class", "text-2xl md:text-3xl text-center");
-      add_location(h21, file, 28, 4, 1550);
+      add_location(h21, file, 30, 4, 1611);
       attr_dev(section2, "class", "flex flex-col items-center max-w-4xl mb-20 md:mb-32");
-      add_location(section2, file, 27, 0, 1476);
+      add_location(section2, file, 29, 0, 1537);
       attr_dev(h31, "class", "text-3xl md:text-5xl");
-      add_location(h31, file, 32, 8, 1817);
+      add_location(h31, file, 34, 8, 1878);
       attr_dev(h41, "class", "text-xl md:text-2xl");
-      add_location(h41, file, 33, 8, 1872);
+      add_location(h41, file, 35, 8, 1933);
       attr_dev(div1, "class", "md:pr-20");
-      add_location(div1, file, 31, 4, 1786);
+      add_location(div1, file, 33, 4, 1847);
       attr_dev(img1, "class", "w-full md:w-3/5 my-4");
       attr_dev(img1, "alt", "computer with sendowl payment portal");
       if (img1.src !== (img1_src_value = "/images/how-step2.jpg")) attr_dev(img1, "src", img1_src_value);
-      add_location(img1, file, 35, 4, 2092);
+      add_location(img1, file, 37, 4, 2153);
       attr_dev(section3, "class", "flex flex-col flex-col-reverse md:flex-row items-center max-w-6xl mb-20 md:mb-32 px-8");
-      add_location(section3, file, 30, 0, 1678);
+      add_location(section3, file, 32, 0, 1739);
       attr_dev(img2, "class", "w-full md:w-3/5 my-4");
       attr_dev(img2, "alt", "computer with sendowl payment portal");
       if (img2.src !== (img2_src_value = "/images/how-step3.jpg")) attr_dev(img2, "src", img2_src_value);
-      add_location(img2, file, 38, 4, 2300);
+      add_location(img2, file, 40, 4, 2361);
       attr_dev(h32, "class", "text-3xl md:text-5xl");
-      add_location(h32, file, 40, 8, 2441);
+      add_location(h32, file, 42, 8, 2502);
       attr_dev(h42, "class", "text-xl md:text-2xl");
-      add_location(h42, file, 41, 8, 2500);
+      add_location(h42, file, 43, 8, 2561);
       attr_dev(div2, "class", "md:pl-20");
-      add_location(div2, file, 39, 4, 2410);
+      add_location(div2, file, 41, 4, 2471);
       attr_dev(section4, "class", "flex flex-col md:flex-row items-center max-w-6xl mb-20 md:mb-32 px-8");
-      add_location(section4, file, 37, 0, 2209);
+      add_location(section4, file, 39, 0, 2270);
       attr_dev(h22, "class", "text-2xl md:text-3xl text-center");
-      add_location(h22, file, 45, 4, 2760);
-      attr_dev(a0, "class", "inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious");
-      attr_dev(a0, "href", "https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart");
-      attr_dev(a0, "rel", "nofollow");
-      add_location(a0, file, 45, 108, 2864);
+      add_location(h22, file, 47, 4, 2821);
+      attr_dev(div3, "class", "inline-block text-xl sm:text-2xl p-4 mt-4 rounded-lg no-underline bg-oblivious");
+      add_location(div3, file, 48, 4, 2929);
       attr_dev(section5, "class", "flex flex-col items-center max-w-4xl mb-20 md:mb-32");
-      add_location(section5, file, 44, 0, 2686);
-      attr_dev(a1, "href", "mailto:obliviousthebook@protonmail.com");
-      add_location(a1, file, 48, 79, 3216);
+      add_location(section5, file, 46, 0, 2747);
+      attr_dev(a, "href", "mailto:obliviousthebook@protonmail.com");
+      add_location(a, file, 51, 79, 3227);
       attr_dev(h23, "class", "text-2xl md:text-3xl text-center");
-      add_location(h23, file, 48, 4, 3141);
+      add_location(h23, file, 51, 4, 3152);
       attr_dev(section6, "class", "flex flex-col items-center max-w-4xl mb-20 md:mb-32");
-      add_location(section6, file, 47, 0, 3067);
+      add_location(section6, file, 50, 0, 3078);
     },
     m: function mount(target, anchor) {
       append_dev(document.head, meta0);
@@ -449,19 +483,43 @@ function create_fragment(ctx) {
       append_dev(section5, h22);
       append_dev(h22, t22);
       append_dev(section5, t23);
-      append_dev(section5, a0);
-      append_dev(a0, t24);
-      insert_dev(target, t25, anchor);
+      append_dev(section5, div3);
+      mount_component(downloadbox, div3, null);
+      insert_dev(target, t24, anchor);
       insert_dev(target, section6, anchor);
       append_dev(section6, h23);
-      append_dev(h23, t26);
-      append_dev(h23, a1);
-      append_dev(a1, t27);
-      append_dev(h23, t28);
+      append_dev(h23, t25);
+      append_dev(h23, a);
+      append_dev(a, t26);
+      append_dev(h23, t27);
+      current = true;
     },
-    p: noop,
-    i: noop,
-    o: noop,
+    p: function update(ctx, _ref) {
+      var _ref2 = _slicedToArray(_ref, 1),
+          dirty = _ref2[0];
+
+      var downloadbox_changes = {};
+
+      if (dirty &
+      /*$$scope*/
+      1) {
+        downloadbox_changes.$$scope = {
+          dirty: dirty,
+          ctx: ctx
+        };
+      }
+
+      downloadbox.$set(downloadbox_changes);
+    },
+    i: function intro(local) {
+      if (current) return;
+      transition_in(downloadbox.$$.fragment, local);
+      current = true;
+    },
+    o: function outro(local) {
+      transition_out(downloadbox.$$.fragment, local);
+      current = false;
+    },
     d: function destroy(detaching) {
       detach_dev(meta0);
       detach_dev(meta1);
@@ -480,7 +538,8 @@ function create_fragment(ctx) {
       if (detaching) detach_dev(section4);
       if (detaching) detach_dev(t21);
       if (detaching) detach_dev(section5);
-      if (detaching) detach_dev(t25);
+      destroy_component(downloadbox);
+      if (detaching) detach_dev(t24);
       if (detaching) detach_dev(section6);
     }
   };
@@ -494,7 +553,7 @@ function create_fragment(ctx) {
   return block;
 }
 
-function instance($$self, $$props) {
+function instance($$self, $$props, $$invalidate) {
   var _$$props$$$slots = $$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
       $$scope = $$props.$$scope;
@@ -503,6 +562,13 @@ function instance($$self, $$props) {
   Object.keys($$props).forEach(function (key) {
     if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn("<Help> was created with unknown prop '".concat(key, "'"));
   });
+
+  $$self.$capture_state = function () {
+    return {
+      DownloadBox: DownloadBox
+    };
+  };
+
   return [];
 }
 

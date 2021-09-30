@@ -2184,9 +2184,377 @@ var CONTEXT_KEY = {};
 function _createSuper$1(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$1(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _isNativeReflectConstruct$1() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file = "src/components/Nav.svelte";
+var console_1 = globals.console;
+var file = "src/components/DownloadBox.svelte"; // (16:70) download
+
+function fallback_block(ctx) {
+  var t;
+  var block = {
+    c: function create() {
+      t = text("download");
+    },
+    l: function claim(nodes) {
+      t = claim_text(nodes, "download");
+    },
+    m: function mount(target, anchor) {
+      insert_dev(target, t, anchor);
+    },
+    d: function destroy(detaching) {
+      if (detaching) detach_dev(t);
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block: block,
+    id: fallback_block.name,
+    type: "fallback",
+    source: "(16:70) download",
+    ctx: ctx
+  });
+  return block;
+} // (17:4) {#if openDownloadList}
+
+
+function create_if_block(ctx) {
+  var ul;
+  var li0;
+  var a0;
+  var t0;
+  var t1;
+  var li1;
+  var a1;
+  var t2;
+  var block = {
+    c: function create() {
+      ul = element("ul");
+      li0 = element("li");
+      a0 = element("a");
+      t0 = text("Book One");
+      t1 = space();
+      li1 = element("li");
+      a1 = element("a");
+      t2 = text("Book Two");
+      this.h();
+    },
+    l: function claim(nodes) {
+      ul = claim_element(nodes, "UL", {
+        class: true
+      });
+      var ul_nodes = children(ul);
+      li0 = claim_element(ul_nodes, "LI", {
+        class: true
+      });
+      var li0_nodes = children(li0);
+      a0 = claim_element(li0_nodes, "A", {
+        class: true,
+        rel: true,
+        href: true
+      });
+      var a0_nodes = children(a0);
+      t0 = claim_text(a0_nodes, "Book One");
+      a0_nodes.forEach(detach_dev);
+      li0_nodes.forEach(detach_dev);
+      t1 = claim_space(ul_nodes);
+      li1 = claim_element(ul_nodes, "LI", {
+        class: true
+      });
+      var li1_nodes = children(li1);
+      a1 = claim_element(li1_nodes, "A", {
+        class: true,
+        rel: true,
+        href: true
+      });
+      var a1_nodes = children(a1);
+      t2 = claim_text(a1_nodes, "Book Two");
+      a1_nodes.forEach(detach_dev);
+      li1_nodes.forEach(detach_dev);
+      ul_nodes.forEach(detach_dev);
+      this.h();
+    },
+    h: function hydrate() {
+      attr_dev(a0, "class", "no-underline p-2");
+      attr_dev(a0, "rel", "nofollow");
+      attr_dev(a0, "href", "https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart");
+      add_location(a0, file, 19, 16, 665);
+      attr_dev(li0, "class", "w-max p-2 hover:bg-oblivious");
+      add_location(li0, file, 18, 12, 607);
+      attr_dev(a1, "class", "no-underline p-2");
+      attr_dev(a1, "rel", "nofollow");
+      attr_dev(a1, "href", "https://transactions.sendowl.com/packages/812169/A234B840/add_to_cart");
+      add_location(a1, file, 25, 16, 945);
+      attr_dev(li1, "class", "w-max p-2 hover:bg-oblivious");
+      add_location(li1, file, 24, 12, 887);
+      attr_dev(ul, "class", "absolute top-full rounded-md bg-white shadow-lg border-2 border-oblivious w-auto z-50");
+      add_location(ul, file, 17, 8, 496);
+    },
+    m: function mount(target, anchor) {
+      insert_dev(target, ul, anchor);
+      append_dev(ul, li0);
+      append_dev(li0, a0);
+      append_dev(a0, t0);
+      append_dev(ul, t1);
+      append_dev(ul, li1);
+      append_dev(li1, a1);
+      append_dev(a1, t2);
+    },
+    d: function destroy(detaching) {
+      if (detaching) detach_dev(ul);
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block: block,
+    id: create_if_block.name,
+    type: "if",
+    source: "(17:4) {#if openDownloadList}",
+    ctx: ctx
+  });
+  return block;
+}
 
 function create_fragment(ctx) {
+  var div;
+  var span;
+  var t;
+  var current;
+  var mounted;
+  var dispose;
+  var default_slot_template =
+  /*#slots*/
+  ctx[4].default;
+  var default_slot = create_slot(default_slot_template, ctx,
+  /*$$scope*/
+  ctx[3], null);
+  var default_slot_or_fallback = default_slot || fallback_block(ctx);
+  var if_block =
+  /*openDownloadList*/
+  ctx[0] && create_if_block(ctx);
+  var block = {
+    c: function create() {
+      div = element("div");
+      span = element("span");
+      if (default_slot_or_fallback) default_slot_or_fallback.c();
+      t = space();
+      if (if_block) if_block.c();
+      this.h();
+    },
+    l: function claim(nodes) {
+      div = claim_element(nodes, "DIV", {
+        class: true,
+        tabindex: true
+      });
+      var div_nodes = children(div);
+      span = claim_element(div_nodes, "SPAN", {
+        class: true
+      });
+      var span_nodes = children(span);
+      if (default_slot_or_fallback) default_slot_or_fallback.l(span_nodes);
+      span_nodes.forEach(detach_dev);
+      t = claim_space(div_nodes);
+      if (if_block) if_block.l(div_nodes);
+      div_nodes.forEach(detach_dev);
+      this.h();
+    },
+    h: function hydrate() {
+      attr_dev(span, "class", "cursor-pointer");
+      add_location(span, file, 15, 4, 372);
+      attr_dev(div, "class", "relative");
+      attr_dev(div, "tabindex", "0");
+      add_location(div, file, 9, 0, 221);
+    },
+    m: function mount(target, anchor) {
+      insert_dev(target, div, anchor);
+      append_dev(div, span);
+
+      if (default_slot_or_fallback) {
+        default_slot_or_fallback.m(span, null);
+      }
+
+      append_dev(div, t);
+      if (if_block) if_block.m(div, null);
+      /*div_binding*/
+
+      ctx[5](div);
+      current = true;
+
+      if (!mounted) {
+        dispose = [listen_dev(span, "click",
+        /*handleDownloadClick*/
+        ctx[2], false, false, false), listen_dev(div, "blur",
+        /*blur_handler*/
+        ctx[6], false, false, false)];
+        mounted = true;
+      }
+    },
+    p: function update(ctx, _ref) {
+      var _ref2 = _slicedToArray(_ref, 1),
+          dirty = _ref2[0];
+
+      if (default_slot) {
+        if (default_slot.p && dirty &
+        /*$$scope*/
+        8) {
+          update_slot(default_slot, default_slot_template, ctx,
+          /*$$scope*/
+          ctx[3], dirty, null, null);
+        }
+      }
+
+      if (
+      /*openDownloadList*/
+      ctx[0]) {
+        if (if_block) ; else {
+          if_block = create_if_block(ctx);
+          if_block.c();
+          if_block.m(div, null);
+        }
+      } else if (if_block) {
+        if_block.d(1);
+        if_block = null;
+      }
+    },
+    i: function intro(local) {
+      if (current) return;
+      transition_in(default_slot_or_fallback, local);
+      current = true;
+    },
+    o: function outro(local) {
+      transition_out(default_slot_or_fallback, local);
+      current = false;
+    },
+    d: function destroy(detaching) {
+      if (detaching) detach_dev(div);
+      if (default_slot_or_fallback) default_slot_or_fallback.d(detaching);
+      if (if_block) if_block.d();
+      /*div_binding*/
+
+      ctx[5](null);
+      mounted = false;
+      run_all(dispose);
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block: block,
+    id: create_fragment.name,
+    type: "component",
+    source: "",
+    ctx: ctx
+  });
+  return block;
+}
+
+function instance($$self, $$props, $$invalidate) {
+  var _$$props$$$slots = $$props.$$slots,
+      slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
+      $$scope = $$props.$$scope;
+  validate_slots("DownloadBox", slots, ['default']);
+  var openDownloadList = false;
+  var downloadBox;
+
+  var handleDownloadClick = function handleDownloadClick() {
+    $$invalidate(0, openDownloadList = true);
+    sendOwl.emptyCart(35479, function () {
+      console.log("Cart Emptied");
+    });
+    downloadBox.focus();
+  };
+
+  var writable_props = [];
+  Object.keys($$props).forEach(function (key) {
+    if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console_1.warn("<DownloadBox> was created with unknown prop '".concat(key, "'"));
+  });
+
+  function div_binding($$value) {
+    binding_callbacks[$$value ? "unshift" : "push"](function () {
+      downloadBox = $$value;
+      $$invalidate(1, downloadBox);
+    });
+  }
+
+  var blur_handler = function blur_handler() {
+    setTimeout(function () {
+      $$invalidate(0, openDownloadList = false);
+    }, 300);
+  };
+
+  $$self.$$set = function ($$props) {
+    if ("$$scope" in $$props) $$invalidate(3, $$scope = $$props.$$scope);
+  };
+
+  $$self.$capture_state = function () {
+    return {
+      openDownloadList: openDownloadList,
+      downloadBox: downloadBox,
+      handleDownloadClick: handleDownloadClick
+    };
+  };
+
+  $$self.$inject_state = function ($$props) {
+    if ("openDownloadList" in $$props) $$invalidate(0, openDownloadList = $$props.openDownloadList);
+    if ("downloadBox" in $$props) $$invalidate(1, downloadBox = $$props.downloadBox);
+  };
+
+  if ($$props && "$$inject" in $$props) {
+    $$self.$inject_state($$props.$$inject);
+  }
+
+  return [openDownloadList, downloadBox, handleDownloadClick, $$scope, slots, div_binding, blur_handler];
+}
+
+var DownloadBox = /*#__PURE__*/function (_SvelteComponentDev) {
+  _inherits(DownloadBox, _SvelteComponentDev);
+
+  var _super = _createSuper$1(DownloadBox);
+
+  function DownloadBox(options) {
+    var _this;
+
+    _classCallCheck(this, DownloadBox);
+
+    _this = _super.call(this, options);
+    init(_assertThisInitialized(_this), options, instance, create_fragment, safe_not_equal, {});
+    dispatch_dev("SvelteRegisterComponent", {
+      component: _assertThisInitialized(_this),
+      tagName: "DownloadBox",
+      options: options,
+      id: create_fragment.name
+    });
+    return _this;
+  }
+
+  return DownloadBox;
+}(SvelteComponentDev);
+
+function _createSuper$2(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$2(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+
+function _isNativeReflectConstruct$2() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+var file$1 = "src/components/Nav.svelte"; // (32:3) <DownloadBox>
+
+function create_default_slot(ctx) {
+  var t;
+  var block = {
+    c: function create() {
+      t = text("download");
+    },
+    l: function claim(nodes) {
+      t = claim_text(nodes, "download");
+    },
+    m: function mount(target, anchor) {
+      insert_dev(target, t, anchor);
+    },
+    d: function destroy(detaching) {
+      if (detaching) detach_dev(t);
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block: block,
+    id: create_default_slot.name,
+    type: "slot",
+    source: "(32:3) <DownloadBox>",
+    ctx: ctx
+  });
+  return block;
+}
+
+function create_fragment$1(ctx) {
   var nav;
   var a0;
   var img;
@@ -2204,13 +2572,24 @@ function create_fragment(ctx) {
   var a2_aria_current_value;
   var t4;
   var li2;
-  var a3;
+  var downloadbox;
   var t5;
-  var t6;
   var li3;
-  var a4;
-  var t7;
-  var a4_aria_current_value;
+  var a3;
+  var t6;
+  var a3_aria_current_value;
+  var current;
+  downloadbox = new DownloadBox({
+    props: {
+      $$slots: {
+        default: [create_default_slot]
+      },
+      $$scope: {
+        ctx: ctx
+      }
+    },
+    $$inline: true
+  });
   var block = {
     c: function create() {
       nav = element("nav");
@@ -2227,12 +2606,11 @@ function create_fragment(ctx) {
       t3 = text("about");
       t4 = space();
       li2 = element("li");
-      a3 = element("a");
-      t5 = text("download");
-      t6 = space();
+      create_component(downloadbox.$$.fragment);
+      t5 = space();
       li3 = element("li");
-      a4 = element("a");
-      t7 = text("read it now");
+      a3 = element("a");
+      t6 = text("read it now");
       this.h();
     },
     l: function claim(nodes) {
@@ -2287,29 +2665,22 @@ function create_fragment(ctx) {
         class: true
       });
       var li2_nodes = children(li2);
-      a3 = claim_element(li2_nodes, "A", {
-        class: true,
-        rel: true,
-        href: true
-      });
-      var a3_nodes = children(a3);
-      t5 = claim_text(a3_nodes, "download");
-      a3_nodes.forEach(detach_dev);
+      claim_component(downloadbox.$$.fragment, li2_nodes);
       li2_nodes.forEach(detach_dev);
-      t6 = claim_space(ul_nodes);
+      t5 = claim_space(ul_nodes);
       li3 = claim_element(ul_nodes, "LI", {
         class: true
       });
       var li3_nodes = children(li3);
-      a4 = claim_element(li3_nodes, "A", {
+      a3 = claim_element(li3_nodes, "A", {
         class: true,
         href: true,
         "aria-current": true,
         rel: true
       });
-      var a4_nodes = children(a4);
-      t7 = claim_text(a4_nodes, "read it now");
-      a4_nodes.forEach(detach_dev);
+      var a3_nodes = children(a3);
+      t6 = claim_text(a3_nodes, "read it now");
+      a3_nodes.forEach(detach_dev);
       li3_nodes.forEach(detach_dev);
       ul_nodes.forEach(detach_dev);
       nav_nodes.forEach(detach_dev);
@@ -2318,45 +2689,41 @@ function create_fragment(ctx) {
     h: function hydrate() {
       if (img.src !== (img_src_value = "/images/logo-150.png")) attr_dev(img, "src", img_src_value);
       attr_dev(img, "alt", "Oblivious logo of motorbike in an outline of Africa");
-      add_location(img, file, 5, 2, 143);
+      add_location(img, file$1, 7, 2, 184);
       attr_dev(a0, "href", "/");
-      add_location(a0, file, 4, 1, 128);
+      add_location(a0, file$1, 6, 1, 169);
       attr_dev(a1, "class", "no-underline p-2 svelte-avwnlm");
       attr_dev(a1, "aria-current", a1_aria_current_value =
       /*segment*/
       ctx[0] === undefined ? "page" : undefined);
       attr_dev(a1, "href", ".");
-      add_location(a1, file, 14, 3, 368);
+      add_location(a1, file$1, 16, 3, 409);
       attr_dev(li0, "class", "block p-1 sm:p-4");
-      add_location(li0, file, 13, 2, 335);
+      add_location(li0, file$1, 15, 2, 376);
       attr_dev(a2, "class", "no-underline p-2 svelte-avwnlm");
       attr_dev(a2, "rel", "prefetch");
       attr_dev(a2, "aria-current", a2_aria_current_value =
       /*segment*/
       ctx[0] === "about" ? "page" : undefined);
       attr_dev(a2, "href", "about");
-      add_location(a2, file, 21, 3, 531);
+      add_location(a2, file$1, 23, 3, 572);
       attr_dev(li1, "class", "block p-1 sm:p-4");
-      add_location(li1, file, 20, 2, 498);
-      attr_dev(a3, "class", "no-underline p-2");
-      attr_dev(a3, "rel", "prefetch");
-      attr_dev(a3, "href", "https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart");
-      add_location(a3, file, 29, 3, 716);
+      add_location(li1, file$1, 22, 2, 539);
       attr_dev(li2, "class", "block p-1 sm:p-4");
-      add_location(li2, file, 28, 2, 683);
-      attr_dev(a4, "class", "p-2 md:p-4 rounded-lg no-underline bg-oblivious svelte-avwnlm");
-      attr_dev(a4, "href", "read");
-      attr_dev(a4, "aria-current", a4_aria_current_value =
+      add_location(li2, file$1, 30, 2, 724);
+      attr_dev(a3, "class", "p-2 md:p-4 rounded-lg no-underline bg-oblivious svelte-avwnlm");
+      attr_dev(a3, "href", "read");
+      attr_dev(a3, "aria-current", a3_aria_current_value =
       /*segment*/
       ctx[0] === "read" ? "page" : undefined);
-      attr_dev(a4, "rel", "nofollow");
-      add_location(a4, file, 36, 3, 912);
+      attr_dev(a3, "rel", "nofollow");
+      add_location(a3, file$1, 34, 3, 841);
       attr_dev(li3, "class", "block p-1 sm:p-4 my-2");
-      add_location(li3, file, 35, 2, 874);
+      add_location(li3, file$1, 33, 2, 803);
       attr_dev(ul, "class", "flex flex-col md:flex-row text-base md:text-xl items-center ml-4");
-      add_location(ul, file, 10, 1, 251);
+      add_location(ul, file$1, 12, 1, 292);
       attr_dev(nav, "class", "flex flex-row justify-between md:justify-start items-center p-4");
-      add_location(nav, file, 3, 0, 49);
+      add_location(nav, file$1, 5, 0, 90);
     },
     m: function mount(target, anchor) {
       insert_dev(target, nav, anchor);
@@ -2373,18 +2740,18 @@ function create_fragment(ctx) {
       append_dev(a2, t3);
       append_dev(ul, t4);
       append_dev(ul, li2);
-      append_dev(li2, a3);
-      append_dev(a3, t5);
-      append_dev(ul, t6);
+      mount_component(downloadbox, li2, null);
+      append_dev(ul, t5);
       append_dev(ul, li3);
-      append_dev(li3, a4);
-      append_dev(a4, t7);
+      append_dev(li3, a3);
+      append_dev(a3, t6);
+      current = true;
     },
     p: function update(ctx, _ref) {
       var _ref2 = _slicedToArray(_ref, 1),
           dirty = _ref2[0];
 
-      if (dirty &
+      if (!current || dirty &
       /*segment*/
       1 && a1_aria_current_value !== (a1_aria_current_value =
       /*segment*/
@@ -2392,7 +2759,7 @@ function create_fragment(ctx) {
         attr_dev(a1, "aria-current", a1_aria_current_value);
       }
 
-      if (dirty &
+      if (!current || dirty &
       /*segment*/
       1 && a2_aria_current_value !== (a2_aria_current_value =
       /*segment*/
@@ -2400,23 +2767,44 @@ function create_fragment(ctx) {
         attr_dev(a2, "aria-current", a2_aria_current_value);
       }
 
+      var downloadbox_changes = {};
+
       if (dirty &
+      /*$$scope*/
+      2) {
+        downloadbox_changes.$$scope = {
+          dirty: dirty,
+          ctx: ctx
+        };
+      }
+
+      downloadbox.$set(downloadbox_changes);
+
+      if (!current || dirty &
       /*segment*/
-      1 && a4_aria_current_value !== (a4_aria_current_value =
+      1 && a3_aria_current_value !== (a3_aria_current_value =
       /*segment*/
       ctx[0] === "read" ? "page" : undefined)) {
-        attr_dev(a4, "aria-current", a4_aria_current_value);
+        attr_dev(a3, "aria-current", a3_aria_current_value);
       }
     },
-    i: noop,
-    o: noop,
+    i: function intro(local) {
+      if (current) return;
+      transition_in(downloadbox.$$.fragment, local);
+      current = true;
+    },
+    o: function outro(local) {
+      transition_out(downloadbox.$$.fragment, local);
+      current = false;
+    },
     d: function destroy(detaching) {
       if (detaching) detach_dev(nav);
+      destroy_component(downloadbox);
     }
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment.name,
+    id: create_fragment$1.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -2424,7 +2812,7 @@ function create_fragment(ctx) {
   return block;
 }
 
-function instance($$self, $$props, $$invalidate) {
+function instance$1($$self, $$props, $$invalidate) {
   var _$$props$$$slots = $$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
       $$scope = $$props.$$scope;
@@ -2441,7 +2829,8 @@ function instance($$self, $$props, $$invalidate) {
 
   $$self.$capture_state = function () {
     return {
-      segment: segment
+      segment: segment,
+      DownloadBox: DownloadBox
     };
   };
 
@@ -2459,7 +2848,7 @@ function instance($$self, $$props, $$invalidate) {
 var Nav = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Nav, _SvelteComponentDev);
 
-  var _super = _createSuper$1(Nav);
+  var _super = _createSuper$2(Nav);
 
   function Nav(options) {
     var _this;
@@ -2467,14 +2856,14 @@ var Nav = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Nav);
 
     _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance, create_fragment, safe_not_equal, {
+    init(_assertThisInitialized(_this), options, instance$1, create_fragment$1, safe_not_equal, {
       segment: 0
     });
     dispatch_dev("SvelteRegisterComponent", {
       component: _assertThisInitialized(_this),
       tagName: "Nav",
       options: options,
-      id: create_fragment.name
+      id: create_fragment$1.name
     });
     var ctx = _this.$$.ctx;
     var props = options.props || {};
@@ -2501,12 +2890,38 @@ var Nav = /*#__PURE__*/function (_SvelteComponentDev) {
   return Nav;
 }(SvelteComponentDev);
 
-function _createSuper$2(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$2(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$3(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$3(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$2() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$1 = "src/components/Footer.svelte";
+function _isNativeReflectConstruct$3() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+var file$2 = "src/components/Footer.svelte"; // (55:3) <DownloadBox>
 
-function create_fragment$1(ctx) {
+function create_default_slot$1(ctx) {
+  var t;
+  var block = {
+    c: function create() {
+      t = text("download");
+    },
+    l: function claim(nodes) {
+      t = claim_text(nodes, "download");
+    },
+    m: function mount(target, anchor) {
+      insert_dev(target, t, anchor);
+    },
+    d: function destroy(detaching) {
+      if (detaching) detach_dev(t);
+    }
+  };
+  dispatch_dev("SvelteRegisterBlock", {
+    block: block,
+    id: create_default_slot$1.name,
+    type: "slot",
+    source: "(55:3) <DownloadBox>",
+    ctx: ctx
+  });
+  return block;
+}
+
+function create_fragment$2(ctx) {
   var nav;
   var a0;
   var img;
@@ -2537,16 +2952,27 @@ function create_fragment$1(ctx) {
   var t9;
   var t10;
   var li5;
-  var a6;
+  var downloadbox;
   var t11;
-  var t12;
   var li6;
-  var a7;
+  var a6;
+  var t12;
+  var a6_aria_current_value;
   var t13;
-  var a7_aria_current_value;
-  var t14;
   var span;
-  var t15;
+  var t14;
+  var current;
+  downloadbox = new DownloadBox({
+    props: {
+      $$slots: {
+        default: [create_default_slot$1]
+      },
+      $$scope: {
+        ctx: ctx
+      }
+    },
+    $$inline: true
+  });
   var block = {
     c: function create() {
       nav = element("nav");
@@ -2575,15 +3001,14 @@ function create_fragment$1(ctx) {
       t9 = text("give");
       t10 = space();
       li5 = element("li");
-      a6 = element("a");
-      t11 = text("download");
-      t12 = space();
+      create_component(downloadbox.$$.fragment);
+      t11 = space();
       li6 = element("li");
-      a7 = element("a");
-      t13 = text("read it now");
-      t14 = space();
+      a6 = element("a");
+      t12 = text("read it now");
+      t13 = space();
       span = element("span");
-      t15 = text("© Luke Gelmi 2021");
+      t14 = text("© Luke Gelmi 2021");
       this.h();
     },
     l: function claim(nodes) {
@@ -2681,37 +3106,30 @@ function create_fragment$1(ctx) {
         class: true
       });
       var li5_nodes = children(li5);
-      a6 = claim_element(li5_nodes, "A", {
-        class: true,
-        href: true,
-        rel: true
-      });
-      var a6_nodes = children(a6);
-      t11 = claim_text(a6_nodes, "download");
-      a6_nodes.forEach(detach_dev);
+      claim_component(downloadbox.$$.fragment, li5_nodes);
       li5_nodes.forEach(detach_dev);
-      t12 = claim_space(ul_nodes);
+      t11 = claim_space(ul_nodes);
       li6 = claim_element(ul_nodes, "LI", {
         class: true
       });
       var li6_nodes = children(li6);
-      a7 = claim_element(li6_nodes, "A", {
+      a6 = claim_element(li6_nodes, "A", {
         class: true,
         href: true,
         "aria-current": true,
         rel: true
       });
-      var a7_nodes = children(a7);
-      t13 = claim_text(a7_nodes, "read it now");
-      a7_nodes.forEach(detach_dev);
+      var a6_nodes = children(a6);
+      t12 = claim_text(a6_nodes, "read it now");
+      a6_nodes.forEach(detach_dev);
       li6_nodes.forEach(detach_dev);
       ul_nodes.forEach(detach_dev);
-      t14 = claim_space(nav_nodes);
+      t13 = claim_space(nav_nodes);
       span = claim_element(nav_nodes, "SPAN", {
         class: true
       });
       var span_nodes = children(span);
-      t15 = claim_text(span_nodes, "© Luke Gelmi 2021");
+      t14 = claim_text(span_nodes, "© Luke Gelmi 2021");
       span_nodes.forEach(detach_dev);
       nav_nodes.forEach(detach_dev);
       this.h();
@@ -2719,68 +3137,64 @@ function create_fragment$1(ctx) {
     h: function hydrate() {
       if (img.src !== (img_src_value = "/images/logo-150.png")) attr_dev(img, "src", img_src_value);
       attr_dev(img, "alt", "Oblivious logo of motorbike in an outline of Africa");
-      add_location(img, file$1, 8, 2, 163);
+      add_location(img, file$2, 10, 2, 212);
       attr_dev(a0, "href", "/");
-      add_location(a0, file$1, 7, 1, 148);
+      add_location(a0, file$2, 9, 1, 197);
       attr_dev(a1, "class", "no-underline p-2 svelte-tus06v");
       attr_dev(a1, "aria-current", a1_aria_current_value =
       /*segment*/
       ctx[0] === undefined ? "page" : undefined);
       attr_dev(a1, "href", ".");
-      add_location(a1, file$1, 15, 3, 357);
+      add_location(a1, file$2, 17, 3, 406);
       attr_dev(li0, "class", "p-1 sm:p-4");
-      add_location(li0, file$1, 14, 2, 330);
+      add_location(li0, file$2, 16, 2, 379);
       attr_dev(a2, "class", "no-underline p-2 svelte-tus06v");
       attr_dev(a2, "rel", "prefetch");
       attr_dev(a2, "aria-current", a2_aria_current_value =
       /*segment*/
       ctx[0] === "about" ? "page" : undefined);
       attr_dev(a2, "href", "about");
-      add_location(a2, file$1, 22, 3, 514);
+      add_location(a2, file$2, 24, 3, 563);
       attr_dev(li1, "class", "p-1 sm:p-4");
-      add_location(li1, file$1, 21, 2, 487);
+      add_location(li1, file$2, 23, 2, 536);
       attr_dev(a3, "class", "no-underline p-2 svelte-tus06v");
       attr_dev(a3, "rel", "prefetch");
       attr_dev(a3, "aria-current", a3_aria_current_value =
       /*segment*/
       ctx[0] === "help" ? "page" : undefined);
       attr_dev(a3, "href", "help");
-      add_location(a3, file$1, 30, 3, 693);
+      add_location(a3, file$2, 32, 3, 742);
       attr_dev(li2, "class", "p-1 sm:p-4");
-      add_location(li2, file$1, 29, 2, 666);
+      add_location(li2, file$2, 31, 2, 715);
       attr_dev(a4, "class", "no-underline p-2");
       attr_dev(a4, "rel", "prefetch");
       attr_dev(a4, "href", "mailto:obliviousthebook@protonmail.com");
-      add_location(a4, file$1, 38, 3, 873);
+      add_location(a4, file$2, 40, 3, 922);
       attr_dev(li3, "class", "p-1 sm:p-4");
-      add_location(li3, file$1, 37, 2, 846);
+      add_location(li3, file$2, 39, 2, 895);
       attr_dev(a5, "class", "no-underline p-2");
       attr_dev(a5, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a5, "rel", "nofollow");
-      add_location(a5, file$1, 45, 3, 1032);
+      add_location(a5, file$2, 47, 3, 1081);
       attr_dev(li4, "class", "p-1 sm:p-4");
-      add_location(li4, file$1, 44, 2, 1005);
-      attr_dev(a6, "class", "no-underline p-2");
-      attr_dev(a6, "href", "https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart");
-      attr_dev(a6, "rel", "nofollow");
-      add_location(a6, file$1, 52, 3, 1216);
+      add_location(li4, file$2, 46, 2, 1054);
       attr_dev(li5, "class", "p-1 sm:p-4");
-      add_location(li5, file$1, 51, 2, 1189);
-      attr_dev(a7, "class", "p-2 md:p-4 rounded-lg no-underline bg-white svelte-tus06v");
-      attr_dev(a7, "href", "read");
-      attr_dev(a7, "aria-current", a7_aria_current_value =
+      add_location(li5, file$2, 53, 2, 1238);
+      attr_dev(a6, "class", "p-2 md:p-4 rounded-lg no-underline bg-white svelte-tus06v");
+      attr_dev(a6, "href", "read");
+      attr_dev(a6, "aria-current", a6_aria_current_value =
       /*segment*/
       ctx[0] === "read" ? "page" : undefined);
-      attr_dev(a7, "rel", "prefetch");
-      add_location(a7, file$1, 59, 3, 1401);
+      attr_dev(a6, "rel", "prefetch");
+      add_location(a6, file$2, 57, 3, 1338);
       attr_dev(li6, "class", "p-1 sm:p-4");
-      add_location(li6, file$1, 58, 2, 1374);
+      add_location(li6, file$2, 56, 2, 1311);
       attr_dev(ul, "class", "flex flex-col md:flex-row items-center ml-4");
-      add_location(ul, file$1, 13, 1, 271);
+      add_location(ul, file$2, 15, 1, 320);
       attr_dev(span, "class", "absolute bottom-0 left-0 md:left-1/2 transform md:-translate-x-1/2 mb-2 text-sm");
-      add_location(span, file$1, 67, 1, 1590);
+      add_location(span, file$2, 65, 1, 1527);
       attr_dev(nav, "class", "relative z-0 flex flex-row justify-between md:justify-start items-center p-4 bg-oblivious");
-      add_location(nav, file$1, 4, 0, 41);
+      add_location(nav, file$2, 6, 0, 90);
     },
     m: function mount(target, anchor) {
       insert_dev(target, nav, anchor);
@@ -2809,21 +3223,21 @@ function create_fragment$1(ctx) {
       append_dev(a5, t9);
       append_dev(ul, t10);
       append_dev(ul, li5);
-      append_dev(li5, a6);
-      append_dev(a6, t11);
-      append_dev(ul, t12);
+      mount_component(downloadbox, li5, null);
+      append_dev(ul, t11);
       append_dev(ul, li6);
-      append_dev(li6, a7);
-      append_dev(a7, t13);
-      append_dev(nav, t14);
+      append_dev(li6, a6);
+      append_dev(a6, t12);
+      append_dev(nav, t13);
       append_dev(nav, span);
-      append_dev(span, t15);
+      append_dev(span, t14);
+      current = true;
     },
     p: function update(ctx, _ref) {
       var _ref2 = _slicedToArray(_ref, 1),
           dirty = _ref2[0];
 
-      if (dirty &
+      if (!current || dirty &
       /*segment*/
       1 && a1_aria_current_value !== (a1_aria_current_value =
       /*segment*/
@@ -2831,7 +3245,7 @@ function create_fragment$1(ctx) {
         attr_dev(a1, "aria-current", a1_aria_current_value);
       }
 
-      if (dirty &
+      if (!current || dirty &
       /*segment*/
       1 && a2_aria_current_value !== (a2_aria_current_value =
       /*segment*/
@@ -2839,7 +3253,7 @@ function create_fragment$1(ctx) {
         attr_dev(a2, "aria-current", a2_aria_current_value);
       }
 
-      if (dirty &
+      if (!current || dirty &
       /*segment*/
       1 && a3_aria_current_value !== (a3_aria_current_value =
       /*segment*/
@@ -2847,23 +3261,44 @@ function create_fragment$1(ctx) {
         attr_dev(a3, "aria-current", a3_aria_current_value);
       }
 
+      var downloadbox_changes = {};
+
       if (dirty &
+      /*$$scope*/
+      2) {
+        downloadbox_changes.$$scope = {
+          dirty: dirty,
+          ctx: ctx
+        };
+      }
+
+      downloadbox.$set(downloadbox_changes);
+
+      if (!current || dirty &
       /*segment*/
-      1 && a7_aria_current_value !== (a7_aria_current_value =
+      1 && a6_aria_current_value !== (a6_aria_current_value =
       /*segment*/
       ctx[0] === "read" ? "page" : undefined)) {
-        attr_dev(a7, "aria-current", a7_aria_current_value);
+        attr_dev(a6, "aria-current", a6_aria_current_value);
       }
     },
-    i: noop,
-    o: noop,
+    i: function intro(local) {
+      if (current) return;
+      transition_in(downloadbox.$$.fragment, local);
+      current = true;
+    },
+    o: function outro(local) {
+      transition_out(downloadbox.$$.fragment, local);
+      current = false;
+    },
     d: function destroy(detaching) {
       if (detaching) detach_dev(nav);
+      destroy_component(downloadbox);
     }
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$1.name,
+    id: create_fragment$2.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -2871,7 +3306,7 @@ function create_fragment$1(ctx) {
   return block;
 }
 
-function instance$1($$self, $$props, $$invalidate) {
+function instance$2($$self, $$props, $$invalidate) {
   var _$$props$$$slots = $$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
       $$scope = $$props.$$scope;
@@ -2888,6 +3323,7 @@ function instance$1($$self, $$props, $$invalidate) {
 
   $$self.$capture_state = function () {
     return {
+      DownloadBox: DownloadBox,
       segment: segment
     };
   };
@@ -2906,7 +3342,7 @@ function instance$1($$self, $$props, $$invalidate) {
 var Footer = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Footer, _SvelteComponentDev);
 
-  var _super = _createSuper$2(Footer);
+  var _super = _createSuper$3(Footer);
 
   function Footer(options) {
     var _this;
@@ -2914,14 +3350,14 @@ var Footer = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Footer);
 
     _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance$1, create_fragment$1, safe_not_equal, {
+    init(_assertThisInitialized(_this), options, instance$2, create_fragment$2, safe_not_equal, {
       segment: 0
     });
     dispatch_dev("SvelteRegisterComponent", {
       component: _assertThisInitialized(_this),
       tagName: "Footer",
       options: options,
-      id: create_fragment$1.name
+      id: create_fragment$2.name
     });
     var ctx = _this.$$.ctx;
     var props = options.props || {};
@@ -2998,12 +3434,12 @@ function fly(node, _ref3) {
   };
 }
 
-function _createSuper$3(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$3(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$4(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$4(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$3() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$2 = "src/components/PageTransition.svelte";
+function _isNativeReflectConstruct$4() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+var file$3 = "src/components/PageTransition.svelte";
 
-function create_fragment$2(ctx) {
+function create_fragment$3(ctx) {
   var div;
   var div_intro;
   var current;
@@ -3027,7 +3463,7 @@ function create_fragment$2(ctx) {
       this.h();
     },
     h: function hydrate() {
-      add_location(div, file$2, 4, 0, 65);
+      add_location(div, file$3, 4, 0, 65);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -3079,7 +3515,7 @@ function create_fragment$2(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$2.name,
+    id: create_fragment$3.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -3087,7 +3523,7 @@ function create_fragment$2(ctx) {
   return block;
 }
 
-function instance$2($$self, $$props, $$invalidate) {
+function instance$3($$self, $$props, $$invalidate) {
   var _$$props$$$slots = $$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
       $$scope = $$props.$$scope;
@@ -3113,7 +3549,7 @@ function instance$2($$self, $$props, $$invalidate) {
 var PageTransition = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(PageTransition, _SvelteComponentDev);
 
-  var _super = _createSuper$3(PageTransition);
+  var _super = _createSuper$4(PageTransition);
 
   function PageTransition(options) {
     var _this;
@@ -3121,12 +3557,12 @@ var PageTransition = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, PageTransition);
 
     _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance$2, create_fragment$2, safe_not_equal, {});
+    init(_assertThisInitialized(_this), options, instance$3, create_fragment$3, safe_not_equal, {});
     dispatch_dev("SvelteRegisterComponent", {
       component: _assertThisInitialized(_this),
       tagName: "PageTransition",
       options: options,
-      id: create_fragment$2.name
+      id: create_fragment$3.name
     });
     return _this;
   }
@@ -3134,12 +3570,12 @@ var PageTransition = /*#__PURE__*/function (_SvelteComponentDev) {
   return PageTransition;
 }(SvelteComponentDev);
 
-function _createSuper$4(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$4(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$5(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$5(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$4() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$3 = "src/routes/_layout.svelte"; // (17:1) <PageTransition>
+function _isNativeReflectConstruct$5() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+var file$4 = "src/routes/_layout.svelte"; // (17:1) <PageTransition>
 
-function create_default_slot(ctx) {
+function create_default_slot$2(ctx) {
   var main;
   var current;
   var default_slot_template =
@@ -3165,7 +3601,7 @@ function create_default_slot(ctx) {
     },
     h: function hydrate() {
       attr_dev(main, "class", "flex flex-col items-center justify-center p-4 lg:p-0 svelte-1fbdjsw");
-      add_location(main, file$3, 17, 2, 611);
+      add_location(main, file$4, 17, 2, 611);
     },
     m: function mount(target, anchor) {
       insert_dev(target, main, anchor);
@@ -3203,7 +3639,7 @@ function create_default_slot(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_default_slot.name,
+    id: create_default_slot$2.name,
     type: "slot",
     source: "(17:1) <PageTransition>",
     ctx: ctx
@@ -3218,7 +3654,7 @@ function create_key_block(ctx) {
   pagetransition = new PageTransition({
     props: {
       $$slots: {
-        default: [create_default_slot]
+        default: [create_default_slot$2]
       },
       $$scope: {
         ctx: ctx
@@ -3274,7 +3710,7 @@ function create_key_block(ctx) {
   return block;
 }
 
-function create_fragment$3(ctx) {
+function create_fragment$4(ctx) {
   var meta0;
   var meta1;
   var meta2;
@@ -3355,19 +3791,19 @@ function create_fragment$3(ctx) {
     h: function hydrate() {
       attr_dev(meta0, "property", "og:site_name");
       attr_dev(meta0, "content", "ObliviousTheBook.com");
-      add_location(meta0, file$3, 7, 1, 224);
+      add_location(meta0, file$4, 7, 1, 224);
       attr_dev(meta1, "property", "fb:admins");
       attr_dev(meta1, "content", "563453705");
-      add_location(meta1, file$3, 8, 1, 289);
+      add_location(meta1, file$4, 8, 1, 289);
       attr_dev(meta2, "property", "og:image");
       attr_dev(meta2, "content", "/images/carousel/images(1).jpg");
-      add_location(meta2, file$3, 9, 1, 340);
+      add_location(meta2, file$4, 9, 1, 340);
       attr_dev(meta3, "name", "twitter:card");
       attr_dev(meta3, "content", "summary_large_image");
-      add_location(meta3, file$3, 10, 1, 411);
+      add_location(meta3, file$4, 10, 1, 411);
       attr_dev(meta4, "name", "twitter:image");
       attr_dev(meta4, "content", "/images/carousel/images(1).jpg");
-      add_location(meta4, file$3, 11, 1, 471);
+      add_location(meta4, file$4, 11, 1, 471);
     },
     m: function mount(target, anchor) {
       append_dev(document.head, meta0);
@@ -3448,7 +3884,7 @@ function create_fragment$3(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$3.name,
+    id: create_fragment$4.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -3456,7 +3892,7 @@ function create_fragment$3(ctx) {
   return block;
 }
 
-function instance$3($$self, $$props, $$invalidate) {
+function instance$4($$self, $$props, $$invalidate) {
   var _$$props$$$slots = $$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
       $$scope = $$props.$$scope;
@@ -3495,7 +3931,7 @@ function instance$3($$self, $$props, $$invalidate) {
 var Layout = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Layout, _SvelteComponentDev);
 
-  var _super = _createSuper$4(Layout);
+  var _super = _createSuper$5(Layout);
 
   function Layout(options) {
     var _this;
@@ -3503,14 +3939,14 @@ var Layout = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Layout);
 
     _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance$3, create_fragment$3, safe_not_equal, {
+    init(_assertThisInitialized(_this), options, instance$4, create_fragment$4, safe_not_equal, {
       segment: 0
     });
     dispatch_dev("SvelteRegisterComponent", {
       component: _assertThisInitialized(_this),
       tagName: "Layout",
       options: options,
-      id: create_fragment$3.name
+      id: create_fragment$4.name
     });
     var ctx = _this.$$.ctx;
     var props = options.props || {};
@@ -3542,13 +3978,13 @@ var root_comp = /*#__PURE__*/Object.freeze({
   'default': Layout
 });
 
-function _createSuper$5(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$5(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$6(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$6(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$5() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function _isNativeReflectConstruct$6() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 var Error_1 = globals.Error;
-var file$4 = "src/routes/_error.svelte"; // (35:0) {#if dev && error.stack}
+var file$5 = "src/routes/_error.svelte"; // (35:0) {#if dev && error.stack}
 
-function create_if_block(ctx) {
+function create_if_block$1(ctx) {
   var pre;
   var t_value =
   /*error*/
@@ -3568,7 +4004,7 @@ function create_if_block(ctx) {
       this.h();
     },
     h: function hydrate() {
-      add_location(pre, file$4, 35, 1, 1173);
+      add_location(pre, file$5, 35, 1, 1173);
     },
     m: function mount(target, anchor) {
       insert_dev(target, pre, anchor);
@@ -3587,7 +4023,7 @@ function create_if_block(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_if_block.name,
+    id: create_if_block$1.name,
     type: "if",
     source: "(35:0) {#if dev && error.stack}",
     ctx: ctx
@@ -3595,7 +4031,7 @@ function create_if_block(ctx) {
   return block;
 }
 
-function create_fragment$4(ctx) {
+function create_fragment$5(ctx) {
   var title_value;
   var t0;
   var h1;
@@ -3615,7 +4051,7 @@ function create_fragment$4(ctx) {
   /*dev*/
   ctx[2] &&
   /*error*/
-  ctx[1].stack && create_if_block(ctx);
+  ctx[1].stack && create_if_block$1(ctx);
   var block = {
     c: function create() {
       t0 = space();
@@ -3657,9 +4093,9 @@ function create_fragment$4(ctx) {
     },
     h: function hydrate() {
       attr_dev(h1, "class", "svelte-pk4dni");
-      add_location(h1, file$4, 30, 0, 1104);
+      add_location(h1, file$5, 30, 0, 1104);
       attr_dev(p, "class", "svelte-pk4dni");
-      add_location(p, file$4, 32, 0, 1123);
+      add_location(p, file$5, 32, 0, 1123);
     },
     m: function mount(target, anchor) {
       insert_dev(target, t0, anchor);
@@ -3703,7 +4139,7 @@ function create_fragment$4(ctx) {
         if (if_block) {
           if_block.p(ctx, dirty);
         } else {
-          if_block = create_if_block(ctx);
+          if_block = create_if_block$1(ctx);
           if_block.c();
           if_block.m(if_block_anchor.parentNode, if_block_anchor);
         }
@@ -3726,7 +4162,7 @@ function create_fragment$4(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$4.name,
+    id: create_fragment$5.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -3734,7 +4170,7 @@ function create_fragment$4(ctx) {
   return block;
 }
 
-function instance$4($$self, $$props, $$invalidate) {
+function instance$5($$self, $$props, $$invalidate) {
   var _$$props$$$slots = $$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
       $$scope = $$props.$$scope;
@@ -3775,7 +4211,7 @@ function instance$4($$self, $$props, $$invalidate) {
 var Error$1 = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(Error, _SvelteComponentDev);
 
-  var _super = _createSuper$5(Error);
+  var _super = _createSuper$6(Error);
 
   function Error(options) {
     var _this;
@@ -3783,7 +4219,7 @@ var Error$1 = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, Error);
 
     _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance$4, create_fragment$4, safe_not_equal, {
+    init(_assertThisInitialized(_this), options, instance$5, create_fragment$5, safe_not_equal, {
       status: 0,
       error: 1
     });
@@ -3791,7 +4227,7 @@ var Error$1 = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "Error",
       options: options,
-      id: create_fragment$4.name
+      id: create_fragment$5.name
     });
     var ctx = _this.$$.ctx;
     var props = options.props || {};
@@ -3832,9 +4268,9 @@ var Error$1 = /*#__PURE__*/function (_SvelteComponentDev) {
   return Error;
 }(SvelteComponentDev);
 
-function _createSuper$6(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$6(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
+function _createSuper$7(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$7(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
-function _isNativeReflectConstruct$6() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
+function _isNativeReflectConstruct$7() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
 var Error_1$1 = globals.Error;
 
 function create_else_block(ctx) {
@@ -3966,7 +4402,7 @@ function create_else_block(ctx) {
 } // (22:1) {#if error}
 
 
-function create_if_block$1(ctx) {
+function create_if_block$2(ctx) {
   var error_1;
   var current;
   error_1 = new Error$1({
@@ -4020,7 +4456,7 @@ function create_if_block$1(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_if_block$1.name,
+    id: create_if_block$2.name,
     type: "if",
     source: "(22:1) {#if error}",
     ctx: ctx
@@ -4201,12 +4637,12 @@ function create_default_slot_1(ctx) {
 } // (21:0) <Layout segment="{segments[0]}" {...level0.props}>
 
 
-function create_default_slot$1(ctx) {
+function create_default_slot$3(ctx) {
   var current_block_type_index;
   var if_block;
   var if_block_anchor;
   var current;
-  var if_block_creators = [create_if_block$1, create_else_block];
+  var if_block_creators = [create_if_block$2, create_else_block];
   var if_blocks = [];
 
   function select_block_type(ctx, dirty) {
@@ -4271,7 +4707,7 @@ function create_default_slot$1(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_default_slot$1.name,
+    id: create_default_slot$3.name,
     type: "slot",
     source: "(21:0) <Layout segment=\\\"{segments[0]}\\\" {...level0.props}>",
     ctx: ctx
@@ -4279,7 +4715,7 @@ function create_default_slot$1(ctx) {
   return block;
 }
 
-function create_fragment$5(ctx) {
+function create_fragment$6(ctx) {
   var layout;
   var current;
   var layout_spread_levels = [{
@@ -4291,7 +4727,7 @@ function create_fragment$5(ctx) {
   ctx[3].props];
   var layout_props = {
     $$slots: {
-      default: [create_default_slot$1]
+      default: [create_default_slot$3]
     },
     $$scope: {
       ctx: ctx
@@ -4361,7 +4797,7 @@ function create_fragment$5(ctx) {
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$5.name,
+    id: create_fragment$6.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -4369,7 +4805,7 @@ function create_fragment$5(ctx) {
   return block;
 }
 
-function instance$5($$self, $$props, $$invalidate) {
+function instance$6($$self, $$props, $$invalidate) {
   var _$$props$$$slots = $$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
       $$scope = $$props.$$scope;
@@ -4441,7 +4877,7 @@ function instance$5($$self, $$props, $$invalidate) {
 var App = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(App, _SvelteComponentDev);
 
-  var _super = _createSuper$6(App);
+  var _super = _createSuper$7(App);
 
   function App(options) {
     var _this;
@@ -4449,7 +4885,7 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, App);
 
     _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance$5, create_fragment$5, safe_not_equal, {
+    init(_assertThisInitialized(_this), options, instance$6, create_fragment$6, safe_not_equal, {
       stores: 6,
       error: 0,
       status: 1,
@@ -4463,7 +4899,7 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
       component: _assertThisInitialized(_this),
       tagName: "App",
       options: options,
-      id: create_fragment$5.name
+      id: create_fragment$6.name
     });
     var ctx = _this.$$.ctx;
     var props = options.props || {};
@@ -4580,35 +5016,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.159423e0.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.34fb7862.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./awww-yeah.6d1d20e9.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./success.3c6f70dc.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./success.b38dd3d0.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.5573e7b9.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.30bff4c0.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.206d9bee.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.471b7323.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.8fbf997e.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.8acc8936.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.587f246d.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.73fe940e.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
-  }
-}, {
-  js: function js() {
-    return Promise.all([import('./[...slug].f89ac658.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].6ef4a678.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
@@ -4619,44 +5051,38 @@ var routes = function (d) {
       i: 0
     }]
   }, {
-    // awww-yeah.svelte
-    pattern: /^\/awww-yeah\/?$/,
-    parts: [{
-      i: 1
-    }]
-  }, {
     // success.svelte
     pattern: /^\/success\/?$/,
     parts: [{
-      i: 2
+      i: 1
     }]
   }, {
     // about.svelte
     pattern: /^\/about\/?$/,
     parts: [{
-      i: 3
+      i: 2
     }]
   }, {
     // help.svelte
     pattern: /^\/help\/?$/,
     parts: [{
-      i: 4
+      i: 3
     }]
   }, {
     // read/index.svelte
     pattern: /^\/read\/?$/,
     parts: [{
-      i: 5
+      i: 4
     }, {
-      i: 6
+      i: 5
     }]
   }, {
     // read/[...slug].svelte
     pattern: /^\/read\/(.+)\/?$/,
     parts: [{
-      i: 5
+      i: 4
     }, {
-      i: 7,
+      i: 6,
       params: function params(match) {
         return {
           slug: d(match[1]).split('/')
@@ -5556,6 +5982,6 @@ start$1({
     target: document.querySelector('#sapper')
 });
 
-export { group_outros as $, create_bidirectional_transition as A, run_all as B, create_component as C, query_selector_all as D, claim_component as E, mount_component as F, noop as G, transition_in as H, transition_out as I, destroy_component as J, _createClass as K, regenerator as L, validate_each_argument as M, create_out_transition as N, empty as O, PageTransition as P, check_outros as Q, destroy_each as R, SvelteComponentDev as S, validate_store as T, component_subscribe as U, stores$1 as V, create_in_transition as W, _toConsumableArray as X, toggle_class as Y, create_slot as Z, _inherits as _, _getPrototypeOf as a, update_slot as a0, writable as a1, globals as a2, HtmlTag as a3, onMount as a4, binding_callbacks as a5, _possibleConstructorReturn as b, _classCallCheck as c, _assertThisInitialized as d, dispatch_dev as e, fade as f, element as g, space as h, init as i, claim_element as j, children as k, claim_space as l, detach_dev as m, claim_text as n, onDestroy as o, attr_dev as p, add_location as q, insert_dev as r, safe_not_equal as s, text as t, append_dev as u, validate_slots as v, listen_dev as w, _slicedToArray as x, set_data_dev as y, add_render_callback as z };
+export { create_slot as $, create_bidirectional_transition as A, run_all as B, create_component as C, DownloadBox as D, query_selector_all as E, claim_component as F, mount_component as G, transition_in as H, transition_out as I, destroy_component as J, noop as K, regenerator as L, _createClass as M, validate_each_argument as N, create_out_transition as O, empty as P, PageTransition as Q, check_outros as R, SvelteComponentDev as S, destroy_each as T, validate_store as U, component_subscribe as V, stores$1 as W, create_in_transition as X, _toConsumableArray as Y, toggle_class as Z, _inherits as _, _getPrototypeOf as a, group_outros as a0, update_slot as a1, writable as a2, globals as a3, HtmlTag as a4, onMount as a5, binding_callbacks as a6, _possibleConstructorReturn as b, _classCallCheck as c, _assertThisInitialized as d, dispatch_dev as e, fade as f, element as g, space as h, init as i, claim_element as j, children as k, claim_space as l, detach_dev as m, claim_text as n, onDestroy as o, attr_dev as p, add_location as q, insert_dev as r, safe_not_equal as s, text as t, append_dev as u, validate_slots as v, listen_dev as w, _slicedToArray as x, set_data_dev as y, add_render_callback as z };
 
 import __inject_styles from './inject_styles.fe622066.js';

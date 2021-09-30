@@ -1,145 +1,37 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, K as _createClass, S as SvelteComponentDev, v as validate_slots, g as element, t as text, j as claim_element, k as children, n as claim_text, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, u as append_dev, x as _slicedToArray, y as set_data_dev, G as noop, h as space, D as query_selector_all, l as claim_space } from './client.e05bae4b.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, D as DownloadBox, s as safe_not_equal, g as element, h as space, t as text, C as create_component, E as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, F as claim_component, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, G as mount_component, x as _slicedToArray, H as transition_in, I as transition_out, J as destroy_component, v as validate_slots } from './client.1edd80e5.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _isNativeReflectConstruct() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file = "src/components/BuyButton.svelte";
+var file = "src/routes/about.svelte"; // (51:49) <DownloadBox>
 
-function create_fragment(ctx) {
-  var a;
+function create_default_slot(ctx) {
   var t;
   var block = {
     c: function create() {
-      a = element("a");
-      t = text(
-      /*text*/
-      ctx[0]);
-      this.h();
+      t = text("or download the e-book");
     },
     l: function claim(nodes) {
-      a = claim_element(nodes, "A", {
-        class: true,
-        href: true,
-        rel: true
-      });
-      var a_nodes = children(a);
-      t = claim_text(a_nodes,
-      /*text*/
-      ctx[0]);
-      a_nodes.forEach(detach_dev);
-      this.h();
-    },
-    h: function hydrate() {
-      attr_dev(a, "class", "inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious");
-      attr_dev(a, "href", "https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart");
-      attr_dev(a, "rel", "nofollow");
-      add_location(a, file, 4, 0, 60);
+      t = claim_text(nodes, "or download the e-book");
     },
     m: function mount(target, anchor) {
-      insert_dev(target, a, anchor);
-      append_dev(a, t);
+      insert_dev(target, t, anchor);
     },
-    p: function update(ctx, _ref) {
-      var _ref2 = _slicedToArray(_ref, 1),
-          dirty = _ref2[0];
-
-      if (dirty &
-      /*text*/
-      1) set_data_dev(t,
-      /*text*/
-      ctx[0]);
-    },
-    i: noop,
-    o: noop,
     d: function destroy(detaching) {
-      if (detaching) detach_dev(a);
+      if (detaching) detach_dev(t);
     }
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment.name,
-    type: "component",
-    source: "",
+    id: create_default_slot.name,
+    type: "slot",
+    source: "(51:49) <DownloadBox>",
     ctx: ctx
   });
   return block;
 }
 
-function instance($$self, $$props, $$invalidate) {
-  var _$$props$$$slots = $$props.$$slots,
-      slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
-      $$scope = $$props.$$scope;
-  validate_slots("BuyButton", slots, []);
-  var _$$props$text = $$props.text,
-      text = _$$props$text === void 0 ? "Get e-Book One" : _$$props$text;
-  var writable_props = ["text"];
-  Object.keys($$props).forEach(function (key) {
-    if (!~writable_props.indexOf(key) && key.slice(0, 2) !== "$$") console.warn("<BuyButton> was created with unknown prop '".concat(key, "'"));
-  });
-
-  $$self.$$set = function ($$props) {
-    if ("text" in $$props) $$invalidate(0, text = $$props.text);
-  };
-
-  $$self.$capture_state = function () {
-    return {
-      text: text
-    };
-  };
-
-  $$self.$inject_state = function ($$props) {
-    if ("text" in $$props) $$invalidate(0, text = $$props.text);
-  };
-
-  if ($$props && "$$inject" in $$props) {
-    $$self.$inject_state($$props.$$inject);
-  }
-
-  return [text];
-}
-
-var BuyButton = /*#__PURE__*/function (_SvelteComponentDev) {
-  _inherits(BuyButton, _SvelteComponentDev);
-
-  var _super = _createSuper(BuyButton);
-
-  function BuyButton(options) {
-    var _this;
-
-    _classCallCheck(this, BuyButton);
-
-    _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance, create_fragment, safe_not_equal, {
-      text: 0
-    });
-    dispatch_dev("SvelteRegisterComponent", {
-      component: _assertThisInitialized(_this),
-      tagName: "BuyButton",
-      options: options,
-      id: create_fragment.name
-    });
-    return _this;
-  }
-
-  _createClass(BuyButton, [{
-    key: "text",
-    get: function get() {
-      throw new Error("<BuyButton>: Props cannot be read directly from the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    },
-    set: function set(value) {
-      throw new Error("<BuyButton>: Props cannot be set directly on the component instance unless compiling with 'accessors: true' or '<svelte:options accessors/>'");
-    }
-  }]);
-
-  return BuyButton;
-}(SvelteComponentDev);
-
-function _createSuper$1(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$1(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
-
-function _isNativeReflectConstruct$1() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$1 = "src/routes/about.svelte";
-
-function create_fragment$1(ctx) {
+function create_fragment(ctx) {
   var meta0;
   var meta1;
   var meta2;
@@ -248,11 +140,23 @@ function create_fragment$1(ctx) {
   var t61;
   var t62;
   var div;
-  var a0;
+  var a;
   var t63;
   var t64;
-  var a1;
-  var t65;
+  var span;
+  var downloadbox;
+  var current;
+  downloadbox = new DownloadBox({
+    props: {
+      $$slots: {
+        default: [create_default_slot]
+      },
+      $$scope: {
+        ctx: ctx
+      }
+    },
+    $$inline: true
+  });
   var block = {
     c: function create() {
       meta0 = element("meta");
@@ -363,11 +267,11 @@ function create_fragment$1(ctx) {
       t61 = text("If you're here for a good yarn; sit back, and let me take you on the ride.");
       t62 = space();
       div = element("div");
-      a0 = element("a");
+      a = element("a");
       t63 = text("Read the book now");
       t64 = text("\n        ... ");
-      a1 = element("a");
-      t65 = text("or download the e-book");
+      span = element("span");
+      create_component(downloadbox.$$.fragment);
       this.h();
     },
     l: function claim(nodes) {
@@ -585,22 +489,21 @@ function create_fragment$1(ctx) {
         class: true
       });
       var div_nodes = children(div);
-      a0 = claim_element(div_nodes, "A", {
+      a = claim_element(div_nodes, "A", {
         class: true,
         href: true,
         rel: true
       });
-      var a0_nodes = children(a0);
-      t63 = claim_text(a0_nodes, "Read the book now");
-      a0_nodes.forEach(detach_dev);
+      var a_nodes = children(a);
+      t63 = claim_text(a_nodes, "Read the book now");
+      a_nodes.forEach(detach_dev);
       t64 = claim_text(div_nodes, "\n        ... ");
-      a1 = claim_element(div_nodes, "A", {
-        rel: true,
-        href: true
+      span = claim_element(div_nodes, "SPAN", {
+        class: true
       });
-      var a1_nodes = children(a1);
-      t65 = claim_text(a1_nodes, "or download the e-book");
-      a1_nodes.forEach(detach_dev);
+      var span_nodes = children(span);
+      claim_component(downloadbox.$$.fragment, span_nodes);
+      span_nodes.forEach(detach_dev);
       div_nodes.forEach(detach_dev);
       this.h();
     },
@@ -608,79 +511,78 @@ function create_fragment$1(ctx) {
       document.title = "About the Oblivious Trilogy | A wild journey through West Africa";
       attr_dev(meta0, "name", "description");
       attr_dev(meta0, "content", "How a ride through England on a Royal Enfield motorcycle turned into an epic journey through Europe and Africa.");
-      add_location(meta0, file$1, 5, 1, 175);
+      add_location(meta0, file, 6, 1, 176);
       attr_dev(meta1, "property", "og:description");
       attr_dev(meta1, "content", "How a ride through England on a Royal Enfield motorcycle turned into an epic journey through Europe and Africa.");
-      add_location(meta1, file$1, 6, 1, 324);
+      add_location(meta1, file, 7, 1, 325);
       attr_dev(meta2, "property", "og:url");
       attr_dev(meta2, "content", "http://www.obliviousthebook.com/");
-      add_location(meta2, file$1, 7, 1, 481);
+      add_location(meta2, file, 8, 1, 482);
       attr_dev(meta3, "property", "og:site_name");
       attr_dev(meta3, "content", "ObliviousTheBook.com");
-      add_location(meta3, file$1, 8, 1, 551);
+      add_location(meta3, file, 9, 1, 552);
       attr_dev(meta4, "property", "fb:admins");
       attr_dev(meta4, "content", "563453705");
-      add_location(meta4, file$1, 9, 1, 615);
+      add_location(meta4, file, 10, 1, 616);
       attr_dev(meta5, "property", "og:image");
       attr_dev(meta5, "content", "/images/logo-750.png");
-      add_location(meta5, file$1, 10, 1, 665);
+      add_location(meta5, file, 11, 1, 666);
       attr_dev(meta6, "name", "twitter:card");
       attr_dev(meta6, "content", "summary_large_image");
-      add_location(meta6, file$1, 11, 1, 725);
+      add_location(meta6, file, 12, 1, 726);
       attr_dev(meta7, "name", "twitter:description");
       attr_dev(meta7, "content", "How a ride through England on a Royal Enfield motorcycle turned into an epic journey through Europe and Africa.");
-      add_location(meta7, file$1, 12, 1, 784);
+      add_location(meta7, file, 13, 1, 785);
       attr_dev(meta8, "name", "twitter:title");
       attr_dev(meta8, "content", "Oblivious - An overlanding motorbike journey through West Africa");
-      add_location(meta8, file$1, 13, 1, 942);
+      add_location(meta8, file, 14, 1, 943);
       attr_dev(meta9, "name", "twitter:image");
       attr_dev(meta9, "content", "/images/logo-750.png");
-      add_location(meta9, file$1, 14, 1, 1047);
+      add_location(meta9, file, 15, 1, 1048);
       attr_dev(h1, "class", "text-4xl md:text-6xl text-center mb-12 mt-12 md:mt-28");
-      add_location(h1, file$1, 17, 0, 1123);
-      add_location(em0, file$1, 21, 8, 1314);
-      add_location(p0, file$1, 21, 1, 1307);
-      add_location(p1, file$1, 22, 1, 1351);
-      add_location(p2, file$1, 23, 1, 1418);
-      add_location(p3, file$1, 24, 1, 1542);
-      add_location(p4, file$1, 25, 1, 1657);
-      add_location(em1, file$1, 26, 4, 1758);
-      add_location(p5, file$1, 26, 1, 1755);
-      add_location(em2, file$1, 28, 37, 1827);
-      add_location(p6, file$1, 28, 1, 1791);
-      add_location(em3, file$1, 29, 162, 2008);
-      add_location(em4, file$1, 29, 206, 2052);
-      add_location(p7, file$1, 29, 1, 1847);
-      add_location(em5, file$1, 30, 53, 2142);
-      add_location(p8, file$1, 30, 1, 2090);
-      add_location(p9, file$1, 31, 1, 2194);
-      add_location(p10, file$1, 32, 1, 2425);
-      add_location(p11, file$1, 33, 1, 2576);
-      add_location(p12, file$1, 34, 1, 2604);
-      add_location(p13, file$1, 35, 1, 2660);
-      add_location(p14, file$1, 36, 1, 2764);
-      add_location(em6, file$1, 37, 45, 2852);
-      add_location(p15, file$1, 37, 1, 2808);
-      add_location(p16, file$1, 38, 1, 2901);
-      add_location(em7, file$1, 39, 42, 2995);
-      add_location(p17, file$1, 39, 1, 2954);
-      add_location(p18, file$1, 40, 1, 3018);
-      add_location(p19, file$1, 41, 1, 3027);
-      add_location(p20, file$1, 42, 1, 3181);
-      add_location(p21, file$1, 43, 1, 3244);
-      add_location(p22, file$1, 44, 1, 3308);
-      add_location(p23, file$1, 45, 1, 3368);
+      add_location(h1, file, 18, 0, 1124);
+      add_location(em0, file, 22, 8, 1315);
+      add_location(p0, file, 22, 1, 1308);
+      add_location(p1, file, 23, 1, 1352);
+      add_location(p2, file, 24, 1, 1419);
+      add_location(p3, file, 25, 1, 1543);
+      add_location(p4, file, 26, 1, 1658);
+      add_location(em1, file, 27, 4, 1759);
+      add_location(p5, file, 27, 1, 1756);
+      add_location(em2, file, 29, 37, 1828);
+      add_location(p6, file, 29, 1, 1792);
+      add_location(em3, file, 30, 162, 2009);
+      add_location(em4, file, 30, 206, 2053);
+      add_location(p7, file, 30, 1, 1848);
+      add_location(em5, file, 31, 53, 2143);
+      add_location(p8, file, 31, 1, 2091);
+      add_location(p9, file, 32, 1, 2195);
+      add_location(p10, file, 33, 1, 2426);
+      add_location(p11, file, 34, 1, 2577);
+      add_location(p12, file, 35, 1, 2605);
+      add_location(p13, file, 36, 1, 2661);
+      add_location(p14, file, 37, 1, 2765);
+      add_location(em6, file, 38, 45, 2853);
+      add_location(p15, file, 38, 1, 2809);
+      add_location(p16, file, 39, 1, 2902);
+      add_location(em7, file, 40, 42, 2996);
+      add_location(p17, file, 40, 1, 2955);
+      add_location(p18, file, 41, 1, 3019);
+      add_location(p19, file, 42, 1, 3028);
+      add_location(p20, file, 43, 1, 3182);
+      add_location(p21, file, 44, 1, 3245);
+      add_location(p22, file, 45, 1, 3309);
+      add_location(p23, file, 46, 1, 3369);
       attr_dev(section, "class", "prose prose-lg mb-10");
-      add_location(section, file$1, 20, 0, 1267);
-      attr_dev(a0, "class", "inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious");
-      attr_dev(a0, "href", "read");
-      attr_dev(a0, "rel", "prefetch");
-      add_location(a0, file$1, 48, 1, 3491);
-      attr_dev(a1, "rel", "nofollow");
-      attr_dev(a1, "href", "https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart");
-      add_location(a1, file$1, 49, 12, 3637);
+      add_location(section, file, 21, 0, 1268);
+      attr_dev(a, "class", "inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious");
+      attr_dev(a, "href", "read");
+      attr_dev(a, "rel", "prefetch");
+      add_location(a, file, 49, 1, 3492);
+      attr_dev(span, "class", "inline-block underline");
+      add_location(span, file, 50, 12, 3638);
       attr_dev(div, "class", "mb-20 md:mb-32");
-      add_location(div, file$1, 47, 0, 3461);
+      add_location(div, file, 48, 0, 3462);
     },
     m: function mount(target, anchor) {
       append_dev(document.head, meta0);
@@ -791,15 +693,39 @@ function create_fragment$1(ctx) {
       append_dev(p23, t61);
       insert_dev(target, t62, anchor);
       insert_dev(target, div, anchor);
-      append_dev(div, a0);
-      append_dev(a0, t63);
+      append_dev(div, a);
+      append_dev(a, t63);
       append_dev(div, t64);
-      append_dev(div, a1);
-      append_dev(a1, t65);
+      append_dev(div, span);
+      mount_component(downloadbox, span, null);
+      current = true;
     },
-    p: noop,
-    i: noop,
-    o: noop,
+    p: function update(ctx, _ref) {
+      var _ref2 = _slicedToArray(_ref, 1),
+          dirty = _ref2[0];
+
+      var downloadbox_changes = {};
+
+      if (dirty &
+      /*$$scope*/
+      1) {
+        downloadbox_changes.$$scope = {
+          dirty: dirty,
+          ctx: ctx
+        };
+      }
+
+      downloadbox.$set(downloadbox_changes);
+    },
+    i: function intro(local) {
+      if (current) return;
+      transition_in(downloadbox.$$.fragment, local);
+      current = true;
+    },
+    o: function outro(local) {
+      transition_out(downloadbox.$$.fragment, local);
+      current = false;
+    },
     d: function destroy(detaching) {
       detach_dev(meta0);
       detach_dev(meta1);
@@ -817,11 +743,12 @@ function create_fragment$1(ctx) {
       if (detaching) detach_dev(section);
       if (detaching) detach_dev(t62);
       if (detaching) detach_dev(div);
+      destroy_component(downloadbox);
     }
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
-    id: create_fragment$1.name,
+    id: create_fragment.name,
     type: "component",
     source: "",
     ctx: ctx
@@ -829,7 +756,7 @@ function create_fragment$1(ctx) {
   return block;
 }
 
-function instance$1($$self, $$props, $$invalidate) {
+function instance($$self, $$props, $$invalidate) {
   var _$$props$$$slots = $$props.$$slots,
       slots = _$$props$$$slots === void 0 ? {} : _$$props$$$slots,
       $$scope = $$props.$$scope;
@@ -841,7 +768,7 @@ function instance$1($$self, $$props, $$invalidate) {
 
   $$self.$capture_state = function () {
     return {
-      BuyButton: BuyButton
+      DownloadBox: DownloadBox
     };
   };
 
@@ -851,7 +778,7 @@ function instance$1($$self, $$props, $$invalidate) {
 var About = /*#__PURE__*/function (_SvelteComponentDev) {
   _inherits(About, _SvelteComponentDev);
 
-  var _super = _createSuper$1(About);
+  var _super = _createSuper(About);
 
   function About(options) {
     var _this;
@@ -859,12 +786,12 @@ var About = /*#__PURE__*/function (_SvelteComponentDev) {
     _classCallCheck(this, About);
 
     _this = _super.call(this, options);
-    init(_assertThisInitialized(_this), options, instance$1, create_fragment$1, safe_not_equal, {});
+    init(_assertThisInitialized(_this), options, instance, create_fragment, safe_not_equal, {});
     dispatch_dev("SvelteRegisterComponent", {
       component: _assertThisInitialized(_this),
       tagName: "About",
       options: options,
-      id: create_fragment$1.name
+      id: create_fragment.name
     });
     return _this;
   }
