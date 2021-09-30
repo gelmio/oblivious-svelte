@@ -1,6 +1,5 @@
-<script>
-	export let segment;
-    import OpenCart from "../components/OpenCart.svelte";
+<script lang="ts">
+	export let segment: string;
 </script>
 
 <nav class="flex flex-row justify-between md:justify-start items-center p-4">
@@ -28,8 +27,12 @@
 				href="about">about</a
 			>
 		</li>
-		<li class="block p-1 sm:p-4 no-underline">
-			<OpenCart></OpenCart>
+		<li class="block p-1 sm:p-4">
+			<a
+				class="no-underline p-2"
+				rel="prefetch"
+				href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart">download</a
+			>
 		</li>
 		<li class="block p-1 sm:p-4 my-2">
 			<a

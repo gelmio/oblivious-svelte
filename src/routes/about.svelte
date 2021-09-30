@@ -1,5 +1,5 @@
 <script>
-    import OpenCart from "../components/OpenCart.svelte";
+    import BuyButton from "../components/BuyButton.svelte";
 </script>
 <svelte:head>
 	<title>About the Oblivious Trilogy | A wild journey through West Africa</title>
@@ -47,5 +47,5 @@
 </section>
 <div class="mb-20 md:mb-32">
 	<a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="read" rel="prefetch">Read the book now</a>
-        ... <span class="underline"><OpenCart text="or download the e-book"></OpenCart></span>
+        ... <a rel="nofollow" href="https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart">or download the e-book</a>
 </div>
