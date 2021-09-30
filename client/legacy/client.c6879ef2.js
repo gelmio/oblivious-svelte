@@ -2274,16 +2274,16 @@ function create_if_block(ctx) {
       attr_dev(a0, "class", "no-underline p-2");
       attr_dev(a0, "rel", "nofollow");
       attr_dev(a0, "href", "https://transactions.sendowl.com/packages/37218/89A60CC9/add_to_cart");
-      add_location(a0, file, 19, 16, 665);
+      add_location(a0, file, 19, 16, 701);
       attr_dev(li0, "class", "w-max p-2 hover:bg-oblivious");
-      add_location(li0, file, 18, 12, 607);
+      add_location(li0, file, 18, 12, 643);
       attr_dev(a1, "class", "no-underline p-2");
       attr_dev(a1, "rel", "nofollow");
       attr_dev(a1, "href", "https://transactions.sendowl.com/packages/812169/A234B840/add_to_cart");
-      add_location(a1, file, 25, 16, 945);
+      add_location(a1, file, 25, 16, 981);
       attr_dev(li1, "class", "w-max p-2 hover:bg-oblivious");
-      add_location(li1, file, 24, 12, 887);
-      attr_dev(ul, "class", "absolute top-full rounded-md bg-white shadow-lg border-2 border-oblivious w-auto z-50");
+      add_location(li1, file, 24, 12, 923);
+      attr_dev(ul, "class", "absolute left-1/2 transform -translate-x-1/2 top-full rounded-md bg-white shadow-lg border-2 border-oblivious w-auto z-50");
       add_location(ul, file, 17, 8, 496);
     },
     m: function mount(target, anchor) {
@@ -5016,31 +5016,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.34fb7862.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.f86c8f56.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./success.3c6f70dc.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./success.d94a79eb.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.5573e7b9.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.806cd37a.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.206d9bee.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.de801b0e.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.8fbf997e.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.ebcc5f7d.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.587f246d.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.a67ea17f.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[...slug].6ef4a678.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].4fe1a5dc.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
