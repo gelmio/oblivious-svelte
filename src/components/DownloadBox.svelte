@@ -15,7 +15,7 @@
 >
     <span on:click={handleDownloadClick} class="cursor-pointer"><slot>download</slot></span>
     {#if openDownloadList}
-        <ul class="absolute top-full rounded-md bg-white shadow-lg border-2 border-oblivious w-auto z-50">
+        <ul class="absolute left-1/2 transform -translate-x-1/2 top-full rounded-md bg-white shadow-lg border-2 border-oblivious w-auto z-50">
             <li class="w-max p-2 hover:bg-oblivious">
                 <a
                     class="no-underline p-2"
