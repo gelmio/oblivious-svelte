@@ -5036,31 +5036,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.715ca186.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.3d61ffd0.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./success.30044788.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./success.0513f3ec.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.3b253f75.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.97e039d4.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.bc8d4f26.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.ddd495a8.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.b8212347.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.adfc1e5e.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.a01006f6.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.ad7b37e0.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[...slug].1b3b4b9d.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].67a6f490.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {

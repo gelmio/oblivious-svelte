@@ -1,4 +1,4 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, v as validate_slots, o as onDestroy, f as fade, g as element, h as space, t as text, j as claim_element, k as children, l as claim_space, m as detach_dev, n as claim_text, p as attr_dev, q as add_location, r as insert_dev, u as append_dev, w as listen_dev, x as _slicedToArray, y as set_data_dev, z as add_render_callback, A as create_bidirectional_transition, B as run_all, D as DownloadBox, C as create_component, E as query_selector_all, F as claim_component, G as mount_component, H as transition_in, I as transition_out, J as destroy_component } from './client.d180a518.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, v as validate_slots, o as onDestroy, f as fade, g as element, h as space, t as text, j as claim_element, k as children, l as claim_space, m as detach_dev, n as claim_text, p as attr_dev, q as add_location, r as insert_dev, u as append_dev, w as listen_dev, x as _slicedToArray, y as set_data_dev, z as add_render_callback, A as create_bidirectional_transition, B as run_all, D as DownloadBox, C as create_component, E as query_selector_all, F as claim_component, G as mount_component, H as transition_in, I as transition_out, J as destroy_component } from './client.d4dd7f11.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -320,56 +320,84 @@ var Carousel = /*#__PURE__*/function (_SvelteComponentDev) {
 function _createSuper$1(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$1(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _isNativeReflectConstruct$1() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$1 = "src/routes/index.svelte"; // (29:67) <DownloadBox>
+var file$1 = "src/routes/index.svelte"; // (29:8) <DownloadBox>
 
 function create_default_slot_1(ctx) {
+  var div;
   var t;
   var block = {
     c: function create() {
-      t = text("or download the e-book");
+      div = element("div");
+      t = text("Or download the e-book");
+      this.h();
     },
     l: function claim(nodes) {
-      t = claim_text(nodes, "or download the e-book");
+      div = claim_element(nodes, "DIV", {
+        class: true
+      });
+      var div_nodes = children(div);
+      t = claim_text(div_nodes, "Or download the e-book");
+      div_nodes.forEach(detach_dev);
+      this.h();
+    },
+    h: function hydrate() {
+      attr_dev(div, "class", "inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-white border border-solid border-oblivious");
+      add_location(div, file$1, 29, 12, 2062);
     },
     m: function mount(target, anchor) {
-      insert_dev(target, t, anchor);
+      insert_dev(target, div, anchor);
+      append_dev(div, t);
     },
     d: function destroy(detaching) {
-      if (detaching) detach_dev(t);
+      if (detaching) detach_dev(div);
     }
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
     id: create_default_slot_1.name,
     type: "slot",
-    source: "(29:67) <DownloadBox>",
+    source: "(29:8) <DownloadBox>",
     ctx: ctx
   });
   return block;
-} // (68:67) <DownloadBox>
+} // (74:8) <DownloadBox>
 
 
 function create_default_slot(ctx) {
+  var div;
   var t;
   var block = {
     c: function create() {
-      t = text("or download the e-book");
+      div = element("div");
+      t = text("Or download the e-book");
+      this.h();
     },
     l: function claim(nodes) {
-      t = claim_text(nodes, "or download the e-book");
+      div = claim_element(nodes, "DIV", {
+        class: true
+      });
+      var div_nodes = children(div);
+      t = claim_text(div_nodes, "Or download the e-book");
+      div_nodes.forEach(detach_dev);
+      this.h();
+    },
+    h: function hydrate() {
+      attr_dev(div, "class", "inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-white border border-solid border-oblivious");
+      add_location(div, file$1, 74, 12, 4493);
     },
     m: function mount(target, anchor) {
-      insert_dev(target, t, anchor);
+      insert_dev(target, div, anchor);
+      append_dev(div, t);
     },
     d: function destroy(detaching) {
-      if (detaching) detach_dev(t);
+      if (detaching) detach_dev(div);
     }
   };
   dispatch_dev("SvelteRegisterBlock", {
     block: block,
     id: create_default_slot.name,
     type: "slot",
-    source: "(68:67) <DownloadBox>",
+    source: "(74:8) <DownloadBox>",
     ctx: ctx
   });
   return block;
@@ -405,78 +433,72 @@ function create_fragment$1(ctx) {
   var a1;
   var t10;
   var t11;
-  var span1;
-  var t12;
-  var span0;
   var downloadbox0;
-  var t13;
+  var t12;
   var section2;
   var h11;
-  var t14;
+  var t13;
   var em1;
+  var t14;
   var t15;
-  var t16;
   var section3;
   var carousel;
-  var t17;
+  var t16;
   var section4;
   var h21;
+  var t17;
   var t18;
-  var t19;
   var div3;
   var img1;
   var img1_src_value;
-  var t20;
+  var t19;
   var div2;
   var p0;
-  var t21;
+  var t20;
   var br0;
+  var t21;
+  var span0;
   var t22;
-  var span2;
-  var t23;
   var em2;
+  var t23;
   var t24;
-  var t25;
   var div1;
   var p1;
-  var t26;
+  var t25;
   var br1;
+  var t26;
+  var span1;
   var t27;
-  var span3;
   var t28;
-  var t29;
   var p2;
-  var t30;
+  var t29;
   var em3;
+  var t30;
   var t31;
-  var t32;
   var br2;
+  var t32;
+  var span2;
   var t33;
-  var span4;
   var t34;
-  var t35;
   var p3;
-  var t36;
+  var t35;
   var br3;
+  var t36;
+  var span3;
   var t37;
-  var span5;
   var t38;
-  var t39;
   var div4;
   var a2;
+  var t39;
   var t40;
-  var t41;
-  var span7;
-  var t42;
-  var span6;
   var downloadbox1;
-  var t43;
+  var t41;
   var section5;
   var h22;
-  var t44;
-  var t45;
+  var t42;
+  var t43;
   var h3;
-  var t46;
+  var t44;
   var current;
   downloadbox0 = new DownloadBox({
     props: {
@@ -533,77 +555,71 @@ function create_fragment$1(ctx) {
       a1 = element("a");
       t10 = text("Start reading now");
       t11 = space();
-      span1 = element("span");
-      t12 = text("... ");
-      span0 = element("span");
       create_component(downloadbox0.$$.fragment);
-      t13 = space();
+      t12 = space();
       section2 = element("section");
       h11 = element("h1");
-      t14 = text("Ride through Africa with me on an outrageously inappropriate ");
+      t13 = text("Ride through Africa with me on an outrageously inappropriate ");
       em1 = element("em");
-      t15 = text("Royal Enfield Bullet");
-      t16 = space();
+      t14 = text("Royal Enfield Bullet");
+      t15 = space();
       section3 = element("section");
       create_component(carousel.$$.fragment);
-      t17 = space();
+      t16 = space();
       section4 = element("section");
       h21 = element("h2");
-      t18 = text("Ride the Adventure from your phone, tablet or e-reader");
-      t19 = space();
+      t17 = text("Ride the Adventure from your phone, tablet or e-reader");
+      t18 = space();
       div3 = element("div");
       img1 = element("img");
-      t20 = space();
+      t19 = space();
       div2 = element("div");
       p0 = element("p");
-      t21 = text("\"This is fascinating shit, man. You're reminding me of a modern Hemingway\"");
+      t20 = text("\"This is fascinating shit, man. You're reminding me of a modern Hemingway\"");
       br0 = element("br");
-      t22 = space();
-      span2 = element("span");
-      t23 = text("- Ben Napier, ");
+      t21 = space();
+      span0 = element("span");
+      t22 = text("- Ben Napier, ");
       em2 = element("em");
-      t24 = text("Scotsman.co");
-      t25 = space();
+      t23 = text("Scotsman.co");
+      t24 = space();
       div1 = element("div");
       p1 = element("p");
-      t26 = text("\"Jesus tap-dancing Christ these are great stories\"");
+      t25 = text("\"Jesus tap-dancing Christ these are great stories\"");
       br1 = element("br");
-      t27 = space();
-      span3 = element("span");
-      t28 = text("- Zach Kelm");
-      t29 = space();
+      t26 = space();
+      span1 = element("span");
+      t27 = text("- Zach Kelm");
+      t28 = space();
       p2 = element("p");
-      t30 = text("\"Adventure is such an abused and overused word these days... Check this out for a taste of ");
+      t29 = text("\"Adventure is such an abused and overused word these days... Check this out for a taste of ");
       em3 = element("em");
-      t31 = text("real");
-      t32 = text(" adventure.\"");
+      t30 = text("real");
+      t31 = text(" adventure.\"");
       br2 = element("br");
-      t33 = space();
-      span4 = element("span");
-      t34 = text("- Iron and Resin");
-      t35 = space();
+      t32 = space();
+      span2 = element("span");
+      t33 = text("- Iron and Resin");
+      t34 = space();
       p3 = element("p");
-      t36 = text("\"Don't laugh at him, he's not funny!\"");
+      t35 = text("\"Don't laugh at him, he's not funny!\"");
       br3 = element("br");
-      t37 = space();
-      span5 = element("span");
-      t38 = text("- My Mum");
-      t39 = space();
+      t36 = space();
+      span3 = element("span");
+      t37 = text("- My Mum");
+      t38 = space();
       div4 = element("div");
       a2 = element("a");
-      t40 = text("Read online now");
-      t41 = space();
-      span7 = element("span");
-      t42 = text("... ");
-      span6 = element("span");
+      t39 = text("Read online now");
+      t40 = space();
       create_component(downloadbox1.$$.fragment);
-      t43 = space();
+      t41 = space();
       section5 = element("section");
       h22 = element("h2");
-      t44 = text("Adventure for free!");
-      t45 = space();
+      t42 = text("Adventure for free!");
+      t43 = space();
       h3 = element("h3");
-      t46 = text("Or... pay what you like!");
+      t44 = text("Or... pay what you like!");
       this.h();
     },
     l: function claim(nodes) {
@@ -693,21 +709,10 @@ function create_fragment$1(ctx) {
       t10 = claim_text(a1_nodes, "Start reading now");
       a1_nodes.forEach(detach_dev);
       t11 = claim_space(div0_nodes);
-      span1 = claim_element(div0_nodes, "SPAN", {
-        class: true
-      });
-      var span1_nodes = children(span1);
-      t12 = claim_text(span1_nodes, "... ");
-      span0 = claim_element(span1_nodes, "SPAN", {
-        class: true
-      });
-      var span0_nodes = children(span0);
-      claim_component(downloadbox0.$$.fragment, span0_nodes);
-      span0_nodes.forEach(detach_dev);
-      span1_nodes.forEach(detach_dev);
+      claim_component(downloadbox0.$$.fragment, div0_nodes);
       div0_nodes.forEach(detach_dev);
       section1_nodes.forEach(detach_dev);
-      t13 = claim_space(nodes);
+      t12 = claim_space(nodes);
       section2 = claim_element(nodes, "SECTION", {
         class: true
       });
@@ -716,21 +721,21 @@ function create_fragment$1(ctx) {
         class: true
       });
       var h11_nodes = children(h11);
-      t14 = claim_text(h11_nodes, "Ride through Africa with me on an outrageously inappropriate ");
+      t13 = claim_text(h11_nodes, "Ride through Africa with me on an outrageously inappropriate ");
       em1 = claim_element(h11_nodes, "EM", {});
       var em1_nodes = children(em1);
-      t15 = claim_text(em1_nodes, "Royal Enfield Bullet");
+      t14 = claim_text(em1_nodes, "Royal Enfield Bullet");
       em1_nodes.forEach(detach_dev);
       h11_nodes.forEach(detach_dev);
       section2_nodes.forEach(detach_dev);
-      t16 = claim_space(nodes);
+      t15 = claim_space(nodes);
       section3 = claim_element(nodes, "SECTION", {
         class: true
       });
       var section3_nodes = children(section3);
       claim_component(carousel.$$.fragment, section3_nodes);
       section3_nodes.forEach(detach_dev);
-      t17 = claim_space(nodes);
+      t16 = claim_space(nodes);
       section4 = claim_element(nodes, "SECTION", {
         class: true
       });
@@ -739,9 +744,9 @@ function create_fragment$1(ctx) {
         class: true
       });
       var h21_nodes = children(h21);
-      t18 = claim_text(h21_nodes, "Ride the Adventure from your phone, tablet or e-reader");
+      t17 = claim_text(h21_nodes, "Ride the Adventure from your phone, tablet or e-reader");
       h21_nodes.forEach(detach_dev);
-      t19 = claim_space(section4_nodes);
+      t18 = claim_space(section4_nodes);
       div3 = claim_element(section4_nodes, "DIV", {
         class: true
       });
@@ -751,7 +756,7 @@ function create_fragment$1(ctx) {
         src: true,
         alt: true
       });
-      t20 = claim_space(div3_nodes);
+      t19 = claim_space(div3_nodes);
       div2 = claim_element(div3_nodes, "DIV", {
         class: true
       });
@@ -760,21 +765,21 @@ function create_fragment$1(ctx) {
         class: true
       });
       var p0_nodes = children(p0);
-      t21 = claim_text(p0_nodes, "\"This is fascinating shit, man. You're reminding me of a modern Hemingway\"");
+      t20 = claim_text(p0_nodes, "\"This is fascinating shit, man. You're reminding me of a modern Hemingway\"");
       br0 = claim_element(p0_nodes, "BR", {});
-      t22 = claim_space(p0_nodes);
-      span2 = claim_element(p0_nodes, "SPAN", {
+      t21 = claim_space(p0_nodes);
+      span0 = claim_element(p0_nodes, "SPAN", {
         class: true
       });
-      var span2_nodes = children(span2);
-      t23 = claim_text(span2_nodes, "- Ben Napier, ");
-      em2 = claim_element(span2_nodes, "EM", {});
+      var span0_nodes = children(span0);
+      t22 = claim_text(span0_nodes, "- Ben Napier, ");
+      em2 = claim_element(span0_nodes, "EM", {});
       var em2_nodes = children(em2);
-      t24 = claim_text(em2_nodes, "Scotsman.co");
+      t23 = claim_text(em2_nodes, "Scotsman.co");
       em2_nodes.forEach(detach_dev);
-      span2_nodes.forEach(detach_dev);
+      span0_nodes.forEach(detach_dev);
       p0_nodes.forEach(detach_dev);
-      t25 = claim_space(div2_nodes);
+      t24 = claim_space(div2_nodes);
       div1 = claim_element(div2_nodes, "DIV", {
         class: true
       });
@@ -783,55 +788,55 @@ function create_fragment$1(ctx) {
         class: true
       });
       var p1_nodes = children(p1);
-      t26 = claim_text(p1_nodes, "\"Jesus tap-dancing Christ these are great stories\"");
+      t25 = claim_text(p1_nodes, "\"Jesus tap-dancing Christ these are great stories\"");
       br1 = claim_element(p1_nodes, "BR", {});
-      t27 = claim_space(p1_nodes);
-      span3 = claim_element(p1_nodes, "SPAN", {
+      t26 = claim_space(p1_nodes);
+      span1 = claim_element(p1_nodes, "SPAN", {
         class: true
       });
-      var span3_nodes = children(span3);
-      t28 = claim_text(span3_nodes, "- Zach Kelm");
-      span3_nodes.forEach(detach_dev);
+      var span1_nodes = children(span1);
+      t27 = claim_text(span1_nodes, "- Zach Kelm");
+      span1_nodes.forEach(detach_dev);
       p1_nodes.forEach(detach_dev);
-      t29 = claim_space(div1_nodes);
+      t28 = claim_space(div1_nodes);
       p2 = claim_element(div1_nodes, "P", {
         class: true
       });
       var p2_nodes = children(p2);
-      t30 = claim_text(p2_nodes, "\"Adventure is such an abused and overused word these days... Check this out for a taste of ");
+      t29 = claim_text(p2_nodes, "\"Adventure is such an abused and overused word these days... Check this out for a taste of ");
       em3 = claim_element(p2_nodes, "EM", {});
       var em3_nodes = children(em3);
-      t31 = claim_text(em3_nodes, "real");
+      t30 = claim_text(em3_nodes, "real");
       em3_nodes.forEach(detach_dev);
-      t32 = claim_text(p2_nodes, " adventure.\"");
+      t31 = claim_text(p2_nodes, " adventure.\"");
       br2 = claim_element(p2_nodes, "BR", {});
-      t33 = claim_space(p2_nodes);
-      span4 = claim_element(p2_nodes, "SPAN", {
+      t32 = claim_space(p2_nodes);
+      span2 = claim_element(p2_nodes, "SPAN", {
         class: true
       });
-      var span4_nodes = children(span4);
-      t34 = claim_text(span4_nodes, "- Iron and Resin");
-      span4_nodes.forEach(detach_dev);
+      var span2_nodes = children(span2);
+      t33 = claim_text(span2_nodes, "- Iron and Resin");
+      span2_nodes.forEach(detach_dev);
       p2_nodes.forEach(detach_dev);
-      t35 = claim_space(div1_nodes);
+      t34 = claim_space(div1_nodes);
       p3 = claim_element(div1_nodes, "P", {
         class: true
       });
       var p3_nodes = children(p3);
-      t36 = claim_text(p3_nodes, "\"Don't laugh at him, he's not funny!\"");
+      t35 = claim_text(p3_nodes, "\"Don't laugh at him, he's not funny!\"");
       br3 = claim_element(p3_nodes, "BR", {});
-      t37 = claim_space(p3_nodes);
-      span5 = claim_element(p3_nodes, "SPAN", {
+      t36 = claim_space(p3_nodes);
+      span3 = claim_element(p3_nodes, "SPAN", {
         class: true
       });
-      var span5_nodes = children(span5);
-      t38 = claim_text(span5_nodes, "- My Mum");
-      span5_nodes.forEach(detach_dev);
+      var span3_nodes = children(span3);
+      t37 = claim_text(span3_nodes, "- My Mum");
+      span3_nodes.forEach(detach_dev);
       p3_nodes.forEach(detach_dev);
       div1_nodes.forEach(detach_dev);
       div2_nodes.forEach(detach_dev);
       div3_nodes.forEach(detach_dev);
-      t39 = claim_space(section4_nodes);
+      t38 = claim_space(section4_nodes);
       div4 = claim_element(section4_nodes, "DIV", {
         class: true
       });
@@ -842,24 +847,13 @@ function create_fragment$1(ctx) {
         rel: true
       });
       var a2_nodes = children(a2);
-      t40 = claim_text(a2_nodes, "Read online now");
+      t39 = claim_text(a2_nodes, "Read online now");
       a2_nodes.forEach(detach_dev);
-      t41 = claim_space(div4_nodes);
-      span7 = claim_element(div4_nodes, "SPAN", {
-        class: true
-      });
-      var span7_nodes = children(span7);
-      t42 = claim_text(span7_nodes, "... ");
-      span6 = claim_element(span7_nodes, "SPAN", {
-        class: true
-      });
-      var span6_nodes = children(span6);
-      claim_component(downloadbox1.$$.fragment, span6_nodes);
-      span6_nodes.forEach(detach_dev);
-      span7_nodes.forEach(detach_dev);
+      t40 = claim_space(div4_nodes);
+      claim_component(downloadbox1.$$.fragment, div4_nodes);
       div4_nodes.forEach(detach_dev);
       section4_nodes.forEach(detach_dev);
-      t43 = claim_space(nodes);
+      t41 = claim_space(nodes);
       section5 = claim_element(nodes, "SECTION", {
         class: true
       });
@@ -868,12 +862,12 @@ function create_fragment$1(ctx) {
         class: true
       });
       var h22_nodes = children(h22);
-      t44 = claim_text(h22_nodes, "Adventure for free!");
+      t42 = claim_text(h22_nodes, "Adventure for free!");
       h22_nodes.forEach(detach_dev);
-      t45 = claim_space(section5_nodes);
+      t43 = claim_space(section5_nodes);
       h3 = claim_element(section5_nodes, "H3", {});
       var h3_nodes = children(h3);
-      t46 = claim_text(h3_nodes, "Or... pay what you like!");
+      t44 = claim_text(h3_nodes, "Or... pay what you like!");
       h3_nodes.forEach(detach_dev);
       section5_nodes.forEach(detach_dev);
       this.h();
@@ -919,72 +913,64 @@ function create_fragment$1(ctx) {
       attr_dev(a1, "href", "read");
       attr_dev(a1, "rel", "prefetch");
       add_location(a1, file$1, 27, 8, 1894);
-      attr_dev(span0, "class", "inline-block underline");
-      add_location(span0, file$1, 28, 30, 2058);
-      attr_dev(span1, "class", "m-2");
-      add_location(span1, file$1, 28, 8, 2036);
       attr_dev(div0, "class", "flex flex-col md:flex-row justify-center items-center");
       add_location(div0, file$1, 26, 4, 1818);
       attr_dev(section1, "class", "flex flex-col items-center mb-20 md:mb-32");
       add_location(section1, file$1, 24, 0, 1654);
-      add_location(em1, file$1, 35, 110, 2427);
+      add_location(em1, file$1, 41, 110, 2577);
       attr_dev(h11, "class", "text-4xl md:text-6xl text-center");
-      add_location(h11, file$1, 35, 4, 2321);
+      add_location(h11, file$1, 41, 4, 2471);
       attr_dev(section2, "class", "flex flex-col items-center mb-20 md:mb-32");
-      add_location(section2, file$1, 34, 0, 2257);
+      add_location(section2, file$1, 40, 0, 2407);
       attr_dev(section3, "class", "flex mb-28 md:mb-32 sm:px-20");
-      add_location(section3, file$1, 37, 0, 2473);
+      add_location(section3, file$1, 43, 0, 2623);
       attr_dev(h21, "class", "text-4xl md:text-6xl text-center mb-8");
-      add_location(h21, file$1, 41, 4, 2626);
+      add_location(h21, file$1, 47, 4, 2776);
       attr_dev(img1, "class", "relative inline-block w-full lg:w-2/3 lg:-mr-10");
       if (img1.src !== (img1_src_value = "/images/kindle-pad-phone.jpg")) attr_dev(img1, "src", img1_src_value);
       attr_dev(img1, "alt", "book being used on various platforms");
-      add_location(img1, file$1, 43, 8, 2821);
-      add_location(br0, file$1, 46, 90, 3181);
-      add_location(em2, file$1, 47, 64, 3250);
-      attr_dev(span2, "class", "text-oblivious-dark");
-      add_location(span2, file$1, 47, 16, 3202);
+      add_location(img1, file$1, 49, 8, 2971);
+      add_location(br0, file$1, 52, 90, 3331);
+      add_location(em2, file$1, 53, 64, 3400);
+      attr_dev(span0, "class", "text-oblivious-dark");
+      add_location(span0, file$1, 53, 16, 3352);
       attr_dev(p0, "class", "absolute top-0 right-0 left-1/2 mt-1 text-xl");
-      add_location(p0, file$1, 45, 12, 3034);
-      add_location(br1, file$1, 51, 70, 3488);
-      attr_dev(span3, "class", "text-oblivious-dark");
-      add_location(span3, file$1, 52, 20, 3513);
+      add_location(p0, file$1, 51, 12, 3184);
+      add_location(br1, file$1, 57, 70, 3638);
+      attr_dev(span1, "class", "text-oblivious-dark");
+      add_location(span1, file$1, 58, 20, 3663);
       attr_dev(p1, "class", "text-xl");
-      add_location(p1, file$1, 50, 16, 3398);
-      add_location(em3, file$1, 55, 111, 3734);
-      add_location(br2, file$1, 55, 136, 3759);
-      attr_dev(span4, "class", "text-oblivious-dark");
-      add_location(span4, file$1, 56, 20, 3784);
+      add_location(p1, file$1, 56, 16, 3548);
+      add_location(em3, file$1, 61, 111, 3884);
+      add_location(br2, file$1, 61, 136, 3909);
+      attr_dev(span2, "class", "text-oblivious-dark");
+      add_location(span2, file$1, 62, 20, 3934);
       attr_dev(p2, "class", "text-xl");
-      add_location(p2, file$1, 54, 16, 3603);
-      add_location(br3, file$1, 59, 57, 3956);
-      attr_dev(span5, "class", "text-oblivious-dark");
-      add_location(span5, file$1, 60, 20, 3981);
+      add_location(p2, file$1, 60, 16, 3753);
+      add_location(br3, file$1, 65, 57, 4106);
+      attr_dev(span3, "class", "text-oblivious-dark");
+      add_location(span3, file$1, 66, 20, 4131);
       attr_dev(p3, "class", "text-xl");
-      add_location(p3, file$1, 58, 16, 3879);
+      add_location(p3, file$1, 64, 16, 4029);
       attr_dev(div1, "class", "absolute top-1/4 bottom-0 pb-8 flex flex-col justify-between");
-      add_location(div1, file$1, 49, 12, 3307);
+      add_location(div1, file$1, 55, 12, 3457);
       attr_dev(div2, "class", "hidden lg:inline-block w-1/3 z-10 pb-4");
-      add_location(div2, file$1, 44, 8, 2969);
+      add_location(div2, file$1, 50, 8, 3119);
       attr_dev(div3, "class", "flex relative items-end justify-center mx-0 lg:mx-10 mb-10");
-      add_location(div3, file$1, 42, 4, 2740);
+      add_location(div3, file$1, 48, 4, 2890);
       attr_dev(a2, "class", "inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious");
       attr_dev(a2, "href", "read");
       attr_dev(a2, "rel", "prefetch");
-      add_location(a2, file$1, 66, 8, 4177);
-      attr_dev(span6, "class", "inline-block underline");
-      add_location(span6, file$1, 67, 30, 4339);
-      attr_dev(span7, "class", "m-2");
-      add_location(span7, file$1, 67, 8, 4317);
+      add_location(a2, file$1, 72, 8, 4327);
       attr_dev(div4, "class", "flex flex-col md:flex-row justify-center items-center");
-      add_location(div4, file$1, 65, 4, 4101);
+      add_location(div4, file$1, 71, 4, 4251);
       attr_dev(section4, "class", "flex flex-col justify-center items-center mb-20 md:mb-32");
-      add_location(section4, file$1, 40, 0, 2547);
+      add_location(section4, file$1, 46, 0, 2697);
       attr_dev(h22, "class", "text-5xl md:text-6xl");
-      add_location(h22, file$1, 71, 4, 4513);
-      add_location(h3, file$1, 72, 4, 4575);
+      add_location(h22, file$1, 83, 4, 4813);
+      add_location(h3, file$1, 84, 4, 4875);
       attr_dev(section5, "class", "mb-20 md:mb-32 sm:px-20 text-center");
-      add_location(section5, file$1, 70, 0, 4455);
+      add_location(section5, file$1, 82, 0, 4755);
     },
     m: function mount(target, anchor) {
       append_dev(document.head, meta0);
@@ -1015,77 +1001,71 @@ function create_fragment$1(ctx) {
       append_dev(div0, a1);
       append_dev(a1, t10);
       append_dev(div0, t11);
-      append_dev(div0, span1);
-      append_dev(span1, t12);
-      append_dev(span1, span0);
-      mount_component(downloadbox0, span0, null);
-      insert_dev(target, t13, anchor);
+      mount_component(downloadbox0, div0, null);
+      insert_dev(target, t12, anchor);
       insert_dev(target, section2, anchor);
       append_dev(section2, h11);
-      append_dev(h11, t14);
+      append_dev(h11, t13);
       append_dev(h11, em1);
-      append_dev(em1, t15);
-      insert_dev(target, t16, anchor);
+      append_dev(em1, t14);
+      insert_dev(target, t15, anchor);
       insert_dev(target, section3, anchor);
       mount_component(carousel, section3, null);
-      insert_dev(target, t17, anchor);
+      insert_dev(target, t16, anchor);
       insert_dev(target, section4, anchor);
       append_dev(section4, h21);
-      append_dev(h21, t18);
-      append_dev(section4, t19);
+      append_dev(h21, t17);
+      append_dev(section4, t18);
       append_dev(section4, div3);
       append_dev(div3, img1);
-      append_dev(div3, t20);
+      append_dev(div3, t19);
       append_dev(div3, div2);
       append_dev(div2, p0);
-      append_dev(p0, t21);
+      append_dev(p0, t20);
       append_dev(p0, br0);
-      append_dev(p0, t22);
-      append_dev(p0, span2);
-      append_dev(span2, t23);
-      append_dev(span2, em2);
-      append_dev(em2, t24);
-      append_dev(div2, t25);
+      append_dev(p0, t21);
+      append_dev(p0, span0);
+      append_dev(span0, t22);
+      append_dev(span0, em2);
+      append_dev(em2, t23);
+      append_dev(div2, t24);
       append_dev(div2, div1);
       append_dev(div1, p1);
-      append_dev(p1, t26);
+      append_dev(p1, t25);
       append_dev(p1, br1);
-      append_dev(p1, t27);
-      append_dev(p1, span3);
-      append_dev(span3, t28);
-      append_dev(div1, t29);
+      append_dev(p1, t26);
+      append_dev(p1, span1);
+      append_dev(span1, t27);
+      append_dev(div1, t28);
       append_dev(div1, p2);
-      append_dev(p2, t30);
+      append_dev(p2, t29);
       append_dev(p2, em3);
-      append_dev(em3, t31);
-      append_dev(p2, t32);
+      append_dev(em3, t30);
+      append_dev(p2, t31);
       append_dev(p2, br2);
-      append_dev(p2, t33);
-      append_dev(p2, span4);
-      append_dev(span4, t34);
-      append_dev(div1, t35);
+      append_dev(p2, t32);
+      append_dev(p2, span2);
+      append_dev(span2, t33);
+      append_dev(div1, t34);
       append_dev(div1, p3);
-      append_dev(p3, t36);
+      append_dev(p3, t35);
       append_dev(p3, br3);
-      append_dev(p3, t37);
-      append_dev(p3, span5);
-      append_dev(span5, t38);
-      append_dev(section4, t39);
+      append_dev(p3, t36);
+      append_dev(p3, span3);
+      append_dev(span3, t37);
+      append_dev(section4, t38);
       append_dev(section4, div4);
       append_dev(div4, a2);
-      append_dev(a2, t40);
-      append_dev(div4, t41);
-      append_dev(div4, span7);
-      append_dev(span7, t42);
-      append_dev(span7, span6);
-      mount_component(downloadbox1, span6, null);
-      insert_dev(target, t43, anchor);
+      append_dev(a2, t39);
+      append_dev(div4, t40);
+      mount_component(downloadbox1, div4, null);
+      insert_dev(target, t41, anchor);
       insert_dev(target, section5, anchor);
       append_dev(section5, h22);
-      append_dev(h22, t44);
-      append_dev(section5, t45);
+      append_dev(h22, t42);
+      append_dev(section5, t43);
       append_dev(section5, h3);
-      append_dev(h3, t46);
+      append_dev(h3, t44);
       current = true;
     },
     p: function update(ctx, _ref) {
@@ -1143,15 +1123,15 @@ function create_fragment$1(ctx) {
       if (detaching) detach_dev(t8);
       if (detaching) detach_dev(section1);
       destroy_component(downloadbox0);
-      if (detaching) detach_dev(t13);
+      if (detaching) detach_dev(t12);
       if (detaching) detach_dev(section2);
-      if (detaching) detach_dev(t16);
+      if (detaching) detach_dev(t15);
       if (detaching) detach_dev(section3);
       destroy_component(carousel);
-      if (detaching) detach_dev(t17);
+      if (detaching) detach_dev(t16);
       if (detaching) detach_dev(section4);
       destroy_component(downloadbox1);
-      if (detaching) detach_dev(t43);
+      if (detaching) detach_dev(t41);
       if (detaching) detach_dev(section5);
     }
   };
