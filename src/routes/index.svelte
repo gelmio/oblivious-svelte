@@ -26,7 +26,13 @@ import DownloadBox from "../components/DownloadBox.svelte";
     <img class="my-12 max-w-3xl max-h-1/2vh" alt='Oblivious book cover' src='/images/3D-cover.jpg'>
     <div class="flex flex-col md:flex-row justify-center items-center">
         <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="read" rel="prefetch">Start reading now</a>
-        <span class="m-2">... <span class="inline-block underline"><DownloadBox>or download the e-book</DownloadBox></span>
+        <DownloadBox>
+            <div 
+                class="inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-white border border-solid border-oblivious"
+            >
+                    Or download the e-book
+		    </div>
+        </DownloadBox>
     </div>
 </section>
 <!-- <section class="mb-20 md:mb-32 px-10 w-full">
@@ -65,7 +71,13 @@ import DownloadBox from "../components/DownloadBox.svelte";
     </div>
     <div class="flex flex-col md:flex-row justify-center items-center">
         <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="read" rel="prefetch">Read online now</a>
-        <span class="m-2">... <span class="inline-block underline"><DownloadBox>or download the e-book</DownloadBox></span>
+        <DownloadBox>
+            <div 
+                class="inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-white border border-solid border-oblivious"
+            >
+                    Or download the e-book
+		    </div>
+        </DownloadBox>
     </div>
 </section>
 <section class="mb-20 md:mb-32 sm:px-20 text-center">

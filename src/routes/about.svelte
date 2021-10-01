@@ -47,7 +47,13 @@ import DownloadBox from "../components/DownloadBox.svelte";
 	<p>If you're here for romance you'll get none of that.</p>
 	<p>If you're here for a good yarn; sit back, and let me take you on the ride.</p>
 </section>
-<div class="mb-20 md:mb-32">
+<div class="mb-20 md:mb-32 flex">
 	<a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="read" rel="prefetch">Read the book now</a>
-        ... <span class="inline-block underline"><DownloadBox>or download the e-book</DownloadBox></span>
+	<DownloadBox>
+		<div 
+			class="inline-block text-xl sm:text-2xl p-4 mx-4 rounded-lg no-underline bg-white border border-solid border-oblivious"
+		>
+				Or download the e-book
+		</div>
+	</DownloadBox>
 </div>
