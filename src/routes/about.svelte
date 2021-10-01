@@ -26,11 +26,12 @@ import DownloadBox from "../components/DownloadBox.svelte";
 	<p>It started off with quitting my job, quitting my girlfriend and fucking off on a one way ticket to London.</p>
 	<p>From there, I headed straight to the local Royal Enfield dealer and grabbed one of those.</p>
 	<p><em>Why wouldn't you?</em></p>
-
+	<img src="/images/before.jpg" class="w-full cursor-pointer" alt="Royal Enfield in the fields of England" />
 	<p>Already, I thought this shit was <em>wild</em>.</p>
 	<p>I surprised myself by riding all the way to the northernmost point of Scotland. Then, before I knew it, I was already down to the southermost point of Spain, <em>shitting</em> myself as I looked across <em>The Strait</em> to Africa...</p>
 	<p>From there, well, I guess that's the real story; <em>Africa.</em> On a fucking Royal Enfield...</p>
 	<p>I never planned a moment of any of this; I sure as shit didn't plan on riding though Africa, otherwise my choice of vehicle would have been more sensible. But there I was. And then what happens next is what happens next...</p>
+	<img src="/images/after.jpg" class="w-full cursor-pointer" alt="Royal Enfield covered in shit" />
 	<p>I don't want to give the game away for those who haven't read any of the Trilogy yet (it would be retarded to spoil my own book, wouldn't it?)</p>
 	<p>So, what can I say?</p>
 	<p>I can tell you that it was a fucking long ride.</p>
