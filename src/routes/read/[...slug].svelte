@@ -338,9 +338,6 @@
 		<div
 			class="rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2"
 		>
-			<p class="font-header text-xl md:text-2xl">
-				Looks like you've been here before...
-			</p>
 			<p class="font-sans text-base md:text-lg mb-4">
 				Want to jump to the last page you were reading?
 			</p>
