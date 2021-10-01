@@ -248,21 +248,19 @@
 					on:click={(e) => e.stopPropagation()}
 					rel="prefetch"
 					href="read/{next[0]}/{next[1]}"
-					class="inline-block text-lg p-2 rounded-lg no-underline bg-oblivious mr-4"
+					class="inline-block text-lg p-2 rounded-lg no-underline bg-oblivious"
 				>
 					Next {nextChapterExists ? "Chapter" : "Book"}
 				</a>
 				{#if next[1] > 10 && !(next[1] % 5)}
-					<span class="m-2">
-						... or <a
-							on:click={(e) => e.stopPropagation()}
-							href="https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart"
-							rel="nofollow"
-							class="border-b border-oblivious-dark"
-						>
-							buy me a coffee!</a
-						>
-					</span>
+					<a
+						on:click={(e) => e.stopPropagation()}
+						href="https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart"
+						rel="nofollow"
+						class="inline-block text-lg p-2 mx-4 rounded-lg no-underline bg-white border border-solid border-oblivious"
+					>
+						Or buy me a coffee!</a
+					>
 				{/if}
 			</div>
 		{:else}
