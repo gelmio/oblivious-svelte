@@ -17,7 +17,7 @@
 
 {#key segment}
 	<PageTransition>
-		<main class="flex flex-col items-center justify-center p-4 lg:p-0">
+		<main class="flex flex-col items-center justify-center p-4 lg:p-0 max-w-4xl overflow-hidden">
 			<slot />
 		</main>
 	</PageTransition>

@@ -16,38 +16,38 @@ import DownloadBox from "../components/DownloadBox.svelte";
           content="/images/logo-750.png"/>
 </svelte:head>
 
-<section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
+<section class="flex flex-col items-center mb-20 md:mb-32">
     <h1 class="text-4xl md:text-5xl text-center">Broken down and need a hand with getting the e-book onto your device?</h1>
     <h2 class="text-xl md:text-3xl text-center">You're in the right place! Here's how to go from zero to reading in a few minutes...</h2>
 </section>
-<section class="flex flex-col md:flex-row items-center max-w-6xl mb-20 md:mb-32 px-8">
+<section class="flex flex-col md:flex-row items-center mb-20 md:mb-32 px-8">
     <img class="w-full md:w-3/5 my-4" alt='computer with sendowl payment portal' src='/images/how-step1.jpg'>
     <div class="md:pl-20">
         <h3 class="text-3xl md:text-5xl">Step One</h3>
         <h4 class="text-xl md:text-2xl">Choose what you want to pay and enter your payment details and email address.</h4>
     </div>
 </section>
-<section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
+<section class="flex flex-col items-center mb-20 md:mb-32">
     <h2 class="text-2xl md:text-3xl text-center">Go grab a coffee, an email is flying your way as fast as it can...</h2>
 </section>
-<section class="flex flex-col flex-col-reverse md:flex-row items-center max-w-6xl mb-20 md:mb-32 px-8">
+<section class="flex flex-col flex-col-reverse md:flex-row items-center mb-20 md:mb-32 px-8">
     <div class="md:pr-20">
         <h3 class="text-3xl md:text-5xl">Step Two</h3>
         <h4 class="text-xl md:text-2xl">Once the email has landed in your inbox, click the link it tells you to go to. From there you'll get to choose your device type and the download will start right away.</h4>
     </div>
     <img class="w-full md:w-3/5 my-4" alt='computer with sendowl payment portal' src='/images/how-step2.jpg'>
 </section>
-<section class="flex flex-col md:flex-row items-center max-w-6xl mb-20 md:mb-32 px-8">
+<section class="flex flex-col md:flex-row items-center mb-20 md:mb-32 px-8">
     <img class="w-full md:w-3/5 my-4" alt='computer with sendowl payment portal' src='/images/how-step3.jpg'>
     <div class="md:pl-20">
         <h3 class="text-3xl md:text-5xl">Get Reading!</h3>
         <h4 class="text-xl md:text-2xl">Feel free to use the e-book on anything with a screen! To get it onto your kindle, simply plug it in and copy the file across!</h4>
     </div>
 </section>
-<section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
+<section class="flex flex-col items-center mb-20 md:mb-32">
     <h2 class="text-2xl md:text-3xl text-center">Just looking for the link to get all of this started?</h2>
     <div class="inline-block text-xl sm:text-2xl p-4 mt-4 rounded-lg no-underline bg-oblivious" ><DownloadBox>Here it is!</DownloadBox></div>
 </section>
-<section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
-    <h2 class="text-2xl md:text-3xl text-center">Still lost? Flick me an email <a href="mailto:obliviousthebook@protonmail.com">here</a> and I'll sort you out.</h2>
+<section class="flex flex-col items-center mb-20 md:mb-32">
+    <h2 class="text-2xl md:text-3xl text-center">Still lost? Flick me an email <a href="mailto:hello@obliviousthebook.com">here</a> and I'll sort you out.</h2>
 </section>

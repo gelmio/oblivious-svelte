@@ -17,7 +17,7 @@
 	/>
 </svelte:head>
 
-<section class="flex flex-col items-center max-w-4xl mt-12 md:mt-28 mb-24">
+<section class="flex flex-col items-center mt-12 md:mt-28 mb-24">
 	<h1 class="text-4xl md:text-6xl text-center mb-2">
 		Read the Oblivious Trilogy for free, right here!
 	</h1>

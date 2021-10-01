@@ -18,12 +18,12 @@ import DownloadBox from "../components/DownloadBox.svelte";
     <meta name="twitter:title" content="Oblivious | An outrageously inappropriate journey through West Africa"/>
 </svelte:head>
 
-<section class="flex flex-col items-center max-w-4xl mt-8 md:mt-20">
+<section class="flex flex-col items-center mt-8 md:mt-20">
     <h1 class="text-4xl md:text-6xl text-center mb-2">Yeah Buddy!</h1>
     <h2 class="text-xl md:text-3xl text-center">Book two of the <em>Oblivious Trilogy</em> is <a href="read" rel="prefetch">here</a> and available for free!</h2>
 </section>
-<section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
-    <img class="my-12 max-w-full max-h-1/2vh" alt='Oblivious book cover' src='/images/3D-cover.jpg'>
+<section class="flex flex-col items-center mb-20 md:mb-32">
+    <img class="my-12 max-w-3xl max-h-1/2vh" alt='Oblivious book cover' src='/images/3D-cover.jpg'>
     <div class="flex flex-col md:flex-row justify-center items-center">
         <a class="inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious" href="read" rel="prefetch">Start reading now</a>
         <span class="m-2">... <span class="inline-block underline"><DownloadBox>or download the e-book</DownloadBox></span>
@@ -32,15 +32,15 @@ import DownloadBox from "../components/DownloadBox.svelte";
 <!-- <section class="mb-20 md:mb-32 px-10 w-full">
     <AsSeenIn />
 </section> -->
-<section class="flex flex-col items-center max-w-4xl mb-20 md:mb-32">
+<section class="flex flex-col items-center mb-20 md:mb-32">
     <h1 class="text-4xl md:text-6xl text-center">Ride through Africa with me on an outrageously inappropriate <em>Royal Enfield Bullet</em></h1>
 </section>
 <section class="flex mb-28 md:mb-32 sm:px-20">
     <Carousel/>
 </section>
 <section class="flex flex-col justify-center items-center mb-20 md:mb-32">
-    <h2 class="text-4xl md:text-6xl text-center max-w-4xl mb-8">Ride the Adventure from your phone, tablet or e-reader</h2>
-    <div class="flex relative items-end justify-center max-w-6xl mx-0 lg:mx-10 mb-10">
+    <h2 class="text-4xl md:text-6xl text-center mb-8">Ride the Adventure from your phone, tablet or e-reader</h2>
+    <div class="flex relative items-end justify-center mx-0 lg:mx-10 mb-10">
         <img class="relative inline-block w-full lg:w-2/3 lg:-mr-10" src="/images/kindle-pad-phone.jpg" alt="book being used on various platforms">
         <div class="hidden lg:inline-block w-1/3 z-10 pb-4">
             <p class="absolute top-0 right-0 left-1/2 mt-1 text-xl">
