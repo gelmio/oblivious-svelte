@@ -1,5 +1,5 @@
-import { L as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, M as _createClass, S as SvelteComponentDev, s as safe_not_equal, a3 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, K as noop, h as space, t as text, P as empty, E as query_selector_all, l as claim_space, n as claim_text, a4 as HtmlTag, u as append_dev, y as set_data_dev, H as transition_in, I as transition_out, R as check_outros, B as run_all, U as validate_store, V as component_subscribe, v as validate_slots, W as stores$1, a5 as onMount, f as fade, z as add_render_callback, X as create_in_transition, a0 as group_outros, a6 as binding_callbacks, O as create_out_transition } from './client.71e38bae.js';
-import { g as giveScrollHint, r as readerPosition } from './reader-hints.2dbdda42.js';
+import { L as regenerator, x as _slicedToArray, _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, M as _createClass, S as SvelteComponentDev, s as safe_not_equal, a3 as globals, g as element, j as claim_element, k as children, m as detach_dev, p as attr_dev, q as add_location, r as insert_dev, w as listen_dev, K as noop, h as space, t as text, P as empty, E as query_selector_all, l as claim_space, n as claim_text, a4 as HtmlTag, u as append_dev, y as set_data_dev, H as transition_in, I as transition_out, R as check_outros, B as run_all, U as validate_store, V as component_subscribe, v as validate_slots, W as stores$1, a5 as onMount, f as fade, z as add_render_callback, X as create_in_transition, a0 as group_outros, a6 as binding_callbacks, O as create_out_transition } from './client.d180a518.js';
+import { g as giveScrollHint, r as readerPosition } from './reader-hints.1cac985d.js';
 
 function smoothScroll(element, initial, final, duration, callback = null) {
     let startTime;
@@ -396,18 +396,15 @@ function create_if_block_2(ctx) {
 function create_if_block_1(ctx) {
   var div2;
   var div1;
-  var p0;
+  var p;
   var t0;
   var t1;
-  var p1;
-  var t2;
-  var t3;
   var div0;
   var button0;
-  var t4;
-  var t5;
+  var t2;
+  var t3;
   var button1;
-  var t6;
+  var t4;
   var div2_intro;
   var mounted;
   var dispose;
@@ -415,18 +412,15 @@ function create_if_block_1(ctx) {
     c: function create() {
       div2 = element("div");
       div1 = element("div");
-      p0 = element("p");
-      t0 = text("Looks like you've been here before...");
+      p = element("p");
+      t0 = text("Want to jump to the last page you were reading?");
       t1 = space();
-      p1 = element("p");
-      t2 = text("Want to jump to the last page you were reading?");
-      t3 = space();
       div0 = element("div");
       button0 = element("button");
-      t4 = text("Sure");
-      t5 = space();
+      t2 = text("Sure");
+      t3 = space();
       button1 = element("button");
-      t6 = text("Nup");
+      t4 = text("Nup");
       this.h();
     },
     l: function claim(nodes) {
@@ -438,34 +432,27 @@ function create_if_block_1(ctx) {
         class: true
       });
       var div1_nodes = children(div1);
-      p0 = claim_element(div1_nodes, "P", {
+      p = claim_element(div1_nodes, "P", {
         class: true
       });
-      var p0_nodes = children(p0);
-      t0 = claim_text(p0_nodes, "Looks like you've been here before...");
-      p0_nodes.forEach(detach_dev);
+      var p_nodes = children(p);
+      t0 = claim_text(p_nodes, "Want to jump to the last page you were reading?");
+      p_nodes.forEach(detach_dev);
       t1 = claim_space(div1_nodes);
-      p1 = claim_element(div1_nodes, "P", {
-        class: true
-      });
-      var p1_nodes = children(p1);
-      t2 = claim_text(p1_nodes, "Want to jump to the last page you were reading?");
-      p1_nodes.forEach(detach_dev);
-      t3 = claim_space(div1_nodes);
       div0 = claim_element(div1_nodes, "DIV", {});
       var div0_nodes = children(div0);
       button0 = claim_element(div0_nodes, "BUTTON", {
         class: true
       });
       var button0_nodes = children(button0);
-      t4 = claim_text(button0_nodes, "Sure");
+      t2 = claim_text(button0_nodes, "Sure");
       button0_nodes.forEach(detach_dev);
-      t5 = claim_space(div0_nodes);
+      t3 = claim_space(div0_nodes);
       button1 = claim_element(div0_nodes, "BUTTON", {
         class: true
       });
       var button1_nodes = children(button1);
-      t6 = claim_text(button1_nodes, "Nup");
+      t4 = claim_text(button1_nodes, "Nup");
       button1_nodes.forEach(detach_dev);
       div0_nodes.forEach(detach_dev);
       div1_nodes.forEach(detach_dev);
@@ -473,15 +460,13 @@ function create_if_block_1(ctx) {
       this.h();
     },
     h: function hydrate() {
-      attr_dev(p0, "class", "font-header text-xl md:text-2xl");
-      add_location(p0, file, 289, 3, 10026);
-      attr_dev(p1, "class", "font-sans text-base md:text-lg mb-4");
-      add_location(p1, file, 292, 3, 10123);
+      attr_dev(p, "class", "font-sans text-base md:text-lg mb-4");
+      add_location(p, file, 289, 3, 10026);
       attr_dev(button0, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-oblivious");
-      add_location(button0, file, 296, 4, 10244);
+      add_location(button0, file, 293, 4, 10147);
       attr_dev(button1, "class", "inline-block text-base md:text-lg p-2 rounded-lg no-underline bg-white border border-solid border-oblivious cursor-pointer");
-      add_location(button1, file, 304, 4, 10461);
-      add_location(div0, file, 295, 3, 10234);
+      add_location(button1, file, 301, 4, 10364);
+      add_location(div0, file, 292, 3, 10137);
       attr_dev(div1, "class", "rounded-lg bg-white p-2 md:p-16 flex flex-col text-center m-2");
       add_location(div1, file, 286, 2, 9941);
       attr_dev(div2, "class", "fixed inset-0 flex justify-center items-center bg-oblivious-opaque z-10");
@@ -490,18 +475,15 @@ function create_if_block_1(ctx) {
     m: function mount(target, anchor) {
       insert_dev(target, div2, anchor);
       append_dev(div2, div1);
-      append_dev(div1, p0);
-      append_dev(p0, t0);
+      append_dev(div1, p);
+      append_dev(p, t0);
       append_dev(div1, t1);
-      append_dev(div1, p1);
-      append_dev(p1, t2);
-      append_dev(div1, t3);
       append_dev(div1, div0);
       append_dev(div0, button0);
-      append_dev(button0, t4);
-      append_dev(div0, t5);
+      append_dev(button0, t2);
+      append_dev(div0, t3);
       append_dev(div0, button1);
-      append_dev(button1, t6);
+      append_dev(button1, t4);
 
       if (!mounted) {
         dispose = [listen_dev(button0, "click",
