@@ -2526,7 +2526,7 @@ var DownloadBox = /*#__PURE__*/function (_SvelteComponentDev) {
 function _createSuper$2(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$2(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _isNativeReflectConstruct$2() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$1 = "src/components/Nav.svelte"; // (32:3) <DownloadBox>
+var file$1 = "src/components/Nav.svelte"; // (33:4) <DownloadBox>
 
 function create_default_slot(ctx) {
   var t;
@@ -2548,13 +2548,14 @@ function create_default_slot(ctx) {
     block: block,
     id: create_default_slot.name,
     type: "slot",
-    source: "(32:3) <DownloadBox>",
+    source: "(33:4) <DownloadBox>",
     ctx: ctx
   });
   return block;
 }
 
 function create_fragment$1(ctx) {
+  var div;
   var nav;
   var a0;
   var img;
@@ -2592,6 +2593,7 @@ function create_fragment$1(ctx) {
   });
   var block = {
     c: function create() {
+      div = element("div");
       nav = element("nav");
       a0 = element("a");
       img = element("img");
@@ -2614,7 +2616,11 @@ function create_fragment$1(ctx) {
       this.h();
     },
     l: function claim(nodes) {
-      nav = claim_element(nodes, "NAV", {
+      div = claim_element(nodes, "DIV", {
+        class: true
+      });
+      var div_nodes = children(div);
+      nav = claim_element(div_nodes, "NAV", {
         class: true
       });
       var nav_nodes = children(nav);
@@ -2684,49 +2690,53 @@ function create_fragment$1(ctx) {
       li3_nodes.forEach(detach_dev);
       ul_nodes.forEach(detach_dev);
       nav_nodes.forEach(detach_dev);
+      div_nodes.forEach(detach_dev);
       this.h();
     },
     h: function hydrate() {
       if (img.src !== (img_src_value = "/images/logo-150.png")) attr_dev(img, "src", img_src_value);
       attr_dev(img, "alt", "Oblivious logo of motorbike in an outline of Africa");
-      add_location(img, file$1, 7, 2, 184);
+      add_location(img, file$1, 8, 3, 238);
       attr_dev(a0, "href", "/");
-      add_location(a0, file$1, 6, 1, 169);
+      add_location(a0, file$1, 7, 2, 222);
       attr_dev(a1, "class", "no-underline p-2 svelte-avwnlm");
       attr_dev(a1, "aria-current", a1_aria_current_value =
       /*segment*/
       ctx[0] === undefined ? "page" : undefined);
       attr_dev(a1, "href", ".");
-      add_location(a1, file$1, 16, 3, 409);
+      add_location(a1, file$1, 17, 4, 472);
       attr_dev(li0, "class", "block p-1 sm:p-4");
-      add_location(li0, file$1, 15, 2, 376);
+      add_location(li0, file$1, 16, 3, 438);
       attr_dev(a2, "class", "no-underline p-2 svelte-avwnlm");
       attr_dev(a2, "rel", "prefetch");
       attr_dev(a2, "aria-current", a2_aria_current_value =
       /*segment*/
       ctx[0] === "about" ? "page" : undefined);
       attr_dev(a2, "href", "about");
-      add_location(a2, file$1, 23, 3, 572);
+      add_location(a2, file$1, 24, 4, 642);
       attr_dev(li1, "class", "block p-1 sm:p-4");
-      add_location(li1, file$1, 22, 2, 539);
+      add_location(li1, file$1, 23, 3, 608);
       attr_dev(li2, "class", "block p-1 sm:p-4");
-      add_location(li2, file$1, 30, 2, 724);
+      add_location(li2, file$1, 31, 3, 801);
       attr_dev(a3, "class", "p-2 md:p-4 rounded-lg no-underline bg-oblivious svelte-avwnlm");
       attr_dev(a3, "href", "read");
       attr_dev(a3, "aria-current", a3_aria_current_value =
       /*segment*/
       ctx[0] === "read" ? "page" : undefined);
       attr_dev(a3, "rel", "nofollow");
-      add_location(a3, file$1, 34, 3, 841);
+      add_location(a3, file$1, 35, 4, 922);
       attr_dev(li3, "class", "block p-1 sm:p-4 my-2");
-      add_location(li3, file$1, 33, 2, 803);
+      add_location(li3, file$1, 34, 3, 883);
       attr_dev(ul, "class", "flex flex-col md:flex-row text-base md:text-xl items-center ml-4");
-      add_location(ul, file$1, 12, 1, 292);
-      attr_dev(nav, "class", "flex flex-row justify-between md:justify-start items-center p-4");
-      add_location(nav, file$1, 5, 0, 90);
+      add_location(ul, file$1, 13, 2, 351);
+      attr_dev(nav, "class", "flex flex-row justify-between md:justify-start items-center p-4 max-w-4xl w-full");
+      add_location(nav, file$1, 6, 1, 125);
+      attr_dev(div, "class", "flex justify-center");
+      add_location(div, file$1, 5, 0, 90);
     },
     m: function mount(target, anchor) {
-      insert_dev(target, nav, anchor);
+      insert_dev(target, div, anchor);
+      append_dev(div, nav);
       append_dev(nav, a0);
       append_dev(a0, img);
       append_dev(nav, t0);
@@ -2798,7 +2808,7 @@ function create_fragment$1(ctx) {
       current = false;
     },
     d: function destroy(detaching) {
-      if (detaching) detach_dev(nav);
+      if (detaching) detach_dev(div);
       destroy_component(downloadbox);
     }
   };
@@ -2893,7 +2903,7 @@ var Nav = /*#__PURE__*/function (_SvelteComponentDev) {
 function _createSuper$3(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$3(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _isNativeReflectConstruct$3() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$2 = "src/components/Footer.svelte"; // (55:3) <DownloadBox>
+var file$2 = "src/components/Footer.svelte"; // (56:4) <DownloadBox>
 
 function create_default_slot$1(ctx) {
   var t;
@@ -2915,13 +2925,14 @@ function create_default_slot$1(ctx) {
     block: block,
     id: create_default_slot$1.name,
     type: "slot",
-    source: "(55:3) <DownloadBox>",
+    source: "(56:4) <DownloadBox>",
     ctx: ctx
   });
   return block;
 }
 
 function create_fragment$2(ctx) {
+  var div;
   var nav;
   var a0;
   var img;
@@ -2975,6 +2986,7 @@ function create_fragment$2(ctx) {
   });
   var block = {
     c: function create() {
+      div = element("div");
       nav = element("nav");
       a0 = element("a");
       img = element("img");
@@ -3012,7 +3024,11 @@ function create_fragment$2(ctx) {
       this.h();
     },
     l: function claim(nodes) {
-      nav = claim_element(nodes, "NAV", {
+      div = claim_element(nodes, "DIV", {
+        class: true
+      });
+      var div_nodes = children(div);
+      nav = claim_element(div_nodes, "NAV", {
         class: true
       });
       var nav_nodes = children(nav);
@@ -3132,72 +3148,76 @@ function create_fragment$2(ctx) {
       t14 = claim_text(span_nodes, "© Luke Gelmi 2021");
       span_nodes.forEach(detach_dev);
       nav_nodes.forEach(detach_dev);
+      div_nodes.forEach(detach_dev);
       this.h();
     },
     h: function hydrate() {
       if (img.src !== (img_src_value = "/images/logo-150.png")) attr_dev(img, "src", img_src_value);
       attr_dev(img, "alt", "Oblivious logo of motorbike in an outline of Africa");
-      add_location(img, file$2, 10, 2, 212);
+      add_location(img, file$2, 11, 3, 268);
       attr_dev(a0, "href", "/");
-      add_location(a0, file$2, 9, 1, 197);
+      add_location(a0, file$2, 10, 2, 252);
       attr_dev(a1, "class", "no-underline p-2 svelte-tus06v");
       attr_dev(a1, "aria-current", a1_aria_current_value =
       /*segment*/
       ctx[0] === undefined ? "page" : undefined);
       attr_dev(a1, "href", ".");
-      add_location(a1, file$2, 17, 3, 406);
+      add_location(a1, file$2, 18, 4, 469);
       attr_dev(li0, "class", "p-1 sm:p-4");
-      add_location(li0, file$2, 16, 2, 379);
+      add_location(li0, file$2, 17, 3, 441);
       attr_dev(a2, "class", "no-underline p-2 svelte-tus06v");
       attr_dev(a2, "rel", "prefetch");
       attr_dev(a2, "aria-current", a2_aria_current_value =
       /*segment*/
       ctx[0] === "about" ? "page" : undefined);
       attr_dev(a2, "href", "about");
-      add_location(a2, file$2, 24, 3, 563);
+      add_location(a2, file$2, 25, 4, 633);
       attr_dev(li1, "class", "p-1 sm:p-4");
-      add_location(li1, file$2, 23, 2, 536);
+      add_location(li1, file$2, 24, 3, 605);
       attr_dev(a3, "class", "no-underline p-2 svelte-tus06v");
       attr_dev(a3, "rel", "prefetch");
       attr_dev(a3, "aria-current", a3_aria_current_value =
       /*segment*/
       ctx[0] === "help" ? "page" : undefined);
       attr_dev(a3, "href", "help");
-      add_location(a3, file$2, 32, 3, 742);
+      add_location(a3, file$2, 33, 4, 820);
       attr_dev(li2, "class", "p-1 sm:p-4");
-      add_location(li2, file$2, 31, 2, 715);
+      add_location(li2, file$2, 32, 3, 792);
       attr_dev(a4, "class", "no-underline p-2");
       attr_dev(a4, "rel", "prefetch");
       attr_dev(a4, "href", "mailto:obliviousthebook@protonmail.com");
-      add_location(a4, file$2, 40, 3, 922);
+      add_location(a4, file$2, 41, 4, 1008);
       attr_dev(li3, "class", "p-1 sm:p-4");
-      add_location(li3, file$2, 39, 2, 895);
+      add_location(li3, file$2, 40, 3, 980);
       attr_dev(a5, "class", "no-underline p-2");
       attr_dev(a5, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a5, "rel", "nofollow");
-      add_location(a5, file$2, 47, 3, 1081);
+      add_location(a5, file$2, 48, 4, 1174);
       attr_dev(li4, "class", "p-1 sm:p-4");
-      add_location(li4, file$2, 46, 2, 1054);
+      add_location(li4, file$2, 47, 3, 1146);
       attr_dev(li5, "class", "p-1 sm:p-4");
-      add_location(li5, file$2, 53, 2, 1238);
+      add_location(li5, file$2, 54, 3, 1337);
       attr_dev(a6, "class", "p-2 md:p-4 rounded-lg no-underline bg-white svelte-tus06v");
       attr_dev(a6, "href", "read");
       attr_dev(a6, "aria-current", a6_aria_current_value =
       /*segment*/
       ctx[0] === "read" ? "page" : undefined);
       attr_dev(a6, "rel", "prefetch");
-      add_location(a6, file$2, 57, 3, 1338);
+      add_location(a6, file$2, 58, 4, 1441);
       attr_dev(li6, "class", "p-1 sm:p-4");
-      add_location(li6, file$2, 56, 2, 1311);
-      attr_dev(ul, "class", "flex flex-col md:flex-row items-center ml-4");
-      add_location(ul, file$2, 15, 1, 320);
+      add_location(li6, file$2, 57, 3, 1413);
+      attr_dev(ul, "class", "flex flex-col lg:flex-row items-center ml-4");
+      add_location(ul, file$2, 16, 2, 381);
       attr_dev(span, "class", "absolute bottom-0 left-0 md:left-1/2 transform md:-translate-x-1/2 mb-2 text-sm");
-      add_location(span, file$2, 65, 1, 1527);
-      attr_dev(nav, "class", "relative z-0 flex flex-row justify-between md:justify-start items-center p-4 bg-oblivious");
-      add_location(nav, file$2, 6, 0, 90);
+      add_location(span, file$2, 66, 2, 1638);
+      attr_dev(nav, "class", "relative z-0 flex flex-row justify-between lg:justify-start items-center p-4 max-w-5xl w-full");
+      add_location(nav, file$2, 7, 1, 138);
+      attr_dev(div, "class", "flex justify-center bg-oblivious");
+      add_location(div, file$2, 6, 0, 90);
     },
     m: function mount(target, anchor) {
-      insert_dev(target, nav, anchor);
+      insert_dev(target, div, anchor);
+      append_dev(div, nav);
       append_dev(nav, a0);
       append_dev(a0, img);
       append_dev(nav, t0);
@@ -3292,7 +3312,7 @@ function create_fragment$2(ctx) {
       current = false;
     },
     d: function destroy(detaching) {
-      if (detaching) detach_dev(nav);
+      if (detaching) detach_dev(div);
       destroy_component(downloadbox);
     }
   };
@@ -3600,7 +3620,7 @@ function create_default_slot$2(ctx) {
       this.h();
     },
     h: function hydrate() {
-      attr_dev(main, "class", "flex flex-col items-center justify-center p-4 lg:p-0 svelte-1fbdjsw");
+      attr_dev(main, "class", "flex flex-col items-center justify-center p-4 lg:p-0 max-w-4xl overflow-hidden svelte-1fbdjsw");
       add_location(main, file$4, 17, 2, 611);
     },
     m: function mount(target, anchor) {
@@ -5016,31 +5036,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.f86c8f56.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.516c5f10.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./success.d94a79eb.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./success.542794d5.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.806cd37a.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.fad03d56.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.de801b0e.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.29e4fc1a.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.ebcc5f7d.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.afd3fbe6.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.a67ea17f.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.61c25951.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[...slug].4fe1a5dc.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].519f2d2a.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {

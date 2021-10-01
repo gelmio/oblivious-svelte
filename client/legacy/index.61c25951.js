@@ -1,4 +1,4 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, g as element, h as space, t as text, E as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, K as noop, v as validate_slots } from './client.c6879ef2.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, g as element, h as space, t as text, E as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, K as noop, v as validate_slots } from './client.71e38bae.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -115,20 +115,20 @@ function create_fragment(ctx) {
       attr_dev(meta2, "content", "Read the Oblivious Trilogy for Free | An outrageously inappropriate journey through West Africa on a Royal Enfield.");
       add_location(meta2, file, 12, 1, 502);
       attr_dev(h1, "class", "text-4xl md:text-6xl text-center mb-2");
-      add_location(h1, file, 19, 1, 756);
+      add_location(h1, file, 19, 1, 746);
       attr_dev(h2, "class", "text-xl md:text-3xl text-center mb-12");
-      add_location(h2, file, 22, 1, 866);
+      add_location(h2, file, 22, 1, 856);
       attr_dev(a0, "rel", "prefetch");
       attr_dev(a0, "href", "read/1/1");
       attr_dev(a0, "class", "inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-oblivious");
-      add_location(a0, file, 26, 2, 1107);
+      add_location(a0, file, 26, 2, 1097);
       attr_dev(a1, "rel", "prefetch");
       attr_dev(a1, "href", "read/2/1");
       attr_dev(a1, "class", "inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-white border border-solid border-oblivious");
-      add_location(a1, file, 32, 2, 1274);
+      add_location(a1, file, 32, 2, 1264);
       attr_dev(div, "class", "flex flex-col md:flex-row justify-center items-center");
-      add_location(div, file, 25, 1, 1037);
-      attr_dev(section, "class", "flex flex-col items-center max-w-4xl mt-12 md:mt-28 mb-24");
+      add_location(div, file, 25, 1, 1027);
+      attr_dev(section, "class", "flex flex-col items-center mt-12 md:mt-28 mb-24");
       add_location(section, file, 18, 0, 679);
     },
     m: function mount(target, anchor) {

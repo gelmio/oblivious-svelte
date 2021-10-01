@@ -1,4 +1,4 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, g as element, h as space, t as text, E as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, K as noop, v as validate_slots } from './client.c6879ef2.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, s as safe_not_equal, g as element, h as space, t as text, E as query_selector_all, j as claim_element, m as detach_dev, l as claim_space, k as children, n as claim_text, p as attr_dev, q as add_location, u as append_dev, r as insert_dev, K as noop, v as validate_slots } from './client.71e38bae.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -147,23 +147,23 @@ function create_fragment(ctx) {
       attr_dev(meta4, "content", "/images/logo-750.png");
       add_location(meta4, file, 12, 4, 576);
       attr_dev(h1, "class", "text-4xl md:text-5xl text-center");
-      add_location(h1, file, 17, 4, 735);
+      add_location(h1, file, 17, 4, 725);
       attr_dev(h2, "class", "text-xl md:text-3xl text-center");
-      add_location(h2, file, 18, 4, 798);
-      attr_dev(section0, "class", "flex flex-col items-center max-w-4xl my-14 md:my-32");
+      add_location(h2, file, 18, 4, 788);
+      attr_dev(section0, "class", "flex flex-col items-center my-14 md:my-32");
       add_location(section0, file, 16, 0, 661);
       attr_dev(img, "class", "w-full md:w-3/5 my-4");
       attr_dev(img, "alt", "computer with sendowl payment portal");
       if (img.src !== (img_src_value = "/images/how-step3.jpg")) attr_dev(img, "src", img_src_value);
-      add_location(img, file, 21, 4, 1105);
+      add_location(img, file, 21, 4, 1085);
       attr_dev(h3, "class", "text-3xl md:text-5xl");
-      add_location(h3, file, 23, 8, 1246);
+      add_location(h3, file, 23, 8, 1226);
       attr_dev(h4, "class", "text-xl md:text-2xl");
-      add_location(h4, file, 24, 8, 1305);
+      add_location(h4, file, 24, 8, 1285);
       attr_dev(div, "class", "md:pl-20");
-      add_location(div, file, 22, 4, 1215);
-      attr_dev(section1, "class", "flex flex-col md:flex-row items-center max-w-6xl mb-20 md:mb-32 px-8");
-      add_location(section1, file, 20, 0, 1014);
+      add_location(div, file, 22, 4, 1195);
+      attr_dev(section1, "class", "flex flex-col md:flex-row items-center mb-20 md:mb-32 px-8");
+      add_location(section1, file, 20, 0, 1004);
     },
     m: function mount(target, anchor) {
       append_dev(document.head, meta0);
