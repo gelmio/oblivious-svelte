@@ -9,9 +9,9 @@
 <svelte:head>
 	<meta property="og:site_name" content="ObliviousTheBook.com" />
 	<meta property="fb:admins" content="563453705" />
-	<meta property="og:image" content="https://obliviousthebook.com/images/social.jpg" />
+	<meta property="og:image" content="https://obliviousthebook.com/images/social-10-21.jpg" />
 	<meta name="twitter:card" content="summary_large_image" />
-	<meta name="twitter:image" content="https://obliviousthebook.com/images/social.jpg" />
+	<meta name="twitter:image" content="https://obliviousthebook.com/images/social-10-21.jpg" />
 </svelte:head>
 <Nav {segment} />
 
