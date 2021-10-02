@@ -7,14 +7,14 @@ import DownloadBox from "../components/DownloadBox.svelte";
 
 <svelte:head>
     <title>Oblivious | An outrageously inappropriate journey through West Africa</title>
-    <meta name="description" content="Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!">
+    <meta name="description" content="Oblivious is an epic solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!">
     <meta property="og:description"
-          content="Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!"/>
+          content="Oblivious is an epic solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!"/>
     <meta property="og:url" content="http://www.obliviousthebook.com/"/>
     <meta property="og:site_name" content="ObliviousTheBook.com"/>
     <meta property="fb:admins" content="563453705"/>
     <meta name="twitter:description"
-          content="Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!"/>
+          content="Oblivious is an epic solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!"/>
     <meta name="twitter:title" content="Oblivious | An outrageously inappropriate journey through West Africa"/>
 </svelte:head>
 
