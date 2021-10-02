@@ -1,4 +1,4 @@
-import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, v as validate_slots, o as onDestroy, f as fade, g as element, h as space, t as text, j as claim_element, k as children, l as claim_space, m as detach_dev, n as claim_text, p as attr_dev, q as add_location, r as insert_dev, u as append_dev, w as listen_dev, x as _slicedToArray, y as set_data_dev, z as add_render_callback, A as create_bidirectional_transition, B as run_all, D as DownloadBox, C as create_component, E as query_selector_all, F as claim_component, G as mount_component, H as transition_in, I as transition_out, J as destroy_component } from './client.d4dd7f11.js';
+import { _ as _inherits, a as _getPrototypeOf, b as _possibleConstructorReturn, c as _classCallCheck, i as init, s as safe_not_equal, d as _assertThisInitialized, e as dispatch_dev, S as SvelteComponentDev, v as validate_slots, o as onDestroy, f as fade, g as element, h as space, t as text, j as claim_element, k as children, l as claim_space, m as detach_dev, n as claim_text, p as attr_dev, q as add_location, r as insert_dev, u as append_dev, w as listen_dev, x as _slicedToArray, y as set_data_dev, z as add_render_callback, A as create_bidirectional_transition, B as run_all, D as DownloadBox, C as create_component, E as query_selector_all, F as claim_component, G as mount_component, H as transition_in, I as transition_out, J as destroy_component } from './client.1656ae78.js';
 
 function _createSuper(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
@@ -342,7 +342,7 @@ function create_default_slot_1(ctx) {
     },
     h: function hydrate() {
       attr_dev(div, "class", "inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-white border border-solid border-oblivious");
-      add_location(div, file$1, 29, 12, 2062);
+      add_location(div, file$1, 29, 12, 2032);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -383,7 +383,7 @@ function create_default_slot(ctx) {
     },
     h: function hydrate() {
       attr_dev(div, "class", "inline-block text-xl sm:text-2xl p-4 mx-4 my-2 rounded-lg no-underline bg-white border border-solid border-oblivious");
-      add_location(div, file$1, 74, 12, 4493);
+      add_location(div, file$1, 74, 12, 4463);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
@@ -623,7 +623,7 @@ function create_fragment$1(ctx) {
       this.h();
     },
     l: function claim(nodes) {
-      var head_nodes = query_selector_all("[data-svelte=\"svelte-w4oja5\"]", document.head);
+      var head_nodes = query_selector_all("[data-svelte=\"svelte-ic42m4\"]", document.head);
       meta0 = claim_element(head_nodes, "META", {
         name: true,
         content: true
@@ -875,102 +875,102 @@ function create_fragment$1(ctx) {
     h: function hydrate() {
       document.title = "Oblivious | An outrageously inappropriate journey through West Africa";
       attr_dev(meta0, "name", "description");
-      attr_dev(meta0, "content", "Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!");
+      attr_dev(meta0, "content", "Oblivious is an epic solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!");
       add_location(meta0, file$1, 9, 4, 423);
       attr_dev(meta1, "property", "og:description");
-      attr_dev(meta1, "content", "Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!");
-      add_location(meta1, file$1, 10, 4, 614);
+      attr_dev(meta1, "content", "Oblivious is an epic solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!");
+      add_location(meta1, file$1, 10, 4, 604);
       attr_dev(meta2, "property", "og:url");
       attr_dev(meta2, "content", "http://www.obliviousthebook.com/");
-      add_location(meta2, file$1, 12, 4, 823);
+      add_location(meta2, file$1, 12, 4, 803);
       attr_dev(meta3, "property", "og:site_name");
       attr_dev(meta3, "content", "ObliviousTheBook.com");
-      add_location(meta3, file$1, 13, 4, 896);
+      add_location(meta3, file$1, 13, 4, 876);
       attr_dev(meta4, "property", "fb:admins");
       attr_dev(meta4, "content", "563453705");
-      add_location(meta4, file$1, 14, 4, 963);
+      add_location(meta4, file$1, 14, 4, 943);
       attr_dev(meta5, "name", "twitter:description");
-      attr_dev(meta5, "content", "Oblivious is an epic true-life solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!");
-      add_location(meta5, file$1, 15, 4, 1016);
+      attr_dev(meta5, "content", "Oblivious is an epic solo overlanding journey through West Africa on a Royal Enfield motorbike. Come along on the unique adventure for free!");
+      add_location(meta5, file$1, 15, 4, 996);
       attr_dev(meta6, "name", "twitter:title");
       attr_dev(meta6, "content", "Oblivious | An outrageously inappropriate journey through West Africa");
-      add_location(meta6, file$1, 17, 4, 1226);
+      add_location(meta6, file$1, 17, 4, 1196);
       attr_dev(h10, "class", "text-4xl md:text-6xl text-center mb-2");
-      add_location(h10, file$1, 21, 4, 1414);
-      add_location(em0, file$1, 22, 64, 1545);
+      add_location(h10, file$1, 21, 4, 1384);
+      add_location(em0, file$1, 22, 64, 1515);
       attr_dev(a0, "href", "read");
       attr_dev(a0, "rel", "prefetch");
-      add_location(a0, file$1, 22, 94, 1575);
+      add_location(a0, file$1, 22, 94, 1545);
       attr_dev(h20, "class", "text-xl md:text-3xl text-center");
-      add_location(h20, file$1, 22, 4, 1485);
+      add_location(h20, file$1, 22, 4, 1455);
       attr_dev(section0, "class", "flex flex-col items-center mt-8 md:mt-20");
-      add_location(section0, file$1, 20, 0, 1351);
+      add_location(section0, file$1, 20, 0, 1321);
       attr_dev(img0, "class", "my-12 max-w-3xl max-h-1/2vh");
       attr_dev(img0, "alt", "Oblivious book cover");
       if (img0.src !== (img0_src_value = "/images/3D-cover.jpg")) attr_dev(img0, "src", img0_src_value);
-      add_location(img0, file$1, 25, 4, 1718);
+      add_location(img0, file$1, 25, 4, 1688);
       attr_dev(a1, "class", "inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious");
       attr_dev(a1, "href", "read");
       attr_dev(a1, "rel", "prefetch");
-      add_location(a1, file$1, 27, 8, 1894);
+      add_location(a1, file$1, 27, 8, 1864);
       attr_dev(div0, "class", "flex flex-col md:flex-row justify-center items-center");
-      add_location(div0, file$1, 26, 4, 1818);
+      add_location(div0, file$1, 26, 4, 1788);
       attr_dev(section1, "class", "flex flex-col items-center mb-20 md:mb-32");
-      add_location(section1, file$1, 24, 0, 1654);
-      add_location(em1, file$1, 41, 110, 2577);
+      add_location(section1, file$1, 24, 0, 1624);
+      add_location(em1, file$1, 41, 110, 2547);
       attr_dev(h11, "class", "text-4xl md:text-6xl text-center");
-      add_location(h11, file$1, 41, 4, 2471);
+      add_location(h11, file$1, 41, 4, 2441);
       attr_dev(section2, "class", "flex flex-col items-center mb-20 md:mb-32");
-      add_location(section2, file$1, 40, 0, 2407);
+      add_location(section2, file$1, 40, 0, 2377);
       attr_dev(section3, "class", "flex mb-28 md:mb-32 sm:px-20");
-      add_location(section3, file$1, 43, 0, 2623);
+      add_location(section3, file$1, 43, 0, 2593);
       attr_dev(h21, "class", "text-4xl md:text-6xl text-center mb-8");
-      add_location(h21, file$1, 47, 4, 2776);
+      add_location(h21, file$1, 47, 4, 2746);
       attr_dev(img1, "class", "relative inline-block w-full lg:w-2/3 lg:-mr-10");
       if (img1.src !== (img1_src_value = "/images/kindle-pad-phone.jpg")) attr_dev(img1, "src", img1_src_value);
       attr_dev(img1, "alt", "book being used on various platforms");
-      add_location(img1, file$1, 49, 8, 2971);
-      add_location(br0, file$1, 52, 90, 3331);
-      add_location(em2, file$1, 53, 64, 3400);
+      add_location(img1, file$1, 49, 8, 2941);
+      add_location(br0, file$1, 52, 90, 3301);
+      add_location(em2, file$1, 53, 64, 3370);
       attr_dev(span0, "class", "text-oblivious-dark");
-      add_location(span0, file$1, 53, 16, 3352);
+      add_location(span0, file$1, 53, 16, 3322);
       attr_dev(p0, "class", "absolute top-0 right-0 left-1/2 mt-1 text-xl");
-      add_location(p0, file$1, 51, 12, 3184);
-      add_location(br1, file$1, 57, 70, 3638);
+      add_location(p0, file$1, 51, 12, 3154);
+      add_location(br1, file$1, 57, 70, 3608);
       attr_dev(span1, "class", "text-oblivious-dark");
-      add_location(span1, file$1, 58, 20, 3663);
+      add_location(span1, file$1, 58, 20, 3633);
       attr_dev(p1, "class", "text-xl");
-      add_location(p1, file$1, 56, 16, 3548);
-      add_location(em3, file$1, 61, 111, 3884);
-      add_location(br2, file$1, 61, 136, 3909);
+      add_location(p1, file$1, 56, 16, 3518);
+      add_location(em3, file$1, 61, 111, 3854);
+      add_location(br2, file$1, 61, 136, 3879);
       attr_dev(span2, "class", "text-oblivious-dark");
-      add_location(span2, file$1, 62, 20, 3934);
+      add_location(span2, file$1, 62, 20, 3904);
       attr_dev(p2, "class", "text-xl");
-      add_location(p2, file$1, 60, 16, 3753);
-      add_location(br3, file$1, 65, 57, 4106);
+      add_location(p2, file$1, 60, 16, 3723);
+      add_location(br3, file$1, 65, 57, 4076);
       attr_dev(span3, "class", "text-oblivious-dark");
-      add_location(span3, file$1, 66, 20, 4131);
+      add_location(span3, file$1, 66, 20, 4101);
       attr_dev(p3, "class", "text-xl");
-      add_location(p3, file$1, 64, 16, 4029);
+      add_location(p3, file$1, 64, 16, 3999);
       attr_dev(div1, "class", "absolute top-1/4 bottom-0 pb-8 flex flex-col justify-between");
-      add_location(div1, file$1, 55, 12, 3457);
+      add_location(div1, file$1, 55, 12, 3427);
       attr_dev(div2, "class", "hidden lg:inline-block w-1/3 z-10 pb-4");
-      add_location(div2, file$1, 50, 8, 3119);
+      add_location(div2, file$1, 50, 8, 3089);
       attr_dev(div3, "class", "flex relative items-end justify-center mx-0 lg:mx-10 mb-10");
-      add_location(div3, file$1, 48, 4, 2890);
+      add_location(div3, file$1, 48, 4, 2860);
       attr_dev(a2, "class", "inline-block text-xl sm:text-2xl p-4 rounded-lg no-underline bg-oblivious");
       attr_dev(a2, "href", "read");
       attr_dev(a2, "rel", "prefetch");
-      add_location(a2, file$1, 72, 8, 4327);
+      add_location(a2, file$1, 72, 8, 4297);
       attr_dev(div4, "class", "flex flex-col md:flex-row justify-center items-center");
-      add_location(div4, file$1, 71, 4, 4251);
+      add_location(div4, file$1, 71, 4, 4221);
       attr_dev(section4, "class", "flex flex-col justify-center items-center mb-20 md:mb-32");
-      add_location(section4, file$1, 46, 0, 2697);
+      add_location(section4, file$1, 46, 0, 2667);
       attr_dev(h22, "class", "text-5xl md:text-6xl");
-      add_location(h22, file$1, 83, 4, 4813);
-      add_location(h3, file$1, 84, 4, 4875);
+      add_location(h22, file$1, 83, 4, 4783);
+      add_location(h3, file$1, 84, 4, 4845);
       attr_dev(section5, "class", "mb-20 md:mb-32 sm:px-20 text-center");
-      add_location(section5, file$1, 82, 0, 4755);
+      add_location(section5, file$1, 82, 0, 4725);
     },
     m: function mount(target, anchor) {
       append_dev(document.head, meta0);

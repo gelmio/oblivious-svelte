@@ -3621,7 +3621,7 @@ function create_default_slot$2(ctx) {
     },
     h: function hydrate() {
       attr_dev(main, "class", "flex flex-col items-center justify-center p-4 lg:p-0 max-w-4xl overflow-hidden svelte-1fbdjsw");
-      add_location(main, file$4, 17, 2, 611);
+      add_location(main, file$4, 17, 2, 643);
     },
     m: function mount(target, anchor) {
       insert_dev(target, main, anchor);
@@ -3778,7 +3778,7 @@ function create_fragment$4(ctx) {
       this.h();
     },
     l: function claim(nodes) {
-      var head_nodes = query_selector_all("[data-svelte=\"svelte-gvmthf\"]", document.head);
+      var head_nodes = query_selector_all("[data-svelte=\"svelte-qzioc7\"]", document.head);
       meta0 = claim_element(head_nodes, "META", {
         property: true,
         content: true
@@ -3816,14 +3816,14 @@ function create_fragment$4(ctx) {
       attr_dev(meta1, "content", "563453705");
       add_location(meta1, file$4, 8, 1, 289);
       attr_dev(meta2, "property", "og:image");
-      attr_dev(meta2, "content", "/images/carousel/images(1).jpg");
+      attr_dev(meta2, "content", "https://obliviousthebook.com/images/social.jpg");
       add_location(meta2, file$4, 9, 1, 340);
       attr_dev(meta3, "name", "twitter:card");
       attr_dev(meta3, "content", "summary_large_image");
-      add_location(meta3, file$4, 10, 1, 411);
+      add_location(meta3, file$4, 10, 1, 427);
       attr_dev(meta4, "name", "twitter:image");
-      attr_dev(meta4, "content", "/images/carousel/images(1).jpg");
-      add_location(meta4, file$4, 11, 1, 471);
+      attr_dev(meta4, "content", "https://obliviousthebook.com/images/social.jpg");
+      add_location(meta4, file$4, 11, 1, 487);
     },
     m: function mount(target, anchor) {
       append_dev(document.head, meta0);
@@ -5036,31 +5036,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.3d61ffd0.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.d68f5045.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./success.0513f3ec.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./success.21d1b894.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.97e039d4.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.46e9a963.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.ddd495a8.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.384ac5fe.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.adfc1e5e.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.2ac28c7c.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.ad7b37e0.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.068b6067.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[...slug].67a6f490.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].5268b2b5.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
