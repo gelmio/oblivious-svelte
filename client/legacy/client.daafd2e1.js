@@ -2903,7 +2903,7 @@ var Nav = /*#__PURE__*/function (_SvelteComponentDev) {
 function _createSuper$3(Derived) { var hasNativeReflectConstruct = _isNativeReflectConstruct$3(); return function _createSuperInternal() { var Super = _getPrototypeOf(Derived), result; if (hasNativeReflectConstruct) { var NewTarget = _getPrototypeOf(this).constructor; result = Reflect.construct(Super, arguments, NewTarget); } else { result = Super.apply(this, arguments); } return _possibleConstructorReturn(this, result); }; }
 
 function _isNativeReflectConstruct$3() { if (typeof Reflect === "undefined" || !Reflect.construct) return false; if (Reflect.construct.sham) return false; if (typeof Proxy === "function") return true; try { Date.prototype.toString.call(Reflect.construct(Date, [], function () {})); return true; } catch (e) { return false; } }
-var file$2 = "src/components/Footer.svelte"; // (56:4) <DownloadBox>
+var file$2 = "src/components/Footer.svelte"; // (57:4) <DownloadBox>
 
 function create_default_slot$1(ctx) {
   var t;
@@ -2925,7 +2925,7 @@ function create_default_slot$1(ctx) {
     block: block,
     id: create_default_slot$1.name,
     type: "slot",
-    source: "(56:4) <DownloadBox>",
+    source: "(57:4) <DownloadBox>",
     ctx: ctx
   });
   return block;
@@ -2933,45 +2933,48 @@ function create_default_slot$1(ctx) {
 
 function create_fragment$2(ctx) {
   var div;
-  var nav;
   var a0;
+  var t0;
+  var t1;
+  var nav;
+  var a1;
   var img;
   var img_src_value;
-  var t0;
+  var t2;
   var ul;
   var li0;
-  var a1;
-  var t1;
-  var a1_aria_current_value;
-  var t2;
-  var li1;
   var a2;
   var t3;
   var a2_aria_current_value;
   var t4;
-  var li2;
+  var li1;
   var a3;
   var t5;
   var a3_aria_current_value;
   var t6;
-  var li3;
+  var li2;
   var a4;
   var t7;
+  var a4_aria_current_value;
   var t8;
-  var li4;
+  var li3;
   var a5;
   var t9;
   var t10;
+  var li4;
+  var a6;
+  var t11;
+  var t12;
   var li5;
   var downloadbox;
-  var t11;
-  var li6;
-  var a6;
-  var t12;
-  var a6_aria_current_value;
   var t13;
-  var span;
+  var li6;
+  var a7;
   var t14;
+  var a7_aria_current_value;
+  var t15;
+  var span;
+  var t16;
   var current;
   downloadbox = new DownloadBox({
     props: {
@@ -2987,40 +2990,43 @@ function create_fragment$2(ctx) {
   var block = {
     c: function create() {
       div = element("div");
-      nav = element("nav");
       a0 = element("a");
+      t0 = text(".");
+      t1 = space();
+      nav = element("nav");
+      a1 = element("a");
       img = element("img");
-      t0 = space();
+      t2 = space();
       ul = element("ul");
       li0 = element("li");
-      a1 = element("a");
-      t1 = text("home");
-      t2 = space();
-      li1 = element("li");
       a2 = element("a");
-      t3 = text("about");
+      t3 = text("home");
       t4 = space();
-      li2 = element("li");
+      li1 = element("li");
       a3 = element("a");
-      t5 = text("get help");
+      t5 = text("about");
       t6 = space();
-      li3 = element("li");
+      li2 = element("li");
       a4 = element("a");
-      t7 = text("get in touch");
+      t7 = text("get help");
       t8 = space();
-      li4 = element("li");
+      li3 = element("li");
       a5 = element("a");
-      t9 = text("give");
+      t9 = text("get in touch");
       t10 = space();
+      li4 = element("li");
+      a6 = element("a");
+      t11 = text("give");
+      t12 = space();
       li5 = element("li");
       create_component(downloadbox.$$.fragment);
-      t11 = space();
-      li6 = element("li");
-      a6 = element("a");
-      t12 = text("read it now");
       t13 = space();
+      li6 = element("li");
+      a7 = element("a");
+      t14 = text("read it now");
+      t15 = space();
       span = element("span");
-      t14 = text("© Luke Gelmi 2021");
+      t16 = text("© Luke Gelmi 2021");
       this.h();
     },
     l: function claim(nodes) {
@@ -3028,20 +3034,28 @@ function create_fragment$2(ctx) {
         class: true
       });
       var div_nodes = children(div);
+      a0 = claim_element(div_nodes, "A", {
+        href: true,
+        class: true
+      });
+      var a0_nodes = children(a0);
+      t0 = claim_text(a0_nodes, ".");
+      a0_nodes.forEach(detach_dev);
+      t1 = claim_space(div_nodes);
       nav = claim_element(div_nodes, "NAV", {
         class: true
       });
       var nav_nodes = children(nav);
-      a0 = claim_element(nav_nodes, "A", {
+      a1 = claim_element(nav_nodes, "A", {
         href: true
       });
-      var a0_nodes = children(a0);
-      img = claim_element(a0_nodes, "IMG", {
+      var a1_nodes = children(a1);
+      img = claim_element(a1_nodes, "IMG", {
         src: true,
         alt: true
       });
-      a0_nodes.forEach(detach_dev);
-      t0 = claim_space(nav_nodes);
+      a1_nodes.forEach(detach_dev);
+      t2 = claim_space(nav_nodes);
       ul = claim_element(nav_nodes, "UL", {
         class: true
       });
@@ -3050,207 +3064,213 @@ function create_fragment$2(ctx) {
         class: true
       });
       var li0_nodes = children(li0);
-      a1 = claim_element(li0_nodes, "A", {
+      a2 = claim_element(li0_nodes, "A", {
         class: true,
-        "aria-current": true,
-        href: true
-      });
-      var a1_nodes = children(a1);
-      t1 = claim_text(a1_nodes, "home");
-      a1_nodes.forEach(detach_dev);
-      li0_nodes.forEach(detach_dev);
-      t2 = claim_space(ul_nodes);
-      li1 = claim_element(ul_nodes, "LI", {
-        class: true
-      });
-      var li1_nodes = children(li1);
-      a2 = claim_element(li1_nodes, "A", {
-        class: true,
-        rel: true,
         "aria-current": true,
         href: true
       });
       var a2_nodes = children(a2);
-      t3 = claim_text(a2_nodes, "about");
+      t3 = claim_text(a2_nodes, "home");
       a2_nodes.forEach(detach_dev);
-      li1_nodes.forEach(detach_dev);
+      li0_nodes.forEach(detach_dev);
       t4 = claim_space(ul_nodes);
-      li2 = claim_element(ul_nodes, "LI", {
+      li1 = claim_element(ul_nodes, "LI", {
         class: true
       });
-      var li2_nodes = children(li2);
-      a3 = claim_element(li2_nodes, "A", {
+      var li1_nodes = children(li1);
+      a3 = claim_element(li1_nodes, "A", {
         class: true,
         rel: true,
         "aria-current": true,
         href: true
       });
       var a3_nodes = children(a3);
-      t5 = claim_text(a3_nodes, "get help");
+      t5 = claim_text(a3_nodes, "about");
       a3_nodes.forEach(detach_dev);
-      li2_nodes.forEach(detach_dev);
+      li1_nodes.forEach(detach_dev);
       t6 = claim_space(ul_nodes);
+      li2 = claim_element(ul_nodes, "LI", {
+        class: true
+      });
+      var li2_nodes = children(li2);
+      a4 = claim_element(li2_nodes, "A", {
+        class: true,
+        rel: true,
+        "aria-current": true,
+        href: true
+      });
+      var a4_nodes = children(a4);
+      t7 = claim_text(a4_nodes, "get help");
+      a4_nodes.forEach(detach_dev);
+      li2_nodes.forEach(detach_dev);
+      t8 = claim_space(ul_nodes);
       li3 = claim_element(ul_nodes, "LI", {
         class: true
       });
       var li3_nodes = children(li3);
-      a4 = claim_element(li3_nodes, "A", {
+      a5 = claim_element(li3_nodes, "A", {
         class: true,
         rel: true,
         href: true
       });
-      var a4_nodes = children(a4);
-      t7 = claim_text(a4_nodes, "get in touch");
-      a4_nodes.forEach(detach_dev);
+      var a5_nodes = children(a5);
+      t9 = claim_text(a5_nodes, "get in touch");
+      a5_nodes.forEach(detach_dev);
       li3_nodes.forEach(detach_dev);
-      t8 = claim_space(ul_nodes);
+      t10 = claim_space(ul_nodes);
       li4 = claim_element(ul_nodes, "LI", {
         class: true
       });
       var li4_nodes = children(li4);
-      a5 = claim_element(li4_nodes, "A", {
+      a6 = claim_element(li4_nodes, "A", {
         class: true,
         href: true,
         rel: true
       });
-      var a5_nodes = children(a5);
-      t9 = claim_text(a5_nodes, "give");
-      a5_nodes.forEach(detach_dev);
+      var a6_nodes = children(a6);
+      t11 = claim_text(a6_nodes, "give");
+      a6_nodes.forEach(detach_dev);
       li4_nodes.forEach(detach_dev);
-      t10 = claim_space(ul_nodes);
+      t12 = claim_space(ul_nodes);
       li5 = claim_element(ul_nodes, "LI", {
         class: true
       });
       var li5_nodes = children(li5);
       claim_component(downloadbox.$$.fragment, li5_nodes);
       li5_nodes.forEach(detach_dev);
-      t11 = claim_space(ul_nodes);
+      t13 = claim_space(ul_nodes);
       li6 = claim_element(ul_nodes, "LI", {
         class: true
       });
       var li6_nodes = children(li6);
-      a6 = claim_element(li6_nodes, "A", {
+      a7 = claim_element(li6_nodes, "A", {
         class: true,
         href: true,
         "aria-current": true,
         rel: true
       });
-      var a6_nodes = children(a6);
-      t12 = claim_text(a6_nodes, "read it now");
-      a6_nodes.forEach(detach_dev);
+      var a7_nodes = children(a7);
+      t14 = claim_text(a7_nodes, "read it now");
+      a7_nodes.forEach(detach_dev);
       li6_nodes.forEach(detach_dev);
       ul_nodes.forEach(detach_dev);
-      t13 = claim_space(nav_nodes);
+      t15 = claim_space(nav_nodes);
       span = claim_element(nav_nodes, "SPAN", {
         class: true
       });
       var span_nodes = children(span);
-      t14 = claim_text(span_nodes, "© Luke Gelmi 2021");
+      t16 = claim_text(span_nodes, "© Luke Gelmi 2021");
       span_nodes.forEach(detach_dev);
       nav_nodes.forEach(detach_dev);
       div_nodes.forEach(detach_dev);
       this.h();
     },
     h: function hydrate() {
+      attr_dev(a0, "href", "/success");
+      attr_dev(a0, "class", "no-underline text-oblivious");
+      add_location(a0, file$2, 7, 1, 138);
       if (img.src !== (img_src_value = "/images/logo-150.png")) attr_dev(img, "src", img_src_value);
       attr_dev(img, "alt", "Oblivious logo of motorbike in an outline of Africa");
-      add_location(img, file$2, 11, 3, 268);
-      attr_dev(a0, "href", "/");
-      add_location(a0, file$2, 10, 2, 252);
-      attr_dev(a1, "class", "no-underline p-2 svelte-tus06v");
-      attr_dev(a1, "aria-current", a1_aria_current_value =
-      /*segment*/
-      ctx[0] === undefined ? "page" : undefined);
-      attr_dev(a1, "href", ".");
-      add_location(a1, file$2, 18, 4, 469);
-      attr_dev(li0, "class", "p-1 sm:p-4");
-      add_location(li0, file$2, 17, 3, 441);
+      add_location(img, file$2, 12, 3, 330);
+      attr_dev(a1, "href", "/");
+      add_location(a1, file$2, 11, 2, 314);
       attr_dev(a2, "class", "no-underline p-2 svelte-tus06v");
-      attr_dev(a2, "rel", "prefetch");
       attr_dev(a2, "aria-current", a2_aria_current_value =
       /*segment*/
-      ctx[0] === "about" ? "page" : undefined);
-      attr_dev(a2, "href", "about");
-      add_location(a2, file$2, 25, 4, 633);
-      attr_dev(li1, "class", "p-1 sm:p-4");
-      add_location(li1, file$2, 24, 3, 605);
+      ctx[0] === undefined ? "page" : undefined);
+      attr_dev(a2, "href", ".");
+      add_location(a2, file$2, 19, 4, 531);
+      attr_dev(li0, "class", "p-1 sm:p-4");
+      add_location(li0, file$2, 18, 3, 503);
       attr_dev(a3, "class", "no-underline p-2 svelte-tus06v");
       attr_dev(a3, "rel", "prefetch");
       attr_dev(a3, "aria-current", a3_aria_current_value =
       /*segment*/
-      ctx[0] === "help" ? "page" : undefined);
-      attr_dev(a3, "href", "help");
-      add_location(a3, file$2, 33, 4, 820);
-      attr_dev(li2, "class", "p-1 sm:p-4");
-      add_location(li2, file$2, 32, 3, 792);
-      attr_dev(a4, "class", "no-underline p-2");
+      ctx[0] === "about" ? "page" : undefined);
+      attr_dev(a3, "href", "about");
+      add_location(a3, file$2, 26, 4, 695);
+      attr_dev(li1, "class", "p-1 sm:p-4");
+      add_location(li1, file$2, 25, 3, 667);
+      attr_dev(a4, "class", "no-underline p-2 svelte-tus06v");
       attr_dev(a4, "rel", "prefetch");
-      attr_dev(a4, "href", "mailto:obliviousthebook@protonmail.com");
-      add_location(a4, file$2, 41, 4, 1008);
-      attr_dev(li3, "class", "p-1 sm:p-4");
-      add_location(li3, file$2, 40, 3, 980);
+      attr_dev(a4, "aria-current", a4_aria_current_value =
+      /*segment*/
+      ctx[0] === "help" ? "page" : undefined);
+      attr_dev(a4, "href", "help");
+      add_location(a4, file$2, 34, 4, 882);
+      attr_dev(li2, "class", "p-1 sm:p-4");
+      add_location(li2, file$2, 33, 3, 854);
       attr_dev(a5, "class", "no-underline p-2");
-      attr_dev(a5, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
-      attr_dev(a5, "rel", "nofollow");
-      add_location(a5, file$2, 48, 4, 1174);
+      attr_dev(a5, "rel", "prefetch");
+      attr_dev(a5, "href", "mailto:obliviousthebook@protonmail.com");
+      add_location(a5, file$2, 42, 4, 1070);
+      attr_dev(li3, "class", "p-1 sm:p-4");
+      add_location(li3, file$2, 41, 3, 1042);
+      attr_dev(a6, "class", "no-underline p-2");
+      attr_dev(a6, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
+      attr_dev(a6, "rel", "nofollow");
+      add_location(a6, file$2, 49, 4, 1236);
       attr_dev(li4, "class", "p-1 sm:p-4");
-      add_location(li4, file$2, 47, 3, 1146);
+      add_location(li4, file$2, 48, 3, 1208);
       attr_dev(li5, "class", "p-1 sm:p-4");
-      add_location(li5, file$2, 54, 3, 1337);
-      attr_dev(a6, "class", "p-2 md:p-4 rounded-lg no-underline bg-white svelte-tus06v");
-      attr_dev(a6, "href", "read");
-      attr_dev(a6, "aria-current", a6_aria_current_value =
+      add_location(li5, file$2, 55, 3, 1399);
+      attr_dev(a7, "class", "p-2 md:p-4 rounded-lg no-underline bg-white svelte-tus06v");
+      attr_dev(a7, "href", "read");
+      attr_dev(a7, "aria-current", a7_aria_current_value =
       /*segment*/
       ctx[0] === "read" ? "page" : undefined);
-      attr_dev(a6, "rel", "prefetch");
-      add_location(a6, file$2, 58, 4, 1441);
+      attr_dev(a7, "rel", "prefetch");
+      add_location(a7, file$2, 59, 4, 1503);
       attr_dev(li6, "class", "p-1 sm:p-4");
-      add_location(li6, file$2, 57, 3, 1413);
+      add_location(li6, file$2, 58, 3, 1475);
       attr_dev(ul, "class", "flex flex-col lg:flex-row items-center ml-4");
-      add_location(ul, file$2, 16, 2, 381);
+      add_location(ul, file$2, 17, 2, 443);
       attr_dev(span, "class", "absolute bottom-0 left-0 md:left-1/2 transform md:-translate-x-1/2 mb-2 text-sm");
-      add_location(span, file$2, 66, 2, 1638);
+      add_location(span, file$2, 67, 2, 1700);
       attr_dev(nav, "class", "relative z-0 flex flex-row justify-between lg:justify-start items-center p-4 max-w-5xl w-full");
-      add_location(nav, file$2, 7, 1, 138);
+      add_location(nav, file$2, 8, 1, 200);
       attr_dev(div, "class", "flex justify-center bg-oblivious");
       add_location(div, file$2, 6, 0, 90);
     },
     m: function mount(target, anchor) {
       insert_dev(target, div, anchor);
+      append_dev(div, a0);
+      append_dev(a0, t0);
+      append_dev(div, t1);
       append_dev(div, nav);
-      append_dev(nav, a0);
-      append_dev(a0, img);
-      append_dev(nav, t0);
+      append_dev(nav, a1);
+      append_dev(a1, img);
+      append_dev(nav, t2);
       append_dev(nav, ul);
       append_dev(ul, li0);
-      append_dev(li0, a1);
-      append_dev(a1, t1);
-      append_dev(ul, t2);
-      append_dev(ul, li1);
-      append_dev(li1, a2);
+      append_dev(li0, a2);
       append_dev(a2, t3);
       append_dev(ul, t4);
-      append_dev(ul, li2);
-      append_dev(li2, a3);
+      append_dev(ul, li1);
+      append_dev(li1, a3);
       append_dev(a3, t5);
       append_dev(ul, t6);
-      append_dev(ul, li3);
-      append_dev(li3, a4);
+      append_dev(ul, li2);
+      append_dev(li2, a4);
       append_dev(a4, t7);
       append_dev(ul, t8);
-      append_dev(ul, li4);
-      append_dev(li4, a5);
+      append_dev(ul, li3);
+      append_dev(li3, a5);
       append_dev(a5, t9);
       append_dev(ul, t10);
+      append_dev(ul, li4);
+      append_dev(li4, a6);
+      append_dev(a6, t11);
+      append_dev(ul, t12);
       append_dev(ul, li5);
       mount_component(downloadbox, li5, null);
-      append_dev(ul, t11);
+      append_dev(ul, t13);
       append_dev(ul, li6);
-      append_dev(li6, a6);
-      append_dev(a6, t12);
-      append_dev(nav, t13);
+      append_dev(li6, a7);
+      append_dev(a7, t14);
+      append_dev(nav, t15);
       append_dev(nav, span);
-      append_dev(span, t14);
+      append_dev(span, t16);
       current = true;
     },
     p: function update(ctx, _ref) {
@@ -3259,17 +3279,9 @@ function create_fragment$2(ctx) {
 
       if (!current || dirty &
       /*segment*/
-      1 && a1_aria_current_value !== (a1_aria_current_value =
-      /*segment*/
-      ctx[0] === undefined ? "page" : undefined)) {
-        attr_dev(a1, "aria-current", a1_aria_current_value);
-      }
-
-      if (!current || dirty &
-      /*segment*/
       1 && a2_aria_current_value !== (a2_aria_current_value =
       /*segment*/
-      ctx[0] === "about" ? "page" : undefined)) {
+      ctx[0] === undefined ? "page" : undefined)) {
         attr_dev(a2, "aria-current", a2_aria_current_value);
       }
 
@@ -3277,8 +3289,16 @@ function create_fragment$2(ctx) {
       /*segment*/
       1 && a3_aria_current_value !== (a3_aria_current_value =
       /*segment*/
-      ctx[0] === "help" ? "page" : undefined)) {
+      ctx[0] === "about" ? "page" : undefined)) {
         attr_dev(a3, "aria-current", a3_aria_current_value);
+      }
+
+      if (!current || dirty &
+      /*segment*/
+      1 && a4_aria_current_value !== (a4_aria_current_value =
+      /*segment*/
+      ctx[0] === "help" ? "page" : undefined)) {
+        attr_dev(a4, "aria-current", a4_aria_current_value);
       }
 
       var downloadbox_changes = {};
@@ -3296,10 +3316,10 @@ function create_fragment$2(ctx) {
 
       if (!current || dirty &
       /*segment*/
-      1 && a6_aria_current_value !== (a6_aria_current_value =
+      1 && a7_aria_current_value !== (a7_aria_current_value =
       /*segment*/
       ctx[0] === "read" ? "page" : undefined)) {
-        attr_dev(a6, "aria-current", a6_aria_current_value);
+        attr_dev(a7, "aria-current", a7_aria_current_value);
       }
     },
     i: function intro(local) {
@@ -5036,31 +5056,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.0f21b1e5.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.af6e8590.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./success.e25c22c0.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./success.235c9e0a.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.c5b105a7.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.83369120.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.ab21c92d.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.5d433c83.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.379974bc.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.9d2af4bd.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.2f6d87a2.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.120bb33f.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[...slug].74e53306.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].a9a4d97f.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
