@@ -5,6 +5,7 @@ import DownloadBox from "./DownloadBox.svelte";
 </script>
 
 <div class="flex justify-center bg-oblivious">
+	<a href="/success" class="no-underline text-oblivious">.</a>
 	<nav
 		class="relative z-0 flex flex-row justify-between lg:justify-start items-center p-4 max-w-5xl w-full"
 	>
