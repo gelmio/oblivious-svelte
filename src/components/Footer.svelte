@@ -43,7 +43,7 @@ import DownloadBox from "./DownloadBox.svelte";
 				<a
 					class="no-underline p-2"
 					rel="prefetch"
-					href="mailto:obliviousthebook@protonmail.com">get in touch</a
+					href="mailto:hello@obliviousthebook.com">get in touch</a
 				>
 			</li>
 			<li class="p-1 sm:p-4">
