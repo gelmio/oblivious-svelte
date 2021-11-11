@@ -3202,31 +3202,31 @@ function create_fragment$2(ctx) {
       add_location(li2, file$2, 33, 3, 854);
       attr_dev(a5, "class", "no-underline p-2");
       attr_dev(a5, "rel", "prefetch");
-      attr_dev(a5, "href", "mailto:obliviousthebook@protonmail.com");
+      attr_dev(a5, "href", "mailto:hello@obliviousthebook.com");
       add_location(a5, file$2, 42, 4, 1070);
       attr_dev(li3, "class", "p-1 sm:p-4");
       add_location(li3, file$2, 41, 3, 1042);
       attr_dev(a6, "class", "no-underline p-2");
       attr_dev(a6, "href", "https://transactions.sendowl.com/products/78458726/77A44CD1/add_to_cart");
       attr_dev(a6, "rel", "nofollow");
-      add_location(a6, file$2, 49, 4, 1236);
+      add_location(a6, file$2, 49, 4, 1231);
       attr_dev(li4, "class", "p-1 sm:p-4");
-      add_location(li4, file$2, 48, 3, 1208);
+      add_location(li4, file$2, 48, 3, 1203);
       attr_dev(li5, "class", "p-1 sm:p-4");
-      add_location(li5, file$2, 55, 3, 1399);
+      add_location(li5, file$2, 55, 3, 1394);
       attr_dev(a7, "class", "p-2 md:p-4 rounded-lg no-underline bg-white svelte-tus06v");
       attr_dev(a7, "href", "read");
       attr_dev(a7, "aria-current", a7_aria_current_value =
       /*segment*/
       ctx[0] === "read" ? "page" : undefined);
       attr_dev(a7, "rel", "prefetch");
-      add_location(a7, file$2, 59, 4, 1503);
+      add_location(a7, file$2, 59, 4, 1498);
       attr_dev(li6, "class", "p-1 sm:p-4");
-      add_location(li6, file$2, 58, 3, 1475);
+      add_location(li6, file$2, 58, 3, 1470);
       attr_dev(ul, "class", "flex flex-col lg:flex-row items-center ml-4");
       add_location(ul, file$2, 17, 2, 443);
       attr_dev(span, "class", "absolute bottom-0 left-0 md:left-1/2 transform md:-translate-x-1/2 mb-2 text-sm");
-      add_location(span, file$2, 67, 2, 1700);
+      add_location(span, file$2, 67, 2, 1695);
       attr_dev(nav, "class", "relative z-0 flex flex-row justify-between lg:justify-start items-center p-4 max-w-5xl w-full");
       add_location(nav, file$2, 8, 1, 200);
       attr_dev(div, "class", "flex justify-center bg-oblivious");
@@ -5056,31 +5056,31 @@ var App = /*#__PURE__*/function (_SvelteComponentDev) {
 var ignore = [/^\/read\/book-index\.json$/, /^\/read\/smooth-scroll\/?$/, /^\/read\/reader-hints\/?$/, /^\/read\/(.+)\.json$/];
 var components = [{
   js: function js() {
-    return Promise.all([import('./index.af6e8590.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.7f2e9898.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./success.235c9e0a.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./success.bce89be7.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./about.83369120.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./about.5ab30e9e.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./help.5d433c83.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./help.a1d29a1b.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./_layout.9d2af4bd.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./_layout.5d3fb497.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./index.120bb33f.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./index.1e8cabe2.js'), __inject_styles(["client-f0fa844b.css"])]).then(function(x) { return x[0]; });
   }
 }, {
   js: function js() {
-    return Promise.all([import('./[...slug].a9a4d97f.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
+    return Promise.all([import('./[...slug].c9f44a14.js'), __inject_styles(["client-f0fa844b.css","[...slug]-051698ce.css"])]).then(function(x) { return x[0]; });
   }
 }];
 var routes = function (d) {
