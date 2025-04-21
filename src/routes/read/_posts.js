@@ -13,7 +13,6 @@ const md = require('markdown-it')();
 const obliviousText = fs.readFileSync(`./static/oblivious/Oblivious.md`, {
 encoding: 'utf8'
 });
-
 const splitByBook = obliviousText.split(/.*# BOOK.*\r\n/).slice(1)
 
 const splitByBookAndChapter = splitByBook.map(
