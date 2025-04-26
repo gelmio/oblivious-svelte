@@ -20,7 +20,7 @@ import DownloadBox from "../components/DownloadBox.svelte";
 
 <section class="flex flex-col items-center mt-8 md:mt-20">
     <h1 class="text-4xl md:text-6xl text-center mb-2">Yeah Buddy!</h1>
-    <h2 class="text-xl md:text-3xl text-center">Book two of the <em>Oblivious Trilogy</em> is <a href="read" rel="prefetch">here</a> and available for free!</h2>
+    <h2 class="text-xl md:text-3xl text-center">Book three of the <em>Oblivious Trilogy</em> is <a href="read" rel="prefetch">here</a> and available for free!</h2>
 </section>
 <section class="flex flex-col items-center mb-20 md:mb-32">
     <img class="my-12 max-w-3xl max-h-1/2vh" alt='Oblivious book cover' src='/images/3D-cover.jpg'>
