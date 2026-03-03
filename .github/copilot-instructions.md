@@ -6,56 +6,106 @@ Static website for [Oblivious](https://obliviousthebook.com), a travel book tril
 
 ## Tech Stack
 
-- **Framework:** Sapper ^0.28 (Svelte ^3.17)
-- **Language:** TypeScript ^4.0 (partial — mixed with plain JS)
-- **Bundler:** Rollup
-- **CSS:** TailwindCSS v2 with `@tailwindcss/typography`, PostCSS (`postcss-import`, `postcss-preset-env`, `cssnano`)
-- **Server:** Polka + sirv (dev only — production is static export)
-- **Content rendering:** markdown-it
+- **Framework:** SvelteKit ^2.0 with Svelte ^5.0 (runes syntax)
+- **Language:** TypeScript ^5.0 (strict mode, `allowJs` + `checkJs`)
+- **Bundler:** Vite ^6.0
+- **Adapter:** @sveltejs/adapter-static — entire site is prerendered
+- **CSS:** TailwindCSS ^4.0 (CSS-first config via `@theme` in `src/app.css`), `@tailwindcss/typography`
+- **Content rendering:** markdown-it ^14.0
+- **Analytics:** Simple Analytics (privacy-first, no cookies)
 
 ## Project Structure
 
-This codebase follows standard Sapper and Svelte file naming and routing conventions.
-
-- `src/components/` — Reusable Svelte components
-- `src/routes/` — Page routes and server API endpoints
-- `src/assets/` — Source stylesheets (PostCSS)
-- `static/` — Static assets served as-is
-- `static/oblivious/` — Book content (Markdown source, images, contacts)
-- `__sapper__/` — Build artifact (do not edit)
+- `src/routes/` — Page routes, layouts, and server load functions
+- `src/lib/components/` — Reusable Svelte components (`Nav`, `Footer`, `Carousel`, `DownloadBox`, `Spinner`, `PageTransition`, `AsSeenIn`)
+- `src/lib/server/` — Server-only modules (`posts.ts` — markdown parsing)
+- `src/lib/stores/` — Svelte writable stores synced with `localStorage`
+- `src/lib/utils/` — Utility functions (`smooth-scroll.ts`)
+- `src/app.css` — Global styles and Tailwind `@theme` config (brand colors, fonts, custom values)
+- `src/app.html` — HTML shell (includes Simple Analytics script)
+- `static/` — Static assets (fonts, images, favicons, PWA manifest)
+- `static/oblivious/` — **Git submodule** (`gelmio/oblivious.git`) — book content (Markdown, EPUBs, images, contacts)
+- `scripts/` — Deployment script (`gh-pages.js`)
+- `build/` — Build output (do not edit, in `.gitignore`)
 
 ## Content Pipeline
 
-The entire trilogy lives in a single file: `static/oblivious/Oblivious.md`.
+The entire trilogy lives in `static/oblivious/Oblivious.md`.
 
-1. `src/routes/read/_posts.js` reads `Oblivious.md` with `fs.readFileSync`
-2. Content is split by `# BOOK` and `## Chapter` headings
+1. `src/lib/server/posts.ts` reads `Oblivious.md` with `fs.readFileSync` at build time
+2. Content is split by `# BOOK` headings into books, then `## Chapter` headings into chapters
 3. Each chapter is rendered to HTML with `markdown-it`
-4. JSON API endpoints (`[bookNumber].json.js`, `book-index.json.js`) serve the parsed content
-5. The `[...slug].svelte` reader component fetches chapter HTML via Sapper's `preload` and renders it with `{@html}`
+4. Two exported functions: `getChapterCounts()` and `getBookContents(bookNumber)`
+5. SvelteKit `load` functions in `src/routes/read/` serve the data to pages
+6. The `[...slug]` reader component renders chapter HTML with `{@html}`
+7. An `entries` generator produces all valid book/chapter slugs for prerendering
 
-## Coding Conventions
+## Svelte 5 Runes
 
-- **TypeScript** is used in entry points (`client.ts`, `server.ts`) and some components/utilities, but server API routes are plain JS
-- **Tailwind utility classes** are used inline on elements; only use `<style>` blocks for pseudo-elements, CSS animations, or `theme()` references
-- **Brand colors:** `oblivious` (#96c8ff), `oblivious-opaque`, `oblivious-dark` (#1871d3) — defined in `tailwind.config.js`
-- **Fonts:** `lato-light` for headings, `Roboto` for body text — loaded via `@font-face` in `src/assets/global.pcss`
-- **SEO:** Every page must set `<svelte:head>` with title, Open Graph, and Twitter Card meta tags
-- **State:** Client-side state uses Svelte `writable` stores; reader position is persisted via `localStorage`
+This codebase uses **Svelte 5 runes exclusively**.
+
+| Pattern         | Syntax                                     |
+| --------------- | ------------------------------------------ |
+| Props           | `let { prop1, prop2 } = $props()`          |
+| Reactive state  | `let value = $state(initial)`              |
+| Computed values | `let computed = $derived(expr)`            |
+| Side effects    | `$effect(() => { ... })`                   |
+| Child content   | `{@render children()}` with `Snippet` type |
+
+## Styling
+
+**TailwindCSS v4** with CSS-first configuration — there is **no `tailwind.config.js`**. All theme customization lives in `src/app.css` using `@theme`.
+
+- **Brand colors:** `oblivious` (#96c8ff), `oblivious-opaque` (#96c8ffad), `oblivious-dark` (#1871d3)
+- **Fonts:** `header` (lato-light) for headings, `sans` (Roboto) for body text
+- **Lato-Light** loaded via `@font-face` from `static/fonts/Lato-Light.ttf`
+- Use **Tailwind utility classes** inline; only use `<style>` blocks for pseudo-elements, CSS animations, or complex selectors
+- Book content uses `prose` / `prose-xl` classes with custom overrides in `src/app.css`
+
+## Routing
+
+| Route                     | Purpose                                 |
+| ------------------------- | --------------------------------------- |
+| `/`                       | Home — carousel, CTAs, book overview    |
+| `/about/`                 | About the trilogy                       |
+| `/help/`                  | E-book download instructions            |
+| `/success/`               | Post-purchase confirmation              |
+| `/read/`                  | Reader landing — book index             |
+| `/read/[book]/[chapter]/` | Chapter reader (`[...slug]` rest param) |
+
+- `prerender = true` and `trailingSlash = 'always'` in root `+layout.ts`
+- Root layout: `Nav` → `PageTransition` → content → `Footer`
+- `/read/` has a nested layout with a sliding chapter navigation panel
+
+## State Management
+
+Two `writable` stores in `src/lib/stores/reader-hints.ts`, synced with `localStorage`:
+
+- **`readerPosition`**: `[book, chapter, paragraph] | null` — reader's exact position
+- **`giveScrollHint`**: `boolean | null` — first-time reader instructions
+
+## SEO
+
+Every page must set `<svelte:head>` with:
+
+- `<title>`
+- `<meta name="description">`
+- Open Graph tags (`og:title`, `og:description`, `og:image`, `og:url`)
+- Twitter Card tags (`twitter:card`, `twitter:title`, `twitter:description`, `twitter:image`)
 
 ## Deployment
 
 ```
-npm run export   →  sapper export --legacy  →  __sapper__/export/
-npm run deploy   →  publishes to `deploy` branch via gh-pages
+npm run build    →  vite build  →  build/
+npm run deploy   →  vite build && node ./scripts/gh-pages.js  →  publishes build/ to deploy branch
 ```
 
-Deployment is manual (no CI/CD). Analytics via Simple Analytics (privacy-first, no cookies).
+Deployment is manual (no CI/CD). The `deploy` branch is served by GitHub Pages. `static/CNAME` contains `obliviousthebook.com`.
 
 ## Important Notes
 
-- **Do NOT suggest migrating to SvelteKit** — this project intentionally uses Sapper
-- `static/global.css` is generated from `src/assets/global.pcss` — never edit it directly
-- `dead-route.svelte` exists solely to force `sapper export` to crawl all book content
-- No test suite or linter/formatter is configured
-- `__sapper__/` is a build artifact — do not edit files there
+- `static/oblivious/` is a **git submodule** — run `git submodule update --init` after cloning
+- No test suite, linter, or formatter is configured
+- `build/` is a build artifact — do not edit
+- `src/ambient.d.ts` declares image imports (`.gif`, `.jpg`, `.jpeg`, `.png`, `.svg`, `.webp`) as string modules
+- The reader component (`src/routes/read/[...slug]/+page.svelte`) is the most complex piece — CSS multi-column pagination, IntersectionObserver for position tracking, custom smooth-scroll utility
