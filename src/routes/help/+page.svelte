@@ -25,7 +25,7 @@
 <section class="flex flex-col items-center mb-20 md:mb-32">
 	<h2 class="text-2xl md:text-3xl text-center">Go grab a coffee, an email is flying your way as fast as it can...</h2>
 </section>
-<section class="flex flex-col flex-col-reverse md:flex-row items-center mb-20 md:mb-32 px-8">
+<section class="flex flex-col-reverse md:flex-row items-center mb-20 md:mb-32 px-8">
 	<div class="md:pr-20">
 		<h3 class="text-3xl md:text-5xl">Step Two</h3>
 		<h4 class="text-xl md:text-2xl">Once the email has landed in your inbox, click the link it tells you to go to. From there you'll get to choose your device type and the download will start right away.</h4>

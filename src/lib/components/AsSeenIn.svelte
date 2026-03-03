@@ -1,6 +1,6 @@
 <h5 class="text-center mt-3 mb-6 uppercase"><strong>As Featured In</strong></h5>
 <div
-  class="grid sm:grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-10"
+  class="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-10"
   style="justify-items: center"
 >
   <img
