@@ -1,0 +1,125 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/*
+ * Custom theme — migrated from tailwind.config.js
+ * Brand colors, fonts, heights, and typography overrides
+ */
+@theme {
+  /* Brand colors */
+  --color-oblivious: #96c8ff;
+  --color-oblivious-opaque: #96c8ffad;
+  --color-oblivious-dark: #1871d3;
+
+  /* Fonts */
+  --font-header: "lato-light", sans-serif;
+  --font-sans: "Roboto", "Helvetica Neue", "Arial", "Noto Sans", sans-serif;
+
+  /* Custom heights */
+  --height-1\/2vh: 50vh;
+  --height-4\/5vh: 80vh;
+
+  /* Custom max-heights */
+  --max-height-1\/2vh: 50vh;
+  --max-height-4\/5vh: 80vh;
+  --max-height-book: 60rem;
+
+  /* Cursor */
+  --cursor-zoom-in: zoom-in;
+  --cursor-zoom-out: zoom-out;
+}
+
+/* Font face declarations */
+@font-face {
+  font-family: "lato-light";
+  font-style: normal;
+  src: url("/fonts/Lato-Light.ttf") format("truetype");
+}
+
+/* Global styles */
+html {
+  scrollbar-color: var(--color-oblivious) white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-header);
+}
+
+h1 {
+  font-size: var(--text-6xl);
+}
+h2 {
+  font-size: var(--text-4xl);
+}
+h3 {
+  font-size: var(--text-3xl);
+}
+h4 {
+  font-size: var(--text-2xl);
+}
+h5 {
+  font-size: var(--text-xl);
+}
+h6 {
+  font-size: var(--text-lg);
+}
+
+a {
+  text-decoration: underline solid var(--color-oblivious-dark);
+}
+
+*::-webkit-scrollbar {
+  width: 10px;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: var(--color-oblivious);
+}
+
+/*
+ * Typography plugin overrides
+ * These customize the prose styles for markdown-rendered book content
+ */
+.prose {
+  max-width: 50ch;
+}
+.prose a {
+  text-decoration: none;
+}
+.prose hr {
+  border-color: var(--color-oblivious);
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+.prose h1 {
+  font-weight: 100;
+}
+.prose h2 {
+  margin: 0;
+}
+.prose p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  break-inside: avoid-column;
+}
+.prose img {
+  cursor: zoom-in;
+}
+.prose-xl h1 {
+  font-weight: 100;
+}
+.prose-xl p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.prose-xl hr {
+  border-color: var(--color-oblivious);
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
+}
