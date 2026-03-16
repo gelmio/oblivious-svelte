@@ -1,7 +1,7 @@
-const ghpages = require('gh-pages');
+import ghpages from 'gh-pages';
 
 ghpages.publish(
-    '__sapper__/export/',
+    'build',
     {
         branch: 'deploy',
         repo: 'https://github.com/gelmio/oblivious-svelte.git',
@@ -14,4 +14,4 @@ ghpages.publish(
     () => {
         console.log('Deploy Complete!')
     }
-)
+);

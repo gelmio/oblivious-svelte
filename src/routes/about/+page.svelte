@@ -1,0 +1,131 @@
+<script lang="ts">
+  import DownloadBox from "$lib/components/DownloadBox.svelte";
+</script>
+
+<svelte:head>
+  <title>About the Oblivious Trilogy | A wild journey through West Africa</title
+  >
+  <meta
+    name="description"
+    content="How a ride through England on a Royal Enfield motorcycle turned into an epic journey through Europe and Africa."
+  />
+  <meta
+    property="og:description"
+    content="How a ride through England on a Royal Enfield motorcycle turned into an epic journey through Europe and Africa."
+  />
+  <meta property="og:url" content="https://obliviousthebook.com/about/" />
+  <meta property="og:site_name" content="ObliviousTheBook.com" />
+  <meta property="fb:admins" content="563453705" />
+  <meta
+    property="og:image"
+    content="https://obliviousthebook.com/images/social-10-21.jpg"
+  />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta
+    name="twitter:description"
+    content="How a ride through England on a Royal Enfield motorcycle turned into an epic journey through Europe and Africa."
+  />
+  <meta
+    name="twitter:title"
+    content="Oblivious - An overlanding motorbike journey through West Africa"
+  />
+  <meta
+    name="twitter:image"
+    content="https://obliviousthebook.com/images/social-10-21.jpg"
+  />
+</svelte:head>
+
+<h1 class="text-4xl md:text-6xl text-center py-16 md:py-24 animate-fade-in-up">
+  Alternate Title: How [not] to ride through Africa on a Royal Enfield.
+</h1>
+<section
+  class="prose prose-xl mb-10 max-w-2xl mx-auto animate-fade-in-up delay-200"
+>
+  <p>So, <em>what's the story then?</em></p>
+  <p>Essentially, it's a story of things getting out of hand...</p>
+  <p>
+    A fairly simple idea just evolved into something that was book-worthy. I
+    still don't really know how it happened...
+  </p>
+  <p>
+    It started off with quitting my job, quitting my girlfriend and fucking off
+    on a one way ticket to London.
+  </p>
+  <p>
+    From there, I headed straight to the local Royal Enfield dealer and grabbed
+    one of those.
+  </p>
+  <p><em>Why wouldn't you?</em></p>
+  <img
+    src="/images/before.jpg"
+    class="w-full rounded-lg shadow-lg hover:scale-[1.02] transition-all duration-300 cursor-pointer"
+    alt="Royal Enfield in the fields of England"
+  />
+  <p>Already, I thought this shit was <em>wild</em>.</p>
+  <p>
+    I surprised myself by riding all the way to the northernmost point of
+    Scotland. Then, before I knew it, I was already down to the southermost
+    point of Spain, <em>shitting</em> myself as I looked across
+    <em>The Strait</em> to Africa...
+  </p>
+  <p>
+    From there, well, I guess that's the real story; <em>Africa.</em> On a fucking
+    Royal Enfield...
+  </p>
+  <p>
+    I never planned a moment of any of this; I sure as shit didn't plan on
+    riding though Africa, otherwise my choice of vehicle would have been more
+    sensible. But there I was. And then what happens next is what happens
+    next...
+  </p>
+  <img
+    src="/images/after.jpg"
+    class="w-full rounded-lg shadow-lg hover:scale-[1.02] transition-all duration-300 cursor-pointer"
+    alt="Royal Enfield covered in shit"
+  />
+  <p>
+    I don't want to give the game away for those who haven't read any of the
+    Trilogy yet (it would be retarded to spoil my own book, wouldn't it?)
+  </p>
+  <p>So, what can I say?</p>
+  <p>I can tell you that it was a fucking long ride.</p>
+  <p>
+    I can tell you that a couple of times I thought I was going to die. That's
+    something, isn't it?
+  </p>
+  <p>I can tell you that I killed a guy.</p>
+  <p>
+    I can tell you that I spend more time on <em>the throne</em> than I care to mention.
+  </p>
+  <p>I can tell you that the Enfield was a beast.</p>
+  <p>I can tell you that Africa is fucking <em>bananas</em>.</p>
+  <p></p>
+  <p>
+    Is that enough? Have I sold you on this yet? It's hard for me to tell you
+    what you'll like about the book without knowing what you're here for...
+  </p>
+  <p>If you're here for adventure, you've got it in spades.</p>
+  <p>If you're here to for a laugh, you'll get some of that.</p>
+  <p>If you're here for romance you'll get none of that.</p>
+  <p>
+    If you're here for a good yarn; sit back, and let me take you on the ride.
+  </p>
+</section>
+<div
+  class="mb-20 md:mb-32 flex flex-col sm:flex-row gap-3 justify-center animate-fade-in-up delay-300"
+>
+  <a
+    class="inline-block text-lg px-6 py-3 rounded-lg no-underline bg-oblivious text-gray-900 font-medium shadow-sm hover:shadow-md transition-all duration-200"
+    href="/read"
+    data-sveltekit-preload-data
+  >
+    Read the book now
+  </a>
+  <DownloadBox>
+    <span
+      class="inline-block text-lg px-6 py-3 rounded-lg border border-oblivious text-gray-800 hover:bg-oblivious/10 transition-all duration-200 cursor-pointer"
+    >
+      Download the e-book
+    </span>
+  </DownloadBox>
+</div>
