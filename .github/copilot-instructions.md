@@ -79,10 +79,9 @@ This codebase uses **Svelte 5 runes exclusively**.
 
 ## State Management
 
-Two `writable` stores in `src/lib/stores/reader-hints.ts`, synced with `localStorage`:
+One `writable` store in `src/lib/stores/reader-hints.ts`, synced with `localStorage`:
 
 - **`readerPosition`**: `[book, chapter, paragraph] | null` — reader's exact position
-- **`giveScrollHint`**: `boolean | null` — first-time reader instructions
 
 ## SEO
 

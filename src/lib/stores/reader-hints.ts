@@ -1,15 +1,23 @@
 import { writable } from 'svelte/store';
 
-let storedPosition: [book: number, chapter: number, paragraph: number] | null = null;
-let storedGiveScrollHint: boolean | null = null;
+type Position = [book: number, chapter: number, paragraph: number];
+
+let storedPosition: Position | null = null;
+let storedAdvanced: Position | null = null;
 
 if (typeof window !== 'undefined') {
 	storedPosition = JSON.parse(window.localStorage.getItem('readerPosition') ?? 'null') || null;
-	storedGiveScrollHint = JSON.parse(window.localStorage.getItem('storedGiveScrollHint') ?? 'null') ?? true;
+	storedAdvanced =
+		JSON.parse(window.localStorage.getItem('mostAdvancedReaderPosition') ?? 'null') || null;
+
+	// Migration: seed mostAdvancedReaderPosition from readerPosition for existing users
+	if (!storedAdvanced && storedPosition) {
+		storedAdvanced = storedPosition;
+		window.localStorage.setItem('mostAdvancedReaderPosition', JSON.stringify(storedAdvanced));
+	}
 }
 
-export const readerPosition = writable<[number, number, number] | null>(storedPosition);
-export const giveScrollHint = writable<boolean | null>(storedGiveScrollHint);
+export const readerPosition = writable<Position | null>(storedPosition);
 
 readerPosition.subscribe((newPosition) => {
 	if (typeof window !== 'undefined') {
@@ -17,8 +25,10 @@ readerPosition.subscribe((newPosition) => {
 	}
 });
 
-giveScrollHint.subscribe((newState) => {
+export const mostAdvancedReaderPosition = writable<Position | null>(storedAdvanced);
+
+mostAdvancedReaderPosition.subscribe((newPosition) => {
 	if (typeof window !== 'undefined') {
-		window.localStorage.setItem('storedGiveScrollHint', JSON.stringify(newState));
+		window.localStorage.setItem('mostAdvancedReaderPosition', JSON.stringify(newPosition));
 	}
 });

@@ -1,3 +1,18 @@
+<script lang="ts">
+  import { onMount } from "svelte";
+  import { goto } from "$app/navigation";
+  import { get } from "svelte/store";
+  import { readerPosition } from "$lib/stores/reader-hints";
+  import Spinner from "$lib/components/Spinner.svelte";
+
+  onMount(() => {
+    const pos = get(readerPosition);
+    const target =
+      pos && pos[0] && pos[1] ? `/read/${pos[0]}/${pos[1]}/` : "/read/1/1/";
+    goto(target, { replaceState: true });
+  });
+</script>
+
 <svelte:head>
   <title>
     Read the Oblivious Trilogy for Free | An outrageously inappropriate journey
@@ -17,28 +32,6 @@
   />
 </svelte:head>
 
-<section class="mt-12 mb-24 flex flex-col items-center md:mt-28">
-  <h1 class="mb-2 text-center text-4xl md:text-6xl">
-    Read the Oblivious Trilogy for free, right here!
-  </h1>
-  <h2 class="mb-12 text-center text-xl md:text-3xl">
-    Tap the book icon and jump to a chapter, or start at the very beginning,
-    which is a very good place to start.
-  </h2>
-  <div class="flex flex-col items-center justify-center md:flex-row">
-    <a
-      data-sveltekit-preload-data
-      href="/read/1/1/"
-      class="mx-4 my-2 inline-block rounded-lg bg-oblivious p-4 text-xl no-underline sm:text-2xl"
-    >
-      Let's go already!
-    </a>
-    <a
-      data-sveltekit-preload-data
-      href="/read/3/1/"
-      class="mx-4 my-2 inline-block rounded-lg border border-solid border-oblivious bg-white p-4 text-xl no-underline sm:text-2xl"
-    >
-      Jump me to Book 3!
-    </a>
-  </div>
-</section>
+<div class="mt-24 flex justify-center">
+  <Spinner />
+</div>

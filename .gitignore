@@ -6,3 +6,6 @@ yarn-error.log
 static/global.css
 .svelte-kit
 build
+.yarn
+.pnp.cjs
+.pnp.loader.mjs

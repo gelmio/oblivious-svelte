@@ -93,9 +93,6 @@
   />
 </svelte:head>
 
-<!-- ============================================================ -->
-<!-- HERO: Full-screen with background image (from A, full-width) -->
-<!-- ============================================================ -->
 <section
   class="full-bleed relative flex items-center justify-center min-h-screen"
 >
@@ -140,21 +137,18 @@
   </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- BOOK SHOWCASE / CTA (from A) -->
-<!-- ============================================================ -->
 <section
-  class="flex flex-col items-center py-20 md:py-32 px-6 max-w-5xl mx-auto"
+  class="flex flex-col items-center py-20 md:py-32 px-6 max-w-6xl mx-auto"
 >
   <div class="flex flex-col md:flex-row items-center gap-10 md:gap-16">
-    <div class="shrink-0 animate-fade-in-up">
+    <div class="shrink-0">
       <img
         src="/images/3D-cover.jpg"
         alt="Oblivious book cover"
         class="w-64 md:w-80 rounded-sm"
       />
     </div>
-    <div class="text-center md:text-left animate-fade-in-up delay-200">
+    <div class="text-center md:text-left delay-200">
       <h2 class="text-3xl md:text-5xl mb-4">
         Ride through Africa on an outrageously inappropriate <em
           >Royal Enfield Bullet</em
@@ -188,9 +182,6 @@
   </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- QUOTE SEPARATOR 1 (C-style, full-width with photo background) -->
-<!-- ============================================================ -->
 <section class="full-bleed relative py-24 md:py-32">
   <img
     src="/images/carousel/images(5).jpg"
@@ -209,9 +200,6 @@
   </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- THE JOURNEY: Masonry photo grid with click-to-zoom (from A) -->
-<!-- ============================================================ -->
 <section class="py-16 md:py-24 px-6 max-w-6xl mx-auto">
   <h3 class="text-3xl md:text-4xl text-center mb-12">The Journey</h3>
   <div class="masonry">
@@ -240,9 +228,6 @@
   </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- QUOTE SEPARATOR 2 (C-style, full-width with photo background) -->
-<!-- ============================================================ -->
 <section class="full-bleed relative py-24 md:py-32">
   <img
     src="/images/carousel/images(6).jpg"
@@ -258,10 +243,7 @@
   </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- READ ANYWHERE: Devices section (from A) -->
-<!-- ============================================================ -->
-<section class="py-16 md:py-24 max-w-5xl mx-auto px-6">
+<section class="py-16 md:py-24 max-w-6xl mx-auto px-6">
   <div class="flex flex-col lg:flex-row items-center gap-10">
     <img
       src="/images/kindle-pad-phone.jpg"
@@ -298,9 +280,6 @@
   </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- QUOTE SEPARATOR 3 (C-style, full-width with photo background) -->
-<!-- ============================================================ -->
 <section class="full-bleed relative py-24 md:py-32">
   <img
     src="/images/carousel/images(1).jpg"
@@ -317,10 +296,7 @@
   </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- AS FEATURED IN (from A) -->
-<!-- ============================================================ -->
-<section class="py-16 md:py-20 px-6 max-w-5xl mx-auto">
+<section class="py-16 md:py-20 px-6 max-w-6xl mx-auto">
   <h5 class="text-center text-sm uppercase tracking-widest text-gray-500 mb-8">
     As Featured In
   </h5>
@@ -337,9 +313,6 @@
   </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- FINAL CTA with photo background (C-style ending) -->
-<!-- ============================================================ -->
 <section class="full-bleed relative py-20 md:py-32">
   <img
     src="/images/carousel/images(7).jpg"
@@ -376,9 +349,6 @@
   </div>
 </section>
 
-<!-- ============================================================ -->
-<!-- LIGHTBOX OVERLAY -->
-<!-- ============================================================ -->
 {#if zoomedPhoto}
   <div
     class="fixed inset-0 z-50 flex items-center justify-center bg-black/90 cursor-zoom-out animate-fade-in"

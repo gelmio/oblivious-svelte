@@ -1,25 +1,36 @@
+<script module lang="ts">
+  let startAtLastPage = false;
+</script>
+
 <script lang="ts">
   import { onMount } from "svelte";
+  import { goto } from "$app/navigation";
   import { page } from "$app/stores";
   import { fade } from "svelte/transition";
-  import { giveScrollHint, readerPosition } from "$lib/stores/reader-hints";
-  import smoothScroll from "$lib/utils/smooth-scroll";
+  import { get } from "svelte/store";
+  import {
+    readerPosition,
+    mostAdvancedReaderPosition,
+  } from "$lib/stores/reader-hints";
+  import { textSizeIndex, PROSE_SIZES } from "$lib/stores/text-size";
+  import { createPaginator } from "$lib/utils/paginator.svelte";
 
   let { data } = $props();
 
-  let reader: HTMLElement | undefined = $state();
-  let readerBounds: DOMRect | undefined = $state();
-  let windowBounds: [x: number, y: number] | undefined = $state();
-  let readerWidth: number | undefined = $state();
-  let readerHeight: number | undefined = $state();
-  let readerTop: number | undefined = $state();
-  let columnGap = 50;
-  let resizeTolerance = 100;
+  const pag = createPaginator();
+
+  let viewportEl: HTMLElement | undefined = $state();
+  let contentEl: HTMLElement | undefined = $state();
   let photoBox: HTMLElement | undefined = $state();
   let showPhotoBox = $state(false);
-  let shouldJumpToPosition = $state(false);
-  let observer: IntersectionObserver | undefined;
-  let paragraphElements: NodeListOf<Element> | undefined;
+
+  // Bind elements to paginator when they mount
+  $effect(() => {
+    if (viewportEl) pag.viewport = viewportEl;
+  });
+  $effect(() => {
+    if (contentEl) pag.content = contentEl;
+  });
 
   let slug = $derived(
     $page.params.slug
@@ -27,185 +38,166 @@
       : null,
   );
 
+  let isLastChapterOfTrilogy = $derived(
+    data.book === 3 && !data.nextChapterExists,
+  );
+  let isLastChapterOfBook = $derived(
+    !data.nextChapterExists && !isLastChapterOfTrilogy,
+  );
   let next = $derived<[number, number]>(
-    !data.nextChapterExists && data.book < 3
-      ? [data.book + 1, 1]
-      : [data.book, data.chapter + 1],
+    isLastChapterOfBook ? [data.book + 1, 1] : [data.book, data.chapter + 1],
+  );
+  let prev = $derived<[number, number] | null>(
+    data.chapter > 1 ? [data.book, data.chapter - 1] : null,
   );
 
-  function readersPositionHasAdvanced(
-    storedPosition: [number, number, number] | null,
-    currentPosition: number[],
-  ): boolean {
-    return (
-      ((!storedPosition || !storedPosition[0] || !storedPosition[1]) &&
-        !!currentPosition) ||
-      currentPosition[0] > (storedPosition?.[0] ?? 0) ||
-      (currentPosition[0] === storedPosition?.[0] &&
-        currentPosition[1] > (storedPosition?.[1] ?? 0))
-    );
-  }
+  // 1-indexed current page for display
+  let currentPage = $derived(pag.pageIndex + 1);
+  let totalPages = $derived(pag.totalPages);
 
-  function setReaderBounds() {
-    if (reader) {
-      windowBounds = [window.innerWidth, window.innerHeight];
-      if (
-        !readerBounds ||
-        !readerHeight ||
-        !readerWidth ||
-        windowBounds[0] < readerWidth ||
-        windowBounds[1] < readerHeight ||
-        windowBounds[0] > readerWidth + resizeTolerance ||
-        windowBounds[1] > readerHeight + resizeTolerance
-      ) {
-        readerHeight = Math.round(windowBounds[1]);
-        readerBounds = reader.getBoundingClientRect();
-        readerWidth = Math.round(readerBounds.width);
-      }
+  let bookProgress = $derived(
+    Math.round(
+      ((data.chapter -
+        1 +
+        (totalPages > 1 ? (currentPage - 1) / (totalPages - 1) : 0)) /
+        data.totalChapters) *
+        100,
+    ),
+  );
+
+  // Text size
+  let sizeIdx = $state(get(textSizeIndex));
+  let proseClass = $derived(PROSE_SIZES[sizeIdx]);
+
+  function changeSize(delta: number) {
+    const next = Math.max(0, Math.min(sizeIdx + delta, PROSE_SIZES.length - 1));
+    if (next !== sizeIdx) {
+      sizeIdx = next;
+      textSizeIndex.set(next);
     }
   }
 
-  function debounce(fn: () => void, delay: number) {
-    let timer: ReturnType<typeof setTimeout>;
-    return function () {
-      clearTimeout(timer);
-      timer = setTimeout(fn, delay);
-    };
-  }
+  // Re-measure when text size changes
+  $effect(() => {
+    const _s = sizeIdx;
+    // Allow DOM to reflow after class change
+    requestAnimationFrame(() => pag.measure());
+  });
 
-  const snapToPage = () => {
-    if (!reader || !readerWidth) return;
-    const currentScroll = reader.scrollLeft;
-    setTimeout(() => {
-      if (!reader || !readerWidth) return;
-      const remainder = reader.scrollLeft % (readerWidth + columnGap);
-      if (currentScroll === reader.scrollLeft && remainder) {
-        const moveLeft =
-          remainder / (readerWidth + columnGap) < 0.5
-            ? -remainder
-            : readerWidth + columnGap - remainder;
-        smoothScroll(
-          reader,
-          [reader.scrollLeft, reader.scrollTop],
-          [reader.scrollLeft + moveLeft, reader.scrollTop],
-          300,
-        );
-      }
-    }, 50);
-  };
-
-  const debouncedSnap = debounce(snapToPage, 1000);
-
-  const handleClick = (e: MouseEvent) => {
-    const { clientX, target } = e;
-    if (target instanceof HTMLElement && target.tagName === "IMG") {
-      showPhotoBox = true;
-      setTimeout(() => {
-        if (photoBox) {
-          photoBox.innerHTML = target.outerHTML;
-        }
-      }, 1);
-    } else if (clientX && readerBounds && readerBounds.left && readerWidth) {
-      const midwayScreenX = readerBounds.left + readerWidth / 2;
-      const scrollDistance = readerWidth + columnGap;
-      if (!reader) return;
-      smoothScroll(
-        reader,
-        [reader.scrollLeft, reader.scrollTop],
-        [
-          reader.scrollLeft +
-            (clientX <= midwayScreenX ? -1 : 1) * scrollDistance,
-          reader.scrollTop,
-        ],
-        300,
-        debouncedSnap,
-      );
-    }
-  };
-
-  function jumpToParagraph() {
-    if (!paragraphElements || !reader || !$readerPosition) return;
-    const elementToJumpTo = paragraphElements[$readerPosition[2] - 1];
-    if (elementToJumpTo instanceof HTMLElement) {
-      smoothScroll(
-        reader,
-        [reader.scrollLeft, reader.scrollTop],
-        [elementToJumpTo.offsetLeft, reader.scrollTop],
-        300,
-        debouncedSnap,
-      );
-    }
-  }
-
-  function setupObservers() {
-    if (paragraphElements && paragraphElements.length > 0 && slug) {
-      observer = new IntersectionObserver(
-        (entries) => {
-          if (entries[0].isIntersecting === true && paragraphElements) {
-            const currentIndex = Array.from(paragraphElements).indexOf(
-              entries[0].target,
-            );
-            if (
-              currentIndex > -1 &&
-              currentIndex > ($readerPosition?.[2] ?? 0) - 1
-            ) {
-              readerPosition.set([slug![0], slug![1], currentIndex + 1]);
-            }
-          }
-        },
-        { threshold: [0] },
-      );
-      Array.from(paragraphElements).forEach((el) => observer!.observe(el));
-    }
-  }
-
-  onMount(() => {
-    paragraphElements = document.querySelectorAll(".reader p");
-    if (slug && readersPositionHasAdvanced($readerPosition, slug)) {
-      readerPosition.set([slug[0], slug[1], 1]);
-      setupObservers();
-    } else if (
-      $readerPosition &&
-      $readerPosition[0] === slug?.[0] &&
-      $readerPosition[1] === slug?.[1] &&
-      $readerPosition[2] > 1
-    ) {
-      shouldJumpToPosition = true;
-      setupObservers();
-    } else if (
-      $readerPosition &&
-      $readerPosition[0] === slug?.[0] &&
-      $readerPosition[1] === slug?.[1] &&
-      $readerPosition[2] === 1
-    ) {
-      setupObservers();
-    }
-
-    setReaderBounds();
-    setTimeout(() => {
-      setReaderBounds();
-      if (readerBounds) {
-        readerTop =
-          (window.pageYOffset || document.documentElement.scrollTop) +
-          readerBounds.top;
-        smoothScroll(
-          window,
-          [window.scrollX, window.scrollY],
-          [window.scrollX, readerTop],
-          600,
-        );
-      }
-    }, 2000);
-
-    return () => {
-      if (observer) {
-        observer.disconnect();
+  // Auto-advance: navigate to next/prev chapter when turning past boundary
+  $effect(() => {
+    pag.onBoundaryReached = (dir: 1 | -1) => {
+      if (dir === 1 && !isLastChapterOfTrilogy) {
+        goto(`/read/${next[0]}/${next[1]}/`);
+      } else if (dir === -1 && prev) {
+        startAtLastPage = true;
+        goto(`/read/${prev[0]}/${prev[1]}/`);
       }
     };
   });
+
+  // Track position after each page turn
+  $effect(() => {
+    // Re-run when pageIndex changes
+    const _idx = pag.pageIndex;
+    if (slug && pag.ready) {
+      pag.updatePosition(slug[0], slug[1]);
+    }
+  });
+
+  function handleClick(e: MouseEvent) {
+    const { clientX, target } = e;
+
+    // Image lightbox
+    if (target instanceof HTMLElement && target.tagName === "IMG") {
+      showPhotoBox = true;
+      setTimeout(() => {
+        if (photoBox) photoBox.innerHTML = target.outerHTML;
+      }, 1);
+      return;
+    }
+
+    // Page turning — left half goes back, right half goes forward
+    if (!viewportEl) return;
+    const rect = viewportEl.getBoundingClientRect();
+    const mid = rect.left + rect.width / 2;
+    pag.turnPage(clientX <= mid ? -1 : 1);
+  }
+
+  function handleKeydown(e: KeyboardEvent) {
+    if (
+      e.target instanceof HTMLInputElement ||
+      e.target instanceof HTMLTextAreaElement
+    )
+      return;
+
+    if (showPhotoBox && e.key === "Escape") {
+      showPhotoBox = false;
+      return;
+    }
+
+    if (e.key === "ArrowRight" || e.key === "PageDown") {
+      e.preventDefault();
+      pag.turnPage(1);
+    } else if (e.key === "ArrowLeft" || e.key === "PageUp") {
+      e.preventDefault();
+      pag.turnPage(-1);
+    }
+  }
+
+  function hasAdvanced(
+    stored: [number, number, number] | null,
+    current: number[],
+  ): boolean {
+    return (
+      !stored ||
+      !stored[0] ||
+      !stored[1] ||
+      current[0] > (stored[0] ?? 0) ||
+      (current[0] === stored[0] && current[1] > (stored[1] ?? 0))
+    );
+  }
+
+  onMount(() => {
+    const stored = get(readerPosition);
+
+    // Capture and reset the module-level flag before async work
+    const shouldStartAtEnd = startAtLastPage;
+    startAtLastPage = false;
+
+    // Measure after a frame so columns are laid out
+    pag.measure();
+
+    // Re-measure after images load and auto-restore position
+    setTimeout(() => {
+      pag.measure();
+
+      // Auto-jump to last page (navigating backward) or saved position
+      requestAnimationFrame(() => {
+        if (shouldStartAtEnd) {
+          pag.goToPage(pag.totalPages - 1, false);
+        } else if (
+          stored &&
+          stored[0] === slug?.[0] &&
+          stored[1] === slug?.[1] &&
+          stored[2] > 1
+        ) {
+          const targetPage = pag.getPageForParagraph(stored[2] - 1);
+          pag.goToPage(targetPage, false);
+        }
+
+        // Scroll the window down to the reader
+        if (viewportEl) {
+          viewportEl.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+      });
+    }, 500);
+
+    return () => pag.destroy();
+  });
 </script>
 
-<svelte:window onresize={() => setReaderBounds()} />
+<svelte:window onkeydown={handleKeydown} />
 
 <svelte:head>
   <title>
@@ -214,58 +206,158 @@
   </title>
 </svelte:head>
 
-<article class="prose mb-8 pt-16 text-justify md:prose-xl md:mb-12">
-  <h2 class="font-header">Book {data.book}, Chapter {data.chapter}</h2>
-  <div
-    bind:this={reader}
-    onclick={handleClick}
-    role="presentation"
-    class="reader no-scrollbar relative overflow-hidden py-12"
-    style={readerWidth && readerHeight
-      ? `height: ${readerHeight}px; columns: auto ${readerWidth}px; column-gap: ${columnGap}px; column-rule: 1px solid #000;`
-      : ""}
-  >
-    {@html data.content}
-    {#if next[0] < 3}
-      <div class="mt-8 flex flex-col items-end justify-end md:flex-row">
-        <a
-          onclick={(e) => e.stopPropagation()}
-          href="/read/{next[0]}/{next[1]}/"
-          class="inline-block rounded-lg bg-oblivious p-2 text-lg no-underline"
-        >
-          Next {data.nextChapterExists ? "Chapter" : "Book"}
-        </a>
-        {#if next[1] > 10 && !(next[1] % 5)}
-          <a
-            onclick={(e) => e.stopPropagation()}
-            href="https://payhip.com/b/5eyXH"
-            rel="nofollow"
-            class="mx-4 inline-block rounded-lg border border-solid border-oblivious bg-white p-2 text-lg no-underline"
+<article class="prose mt-4 mb-8 text-justify {proseClass} md:mb-12 max-w-none!">
+  <!-- Reader row: gutter-left | viewport | gutter-right -->
+  <div class="reader-row">
+    <!-- Left gutter button -->
+    <button
+      onclick={() => pag.turnPage(-1)}
+      aria-label="Previous page"
+      class="reader-gutter reader-gutter-left"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="gutter-icon"
+      >
+        <polyline points="15 18 9 12 15 6"></polyline>
+      </svg>
+    </button>
+
+    <!-- Viewport: clips the visible page -->
+    <div
+      bind:this={viewportEl}
+      role="presentation"
+      class="reader-viewport pt-4 relative overflow-hidden max-w-xl mx-auto"
+      style={pag.viewportStyle}
+    >
+      <!-- Left click zone -->
+      <button
+        onclick={() => pag.turnPage(-1)}
+        class="click-zone click-zone-left"
+        aria-label="Previous page"
+        tabindex="-1"
+      ></button>
+      <!-- Right click zone -->
+      <button
+        onclick={() => pag.turnPage(1)}
+        class="click-zone click-zone-right"
+        aria-label="Next page"
+        tabindex="-1"
+      ></button>
+
+      <!-- Content: CSS columns + transform-based movement -->
+      <div
+        bind:this={contentEl}
+        onclick={handleClick}
+        ontouchstart={pag.handleTouchStart}
+        ontouchmove={pag.handleTouchMove}
+        ontouchend={pag.handleTouchEnd}
+        role="presentation"
+        class="reader-content pt-4 pb-4"
+        style={pag.contentStyle}
+      >
+        <!-- Chapter heading -->
+        {#if data.chapter === 1}
+          <p
+            class="font-header text-left text-lg uppercase tracking-widest text-gray-400 mb-1! mt-2!"
           >
-            Or buy me a coffee!
-          </a>
+            Book {data.book}
+          </p>
         {/if}
-      </div>
-    {:else}
-      <div class="mt-8 text-center font-header">
-        <p>Congrats! You've made it to the end of Book 2!</p>
-        <p>
-          That's as far as things go for the moment, but Book 3 is on the way
-          out soon!
+        <p
+          class="font-header text-left text-base uppercase tracking-widest text-gray-400 mb-4! mt-0!"
+        >
+          Chapter {data.chapter}
         </p>
-        <p>
-          While you wait, feel free to jump on the mailing list, or maybe even <a
-            onclick={(e) => e.stopPropagation()}
-            href="https://payhip.com/b/5eyXH"
-            rel="nofollow"
-            class="border-b border-oblivious-dark">buy me a coffee!</a
-          >
-        </p>
+
+        {@html data.content}
       </div>
-    {/if}
+    </div>
+
+    <!-- Right gutter button -->
+    <button
+      onclick={() => pag.turnPage(1)}
+      aria-label="Next page"
+      class="reader-gutter reader-gutter-right"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="2"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="gutter-icon"
+      >
+        <polyline points="9 18 15 12 9 6"></polyline>
+      </svg>
+    </button>
   </div>
-  <div class="-mt-10 text-center text-xs">Oblivious | Luke Gelmi</div>
+
+  <!-- Bottom progress bar with chapter identity and text size picker -->
+  <div
+    class="mt-1 flex items-center justify-between gap-2 px-1 text-xs text-gray-500 select-none max-w-xl mx-auto"
+  >
+    <div class="min-w-0 shrink-0">
+      {#if prev}
+        <a
+          href="/read/{prev[0]}/{prev[1]}/"
+          class="no-underline text-oblivious-dark hover:text-oblivious transition-colors"
+          >‹ Ch. {prev[1]}</a
+        >
+      {/if}
+    </div>
+    <div class="flex flex-col items-center gap-1 flex-1 min-w-0">
+      <span class="font-header text-sm text-gray-700">
+        Book {data.book}, Chapter {data.chapter}
+      </span>
+      <span>
+        Page {currentPage} of {totalPages}
+        <span class="mx-1 text-gray-300">·</span>
+        {bookProgress}%
+      </span>
+      <div class="h-1 w-full max-w-md rounded-full bg-gray-200 overflow-hidden">
+        <div
+          class="h-full rounded-full bg-oblivious transition-all duration-300 ease-out"
+          style="width: {bookProgress}%"
+        ></div>
+      </div>
+      <!-- Text size controls -->
+      <div class="flex items-center gap-1.5 mt-0.5">
+        <button
+          onclick={() => changeSize(-1)}
+          disabled={sizeIdx <= 0}
+          class="font-header text-gray-400 hover:text-oblivious-dark disabled:opacity-30 disabled:cursor-default cursor-pointer transition-colors leading-none"
+          aria-label="Decrease text size">A−</button
+        >
+        <span class="text-gray-300">Text size</span>
+        <button
+          onclick={() => changeSize(1)}
+          disabled={sizeIdx >= PROSE_SIZES.length - 1}
+          class="font-header text-gray-400 hover:text-oblivious-dark disabled:opacity-30 disabled:cursor-default cursor-pointer transition-colors leading-none"
+          aria-label="Increase text size">A+</button
+        >
+      </div>
+    </div>
+    <div class="min-w-0 shrink-0">
+      {#if !isLastChapterOfTrilogy}
+        <a
+          href="/read/{next[0]}/{next[1]}/"
+          class="no-underline text-oblivious-dark hover:text-oblivious transition-colors"
+          >{data.nextChapterExists ? `Ch. ${next[1]}` : `Book ${next[0]}`} ›</a
+        >
+      {/if}
+    </div>
+  </div>
 </article>
+
 {#if showPhotoBox}
   <div
     in:fade
@@ -276,86 +368,79 @@
     onkeydown={(e) => {
       if (e.key === "Escape") showPhotoBox = false;
     }}
-    class="fixed inset-0 flex cursor-zoom-out items-center justify-center bg-oblivious-opaque"
+    class="fixed inset-0 z-30 flex cursor-zoom-out items-center justify-center bg-oblivious-opaque"
   ></div>
-{/if}
-{#if $giveScrollHint}
-  <div
-    in:fade={{ delay: 1000 }}
-    out:fade
-    class="fixed inset-0 z-10 flex items-center justify-center bg-oblivious-opaque"
-  >
-    <div class="m-2 flex flex-col rounded-lg bg-white p-2 text-center md:p-16">
-      <p class="mb-4 font-header text-xl md:text-2xl">Here's some tips:</p>
-      <p class="mb-1 font-sans text-base md:text-lg">
-        Tap the text to turn the pages.
-      </p>
-      <p class="mb-1 font-sans text-base md:text-lg">Tap the images to zoom.</p>
-      <p class="mb-1 font-sans text-base md:text-lg">
-        I'll help you out by keeping track of where you're up to.
-      </p>
-      <p class="mb-1 font-sans text-base md:text-lg">
-        I'll also scroll automatically to where the pages are so you don't have
-        to bother your finger...
-      </p>
-      <div>
-        <span
-          onclick={() => {
-            giveScrollHint.set(false);
-          }}
-          role="button"
-          tabindex="0"
-          onkeydown={(e) => {
-            if (e.key === "Enter" || e.key === " ") giveScrollHint.set(false);
-          }}
-          class="inline-block cursor-pointer rounded-lg bg-oblivious p-2 text-base no-underline md:text-lg"
-        >
-          Got it
-        </span>
-      </div>
-    </div>
-  </div>
-{:else if shouldJumpToPosition}
-  <div
-    in:fade={{ delay: 1000 }}
-    class="fixed inset-0 z-10 flex items-center justify-center bg-oblivious-opaque"
-  >
-    <div class="m-2 flex flex-col rounded-lg bg-white p-2 text-center md:p-16">
-      <p class="mb-4 font-sans text-base md:text-lg">
-        Want to jump to the last page you were reading?
-      </p>
-      <div>
-        <button
-          onclick={() => {
-            shouldJumpToPosition = false;
-            jumpToParagraph();
-          }}
-          class="inline-block rounded-lg bg-oblivious p-2 text-base no-underline md:text-lg"
-        >
-          Sure
-        </button>
-        <button
-          onclick={() => {
-            shouldJumpToPosition = false;
-            if ($readerPosition) {
-              readerPosition.set([$readerPosition[0], $readerPosition[1], 1]);
-            }
-          }}
-          class="inline-block cursor-pointer rounded-lg border border-solid border-oblivious bg-white p-2 text-base no-underline md:text-lg"
-        >
-          Nup
-        </button>
-      </div>
-    </div>
-  </div>
 {/if}
 
 <style>
-  .no-scrollbar::-webkit-scrollbar {
-    display: none;
+  /* Reader row: flex container for gutter buttons + viewport */
+  .reader-row {
+    display: flex;
+    align-items: stretch;
+    gap: 0;
   }
-  .no-scrollbar {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+
+  /* Gutter page-turn buttons flanking the text */
+  .reader-gutter {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    background: transparent;
+    color: #d1d5db;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    border-radius: 8px;
+    transition: color 0.2s;
+  }
+  .reader-gutter:hover {
+    color: #9ca3af;
+  }
+  .gutter-icon {
+    width: 28px;
+    height: 28px;
+  }
+  @media (max-width: 768px) {
+    .reader-gutter {
+      width: 28px;
+    }
+    .gutter-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .reader-viewport {
+    flex: 1;
+    min-width: 0;
+    touch-action: pan-y;
+    padding-inline: 0.5rem;
+  }
+  .reader-content {
+    overflow: visible;
+  }
+
+  /* Invisible click zones for left/right page turns */
+  .click-zone {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+    background: transparent;
+    border: none;
+    padding: 0;
+    outline: none;
+  }
+  .click-zone-left {
+    left: 0;
+    width: 50%;
+    cursor: w-resize;
+  }
+  .click-zone-right {
+    right: 0;
+    width: 50%;
+    cursor: e-resize;
   }
 </style>

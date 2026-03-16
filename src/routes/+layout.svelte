@@ -10,6 +10,9 @@
 
   let pathname = $derived($page.url.pathname);
   let isHome = $derived(pathname === "/");
+  let isReader = $derived(
+    pathname.startsWith("/read/") && pathname !== "/read/",
+  );
 </script>
 
 <svelte:head>
@@ -28,13 +31,26 @@
 
 <Nav {pathname} />
 
-{#key pathname}
-  <PageTransition>
-    <main class={isHome ? '' : 'flex flex-col items-center justify-center p-4 lg:p-0 max-w-4xl overflow-hidden'}>
-      {@render children()}
-    </main>
-  </PageTransition>
-{/key}
+{#if isReader}
+  <!-- Skip root PageTransition for reader pages — the read layout has its own -->
+  <main
+    class="flex flex-col items-center justify-center p-4 lg:p-0 max-w-4xl overflow-x-clip"
+  >
+    {@render children()}
+  </main>
+{:else}
+  {#key pathname}
+    <PageTransition>
+      <main
+        class={isHome
+          ? ""
+          : "flex flex-col items-center justify-center p-4 lg:p-0 max-w-4xl overflow-x-clip"}
+      >
+        {@render children()}
+      </main>
+    </PageTransition>
+  {/key}
+{/if}
 
 <Footer {pathname} {isHome} />
 

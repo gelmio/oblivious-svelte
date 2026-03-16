@@ -22,12 +22,14 @@ export const load: PageServerLoad = ({ params }) => {
 	}
 
 	const nextChapterExists = chapterNumber < bookContents.length;
+	const totalChapters = bookContents.length;
 
 	return {
 		content: bookContents[chapterNumber - 1],
 		book: bookNumber,
 		chapter: chapterNumber,
-		nextChapterExists
+		nextChapterExists,
+		totalChapters
 	};
 };
 

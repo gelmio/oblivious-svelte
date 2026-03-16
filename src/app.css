@@ -91,7 +91,9 @@ a.no-underline {
 
 /*
  * Typography plugin overrides
- * These customize the prose styles for markdown-rendered book content
+ * These customize the prose styles for markdown-rendered book content.
+ * All size-specific overrides live on the base .prose selector so they
+ * apply at every prose-* size (sm / base / lg / xl / 2xl).
  */
 .prose {
   max-width: 50ch;
@@ -117,18 +119,6 @@ a.no-underline {
 }
 .prose img {
   cursor: zoom-in;
-}
-.prose-xl h1 {
-  font-weight: 100;
-}
-.prose-xl p {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.prose-xl hr {
-  border-color: var(--color-oblivious);
-  margin-top: 2.5em;
-  margin-bottom: 2.5em;
 }
 
 /*

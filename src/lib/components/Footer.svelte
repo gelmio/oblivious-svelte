@@ -103,14 +103,7 @@
             Support the Author
           </a>
           <div class="mt-2">
-            <DownloadBox>
-              <span
-                class="inline-block px-4 py-2 rounded-lg bg-white text-gray-800 text-sm font-medium
-                shadow-sm hover:shadow-md transition-all duration-200 cursor-pointer"
-              >
-                Download E-Book
-              </span>
-            </DownloadBox>
+            <DownloadBox>Download E-Book</DownloadBox>
           </div>
           <a
             class="mt-2 inline-flex items-center justify-center px-5 py-2.5 rounded-lg no-underline
